@@ -1,0 +1,537 @@
+{
+  "key": "502de3bd2fc08e8c",
+  "inputs": {
+    "url": "https://yc-oss.github.io/api/batches/fall-2026.json"
+  },
+  "fetched_at": "2026-08-13T15:05:07.324977+00:00",
+  "payload": [
+    {
+      "id": 31378,
+      "name": "GodHands",
+      "slug": "godhands",
+      "former_names": [],
+      "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/5ec540989c0e572731406bc02714d7608e407cc3.png",
+      "website": "https://godhands.dev",
+      "all_locations": "Bengaluru, KA, India; Remote",
+      "long_description": "GodHands is building a living knowledge base for engineering teams, turning the code, docs, and decisions across your stack into a single source of truth that stays accurate as you grow.",
+      "one_liner": "The company knowledge base that updates itself",
+      "team_size": 2,
+      "industry": "B2B",
+      "subindustry": "B2B",
+      "launched_at": 1777151399,
+      "tags": [
+        "Documents",
+        "Artificial Intelligence",
+        "Developer Tools",
+        "DevOps"
+      ],
+      "tags_highlighted": [],
+      "top_company": false,
+      "isHiring": false,
+      "nonprofit": false,
+      "batch": "Fall 2026",
+      "status": "Active",
+      "industries": [
+        "B2B"
+      ],
+      "regions": [
+        "India",
+        "South Asia",
+        "Remote",
+        "Fully Remote"
+      ],
+      "stage": "Early",
+      "app_video_public": false,
+      "demo_day_video_public": false,
+      "app_answers": null,
+      "question_answers": false,
+      "url": "https://www.ycombinator.com/companies/godhands",
+      "api": "https://yc-oss.github.io/api/batches/fall-2026/godhands.json"
+    },
+    {
+      "id": 31452,
+      "name": "Degla Inc",
+      "slug": "degla-inc",
+      "former_names": [],
+      "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/9b4aa40c1f823de9d3ec9a6c4b04e1e382dc5a85.png",
+      "website": "https://degla.ai",
+      "all_locations": "Boston, MA, USA",
+      "long_description": "We turn natural Language into Multi-Drone Mission execution. Degla is built around a simple idea: once you\u2019ve expressed your intent, the system owns the problem.You don\u2019t babysit drones. You don\u2019t micromanage failures. You don\u2019t rewrite plans. You state the goal, Degla figures out how.",
+      "one_liner": "The fully autonomous intelligence layer in the sky.",
+      "team_size": 2,
+      "industry": "Industrials",
+      "subindustry": "Industrials -> Drones",
+      "launched_at": 1775570807,
+      "tags": [
+        "Artificial Intelligence",
+        "Hard Tech",
+        "Drones",
+        "Aerospace",
+        "AI"
+      ],
+      "tags_highlighted": [],
+      "top_company": false,
+      "isHiring": false,
+      "nonprofit": false,
+      "batch": "Fall 2026",
+      "status": "Active",
+      "industries": [
+        "Industrials",
+        "Drones"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "stage": "Early",
+      "app_video_public": false,
+      "demo_day_video_public": false,
+      "app_answers": null,
+      "question_answers": false,
+      "url": "https://www.ycombinator.com/companies/degla-inc",
+      "api": "https://yc-oss.github.io/api/batches/fall-2026/degla-inc.json"
+    },
+    {
+      "id": 31461,
+      "name": "Collar",
+      "slug": "collar",
+      "former_names": [
+        "Collar AI"
+      ],
+      "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/9eb4e7455b35796c4972c68f65a621d21e458003.png",
+      "website": "https://usecollarai.com",
+      "all_locations": "Singapore, Singapore",
+      "long_description": "Connect your inboxes and conversations to Collar. \r\nGet a proprietary company brain from your past deals, context, and current mandate. Agents then run the entire pre-investment process: inbound and outbound sourcing, diligence, IC memos, and slides, in your fund's voice rather than a generic one. \r\nIt deploys inside your architecture, so every fund owns its platform and its data.",
+      "one_liner": "The platform for AI-native private market investors.",
+      "team_size": 2,
+      "industry": "B2B",
+      "subindustry": "B2B",
+      "launched_at": 1777111023,
+      "tags": [
+        "Finance",
+        "AI"
+      ],
+      "tags_highlighted": [],
+      "top_company": false,
+      "isHiring": true,
+      "nonprofit": false,
+      "batch": "Fall 2026",
+      "status": "Active",
+      "industries": [
+        "B2B"
+      ],
+      "regions": [
+        "Singapore",
+        "Southeast Asia"
+      ],
+      "stage": "Early",
+      "app_video_public": false,
+      "demo_day_video_public": false,
+      "app_answers": null,
+      "question_answers": false,
+      "url": "https://www.ycombinator.com/companies/collar",
+      "api": "https://yc-oss.github.io/api/batches/fall-2026/collar.json"
+    },
+    {
+      "id": 31591,
+      "name": "RightNow",
+      "slug": "rightnow",
+      "former_names": [],
+      "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/59b2e02a314037738d9f32192f83e8bd442be246.png",
+      "website": "https://runinfra.ai/",
+      "all_locations": "San Francisco, CA, USA",
+      "long_description": "RightNow AI is a research lab building GPU infrastructure that lets teams own their AI stack instead of depending on closed-source APIs. Our platform RunInfra takes any HuggingFace model, auto-generates optimized GPU kernels, and deploys it serverlessly with pay-per-token pricing\r\n\r\nRightNow AI lab: https://rightnowai.co\r\nRunInfra platform: https://runinfra.ai.",
+      "one_liner": "Enabling Model-Hardware Co-Design at Scale",
+      "team_size": 2,
+      "industry": "B2B",
+      "subindustry": "B2B -> Infrastructure",
+      "launched_at": 1779474756,
+      "tags": [],
+      "tags_highlighted": [],
+      "top_company": false,
+      "isHiring": false,
+      "nonprofit": false,
+      "batch": "Fall 2026",
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Infrastructure"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "stage": "Early",
+      "app_video_public": false,
+      "demo_day_video_public": false,
+      "app_answers": null,
+      "question_answers": false,
+      "url": "https://www.ycombinator.com/companies/rightnow",
+      "api": "https://yc-oss.github.io/api/batches/fall-2026/rightnow.json"
+    },
+    {
+      "id": 33838,
+      "name": "Simantic",
+      "slug": "simantic",
+      "former_names": [],
+      "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/12eef74104b6e57636a6f0d2305e3a2d18d5c2e5.png",
+      "website": "https://simantic.dev",
+      "all_locations": "Waterloo, ON, Canada",
+      "long_description": "Simantic is modernizing the embedded firmware industry with hardware simulation developed for the adoption of AI in hardware engineering. Simantic gives both humans and AI the visibility into hardware previously limited by the physical world.",
+      "one_liner": "Firmware simulation for AI agents",
+      "team_size": 4,
+      "industry": "B2B",
+      "subindustry": "B2B -> Engineering, Product and Design",
+      "launched_at": 1782327485,
+      "tags": [
+        "Developer Tools",
+        "Hardware",
+        "Semiconductors",
+        "Electronics",
+        "AI"
+      ],
+      "tags_highlighted": [],
+      "top_company": false,
+      "isHiring": true,
+      "nonprofit": false,
+      "batch": "Fall 2026",
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Engineering, Product and Design"
+      ],
+      "regions": [
+        "Canada",
+        "America / Canada"
+      ],
+      "stage": "Early",
+      "app_video_public": false,
+      "demo_day_video_public": false,
+      "app_answers": null,
+      "question_answers": false,
+      "url": "https://www.ycombinator.com/companies/simantic",
+      "api": "https://yc-oss.github.io/api/batches/fall-2026/simantic.json"
+    },
+    {
+      "id": 34365,
+      "name": "Lambda Robotics",
+      "slug": "lambda-robotics",
+      "former_names": [],
+      "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/751b6f5898f8cb0549b80d5a13c551d0c7c0e12f.png",
+      "website": "https://lambdarobotics.ai",
+      "all_locations": "San Francisco, CA, USA",
+      "long_description": "Lambda Robotics builds and deploys robots for the infrastructure powering frontier AI.",
+      "one_liner": "Robotics for AI Infrastructure",
+      "team_size": 6,
+      "industry": "Industrials",
+      "subindustry": "Industrials -> Manufacturing and Robotics",
+      "launched_at": 1785385611,
+      "tags": [
+        "Robotics",
+        "Infrastructure",
+        "AI"
+      ],
+      "tags_highlighted": [],
+      "top_company": false,
+      "isHiring": true,
+      "nonprofit": false,
+      "batch": "Fall 2026",
+      "status": "Active",
+      "industries": [
+        "Industrials",
+        "Manufacturing and Robotics"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "stage": "Early",
+      "app_video_public": false,
+      "demo_day_video_public": false,
+      "app_answers": null,
+      "question_answers": false,
+      "url": "https://www.ycombinator.com/companies/lambda-robotics",
+      "api": "https://yc-oss.github.io/api/batches/fall-2026/lambda-robotics.json"
+    },
+    {
+      "id": 34464,
+      "name": "herdr",
+      "slug": "herdr",
+      "former_names": [],
+      "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/16f63118d9ed1edf6a055497860b53107c37b334.png",
+      "website": "https://herdr.dev/",
+      "all_locations": "Ankara, Ankara, Turkey",
+      "long_description": "Developers don't run one coding agent anymore. They run fleets of them \u2014 for hours, sometimes days \u2014 across laptops, servers, and sandboxes. Keeping track of that work is the new bottleneck: which agent is blocked, which one finished, which terminal is it in, and why did everything die when the laptop closed.\r\n\r\nHerdr is the open-source home for that work. A background server owns the agents' terminal sessions on each machine, so the work survives disconnects, closed lids, and dropped SSH. Herdr detects each agent and turns the chaos into an attention queue \u2014 working, blocked, done, across every project \u2014 so you look only when an agent needs you. Every client is just a view: the bundled terminal UI, SSH from another machine, your phone. Close one, open another; the work never stops.\r\n\r\nSoftware can drive it too: a CLI, a socket API, and a plugin marketplace that passed 500 community plugins in its first month. The runtime is Apache-2.0 and stays open. Four months after launch: 25k GitHub stars, 340k downloads.",
+      "one_liner": "building the open agent runtime",
+      "team_size": 1,
+      "industry": "B2B",
+      "subindustry": "B2B -> Engineering, Product and Design",
+      "launched_at": 1786038738,
+      "tags": [
+        "Artificial Intelligence",
+        "Developer Tools",
+        "AI Assistant"
+      ],
+      "tags_highlighted": [],
+      "top_company": false,
+      "isHiring": false,
+      "nonprofit": false,
+      "batch": "Fall 2026",
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Engineering, Product and Design"
+      ],
+      "regions": [
+        "Turkey",
+        "Middle East and North Africa"
+      ],
+      "stage": "Early",
+      "app_video_public": false,
+      "demo_day_video_public": false,
+      "app_answers": null,
+      "question_answers": false,
+      "url": "https://www.ycombinator.com/companies/herdr",
+      "api": "https://yc-oss.github.io/api/batches/fall-2026/herdr.json"
+    },
+    {
+      "id": 34629,
+      "name": "Simulithic",
+      "slug": "simulithic",
+      "former_names": [],
+      "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/57304390a5b5c762c389b95f1b769b4ac71ed64e.png",
+      "website": "https://simulithic.com",
+      "all_locations": "San Francisco, CA, USA",
+      "long_description": "We build simulations of your real users, grounded in your session data, so you can predict how any product change will perform before you ship it.",
+      "one_liner": "Simulate how any product change will perform before shipping.",
+      "team_size": 2,
+      "industry": "B2B",
+      "subindustry": "B2B -> Engineering, Product and Design",
+      "launched_at": 1786468833,
+      "tags": [
+        "AI"
+      ],
+      "tags_highlighted": [],
+      "top_company": false,
+      "isHiring": false,
+      "nonprofit": false,
+      "batch": "Fall 2026",
+      "status": "Active",
+      "industries": [
+        "B2B",
+        "Engineering, Product and Design"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "stage": "Early",
+      "app_video_public": false,
+      "demo_day_video_public": false,
+      "app_answers": null,
+      "question_answers": false,
+      "url": "https://www.ycombinator.com/companies/simulithic",
+      "api": "https://yc-oss.github.io/api/batches/fall-2026/simulithic.json"
+    },
+    {
+      "id": 34794,
+      "name": "Qokedas",
+      "slug": "qokedas",
+      "former_names": [],
+      "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/db2b316be3ecf24cfbcfc09074b3e2b8a1f3bb05.png",
+      "website": "https://qokedas.com/",
+      "all_locations": "San Francisco, CA, USA",
+      "long_description": "Most of what happens on Earth is never written down. It passes through instruments as signal and disappears. Our goal is to turn that signal into training data in the form of RL Environments, so labs can build models that read the physical world and operate the machines that measure it",
+      "one_liner": "Teaching models to decode the physical world",
+      "team_size": 3,
+      "industry": "B2B",
+      "subindustry": "B2B",
+      "launched_at": 1785795073,
+      "tags": [
+        "Artificial Intelligence",
+        "Deep Learning"
+      ],
+      "tags_highlighted": [],
+      "top_company": false,
+      "isHiring": false,
+      "nonprofit": false,
+      "batch": "Fall 2026",
+      "status": "Active",
+      "industries": [
+        "B2B"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "stage": "Early",
+      "app_video_public": false,
+      "demo_day_video_public": false,
+      "app_answers": null,
+      "question_answers": false,
+      "url": "https://www.ycombinator.com/companies/qokedas",
+      "api": "https://yc-oss.github.io/api/batches/fall-2026/qokedas.json"
+    },
+    {
+      "id": 35094,
+      "name": "Forward",
+      "slug": "useforward",
+      "former_names": [],
+      "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/717ea600e14829731cf877a194aca957195d9b27.png",
+      "website": "https://www.useforward.co/",
+      "all_locations": "San Francisco, CA, USA",
+      "long_description": "An AI platform that connects commercial debt advisors with mandate matching private credit funds. ",
+      "one_liner": "Unifying Global Private Credit",
+      "team_size": 5,
+      "industry": "B2B",
+      "subindustry": "B2B",
+      "launched_at": 1785975971,
+      "tags": [
+        "Artificial Intelligence",
+        "Fintech",
+        "B2B"
+      ],
+      "tags_highlighted": [],
+      "top_company": false,
+      "isHiring": false,
+      "nonprofit": false,
+      "batch": "Fall 2026",
+      "status": "Active",
+      "industries": [
+        "B2B"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "stage": "Early",
+      "app_video_public": false,
+      "demo_day_video_public": false,
+      "app_answers": null,
+      "question_answers": false,
+      "url": "https://www.ycombinator.com/companies/useforward",
+      "api": "https://yc-oss.github.io/api/batches/fall-2026/useforward.json"
+    },
+    {
+      "id": 35522,
+      "name": "Hemlock",
+      "slug": "hemlock",
+      "former_names": [],
+      "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/bbacf68d8da77e7a11ad346712dd48cf4d50347d.png",
+      "website": "https://hemlock.info",
+      "all_locations": "Los Angeles, CA, USA",
+      "long_description": "Every serious robotics lab is bottlenecked on the same thing: demonstration data. The field has converged on egocentric video and hand pose as the substrate, and both are now cheap to collect at scale. What neither of them contains is force. A video of someone picking up an egg and a video of someone picking up a rock are nearly identical in pixel space and nearly identical in joint angles. They differ almost entirely in a quantity nobody is recording. Policies trained without it learn geometry and inherit no sense of touch.\r\n\r\nHemlock closes that gap at the source. Our device, the Bracelet, is a wrist-worn surface EMG band that reads the electrical activity of the forearm muscles that actually drive the hand, which means it recovers contraction force directly rather than inferring it from motion. This distinction is the whole thesis: force cannot be reconstructed downstream of kinematics, because a hand squeezing hard isometrically and a hand resting can occupy the identical pose. Muscle signal is the only non-invasive channel that separates them.",
+      "one_liner": "Force-sensing wristband for training robotic AI",
+      "team_size": 1,
+      "industry": "Industrials",
+      "subindustry": "Industrials -> Manufacturing and Robotics",
+      "launched_at": 1786491305,
+      "tags": [
+        "Hard Tech",
+        "Hardware"
+      ],
+      "tags_highlighted": [],
+      "top_company": false,
+      "isHiring": true,
+      "nonprofit": false,
+      "batch": "Fall 2026",
+      "status": "Active",
+      "industries": [
+        "Industrials",
+        "Manufacturing and Robotics"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "stage": "Early",
+      "app_video_public": false,
+      "demo_day_video_public": false,
+      "app_answers": null,
+      "question_answers": false,
+      "url": "https://www.ycombinator.com/companies/hemlock",
+      "api": "https://yc-oss.github.io/api/batches/fall-2026/hemlock.json"
+    },
+    {
+      "id": 35523,
+      "name": "twentyfour26",
+      "slug": "twentyfour26",
+      "former_names": [],
+      "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/ceb91f5325b460f109e85bc25abd1618a24863cb.png",
+      "website": "https://twentyfour26.com/",
+      "all_locations": "San Francisco, CA, USA",
+      "long_description": "twentyfour26 builds autonomous CNC machining cells that turn CAD files into same-day custom metal parts.",
+      "one_liner": "On Demand CNC Prototyping ",
+      "team_size": 2,
+      "industry": "Industrials",
+      "subindustry": "Industrials -> Manufacturing and Robotics",
+      "launched_at": 1786424480,
+      "tags": [
+        "Robotics",
+        "Manufacturing",
+        "Industrial"
+      ],
+      "tags_highlighted": [],
+      "top_company": false,
+      "isHiring": false,
+      "nonprofit": false,
+      "batch": "Fall 2026",
+      "status": "Active",
+      "industries": [
+        "Industrials",
+        "Manufacturing and Robotics"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "stage": "Early",
+      "app_video_public": false,
+      "demo_day_video_public": false,
+      "app_answers": null,
+      "question_answers": false,
+      "url": "https://www.ycombinator.com/companies/twentyfour26",
+      "api": "https://yc-oss.github.io/api/batches/fall-2026/twentyfour26.json"
+    },
+    {
+      "id": 35784,
+      "name": "Vorelios",
+      "slug": "vorelios",
+      "former_names": [],
+      "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/b4f39044267f59b55cfe15cd369dcd61b7e645f5.png",
+      "website": "https://vorelios.com",
+      "all_locations": "San Francisco, CA, USA",
+      "long_description": "Engineering is bottlenecked by slow, costly simulations. We're fixing that by building foundation models that learn physics end-to-end and deliver the same results in seconds, at a fraction of the cost.",
+      "one_liner": "AI that simulates physics 1000x faster",
+      "team_size": 2,
+      "industry": "B2B",
+      "subindustry": "B2B",
+      "launched_at": 1786417769,
+      "tags": [
+        "Artificial Intelligence",
+        "Hard Tech",
+        "B2B"
+      ],
+      "tags_highlighted": [],
+      "top_company": false,
+      "isHiring": false,
+      "nonprofit": false,
+      "batch": "Fall 2026",
+      "status": "Active",
+      "industries": [
+        "B2B"
+      ],
+      "regions": [
+        "United States of America",
+        "America / Canada"
+      ],
+      "stage": "Early",
+      "app_video_public": false,
+      "demo_day_video_public": false,
+      "app_answers": null,
+      "question_answers": false,
+      "url": "https://www.ycombinator.com/companies/vorelios",
+      "api": "https://yc-oss.github.io/api/batches/fall-2026/vorelios.json"
+    }
+  ]
+}

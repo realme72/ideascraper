@@ -6,9 +6,8 @@ Point it at a topic, get one-page investment memos out the other end — each
 ending in a clear **Pass / Watch / Take a meeting**, and each claim traceable back
 to the source it came from.
 
-> **Status: scaffolding.** The four stages exist as modules with their
-> responsibilities documented, but no implementation yet. Stage 1 (sourcing) is
-> next — see `prompts/0003`.
+> **Status: stage 1 of 4 working.** Sourcing runs end to end against live data.
+> Enrichment, analysis and memo rendering are next.
 
 ---
 
@@ -56,4 +55,39 @@ assistant, the prompt entry says so.
 
 ## Running it
 
-Not yet runnable. Instructions land with stage 1.
+```bash
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+.venv/bin/python -m pipeline source "AI agents for SMBs"
+```
+
+No API key needed for sourcing — both sources are public and keyless. Every HTTP
+response is cached under `data/raw/` and committed, so a re-run works offline
+and returns the same result.
+
+```
+15 candidates for "AI agents for SMBs"
+term coverage: agent (15), ai (15), smb (4)
+
+ 1. Async  [0.67 · yc]
+    Transforming small businesses with AI agents
+    · YC Summer 2026 batch
+    https://withasync.com
+
+ 2. Agent-desktop  [0.56 · hn]
+    Native desktop automation CLI for AI agents
+    · 99 points and 44 comments on Hacker News
+    · Launched on HN 02 May 2026
+    https://github.com/lahfir/agent-desktop
+...
+```
+
+`term coverage` reports how many results matched each word of the query. `smb
+(4)` above is the honest answer that recent YC batches skew to developer tooling
+— a partner should see that rather than assume the list is SMB-focused.
+
+Useful flags: `--limit`, `--batches` (YC batches to search), `--min-relevance`,
+`--refresh` (bypass the cache).
+
+```bash
+.venv/bin/python -m pytest tests/ -q      # 43 tests
+```

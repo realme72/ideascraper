@@ -1,0 +1,675 @@
+{
+  "key": "7ab7d60dba255f49",
+  "inputs": {
+    "url": "https://hn.algolia.com/api/v1/search",
+    "params": {
+      "query": "AI agents for SMBs",
+      "tags": "launch_hn",
+      "hitsPerPage": 40,
+      "numericFilters": "created_at_i>1739977508"
+    }
+  },
+  "fetched_at": "2026-08-13T15:05:08.915034+00:00",
+  "payload": {
+    "exhaustive": {
+      "nbHits": false,
+      "typo": false
+    },
+    "exhaustiveNbHits": false,
+    "exhaustiveTypo": false,
+    "hits": [
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "ttpost"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents",
+              "for",
+              "smbs"
+            ],
+            "value": "Hey HN, we're Alex and Tyler, co-founders of Voker.<em>ai</em> (<a href=\"https://voker.ai/\">https://voker.<em>ai</em>/</a>), an agent analytics platform <em>for</em> <em>AI</em> product teams. Voker gives full visibility into what users are asking of your <em>agents</em>, and whether your <em>agents</em> are delivering, without having to dig through logs. Our main product is a lightweight SDK that is LLM stack agnostic and purpose-built <em>for</em> agent products. (<a href=\"https://app.voker.ai/docs\">https://app.voker.<em>ai</em>/docs</a>)<p>Agent Engineers and <em>AI</em> product teams don\u2019t have the right level of visibility into agent performance in production, which results in bad user experiences, churn, and hundreds of hours wasted with spot checks to find and debug issues with agent configurations.<p>Demo: <a href=\"https://www.tella.tv/video/vid_cmoukcsk1000i07jgb4j65u67/view\" rel=\"nofollow\">https://www.tella.tv/video/vid_cmoukcsk1000i07jgb4j65u67/vie...</a><p>We recently conducted a survey of YC Founders and 90%+ of respondents said that the only way they know if their <em>Agents</em> are failing users in production is by hearing complaints from customers. They push a prompt change hoping that it fixes the problem and doesn\u2019t break something somewhere else, and the cycle repeats.<p>We saw tons of observability and evals products popping up to try to address these problems, but we still felt like something was missing in the agent monitoring stack. Obs is good <em>for</em> individual trace debugging but is only accessible to engineers. Evals are good <em>for</em> testing known issues, but don't give insights into trends that teams don\u2019t expect, so engineers are always playing catch up. Traditional product analytics tools do a good job tracking clicks and pageviews across your product surface but weren\u2019t built ground up <em>for</em> agent products. Knowing what users want out of <em>agents</em>, and whether the agent delivered requires specific conversational intelligence / unstructured data processing techniques.<p>We came up with the agent analytics primitives of Intents, Corrections, and Resolutions to describe something pretty much all conversational <em>agents</em> had in common: a user will always come to an agent with an intent, the user might have to correct this agent on the way to getting their intent resolved, and hopefully every intent a user has is eventually resolved by the agent.\nVoker processes LLM calls by automatically annotating individual conversations and picking out user intent and corrections. Voker takes these and uses LLMs and hierarchical text classification to create dynamic categories that give higher level insights so you don\u2019t have to read individual conversations to know what are the main usage patterns across your users.<p>The most common <em>subs</em>titute solution we\u2019ve seen is uploading obs logs to Claude or ChatGPT and asking <em>for</em> summary insights. There are a few problems with this - mainly that LLMs aren\u2019t good at math or data science, so you don\u2019t get accurate or consistent statistics. Its highly likely that the LLM overfits to some insights and underfits to others. The LLM isn\u2019t programmatically reading and classifying each individual session or interaction. This is why we don\u2019t use LLMs <em>for</em> any of our core data engineering (processing events, calculating statistics) so the analytics we produce are consistent, reproducible, and accurate.\nWe have a publicly available, lightweight SDK that wraps LLM calls to OpenAI, Anthropic and Gemini in Python and Typescript. Voker handles the data engineering to turn raw data into usable analytics primitives and higher level insights. \nFree tier: 2,000 events / mo, requires email signup. Paid plans start at $80/mo with a 30 day free trial.<p>We'd love to hear how you're currently detecting trends, and if you try Voker, tell us what part of our analysis is valuable, and what still feels missing. Thanks <em>for</em> reading, and we\u2019re looking forward to your thoughts in the comments!"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai",
+              "agents",
+              "for"
+            ],
+            "value": "Launch HN: Voker (YC S24) \u2013 Analytics <em>for</em> <em>AI</em> <em>Agents</em>"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai"
+            ],
+            "value": "https://voker.<em>ai</em>"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_ttpost",
+          "story_48109962",
+          "launch_hn"
+        ],
+        "author": "ttpost",
+        "children": [
+          48110403,
+          48110569,
+          48110772,
+          48110783,
+          48111787,
+          48112198,
+          48112823,
+          48112902,
+          48117648,
+          48117795,
+          48118773,
+          48119614,
+          48120056,
+          48120939,
+          48128652,
+          48128911,
+          48161027,
+          48163408,
+          48222649
+        ],
+        "created_at": "2026-05-12T15:45:20Z",
+        "created_at_i": 1778600720,
+        "num_comments": 22,
+        "objectID": "48109962",
+        "points": 59,
+        "story_id": 48109962,
+        "story_text": "Hey HN, we&#x27;re Alex and Tyler, co-founders of Voker.ai (<a href=\"https:&#x2F;&#x2F;voker.ai&#x2F;\">https:&#x2F;&#x2F;voker.ai&#x2F;</a>), an agent analytics platform for AI product teams. Voker gives full visibility into what users are asking of your agents, and whether your agents are delivering, without having to dig through logs. Our main product is a lightweight SDK that is LLM stack agnostic and purpose-built for agent products. (<a href=\"https:&#x2F;&#x2F;app.voker.ai&#x2F;docs\">https:&#x2F;&#x2F;app.voker.ai&#x2F;docs</a>)<p>Agent Engineers and AI product teams don\u2019t have the right level of visibility into agent performance in production, which results in bad user experiences, churn, and hundreds of hours wasted with spot checks to find and debug issues with agent configurations.<p>Demo: <a href=\"https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;vid_cmoukcsk1000i07jgb4j65u67&#x2F;view\" rel=\"nofollow\">https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;vid_cmoukcsk1000i07jgb4j65u67&#x2F;vie...</a><p>We recently conducted a survey of YC Founders and 90%+ of respondents said that the only way they know if their Agents are failing users in production is by hearing complaints from customers. They push a prompt change hoping that it fixes the problem and doesn\u2019t break something somewhere else, and the cycle repeats.<p>We saw tons of observability and evals products popping up to try to address these problems, but we still felt like something was missing in the agent monitoring stack. Obs is good for individual trace debugging but is only accessible to engineers. Evals are good for testing known issues, but don&#x27;t give insights into trends that teams don\u2019t expect, so engineers are always playing catch up. Traditional product analytics tools do a good job tracking clicks and pageviews across your product surface but weren\u2019t built ground up for agent products. Knowing what users want out of agents, and whether the agent delivered requires specific conversational intelligence &#x2F; unstructured data processing techniques.<p>We came up with the agent analytics primitives of Intents, Corrections, and Resolutions to describe something pretty much all conversational agents had in common: a user will always come to an agent with an intent, the user might have to correct this agent on the way to getting their intent resolved, and hopefully every intent a user has is eventually resolved by the agent.\nVoker processes LLM calls by automatically annotating individual conversations and picking out user intent and corrections. Voker takes these and uses LLMs and hierarchical text classification to create dynamic categories that give higher level insights so you don\u2019t have to read individual conversations to know what are the main usage patterns across your users.<p>The most common substitute solution we\u2019ve seen is uploading obs logs to Claude or ChatGPT and asking for summary insights. There are a few problems with this - mainly that LLMs aren\u2019t good at math or data science, so you don\u2019t get accurate or consistent statistics. Its highly likely that the LLM overfits to some insights and underfits to others. The LLM isn\u2019t programmatically reading and classifying each individual session or interaction. This is why we don\u2019t use LLMs for any of our core data engineering (processing events, calculating statistics) so the analytics we produce are consistent, reproducible, and accurate.\nWe have a publicly available, lightweight SDK that wraps LLM calls to OpenAI, Anthropic and Gemini in Python and Typescript. Voker handles the data engineering to turn raw data into usable analytics primitives and higher level insights. \nFree tier: 2,000 events &#x2F; mo, requires email signup. Paid plans start at $80&#x2F;mo with a 30 day free trial.<p>We&#x27;d love to hear how you&#x27;re currently detecting trends, and if you try Voker, tell us what part of our analysis is valuable, and what still feels missing. Thanks for reading, and we\u2019re looking forward to your thoughts in the comments!",
+        "title": "Launch HN: Voker (YC S24) \u2013 Analytics for AI Agents",
+        "updated_at": "2026-07-29T20:35:58Z",
+        "url": "https://voker.ai"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "nickpapciak"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents",
+              "for",
+              "smbs"
+            ],
+            "value": "Hey HN! We\u2019re Abhi, Venkat, Tom, and Nick and we are building Datafruit (<a href=\"https://datafruit.dev/\">https://datafruit.dev/</a>), an <em>AI</em> DevOps <em>agent</em>. We\u2019re like Devin <em>for</em> DevOps. You can ask Datafruit to check your cloud spend, look <em>for</em> loose security policies, make changes to your IaC, and it can reason across your deployment standards, design docs, and DevOps practices.<p>Demo video: <a href=\"https://www.youtube.com/watch?v=2FitSggI7tg\" rel=\"nofollow\">https://www.youtube.com/watch?v=2FitSggI7tg</a>.<p>Right now, we have two main methods to interact with Datafruit:<p>(1) automated infrastructure audits\u2014 <em>agents</em> periodically scan your environment to find cost optimization opportunities, detect infrastructure drift, and validate your infra against compliance requirements.<p>(2) chat interface (available as a web UI and through slack) \u2014 ask the <em>agent</em> questions <em>for</em> real-time insights, or assign tasks directly, such as investigating spend anomalies, reviewing security posture, or applying changes to IaC resources.<p>Working at FAANG and various high-growth startups, we realized that infra work requires an enormous amount of context, often more than traditional software engineering. The business decisions, codebase, and cloud itself are all extremely important in any task that has been assigned. To maximize the success of the <em>agents</em>, we do a fair amount of context engineering. Not hallucinating is super important!<p>One thing which has worked incredibly well <em>for</em> us is a multi-<em>agent</em> system where we have specialized sub-<em>agents</em> with access to specific tool calls and documentation <em>for</em> their specialty. <em>Agents</em> choose to \u201chandoff\u201d to each other when they feel like another <em>agent</em> would be more specialized <em>for</em> the task. However, all <em>agents</em> share the same context (<a href=\"https://cognition.ai/blog/dont-build-multi-agents\" rel=\"nofollow\">https://cognition.<em>ai</em>/blog/dont-build-multi-<em>agents</em></a>). We\u2019re pretty happy with this approach, and believe it could work in other disciplines which require high amounts of specialized expertise.<p>Infrastructure is probably the most mission-critical part of any software organization, and needs extremely heavy guardrails to keep it safe. Language models are not yet at the point where they can be trusted to make changes (we\u2019ve talked to a couple of startups where the Claude Code + AWS CLI combo has taken their infra down). Right now, Datafruit receives read-only access to your infrastructure and can only make changes through pull requests to your IaC repositories. The <em>agent</em> also operates in a sandboxed virtual environment so that it could not write cloud CLI commands if it wanted to!<p>Where LLMs <i>can</i> add significant value is in reducing the constant operational inefficiencies that eat up cloud spend and delay deadlines\u2014the small-but-urgent ops work. Once Datafruit indexes your environment, you can ask it to do things like:<p><pre><code>  &quot;Grant @User write access to analytics S3 bucket <em>for</em> 24 hours&quot;\n    -&gt; Creates temporary IAM role, sends least-privilege credentials, auto-revokes tomorrow\n\n  &quot;Find where this secret is used so I can rotate it without downtime&quot;\n    -&gt; Discovers all instances of your secret, including old cron-jobs you might not know about, so you can safely rotate your keys\n\n\n  &quot;Why did database costs spike yesterday?&quot;\n    -&gt; Identifies expensive queries, shows optimization options, implements fixes\n\n</code></pre>\nWe charge a straightforward <em>subs</em>cription model <em>for</em> a managed version, but we also offer a bring-your-own-cloud model. All of Datafruit can be deployed on Kubernetes using Helm charts <em>for</em> enterprise customers where data can\u2019t leave your VPC.\n<em>For</em> the time being, we\u2019re installing the product ourselves on customers' clouds. It doesn\u2019t exist in a self-serve form yet. We\u2019ll get there eventually, but in the meantime if you\u2019re interested we\u2019d love <em>for</em> you guys to email us at founders@datafruit.dev.<p>We would love to hear your thoughts! If you work with cloud infra, we are especially interested in learning about what kinds of work you do which you wish could be offloaded onto an <em>agent</em>."
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai",
+              "for"
+            ],
+            "value": "Launch HN: Datafruit (YC S25) \u2013 <em>AI</em> <em>for</em> DevOps"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_nickpapciak",
+          "story_45104974",
+          "launch_hn"
+        ],
+        "author": "nickpapciak",
+        "children": [
+          45105529,
+          45105608,
+          45105695,
+          45106309,
+          45106934,
+          45107538,
+          45107840,
+          45108429,
+          45108575,
+          45108823,
+          45109363,
+          45109894,
+          45111927,
+          45112941,
+          45113159,
+          45119243,
+          45119724
+        ],
+        "created_at": "2025-09-02T16:08:31Z",
+        "created_at_i": 1756829311,
+        "num_comments": 48,
+        "objectID": "45104974",
+        "points": 65,
+        "story_id": 45104974,
+        "story_text": "Hey HN! We\u2019re Abhi, Venkat, Tom, and Nick and we are building Datafruit (<a href=\"https:&#x2F;&#x2F;datafruit.dev&#x2F;\">https:&#x2F;&#x2F;datafruit.dev&#x2F;</a>), an AI DevOps agent. We\u2019re like Devin for DevOps. You can ask Datafruit to check your cloud spend, look for loose security policies, make changes to your IaC, and it can reason across your deployment standards, design docs, and DevOps practices.<p>Demo video: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=2FitSggI7tg\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=2FitSggI7tg</a>.<p>Right now, we have two main methods to interact with Datafruit:<p>(1) automated infrastructure audits\u2014 agents periodically scan your environment to find cost optimization opportunities, detect infrastructure drift, and validate your infra against compliance requirements.<p>(2) chat interface (available as a web UI and through slack) \u2014 ask the agent questions for real-time insights, or assign tasks directly, such as investigating spend anomalies, reviewing security posture, or applying changes to IaC resources.<p>Working at FAANG and various high-growth startups, we realized that infra work requires an enormous amount of context, often more than traditional software engineering. The business decisions, codebase, and cloud itself are all extremely important in any task that has been assigned. To maximize the success of the agents, we do a fair amount of context engineering. Not hallucinating is super important!<p>One thing which has worked incredibly well for us is a multi-agent system where we have specialized sub-agents with access to specific tool calls and documentation for their specialty. Agents choose to \u201chandoff\u201d to each other when they feel like another agent would be more specialized for the task. However, all agents share the same context (<a href=\"https:&#x2F;&#x2F;cognition.ai&#x2F;blog&#x2F;dont-build-multi-agents\" rel=\"nofollow\">https:&#x2F;&#x2F;cognition.ai&#x2F;blog&#x2F;dont-build-multi-agents</a>). We\u2019re pretty happy with this approach, and believe it could work in other disciplines which require high amounts of specialized expertise.<p>Infrastructure is probably the most mission-critical part of any software organization, and needs extremely heavy guardrails to keep it safe. Language models are not yet at the point where they can be trusted to make changes (we\u2019ve talked to a couple of startups where the Claude Code + AWS CLI combo has taken their infra down). Right now, Datafruit receives read-only access to your infrastructure and can only make changes through pull requests to your IaC repositories. The agent also operates in a sandboxed virtual environment so that it could not write cloud CLI commands if it wanted to!<p>Where LLMs <i>can</i> add significant value is in reducing the constant operational inefficiencies that eat up cloud spend and delay deadlines\u2014the small-but-urgent ops work. Once Datafruit indexes your environment, you can ask it to do things like:<p><pre><code>  &quot;Grant @User write access to analytics S3 bucket for 24 hours&quot;\n    -&gt; Creates temporary IAM role, sends least-privilege credentials, auto-revokes tomorrow\n\n  &quot;Find where this secret is used so I can rotate it without downtime&quot;\n    -&gt; Discovers all instances of your secret, including old cron-jobs you might not know about, so you can safely rotate your keys\n\n\n  &quot;Why did database costs spike yesterday?&quot;\n    -&gt; Identifies expensive queries, shows optimization options, implements fixes\n\n</code></pre>\nWe charge a straightforward subscription model for a managed version, but we also offer a bring-your-own-cloud model. All of Datafruit can be deployed on Kubernetes using Helm charts for enterprise customers where data can\u2019t leave your VPC.\nFor the time being, we\u2019re installing the product ourselves on customers&#x27; clouds. It doesn\u2019t exist in a self-serve form yet. We\u2019ll get there eventually, but in the meantime if you\u2019re interested we\u2019d love for you guys to email us at founders@datafruit.dev.<p>We would love to hear your thoughts! If you work with cloud infra, we are especially interested in learning about what kinds of work you do which you wish could be offloaded onto an agent.",
+        "title": "Launch HN: Datafruit (YC S25) \u2013 AI for DevOps",
+        "updated_at": "2026-03-05T22:36:58Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "benjsm"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents",
+              "for",
+              "smbs"
+            ],
+            "value": "Hi HN, we\u2019re Ben and Connor, the co-founders of Skope (<a href=\"https://www.useskope.com/\">https://www.useskope.com/</a>), a billing system that supports outcome-based pricing <em>for</em> software\u2014that is, which charges your customers only when your software actually works. We\u2019re an alternative to Stripe Billing, Orb, and Metronome that natively supports this pricing model, because we believe it\u2019s especially needed <em>for</em> the <em>AI</em> products which are flooding the market and that will continue to be built in the future.<p>Here\u2019s a demo video: <a href=\"https://www.youtube.com/watch?v=ORxhACQbu64\" rel=\"nofollow\">https://www.youtube.com/watch?v=ORxhACQbu64</a><p>Prior to working on Skope, we built <em>AI</em> <em>agents</em> that fundraised <em>for</em> nonprofits. We weren\u2019t able to find our stride within the nonprofit world, one reason being that there was no incentive <em>for</em> a nonprofit (with an already small budget) to take on the risk of buying expensive software claiming to replace humans at a high upfront cost, without proving its value first.<p>Instead, they should\u2019ve been able to pay every time our product really worked (in this case by securing a donation or booking a meeting). With this model, we wouldn\u2019t profit with a mediocre product. At the same time, we\u2019d give ourselves more upside if what we were selling truly did its job. All while taking all the risk off of our buyers.<p>Although we really wanted to, there was no easy way to make this happen at scale. It would have had to rely on trust, and depend on every single customer reporting each outcome quickly and accurately. Not the best recipe.<p>So, we decided to build it\u2026which turned out to mean rebuilding billing from scratch. We think a world where people pay <em>for</em> software doing its job is a good one, in which case outcome-based pricing will catch on, but don\u2019t think it\u2019ll happen overnight. There are a ton of wrinkles to figure out still. In the meantime, we\u2019ve also built the rails to support traditional <em>subs</em>criptions and usage/credit based models with a focus on making iteration on price really easy.<p>How it works: Our users can easily track customer usage through units (like tokens consumed or emails sent) and set pricing rules such as the price of each unit or a limit <em>for</em> usage per month. These pricing rules are designed to be flexible items that can be modified easily <em>for</em> each customer. Usage is recorded as events uploaded via our API/SDK, which are mapped to pricing rules <em>for</em> accurate, immutable billing calculations. Invoices are automatically generated at the end of each billing period based on the events logged during the given period. We are working to develop integrations with LLM observability platforms such as Helicone and Langfuse to make it easy to record customer usage data. Finally, we make it easy to collect payments via Stripe (disconnected from Stripe Billing).<p><em>For</em> outcomes specifically, we\u2019re working on acting as a middle layer between our customers and their users. The same process <em>for</em> setting prices and units follows as said before, but we\u2019ll have access to both our users\u2019 and their customers\u2019 systems of record to verify that these outcomes actually happened. We built a customer portal so that once outcomes are verified by us, the customer can see and validate them as they happen. If a customer of a company using Skope, wants to dispute a charge, we plan to handle it ourselves through the platform. Transparency and trust are really important between all parties within this model, so we want to do everything possible to encourage that.<p>We really like the outcome-based model because it encourages truly good software and aligns incentives between buyers and sellers. We think that the bar <em>for</em> software will become higher as more companies adopt it and it\u2019ll lead to cool things. At the same time, neither buyers nor sellers can pull a fast one on the other to get a better deal. It\u2019s similar to Google Ads, which introduced pay-per-click pricing to online advertising <em>for</em> the first time. We\u2019re trying to make it possible <em>for</em> the entire software industry to come into the pay-per-performance realm, just like Google did 20 years ago.<p>We\u2019re rolling out at a flat <em>subs</em>cription price. Counterintuitively, we don\u2019t think the outcome-based model makes sense <em>for</em> Skope itself. A billing product isn\u2019t one that \u201cmay or may not work\u201d, it needs to just work.<p>The way <em>AI</em> companies do business needs new billing infrastructure, and that's what we\u2019re working to provide. We have a ton to learn and are eager to hear how others see the future playing out.<p>Please let us know if you have any thoughts on things you\u2019d like to see. Always excited to riff on this and we\u2019d absolutely love your comments!"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "for"
+            ],
+            "value": "Launch HN: Skope (YC S25) \u2013 Outcome-based pricing <em>for</em> software products"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_benjsm",
+          "story_44973758",
+          "launch_hn"
+        ],
+        "author": "benjsm",
+        "children": [
+          44974134,
+          44974334,
+          44974410,
+          44974601,
+          44975282,
+          44975649,
+          44976483,
+          44976492,
+          44976527,
+          44978953,
+          44980044,
+          44980083,
+          44980140,
+          44980382,
+          44996163
+        ],
+        "created_at": "2025-08-21T15:09:38Z",
+        "created_at_i": 1755788978,
+        "num_comments": 45,
+        "objectID": "44973758",
+        "points": 55,
+        "story_id": 44973758,
+        "story_text": "Hi HN, we\u2019re Ben and Connor, the co-founders of Skope (<a href=\"https:&#x2F;&#x2F;www.useskope.com&#x2F;\">https:&#x2F;&#x2F;www.useskope.com&#x2F;</a>), a billing system that supports outcome-based pricing for software\u2014that is, which charges your customers only when your software actually works. We\u2019re an alternative to Stripe Billing, Orb, and Metronome that natively supports this pricing model, because we believe it\u2019s especially needed for the AI products which are flooding the market and that will continue to be built in the future.<p>Here\u2019s a demo video: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ORxhACQbu64\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ORxhACQbu64</a><p>Prior to working on Skope, we built AI agents that fundraised for nonprofits. We weren\u2019t able to find our stride within the nonprofit world, one reason being that there was no incentive for a nonprofit (with an already small budget) to take on the risk of buying expensive software claiming to replace humans at a high upfront cost, without proving its value first.<p>Instead, they should\u2019ve been able to pay every time our product really worked (in this case by securing a donation or booking a meeting). With this model, we wouldn\u2019t profit with a mediocre product. At the same time, we\u2019d give ourselves more upside if what we were selling truly did its job. All while taking all the risk off of our buyers.<p>Although we really wanted to, there was no easy way to make this happen at scale. It would have had to rely on trust, and depend on every single customer reporting each outcome quickly and accurately. Not the best recipe.<p>So, we decided to build it\u2026which turned out to mean rebuilding billing from scratch. We think a world where people pay for software doing its job is a good one, in which case outcome-based pricing will catch on, but don\u2019t think it\u2019ll happen overnight. There are a ton of wrinkles to figure out still. In the meantime, we\u2019ve also built the rails to support traditional subscriptions and usage&#x2F;credit based models with a focus on making iteration on price really easy.<p>How it works: Our users can easily track customer usage through units (like tokens consumed or emails sent) and set pricing rules such as the price of each unit or a limit for usage per month. These pricing rules are designed to be flexible items that can be modified easily for each customer. Usage is recorded as events uploaded via our API&#x2F;SDK, which are mapped to pricing rules for accurate, immutable billing calculations. Invoices are automatically generated at the end of each billing period based on the events logged during the given period. We are working to develop integrations with LLM observability platforms such as Helicone and Langfuse to make it easy to record customer usage data. Finally, we make it easy to collect payments via Stripe (disconnected from Stripe Billing).<p>For outcomes specifically, we\u2019re working on acting as a middle layer between our customers and their users. The same process for setting prices and units follows as said before, but we\u2019ll have access to both our users\u2019 and their customers\u2019 systems of record to verify that these outcomes actually happened. We built a customer portal so that once outcomes are verified by us, the customer can see and validate them as they happen. If a customer of a company using Skope, wants to dispute a charge, we plan to handle it ourselves through the platform. Transparency and trust are really important between all parties within this model, so we want to do everything possible to encourage that.<p>We really like the outcome-based model because it encourages truly good software and aligns incentives between buyers and sellers. We think that the bar for software will become higher as more companies adopt it and it\u2019ll lead to cool things. At the same time, neither buyers nor sellers can pull a fast one on the other to get a better deal. It\u2019s similar to Google Ads, which introduced pay-per-click pricing to online advertising for the first time. We\u2019re trying to make it possible for the entire software industry to come into the pay-per-performance realm, just like Google did 20 years ago.<p>We\u2019re rolling out at a flat subscription price. Counterintuitively, we don\u2019t think the outcome-based model makes sense for Skope itself. A billing product isn\u2019t one that \u201cmay or may not work\u201d, it needs to just work.<p>The way AI companies do business needs new billing infrastructure, and that&#x27;s what we\u2019re working to provide. We have a ton to learn and are eager to hear how others see the future playing out.<p>Please let us know if you have any thoughts on things you\u2019d like to see. Always excited to riff on this and we\u2019d absolutely love your comments!",
+        "title": "Launch HN: Skope (YC S25) \u2013 Outcome-based pricing for software products",
+        "updated_at": "2026-08-04T06:57:59Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "advaith08"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents",
+              "for",
+              "smbs"
+            ],
+            "value": "Hey HN, we're Advaith and Akash from Discovered Materials ( <a href=\"https://discoveredmaterials.com/\">https://discoveredmaterials.com/</a> ).  We build <em>AI</em> <em>agents</em> that discover new materials <em>for</em> the semiconductor industry.<p>GPUs today have a heat problem. Nvidia &amp; AMD are almost doubling the TDP (Thermal Design Power) in every chip they release - the H100 (released 2022) has a TDP of 700W, Blackwell (2024) gives out 1.2 kW and Rubin (2026) gives out at 2.3 kW of heat. This trend is expected to continue, and getting rid of this heat is one of the major reasons datacenters consume so much power and water today - they need it to keep chips cool during operation.<p>The amount of heat produced by a chip and its ability to dissipate it are both influenced by the materials used to make it. <em>For</em> example, we could reduce the energy per bit required to move data between logic and memory by 10-50x by 3D packaging chips (placing HBM memory stacks directly on top of logic chips, instead of placing them beside logic on a 2D circuit board). However, we're unable to do this today because the dielectric material used in HBM (such as SiO2) is a very poor thermal conductor, trapping heat between logic and memory and causing drastic temperature rise during operation. Similarly, there's many other materials in the GPU that are being re-evaluated today - 2 more examples are thermal interface materials and <em>subs</em>trates. However, getting a new material into a fab takes years and hundreds of millions of dollars of research - the infamous &quot;lab-to-fab valley of death&quot;.<p>At Discovered Materials, we're optimistic that <em>AI</em> <em>agents</em> can reduce the timeline and cost required to introduce new materials into semiconductor chips. We're seeing glimpses of this already - we tested 7 models from Anthropic, OpenAI and Kimi, and found that they're all able to computationally discover new materials that are dynamically stable and possess promising properties. This was surprising to us - it would generally take a PhD student a couple of weeks of work to discover the kind of materials that these models find over an 8 hour run!<p>However, computational discovery is the easy part. A material discovery is only valid if the material can be made and tested in a lab (As an example, graphene\u2019s properties were predicted in 1947 but it was made <em>for</em> the first time in 2004). Today\u2019s models are not good at coming up with synthesis recipes to make materials in a lab. Even if they do get better at it, we're uncertain about how much that will help - making a new material is a highly empirical process involving trial and error over many experiments. Human experts themselves cannot &quot;one-shot&quot; the task, but we expect that a highly capable model will reduce the number of experimental iterations required to make a new material. We\u2019ve seen some evidence of this over the 3 months of our Y Combinator batch - we simulated, synthesized and tested thermal interface materials (TIMs) that match the performance of TIMs the world's largest chemical companies have guarded as trade secrets <em>for</em> over 20 years.<p>We\u2019re releasing hundreds of hundreds of new materials discovered by frontier <em>AI</em> models, as well as our benchmark which measures model ability on material discovery here (also linked in the thread url): <a href=\"https://discoveredmaterials.com/research\">https://discoveredmaterials.com/research</a>. It covers what we discuss above, as well as a variety of strange behavior that we observe from the models, such as Claude's propensity to reward hack or GPT-5.6 occasionally losing its mind after ~50M tokens.<p>Our business model: We aim to license and sell IP on the materials we discover, as well as the IP on how to make these materials. We're also exploring an alternate business model where we sell the harness+tools we use to discover materials to semiconductor and chemical companies, allowing them to discover materials on their own. We're leaning towards the latter to start, but we expect that we'll do both in the long run.<p>Our backstory: Akash has a PhD in Material Science from Stanford University, and has spent the last 11 years studying new materials <em>for</em> semiconductor chips. His work on new nanoscale interconnects was Stanford Engineering\u2019s most popular story of 2025. Advaith studied <em>AI</em> at Carnegie Mellon and was a research engineer building video models and <em>agents</em> at Persona <em>AI</em> (acquired) and Luma Labs.<p>We are very interested in your opinion! The semiconductor industry is quite secretive, and your thoughts on the roadmap of the industry or the materials we should go after would be very helpful. We would also love to hear from people who have run experiments in labs - what can we learn from your experience doing empirical science?"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Launch HN: Discovered Materials (YC P26) \u2013 <em>AI</em> <em>agents</em> to discover new materials"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://discoveredmaterials.com/research/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_advaith08",
+          "story_49269090",
+          "launch_hn"
+        ],
+        "author": "advaith08",
+        "children": [
+          49269241,
+          49269354,
+          49269930,
+          49270577,
+          49270749,
+          49270858,
+          49272259,
+          49273435,
+          49275289,
+          49276057,
+          49279929,
+          49280333,
+          49280538,
+          49281000,
+          49281594,
+          49283782,
+          49286332
+        ],
+        "created_at": "2026-08-12T07:51:20Z",
+        "created_at_i": 1786521080,
+        "num_comments": 34,
+        "objectID": "49269090",
+        "points": 151,
+        "story_id": 49269090,
+        "story_text": "Hey HN, we&#x27;re Advaith and Akash from Discovered Materials ( <a href=\"https:&#x2F;&#x2F;discoveredmaterials.com&#x2F;\">https:&#x2F;&#x2F;discoveredmaterials.com&#x2F;</a> ).  We build AI agents that discover new materials for the semiconductor industry.<p>GPUs today have a heat problem. Nvidia &amp; AMD are almost doubling the TDP (Thermal Design Power) in every chip they release - the H100 (released 2022) has a TDP of 700W, Blackwell (2024) gives out 1.2 kW and Rubin (2026) gives out at 2.3 kW of heat. This trend is expected to continue, and getting rid of this heat is one of the major reasons datacenters consume so much power and water today - they need it to keep chips cool during operation.<p>The amount of heat produced by a chip and its ability to dissipate it are both influenced by the materials used to make it. For example, we could reduce the energy per bit required to move data between logic and memory by 10-50x by 3D packaging chips (placing HBM memory stacks directly on top of logic chips, instead of placing them beside logic on a 2D circuit board). However, we&#x27;re unable to do this today because the dielectric material used in HBM (such as SiO2) is a very poor thermal conductor, trapping heat between logic and memory and causing drastic temperature rise during operation. Similarly, there&#x27;s many other materials in the GPU that are being re-evaluated today - 2 more examples are thermal interface materials and substrates. However, getting a new material into a fab takes years and hundreds of millions of dollars of research - the infamous &quot;lab-to-fab valley of death&quot;.<p>At Discovered Materials, we&#x27;re optimistic that AI agents can reduce the timeline and cost required to introduce new materials into semiconductor chips. We&#x27;re seeing glimpses of this already - we tested 7 models from Anthropic, OpenAI and Kimi, and found that they&#x27;re all able to computationally discover new materials that are dynamically stable and possess promising properties. This was surprising to us - it would generally take a PhD student a couple of weeks of work to discover the kind of materials that these models find over an 8 hour run!<p>However, computational discovery is the easy part. A material discovery is only valid if the material can be made and tested in a lab (As an example, graphene\u2019s properties were predicted in 1947 but it was made for the first time in 2004). Today\u2019s models are not good at coming up with synthesis recipes to make materials in a lab. Even if they do get better at it, we&#x27;re uncertain about how much that will help - making a new material is a highly empirical process involving trial and error over many experiments. Human experts themselves cannot &quot;one-shot&quot; the task, but we expect that a highly capable model will reduce the number of experimental iterations required to make a new material. We\u2019ve seen some evidence of this over the 3 months of our Y Combinator batch - we simulated, synthesized and tested thermal interface materials (TIMs) that match the performance of TIMs the world&#x27;s largest chemical companies have guarded as trade secrets for over 20 years.<p>We\u2019re releasing hundreds of hundreds of new materials discovered by frontier AI models, as well as our benchmark which measures model ability on material discovery here (also linked in the thread url): <a href=\"https:&#x2F;&#x2F;discoveredmaterials.com&#x2F;research\">https:&#x2F;&#x2F;discoveredmaterials.com&#x2F;research</a>. It covers what we discuss above, as well as a variety of strange behavior that we observe from the models, such as Claude&#x27;s propensity to reward hack or GPT-5.6 occasionally losing its mind after ~50M tokens.<p>Our business model: We aim to license and sell IP on the materials we discover, as well as the IP on how to make these materials. We&#x27;re also exploring an alternate business model where we sell the harness+tools we use to discover materials to semiconductor and chemical companies, allowing them to discover materials on their own. We&#x27;re leaning towards the latter to start, but we expect that we&#x27;ll do both in the long run.<p>Our backstory: Akash has a PhD in Material Science from Stanford University, and has spent the last 11 years studying new materials for semiconductor chips. His work on new nanoscale interconnects was Stanford Engineering\u2019s most popular story of 2025. Advaith studied AI at Carnegie Mellon and was a research engineer building video models and agents at Persona AI (acquired) and Luma Labs.<p>We are very interested in your opinion! The semiconductor industry is quite secretive, and your thoughts on the roadmap of the industry or the materials we should go after would be very helpful. We would also love to hear from people who have run experiments in labs - what can we learn from your experience doing empirical science?",
+        "title": "Launch HN: Discovered Materials (YC P26) \u2013 AI agents to discover new materials",
+        "updated_at": "2026-08-13T14:58:49Z",
+        "url": "https://discoveredmaterials.com/research/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "a24venka"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents",
+              "for",
+              "smbs"
+            ],
+            "value": "Hey HN! We're Ashwin and Akshay from Spine <em>AI</em> (<a href=\"https://www.getspine.ai\">https://www.getspine.<em>ai</em></a>). Spine Swarm is a multi-agent system that works on an infinite visual canvas to complete complex non-coding projects: competitive analysis, financial modeling, SEO audits, pitch decks, interactive prototypes, and more. Here's a video of it in action: <a href=\"https://www.youtube.com/watch?v=R_2-ggpZz0Q\" rel=\"nofollow\">https://www.youtube.com/watch?v=R_2-ggpZz0Q</a>.<p>We've been friends <em>for</em> over 13 years. We took our first ML course together at NTU, in a part of campus called North Spine, which is where the name comes from. We went through YC in S23 and have spent about 3 years building Spine across many product iterations.<p>The core idea: chat is the wrong interface <em>for</em> complex <em>AI</em> work. It's a linear thread, and real projects aren't linear. Sure, you can ask a chatbot to reference the financial model from earlier in the thread, or run research and market sizing together, but you're trusting the model to juggle that context implicitly. There's no way to see how it's connecting the pieces, no way to correct one step without rerunning everything, and no way to branch off and explore two strategies side by side. ChatGPT was a demo that blew up, and chat stuck around as the default interface, not because it's the right abstraction. We thought humans and <em>agents</em> needed a real workspace where the structure of the work is explicit and user-controllable, not hidden inside a context window.<p>So we built an infinite visual canvas where you think in blocks instead of threads. Each block is our abstraction on top of <em>AI</em> models. There are dedicated block types <em>for</em> LLM calls, image generation, web browsing, apps, slides, spreadsheets, and more. Think of them as Lego bricks <em>for</em> <em>AI</em> workflows: each one does something specific, but they can be snapped together and composed in many different ways. You can connect any block to any other block, and that connection guarantees the passing of context regardless of block type. The whole system is model-agnostic, so in a single workflow you can go from an OpenAI LLM call, to an image generation mode like Nano Banana Pro, to Claude generating an interactive app, each block using whatever model fits best. Multiple blocks can fan out from the same input, analyzing it in different ways with different models, then feed their outputs into a downstream block that synthesizes the results.<p>The first version of the canvas was fully manual. Users entered prompts, chose models, ran blocks, and made connections themselves. It clicked with founders and product managers because they could branch in different directions from the same starting point: take a product idea and generate a prototype in one branch, a PRD in another, a competitive critique in a third, and a pitch deck in a fourth, all sharing the same upstream context. But new users didn't want to learn the interface. They kept asking us to build a chat layer that would generate and connect blocks on their behalf, to replicate the way we were using the tool. So we built that, and in doing so discovered something we didn't expect: the <em>agents</em> were capable of running autonomously <em>for</em> hours, producing complete deliverables. It turned out <em>agents</em> could run longer and keep their context windows clean by delegating work to blocks and storing intermediary context on the canvas, rather than holding everything in a single context window.<p>Here's how it works now. When you submit a task, a central orchestrator decomposes it into subtasks and delegates each to specialized persona <em>agents</em>. These <em>agents</em> operate on the canvas blocks and can override default settings, primarily the model and prompt, to fit each subtask. <em>Agents</em> pick the best model <em>for</em> each block and sometimes run the same block with multiple models to compare and synthesize outputs. Multiple <em>agents</em> work in parallel when their subtasks don't have dependencies, and downstream <em>agents</em> automatically receive context from upstream work. The user doesn't configure any of this. You can also dispatch multiple tasks at once and the system will queue dependent ones or start independent ones immediately.<p><em>Agents</em> aren't fully autonomous by default. Any agent can pause execution and ask the user <em>for</em> clarification or feedback before continuing, which keeps the human in the loop where it matters. And once <em>agents</em> have produced output, you can select a <em>subs</em>et of blocks on the canvas and iterate on them through the chat without rerunning the entire workflow.<p>The canvas gives <em>agents</em> something that filesystems and message-passing don't: a persistent, structured representation of the entire project that any agent can read and contribute to at any point. In typical multi-agent systems, context degrades as it passes between <em>agents</em>. The canvas addresses this because <em>agents</em> store intermediary results in blocks rather than trying to hold everything in memory, and they leave explicit structured handoffs designed to be consumed efficiently by the next agent in the chain. Every step is also fully auditable, so you can trace exactly how each agent arrived at its conclusions.<p>We ran benchmarks to validate what we were seeing. On Google DeepMind's DeepSearchQA, which is 900 questions spanning 17 fields, each structured as a causal chain where each step depends on completing the previous one, Spine Swarm scored 87.6% on the full dataset with zero human intervention. <em>For</em> the benchmark we used a <em>subs</em>et of block types relevant to the questions (LLM calls, web browsing, table) and removed irrelevant ones like document, spreadsheet, and slide generation. We also disabled human clarification so <em>agents</em> ran fully independently. The <em>agents</em> were not just auditable but also state of the art. The auditability also exposed actual errors in an older benchmark (GAIA Level 3), cases where the expected answer was wrong or ambiguous, which you'd never catch with a black-box pipeline. We detail the methodology, architecture, and benchmark errors in the full writeup: <a href=\"https://blog.getspine.ai/spine-swarm-hits-1-on-gaia-level-3-and-google-deepmind-deepsearchqa\">https://blog.getspine.<em>ai</em>/spine-swarm-hits-1-on-gaia-level-3-...</a><p>Benchmarks measure accuracy on closed-ended questions. Turns out the same architecture also leads to better open-ended outputs like decks, reports, and prototypes with minimal supervision. We've seen early users split into two camps: some watch the <em>agents</em> work and jump in to redirect mid-flow, others queue a task and come back to a finished deliverable. Both work because the canvas preserves the full chain of work, so you can audit or intervene whenever you want.<p>A good first task to try: give it your website URL and ask <em>for</em> a full SEO analysis, competitive landscape, and a prioritized growth roadmap with a slide deck. You'll see multiple <em>agents</em> spin up on the canvas simultaneously. People have also used it <em>for</em> fundraising pitch decks with financial models, prototyping features from screenshots and PRDs, competitive analysis reports and deep-dive learning plans that research a topic from multiple angles and produce structured material you can explore further.<p>Pricing is usage-based credits tied to block usage and the underlying models used. <em>Agents</em> tend to use more credits than manual workflows because they're tuned to get you the best possible outcome, which means they pick the best blocks and do more work. Details here: <a href=\"https://www.getspine.ai/pricing\">https://www.getspine.<em>ai</em>/pricing</a>. There's a free tier, and one honest caveat: we sized it to let you try a real task, but tasks vary in complexity. If you run out before you've had a proper chance to explore, email us at founders@getspine.<em>ai</em> and we'll work with you.<p>We'd love your feedback on the experience: what worked, what didn't, and where it fell short. We're also curious how others here approach complex, multi-step <em>AI</em> work beyond coding. What tools are you using, and what breaks first? We'll be in the comments all day."
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai",
+              "agents"
+            ],
+            "value": "Launch HN: Spine Swarm (YC S23) \u2013 <em>AI</em> <em>agents</em> that collaborate on a visual canvas"
+          },
+          "url": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "ai"
+            ],
+            "value": "https://www.getspine.<em>ai</em>/"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_a24venka",
+          "story_47364116",
+          "launch_hn"
+        ],
+        "author": "a24venka",
+        "children": [
+          47364511,
+          47364602,
+          47364609,
+          47364695,
+          47364780,
+          47364969,
+          47364974,
+          47365088,
+          47365179,
+          47365286,
+          47365316,
+          47365390,
+          47365555,
+          47365572,
+          47365607,
+          47365726,
+          47365727,
+          47365732,
+          47365786,
+          47365822,
+          47366031,
+          47366088,
+          47366264,
+          47366371,
+          47366460,
+          47366500,
+          47366971,
+          47367537,
+          47367621,
+          47368138,
+          47368285,
+          47368413,
+          47368629,
+          47369149,
+          47370764,
+          47370800,
+          47373567,
+          47374157,
+          47374454,
+          47375532,
+          47376801,
+          47377399,
+          47385979,
+          47410341,
+          47412862
+        ],
+        "created_at": "2026-03-13T13:22:40Z",
+        "created_at_i": 1773408160,
+        "num_comments": 69,
+        "objectID": "47364116",
+        "points": 109,
+        "story_id": 47364116,
+        "story_text": "Hey HN! We&#x27;re Ashwin and Akshay from Spine AI (<a href=\"https:&#x2F;&#x2F;www.getspine.ai\">https:&#x2F;&#x2F;www.getspine.ai</a>). Spine Swarm is a multi-agent system that works on an infinite visual canvas to complete complex non-coding projects: competitive analysis, financial modeling, SEO audits, pitch decks, interactive prototypes, and more. Here&#x27;s a video of it in action: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=R_2-ggpZz0Q\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=R_2-ggpZz0Q</a>.<p>We&#x27;ve been friends for over 13 years. We took our first ML course together at NTU, in a part of campus called North Spine, which is where the name comes from. We went through YC in S23 and have spent about 3 years building Spine across many product iterations.<p>The core idea: chat is the wrong interface for complex AI work. It&#x27;s a linear thread, and real projects aren&#x27;t linear. Sure, you can ask a chatbot to reference the financial model from earlier in the thread, or run research and market sizing together, but you&#x27;re trusting the model to juggle that context implicitly. There&#x27;s no way to see how it&#x27;s connecting the pieces, no way to correct one step without rerunning everything, and no way to branch off and explore two strategies side by side. ChatGPT was a demo that blew up, and chat stuck around as the default interface, not because it&#x27;s the right abstraction. We thought humans and agents needed a real workspace where the structure of the work is explicit and user-controllable, not hidden inside a context window.<p>So we built an infinite visual canvas where you think in blocks instead of threads. Each block is our abstraction on top of AI models. There are dedicated block types for LLM calls, image generation, web browsing, apps, slides, spreadsheets, and more. Think of them as Lego bricks for AI workflows: each one does something specific, but they can be snapped together and composed in many different ways. You can connect any block to any other block, and that connection guarantees the passing of context regardless of block type. The whole system is model-agnostic, so in a single workflow you can go from an OpenAI LLM call, to an image generation mode like Nano Banana Pro, to Claude generating an interactive app, each block using whatever model fits best. Multiple blocks can fan out from the same input, analyzing it in different ways with different models, then feed their outputs into a downstream block that synthesizes the results.<p>The first version of the canvas was fully manual. Users entered prompts, chose models, ran blocks, and made connections themselves. It clicked with founders and product managers because they could branch in different directions from the same starting point: take a product idea and generate a prototype in one branch, a PRD in another, a competitive critique in a third, and a pitch deck in a fourth, all sharing the same upstream context. But new users didn&#x27;t want to learn the interface. They kept asking us to build a chat layer that would generate and connect blocks on their behalf, to replicate the way we were using the tool. So we built that, and in doing so discovered something we didn&#x27;t expect: the agents were capable of running autonomously for hours, producing complete deliverables. It turned out agents could run longer and keep their context windows clean by delegating work to blocks and storing intermediary context on the canvas, rather than holding everything in a single context window.<p>Here&#x27;s how it works now. When you submit a task, a central orchestrator decomposes it into subtasks and delegates each to specialized persona agents. These agents operate on the canvas blocks and can override default settings, primarily the model and prompt, to fit each subtask. Agents pick the best model for each block and sometimes run the same block with multiple models to compare and synthesize outputs. Multiple agents work in parallel when their subtasks don&#x27;t have dependencies, and downstream agents automatically receive context from upstream work. The user doesn&#x27;t configure any of this. You can also dispatch multiple tasks at once and the system will queue dependent ones or start independent ones immediately.<p>Agents aren&#x27;t fully autonomous by default. Any agent can pause execution and ask the user for clarification or feedback before continuing, which keeps the human in the loop where it matters. And once agents have produced output, you can select a subset of blocks on the canvas and iterate on them through the chat without rerunning the entire workflow.<p>The canvas gives agents something that filesystems and message-passing don&#x27;t: a persistent, structured representation of the entire project that any agent can read and contribute to at any point. In typical multi-agent systems, context degrades as it passes between agents. The canvas addresses this because agents store intermediary results in blocks rather than trying to hold everything in memory, and they leave explicit structured handoffs designed to be consumed efficiently by the next agent in the chain. Every step is also fully auditable, so you can trace exactly how each agent arrived at its conclusions.<p>We ran benchmarks to validate what we were seeing. On Google DeepMind&#x27;s DeepSearchQA, which is 900 questions spanning 17 fields, each structured as a causal chain where each step depends on completing the previous one, Spine Swarm scored 87.6% on the full dataset with zero human intervention. For the benchmark we used a subset of block types relevant to the questions (LLM calls, web browsing, table) and removed irrelevant ones like document, spreadsheet, and slide generation. We also disabled human clarification so agents ran fully independently. The agents were not just auditable but also state of the art. The auditability also exposed actual errors in an older benchmark (GAIA Level 3), cases where the expected answer was wrong or ambiguous, which you&#x27;d never catch with a black-box pipeline. We detail the methodology, architecture, and benchmark errors in the full writeup: <a href=\"https:&#x2F;&#x2F;blog.getspine.ai&#x2F;spine-swarm-hits-1-on-gaia-level-3-and-google-deepmind-deepsearchqa\">https:&#x2F;&#x2F;blog.getspine.ai&#x2F;spine-swarm-hits-1-on-gaia-level-3-...</a><p>Benchmarks measure accuracy on closed-ended questions. Turns out the same architecture also leads to better open-ended outputs like decks, reports, and prototypes with minimal supervision. We&#x27;ve seen early users split into two camps: some watch the agents work and jump in to redirect mid-flow, others queue a task and come back to a finished deliverable. Both work because the canvas preserves the full chain of work, so you can audit or intervene whenever you want.<p>A good first task to try: give it your website URL and ask for a full SEO analysis, competitive landscape, and a prioritized growth roadmap with a slide deck. You&#x27;ll see multiple agents spin up on the canvas simultaneously. People have also used it for fundraising pitch decks with financial models, prototyping features from screenshots and PRDs, competitive analysis reports and deep-dive learning plans that research a topic from multiple angles and produce structured material you can explore further.<p>Pricing is usage-based credits tied to block usage and the underlying models used. Agents tend to use more credits than manual workflows because they&#x27;re tuned to get you the best possible outcome, which means they pick the best blocks and do more work. Details here: <a href=\"https:&#x2F;&#x2F;www.getspine.ai&#x2F;pricing\">https:&#x2F;&#x2F;www.getspine.ai&#x2F;pricing</a>. There&#x27;s a free tier, and one honest caveat: we sized it to let you try a real task, but tasks vary in complexity. If you run out before you&#x27;ve had a proper chance to explore, email us at founders@getspine.ai and we&#x27;ll work with you.<p>We&#x27;d love your feedback on the experience: what worked, what didn&#x27;t, and where it fell short. We&#x27;re also curious how others here approach complex, multi-step AI work beyond coding. What tools are you using, and what breaks first? We&#x27;ll be in the comments all day.",
+        "title": "Launch HN: Spine Swarm (YC S23) \u2013 AI agents that collaborate on a visual canvas",
+        "updated_at": "2026-03-26T23:51:20Z",
+        "url": "https://www.getspine.ai/"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "louis030195"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents",
+              "for",
+              "smbs"
+            ],
+            "value": "Hi Hacker News, I'm Louis. I built Screenpipe (<a href=\"https://screenpipe.com\">https://screenpipe.com</a>), an app that records your screen and audio locally (only!), and gives <em>AI</em> <em>agents</em> a searchable memory of what you've seen, said, and heard. This makes it easier to automate your repetitive tasks, turn them into SOPs (Standard Operating Procedure) and so on.<p>I made a HN-style demo video at <a href=\"https://www.tella.tv/video/build-your-ai-second-brain-with-screenpipe-e1j7\" rel=\"nofollow\">https://www.tella.tv/video/build-your-<em>ai</em>-second-brain-with-s...</a> and there\u2019s a marketing video at <a href=\"https://www.youtube.com/watch?v=c1jV6E9pyug\" rel=\"nofollow\">https://www.youtube.com/watch?v=c1jV6E9pyug</a>.<p>I\u2019ve been obsessed with this <em>for</em> a long time. I\u2019ve been maintaining a \u201csecond brain\u201d since 2020, in which I would store journals, handwritten notes, music I listen to, projects I'm working on, conversations I have with people, personal CRM etc. I experimented a lot of RAG in the early days with ParlAI, hundreds of fine-tuned GPT2 models, and GPT3 (<a href=\"https://forum.obsidian.md/t/fine-tuning-openai-api-gpt3-on-your-second-brain-obsidian/21849/4\" rel=\"nofollow\">https://forum.obsidian.md/t/fine-tuning-openai-api-gpt3-on-y...</a>). Later I built Ava, the first Obsidian <em>AI</em> plugin, which grew to a few thousands of users quickly. It then became Embedbase, an API to make it easier to build <em>AI</em> apps powered by RAG.<p>What I learned from all this is how important it is <em>for</em> the models to have context about what you\u2019re doing on your computer, in order to get them to do what you want.<p>In the early days there was fine tuning but it was too much pain, then there was tool calling so that <em>AI</em> can access software you use but still kinda not autonomous enough. needing micro management. Then MCP came, but it felt too static, and non technical users struggled to build and use MCP. Then we got skills. Most recently we\u2019ve seen Karpathy\u2019s LLM-maintained wiki, Garry's GBrain, etc., where an agent incrementally maintains a persistent collection of Markdown pages. New sources update entity pages, strengthen or contradict existing claims, and improve a synthesis that compounds over time. I like this pattern, but it still begins with someone selecting and importing the sources. There is still no way <em>AI</em> can know what you and your company are doing every day, across apps, not just inside of apps.<p>Of course, not everyone wants this. But I do! I want <em>AI</em> to know what I'm doing and never lose memory ever again, and I want it to use the same software that humans do, without painful context switches.<p>I started building Screenpipe <em>for</em> myself in 2024 - a CLI to record your screen and plug this context into <em>AI</em>. An HN user posted it in 2024 (<a href=\"https://news.ycombinator.com/item?id=41695840\">https://news.ycombinator.com/item?id=41695840</a>) and that discussion influenced the product. The most useful criticism concerned recording consent, local security, CPU usage, signal-to-noise, and whether <em>agents</em> could act on top of the data.<p>The naive implementation started from continuously recording video and running OCR over every frame. But that creates duplicate data, consumes <em>subs</em>tantial resources (it basically turns your computer into a space heater!), and discards structure the operating system already knows. Screenpipe now instead listens <em>for</em> events such as app switches, clicks, typing pauses, scrolling, and idle fallbacks. When something meaningful changes, it pairs a screenshot with the operating system\u2019s accessibility tree at the same timestamp. OCR is used when structured accessibility data is unavailable. We also capture audio continuously, identify speakers and transcribe locally through Parakeet/Whisper or using cloud models.<p>Everything is indexed in a local SQLite database, mp4 files, and sometimes md files. An <em>AI</em> friendly API on port 3030 is open <em>for</em> <em>agents</em>, with authentication and a MCP and skills.<p>Once Screenpipe has been up and running <em>for</em> a while, you can use it through our built-in chat, Claude, ChatGPT, Hermes, Openclaw, or any agent, to do things like:<p>- adding context to your current chat, e.g. &quot;gather all context about task X&quot;, then requiring less prompts to achieve your goal<p>- retrieve information, e.g. &quot;retrieve the tasks i was working on from 8 am to 4 pm, make a list of what got done and what's left&quot;<p>- create and maintain a personal wiki / second brain <em>for</em> your <em>agents</em>: &quot;every 1h organize everything i do in projects, people, tasks, meetings in my Obsidian vault as markdown files and folders&quot;<p>- create automations: whenever i visit someone's profile on linkedin, update my crm<p>- find automation opportunities: look at everything my team has done this week and turn it into a list of automation opportunities<p>Screenpipe data is stored locally, though we also offer an enterprise plan to discover automation opportunities and <em>for</em> that the company decides where the data lives. We built our own <em>AI</em> PII model to redact sensitive information, it runs locally on Apple MLX or Windows DirectML, we also support cloud confidential inference <em>for</em> low end devices, although our local models are meant to use &lt;1% CPU and &lt;400 mb RAM. Users can set apps, windows, and urls to filter, in addition to browser incognito mode.<p>We also support recording schedules and other privacy features.<p>Most of our codebase is written in Rust, MLX, Onnx, we like cidre or direct C call <em>for</em> Apple APIs and windows-rs <em>for</em> Windows API. We also experimentally support Linux.<p>We have a desktop app (<a href=\"https://screenpipe.com/how-to-install\">https://screenpipe.com/how-to-install</a>) and a CLI:<p><pre><code>  npx screenpipe record\n</code></pre>\nYou can run that without creating an account. All the code is source-available at <a href=\"https://github.com/screenpipe/screenpipe\" rel=\"nofollow\">https://github.com/screenpipe/screenpipe</a>. We took the dreaded step of making our own Screenpipe Commercial License. I know HN strongly prefers OSI open source (MIT/Apache/etc.) but couldn\u2019t find a sustainable way to keep developing Screenpipe while companies were using it commercially <em>for</em> free. So now personal non-commercial, nonprofit, educational, and research use is free, but commercial use requires a license.<p>Versions released before the license change remain available under MIT. We have a free tier, and other plans, including Enterprise which helps companies find automation opportunities.<p>Would love to hear any feedback, things you've done with screenpipe, or features you'd want"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "agents"
+            ],
+            "value": "Launch HN: Screenpipe (YC S26) \u2013 Record how you work and turn that into <em>agents</em>"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_louis030195",
+          "story_49024620",
+          "launch_hn"
+        ],
+        "author": "louis030195",
+        "children": [
+          49024761,
+          49025034,
+          49025107,
+          49025175,
+          49025291,
+          49025378,
+          49025557,
+          49025704,
+          49026319,
+          49026609,
+          49026624,
+          49026720,
+          49027325,
+          49027573,
+          49027845,
+          49027906,
+          49028025,
+          49028043,
+          49028076,
+          49028083,
+          49028111,
+          49028119,
+          49028130,
+          49029003,
+          49029162,
+          49031269,
+          49031437,
+          49031697,
+          49031980,
+          49033472,
+          49039177,
+          49057039,
+          49064231,
+          49093110
+        ],
+        "created_at": "2026-07-23T16:48:38Z",
+        "created_at_i": 1784825318,
+        "num_comments": 67,
+        "objectID": "49024620",
+        "points": 88,
+        "story_id": 49024620,
+        "story_text": "Hi Hacker News, I&#x27;m Louis. I built Screenpipe (<a href=\"https:&#x2F;&#x2F;screenpipe.com\">https:&#x2F;&#x2F;screenpipe.com</a>), an app that records your screen and audio locally (only!), and gives AI agents a searchable memory of what you&#x27;ve seen, said, and heard. This makes it easier to automate your repetitive tasks, turn them into SOPs (Standard Operating Procedure) and so on.<p>I made a HN-style demo video at <a href=\"https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;build-your-ai-second-brain-with-screenpipe-e1j7\" rel=\"nofollow\">https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;build-your-ai-second-brain-with-s...</a> and there\u2019s a marketing video at <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=c1jV6E9pyug\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=c1jV6E9pyug</a>.<p>I\u2019ve been obsessed with this for a long time. I\u2019ve been maintaining a \u201csecond brain\u201d since 2020, in which I would store journals, handwritten notes, music I listen to, projects I&#x27;m working on, conversations I have with people, personal CRM etc. I experimented a lot of RAG in the early days with ParlAI, hundreds of fine-tuned GPT2 models, and GPT3 (<a href=\"https:&#x2F;&#x2F;forum.obsidian.md&#x2F;t&#x2F;fine-tuning-openai-api-gpt3-on-your-second-brain-obsidian&#x2F;21849&#x2F;4\" rel=\"nofollow\">https:&#x2F;&#x2F;forum.obsidian.md&#x2F;t&#x2F;fine-tuning-openai-api-gpt3-on-y...</a>). Later I built Ava, the first Obsidian AI plugin, which grew to a few thousands of users quickly. It then became Embedbase, an API to make it easier to build AI apps powered by RAG.<p>What I learned from all this is how important it is for the models to have context about what you\u2019re doing on your computer, in order to get them to do what you want.<p>In the early days there was fine tuning but it was too much pain, then there was tool calling so that AI can access software you use but still kinda not autonomous enough. needing micro management. Then MCP came, but it felt too static, and non technical users struggled to build and use MCP. Then we got skills. Most recently we\u2019ve seen Karpathy\u2019s LLM-maintained wiki, Garry&#x27;s GBrain, etc., where an agent incrementally maintains a persistent collection of Markdown pages. New sources update entity pages, strengthen or contradict existing claims, and improve a synthesis that compounds over time. I like this pattern, but it still begins with someone selecting and importing the sources. There is still no way AI can know what you and your company are doing every day, across apps, not just inside of apps.<p>Of course, not everyone wants this. But I do! I want AI to know what I&#x27;m doing and never lose memory ever again, and I want it to use the same software that humans do, without painful context switches.<p>I started building Screenpipe for myself in 2024 - a CLI to record your screen and plug this context into AI. An HN user posted it in 2024 (<a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=41695840\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=41695840</a>) and that discussion influenced the product. The most useful criticism concerned recording consent, local security, CPU usage, signal-to-noise, and whether agents could act on top of the data.<p>The naive implementation started from continuously recording video and running OCR over every frame. But that creates duplicate data, consumes substantial resources (it basically turns your computer into a space heater!), and discards structure the operating system already knows. Screenpipe now instead listens for events such as app switches, clicks, typing pauses, scrolling, and idle fallbacks. When something meaningful changes, it pairs a screenshot with the operating system\u2019s accessibility tree at the same timestamp. OCR is used when structured accessibility data is unavailable. We also capture audio continuously, identify speakers and transcribe locally through Parakeet&#x2F;Whisper or using cloud models.<p>Everything is indexed in a local SQLite database, mp4 files, and sometimes md files. An AI friendly API on port 3030 is open for agents, with authentication and a MCP and skills.<p>Once Screenpipe has been up and running for a while, you can use it through our built-in chat, Claude, ChatGPT, Hermes, Openclaw, or any agent, to do things like:<p>- adding context to your current chat, e.g. &quot;gather all context about task X&quot;, then requiring less prompts to achieve your goal<p>- retrieve information, e.g. &quot;retrieve the tasks i was working on from 8 am to 4 pm, make a list of what got done and what&#x27;s left&quot;<p>- create and maintain a personal wiki &#x2F; second brain for your agents: &quot;every 1h organize everything i do in projects, people, tasks, meetings in my Obsidian vault as markdown files and folders&quot;<p>- create automations: whenever i visit someone&#x27;s profile on linkedin, update my crm<p>- find automation opportunities: look at everything my team has done this week and turn it into a list of automation opportunities<p>Screenpipe data is stored locally, though we also offer an enterprise plan to discover automation opportunities and for that the company decides where the data lives. We built our own AI PII model to redact sensitive information, it runs locally on Apple MLX or Windows DirectML, we also support cloud confidential inference for low end devices, although our local models are meant to use &lt;1% CPU and &lt;400 mb RAM. Users can set apps, windows, and urls to filter, in addition to browser incognito mode.<p>We also support recording schedules and other privacy features.<p>Most of our codebase is written in Rust, MLX, Onnx, we like cidre or direct C call for Apple APIs and windows-rs for Windows API. We also experimentally support Linux.<p>We have a desktop app (<a href=\"https:&#x2F;&#x2F;screenpipe.com&#x2F;how-to-install\">https:&#x2F;&#x2F;screenpipe.com&#x2F;how-to-install</a>) and a CLI:<p><pre><code>  npx screenpipe record\n</code></pre>\nYou can run that without creating an account. All the code is source-available at <a href=\"https:&#x2F;&#x2F;github.com&#x2F;screenpipe&#x2F;screenpipe\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;screenpipe&#x2F;screenpipe</a>. We took the dreaded step of making our own Screenpipe Commercial License. I know HN strongly prefers OSI open source (MIT&#x2F;Apache&#x2F;etc.) but couldn\u2019t find a sustainable way to keep developing Screenpipe while companies were using it commercially for free. So now personal non-commercial, nonprofit, educational, and research use is free, but commercial use requires a license.<p>Versions released before the license change remain available under MIT. We have a free tier, and other plans, including Enterprise which helps companies find automation opportunities.<p>Would love to hear any feedback, things you&#x27;ve done with screenpipe, or features you&#x27;d want",
+        "title": "Launch HN: Screenpipe (YC S26) \u2013 Record how you work and turn that into agents",
+        "updated_at": "2026-08-03T04:40:25Z"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "BenceRed"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents",
+              "for",
+              "smbs"
+            ],
+            "value": "Hi HN, we\u2019re Bence and Ryan, founders of Hoplite (<a href=\"https://hoplite.sh\">https://hoplite.sh</a>). Hoplite lets you deploy coding <em>agents</em> in the cloud, with a suite of tools that makes it incredibly easy to QA features. During onboarding, we port over your local setup - sessions, memories, MCP servers, and get your projects ready to run in the cloud.<p>Here\u2019s a demo: <a href=\"https://youtu.be/bnyktZ_9pjE\" rel=\"nofollow\">https://youtu.be/bnyktZ_9pjE</a><p>We got here after pivoting away from the idea we applied to YC with; <em>AI</em> <em>for</em> retail investing. It ultimately wasn\u2019t a product that we ourselves would use, nor served a customer base that we felt connected to. In reflecting on what we really wanted to do, we realised that we loved talking to founders and developers, and were really opinionated about the specific area of cloud <em>agents</em>. We tried out all the existing solutions, and didn\u2019t find one that A) took good advantage of being in the cloud, and B) was performant and felt good to use.<p>We\u2019re building a product that we feel reflects what mainstream development will look like in 6-12 months. As models improve, developers will end up reviewing less and less code, and will instead focus on reviewing the product output. That means evaluating new user flows, visually verifying that new features look good, that the API works as expected, that the CLI works on Windows, etc. And doing it while running hundreds of <em>agents</em> concurrently.<p>On the agent side, we\u2019ve created a custom harness. We spent a lot of time deciding on whether we should use an off the shelf solution like Codex/Claude Code, but ultimately wanted the independence and freedom that came with building it in house. It also means that we can test out completely new features without relying on Anthropic and OpenAI to catch up.<p>Everything is hosted on AWS, with the exception of: Temporal <em>for</em> durable workflows, Modal <em>for</em> sandboxes, and Planetscale <em>for</em> our database. Our infra decisions were driven by a strong belief that <em>agents</em> are becoming a tier 0 piece of infrastructure, and they need the reliability and security to match that.<p>You can try it now <em>for</em> free with the code \u2018HACKERNEWS\u2019 - we\u2019ve included $100 in free credits, plus you can connect your Codex <em>subs</em>cription and use OpenAI models via it. You can see some more details around our pricing at <a href=\"https://hoplite.sh/pricing\">https://hoplite.sh/pricing</a>.<p>At the moment we\u2019re focusing on optimising two key experiences: onboarding and previews, and would love to hear your feedback on them. And if you find that the <em>agent's</em> performance in certain tasks doesn\u2019t match your expectations, please let us know!"
+          },
+          "title": {
+            "fullyHighlighted": false,
+            "matchLevel": "partial",
+            "matchedWords": [
+              "agents"
+            ],
+            "value": "Launch HN: Hoplite (YC S26) \u2013 Effortlessly deploy cloud coding <em>agents</em>"
+          },
+          "url": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "https://hoplite.sh"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_BenceRed",
+          "story_49157997",
+          "launch_hn"
+        ],
+        "author": "BenceRed",
+        "children": [
+          49158295,
+          49158324,
+          49158759,
+          49158815,
+          49158876,
+          49159036,
+          49159233,
+          49159235,
+          49159660,
+          49159733,
+          49160106,
+          49160107,
+          49160197,
+          49160584,
+          49160918,
+          49160955,
+          49161483,
+          49162300,
+          49163451,
+          49165702,
+          49165969,
+          49166404,
+          49172790,
+          49181234,
+          49208355,
+          49223690,
+          49226175
+        ],
+        "created_at": "2026-08-03T16:32:06Z",
+        "created_at_i": 1785774726,
+        "num_comments": 70,
+        "objectID": "49157997",
+        "points": 81,
+        "story_id": 49157997,
+        "story_text": "Hi HN, we\u2019re Bence and Ryan, founders of Hoplite (<a href=\"https:&#x2F;&#x2F;hoplite.sh\">https:&#x2F;&#x2F;hoplite.sh</a>). Hoplite lets you deploy coding agents in the cloud, with a suite of tools that makes it incredibly easy to QA features. During onboarding, we port over your local setup - sessions, memories, MCP servers, and get your projects ready to run in the cloud.<p>Here\u2019s a demo: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;bnyktZ_9pjE\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;bnyktZ_9pjE</a><p>We got here after pivoting away from the idea we applied to YC with; AI for retail investing. It ultimately wasn\u2019t a product that we ourselves would use, nor served a customer base that we felt connected to. In reflecting on what we really wanted to do, we realised that we loved talking to founders and developers, and were really opinionated about the specific area of cloud agents. We tried out all the existing solutions, and didn\u2019t find one that A) took good advantage of being in the cloud, and B) was performant and felt good to use.<p>We\u2019re building a product that we feel reflects what mainstream development will look like in 6-12 months. As models improve, developers will end up reviewing less and less code, and will instead focus on reviewing the product output. That means evaluating new user flows, visually verifying that new features look good, that the API works as expected, that the CLI works on Windows, etc. And doing it while running hundreds of agents concurrently.<p>On the agent side, we\u2019ve created a custom harness. We spent a lot of time deciding on whether we should use an off the shelf solution like Codex&#x2F;Claude Code, but ultimately wanted the independence and freedom that came with building it in house. It also means that we can test out completely new features without relying on Anthropic and OpenAI to catch up.<p>Everything is hosted on AWS, with the exception of: Temporal for durable workflows, Modal for sandboxes, and Planetscale for our database. Our infra decisions were driven by a strong belief that agents are becoming a tier 0 piece of infrastructure, and they need the reliability and security to match that.<p>You can try it now for free with the code \u2018HACKERNEWS\u2019 - we\u2019ve included $100 in free credits, plus you can connect your Codex subscription and use OpenAI models via it. You can see some more details around our pricing at <a href=\"https:&#x2F;&#x2F;hoplite.sh&#x2F;pricing\">https:&#x2F;&#x2F;hoplite.sh&#x2F;pricing</a>.<p>At the moment we\u2019re focusing on optimising two key experiences: onboarding and previews, and would love to hear your feedback on them. And if you find that the agent&#x27;s performance in certain tasks doesn\u2019t match your expectations, please let us know!",
+        "title": "Launch HN: Hoplite (YC S26) \u2013 Effortlessly deploy cloud coding agents",
+        "updated_at": "2026-08-13T07:12:46Z",
+        "url": "https://hoplite.sh"
+      },
+      {
+        "_highlightResult": {
+          "author": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Weves"
+          },
+          "story_text": {
+            "fullyHighlighted": false,
+            "matchLevel": "full",
+            "matchedWords": [
+              "ai",
+              "agents",
+              "for",
+              "smbs"
+            ],
+            "value": "Hey HN, Chris and Yuhong here from Onyx (<a href=\"https://github.com/onyx-dot-app/onyx\" rel=\"nofollow\">https://github.com/onyx-dot-app/onyx</a>). We\u2019re building an open-source chat that works with any LLM (proprietary + open weight) <i>and</i> gives these LLMs the tools they need to be useful (RAG, web search, MCP, deep research, memory, etc.).<p>Demo: <a href=\"https://youtu.be/2g4BxTZ9ztg\" rel=\"nofollow\">https://youtu.be/2g4BxTZ9ztg</a><p>Two years ago, Yuhong and I had the same recurring problem. We were on growing teams and it was ridiculously difficult to find the right information across our docs, Slack, meeting notes, etc. Existing solutions required sending out our company's data, lacked customization, and frankly didn't work well. So, we started Danswer, an open-source enterprise search project built to be self-hosted and easily customized.<p>As the project grew, we started seeing an interesting trend\u2014even though we were explicitly a search app, people wanted to use Danswer just to chat with LLMs. We\u2019d hear, \u201cthe connectors, indexing, and search are great, but I\u2019m going to start by connecting GPT-4o, Claude Sonnet 4, and Qwen to provide my team with a secure way to use them\u201d.<p>Many users would add RAG, <em>agents</em>, and custom tools later, but much of the usage stayed \u2018basic chat\u2019. We thought: \u201cwhy would people co-opt an enterprise search when other <em>AI</em> chat solutions exist?\u201d<p>As we continued talking to users, we realized two key points:<p>(1) just giving a company secure access to an LLM with a great UI and simple tools is a huge part of the value add of <em>AI</em><p>(2) providing this <i>well</i> is much harder than you might think and the bar is incredibly high<p>Consumer products like ChatGPT and Claude already provide a great experience\u2014and chat with <em>AI</em> <em>for</em> work is something (ideally) everyone at the company uses 10+ times per day. People expect the same snappy, simple, and intuitive UX with a full feature set. Getting hundreds of small details right to take the experience from \u201cthis works\u201d to \u201cthis feels magical\u201d is not easy, and nothing else in the space has managed to do it.<p>So ~3 months ago we pivoted to Onyx, the open-source chat UI with:<p>- (truly) world class chat UX. Usable both by a fresh college grad who grew up with <em>AI</em> and an industry veteran who\u2019s using <em>AI</em> tools <em>for</em> the first time.<p>- Support <em>for</em> all the common add-ons: RAG, connectors, web search, custom tools, MCP, assistants, deep research.<p>- RBAC, SSO, permission syncing, easy on-prem hosting to make it work <em>for</em> larger enterprises.<p>Through building features like deep research and code interpreter that work across model providers, we've learned a ton of non-obvious things about engineering LLMs that have been key to making Onyx work. I'd like to share two that were particularly interesting (happy to discuss more in the comments).<p>First, context management is one of the most difficult and important things to get right. We\u2019ve found that LLMs really struggle to remember both system prompts and previous user messages in long conversations. Even simple instructions like \u201cignore sources of type X\u201d in the system prompt are very often ignored. This is exacerbated by multiple tool calls, which can often feed in huge amounts of context. We solved this problem with a \u201cReminder\u201d prompt\u2014a short 1-3 sentence blurb injected at the end of the user message that describes the non-negotiables that the LLM must abide by. Empirically, LLMs attend most to the very end of the context window, so this placement gives the highest likelihood of adherence.<p>Second, we\u2019ve needed to build an understanding of the \u201cnatural tendencies\u201d of certain models when using tools, and build around them. <em>For</em> example, the GPT family of models are fine-tuned to use a python code interpreter that operates in a Jupyter notebook. Even if told explicitly, it refuses to add `print()` around the last line, since, in Jupyter, this last line is automatically written to stdout. Other models don\u2019t have this strong preference, so we\u2019ve had to design our model-agnostic code interpreter to also automatically `print()` the last bare line.<p>So far, we\u2019ve had a Fortune 100 team fork Onyx and provide 10k+ employees access to every model within a single interface, and create thousands of use-case specific Assistants <em>for</em> every department, each using the best model <em>for</em> the job. We\u2019ve seen teams operating in sensitive industries completely airgap Onyx w/ locally hosted LLMs to provide a copilot that wouldn\u2019t have been possible otherwise.<p>If you\u2019d like to try Onyx out, follow <a href=\"https://docs.onyx.app/deployment/getting_started/quickstart\">https://docs.onyx.app/deployment/getting_started/quickstart</a> to get set up locally w/ Docker in &lt;15 minutes. <em>For</em> our Cloud: <a href=\"https://www.onyx.app/\">https://www.onyx.app/</a>. If there\u2019s anything you'd like to see to make it a no-brainer to replace your ChatGPT Enterprise/Claude Enterprise <em>subs</em>cription, we\u2019d love to hear it!"
+          },
+          "title": {
+            "matchLevel": "none",
+            "matchedWords": [],
+            "value": "Launch HN: Onyx (YC W24) \u2013 Open-source chat UI"
+          }
+        },
+        "_tags": [
+          "story",
+          "author_Weves",
+          "story_46045987",
+          "launch_hn"
+        ],
+        "author": "Weves",
+        "children": [
+          46046366,
+          46046371,
+          46046530,
+          46046553,
+          46046855,
+          46046908,
+          46046921,
+          46046957,
+          46046997,
+          46047030,
+          46047062,
+          46047106,
+          46047234,
+          46047287,
+          46047305,
+          46047365,
+          46047410,
+          46047501,
+          46047885,
+          46047975,
+          46048001,
+          46048045,
+          46048123,
+          46048134,
+          46048414,
+          46048668,
+          46048675,
+          46049079,
+          46049272,
+          46049882,
+          46050224,
+          46050895,
+          46050934,
+          46050984,
+          46051625,
+          46051776,
+          46052189,
+          46052745,
+          46053082,
+          46053300,
+          46053399,
+          46054502,
+          46055291,
+          46055471,
+          46055897,
+          46056235,
+          46056819,
+          46056820,
+          46061256,
+          46061664,
+          46062910,
+          46064840,
+          46066266,
+          46083281
+        ],
+        "created_at": "2025-11-25T14:20:30Z",
+        "created_at_i": 1764080430,
+        "num_comments": 160,
+        "objectID": "46045987",
+        "points": 254,
+        "story_id": 46045987,
+        "story_text": "Hey HN, Chris and Yuhong here from Onyx (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;onyx-dot-app&#x2F;onyx\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;onyx-dot-app&#x2F;onyx</a>). We\u2019re building an open-source chat that works with any LLM (proprietary + open weight) <i>and</i> gives these LLMs the tools they need to be useful (RAG, web search, MCP, deep research, memory, etc.).<p>Demo: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;2g4BxTZ9ztg\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;2g4BxTZ9ztg</a><p>Two years ago, Yuhong and I had the same recurring problem. We were on growing teams and it was ridiculously difficult to find the right information across our docs, Slack, meeting notes, etc. Existing solutions required sending out our company&#x27;s data, lacked customization, and frankly didn&#x27;t work well. So, we started Danswer, an open-source enterprise search project built to be self-hosted and easily customized.<p>As the project grew, we started seeing an interesting trend\u2014even though we were explicitly a search app, people wanted to use Danswer just to chat with LLMs. We\u2019d hear, \u201cthe connectors, indexing, and search are great, but I\u2019m going to start by connecting GPT-4o, Claude Sonnet 4, and Qwen to provide my team with a secure way to use them\u201d.<p>Many users would add RAG, agents, and custom tools later, but much of the usage stayed \u2018basic chat\u2019. We thought: \u201cwhy would people co-opt an enterprise search when other AI chat solutions exist?\u201d<p>As we continued talking to users, we realized two key points:<p>(1) just giving a company secure access to an LLM with a great UI and simple tools is a huge part of the value add of AI<p>(2) providing this <i>well</i> is much harder than you might think and the bar is incredibly high<p>Consumer products like ChatGPT and Claude already provide a great experience\u2014and chat with AI for work is something (ideally) everyone at the company uses 10+ times per day. People expect the same snappy, simple, and intuitive UX with a full feature set. Getting hundreds of small details right to take the experience from \u201cthis works\u201d to \u201cthis feels magical\u201d is not easy, and nothing else in the space has managed to do it.<p>So ~3 months ago we pivoted to Onyx, the open-source chat UI with:<p>- (truly) world class chat UX. Usable both by a fresh college grad who grew up with AI and an industry veteran who\u2019s using AI tools for the first time.<p>- Support for all the common add-ons: RAG, connectors, web search, custom tools, MCP, assistants, deep research.<p>- RBAC, SSO, permission syncing, easy on-prem hosting to make it work for larger enterprises.<p>Through building features like deep research and code interpreter that work across model providers, we&#x27;ve learned a ton of non-obvious things about engineering LLMs that have been key to making Onyx work. I&#x27;d like to share two that were particularly interesting (happy to discuss more in the comments).<p>First, context management is one of the most difficult and important things to get right. We\u2019ve found that LLMs really struggle to remember both system prompts and previous user messages in long conversations. Even simple instructions like \u201cignore sources of type X\u201d in the system prompt are very often ignored. This is exacerbated by multiple tool calls, which can often feed in huge amounts of context. We solved this problem with a \u201cReminder\u201d prompt\u2014a short 1-3 sentence blurb injected at the end of the user message that describes the non-negotiables that the LLM must abide by. Empirically, LLMs attend most to the very end of the context window, so this placement gives the highest likelihood of adherence.<p>Second, we\u2019ve needed to build an understanding of the \u201cnatural tendencies\u201d of certain models when using tools, and build around them. For example, the GPT family of models are fine-tuned to use a python code interpreter that operates in a Jupyter notebook. Even if told explicitly, it refuses to add `print()` around the last line, since, in Jupyter, this last line is automatically written to stdout. Other models don\u2019t have this strong preference, so we\u2019ve had to design our model-agnostic code interpreter to also automatically `print()` the last bare line.<p>So far, we\u2019ve had a Fortune 100 team fork Onyx and provide 10k+ employees access to every model within a single interface, and create thousands of use-case specific Assistants for every department, each using the best model for the job. We\u2019ve seen teams operating in sensitive industries completely airgap Onyx w&#x2F; locally hosted LLMs to provide a copilot that wouldn\u2019t have been possible otherwise.<p>If you\u2019d like to try Onyx out, follow <a href=\"https:&#x2F;&#x2F;docs.onyx.app&#x2F;deployment&#x2F;getting_started&#x2F;quickstart\">https:&#x2F;&#x2F;docs.onyx.app&#x2F;deployment&#x2F;getting_started&#x2F;quickstart</a> to get set up locally w&#x2F; Docker in &lt;15 minutes. For our Cloud: <a href=\"https:&#x2F;&#x2F;www.onyx.app&#x2F;\">https:&#x2F;&#x2F;www.onyx.app&#x2F;</a>. If there\u2019s anything you&#x27;d like to see to make it a no-brainer to replace your ChatGPT Enterprise&#x2F;Claude Enterprise subscription, we\u2019d love to hear it!",
+        "title": "Launch HN: Onyx (YC W24) \u2013 Open-source chat UI",
+        "updated_at": "2026-05-31T18:06:30Z"
+      }
+    ],
+    "hitsPerPage": 40,
+    "nbHits": 8,
+    "nbPages": 1,
+    "page": 0,
+    "params": "query=AI+agents+for+SMBs&tags=launch_hn&hitsPerPage=40&numericFilters=created_at_i%3E1739977508&advancedSyntax=true&analyticsTags=backend",
+    "processingTimeMS": 10,
+    "processingTimingsMS": {
+      "_request": {
+        "roundTrip": 19
+      },
+      "afterFetch": {
+        "format": {
+          "highlighting": 3,
+          "total": 3
+        }
+      },
+      "fetch": {
+        "query": 8,
+        "total": 9
+      },
+      "total": 10
+    },
+    "query": "AI agents for SMBs",
+    "serverTimeMS": 14
+  }
+}

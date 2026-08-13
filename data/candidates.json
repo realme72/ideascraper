@@ -1,0 +1,843 @@
+{
+  "topic": "AI agents for SMBs",
+  "generated_at": "2026-08-13T15:14:24.419148Z",
+  "sources_used": [
+    "yc",
+    "hn"
+  ],
+  "term_coverage": {
+    "agent": 15,
+    "ai": 15,
+    "smb": 4
+  },
+  "candidates": [
+    {
+      "slug": "withasync",
+      "name": "Async",
+      "website": "https://withasync.com",
+      "one_liner": "Transforming small businesses with AI agents",
+      "description": "Async builds agents that change how businesses can run. Law firms, healthcare clinics and real estate companies hire our AI agents to automate complex work that's never been economical to staff with humans, letting us capture labor spend that didn't previously exist.",
+      "keywords": [
+        "Artificial Intelligence",
+        "B2B"
+      ],
+      "relevance": 0.667,
+      "signals": [
+        {
+          "kind": "freshness",
+          "label": "YC Summer 2026 batch",
+          "value": null,
+          "observed_at": "2025-06-25T19:18:46Z",
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/withasync",
+            "retrieved_at": "2026-08-13T15:14:22.602662Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Team of 2",
+          "value": 2.0,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/withasync",
+            "retrieved_at": "2026-08-13T15:14:22.602662Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Stage: Early",
+          "value": null,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/withasync",
+            "retrieved_at": "2026-08-13T15:14:22.602662Z"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/withasync",
+          "retrieved_at": "2026-08-13T15:14:22.602662Z"
+        }
+      ]
+    },
+    {
+      "slug": "agent-desktop",
+      "name": "Agent-desktop",
+      "website": "https://github.com/lahfir/agent-desktop",
+      "one_liner": "Native desktop automation CLI for AI agents",
+      "description": "I've been building computer-use tools for a while, and I quietly launched this about a month ago (122 Stars on GH). I figured it was worth sharing here. Over the last few months, a lot of computer-use agents have come out: Codex, Claude Code, CUA, and others. Most of them seem to work roughly like this: 1. Take a screenshot 2. Have the model predict pixel coordinates 3. Click x,y 4. Take another screenshot 5. Repeat That works, but it's slow, expensive in tokens, and fragile. If the UI shifts a few pixels, things break. And the model still doesn't know what any element actually is. But the OS already exposes structured UI information: - macOS: Accessibility API - Windows: UI Automation - Linux: AT-SPI Screen readers have used these APIs for years. On the web, Playwright beat screenshot…",
+      "keywords": [],
+      "relevance": 0.556,
+      "signals": [
+        {
+          "kind": "traction",
+          "label": "99 points and 44 comments on Hacker News",
+          "value": 99.0,
+          "observed_at": "2026-05-02T02:18:24Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=47982708",
+            "retrieved_at": "2026-08-13T15:14:24.383052Z"
+          }
+        },
+        {
+          "kind": "freshness",
+          "label": "Launched on HN 02 May 2026",
+          "value": null,
+          "observed_at": "2026-05-02T02:18:24Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=47982708",
+            "retrieved_at": "2026-08-13T15:14:24.383052Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Posted and answered questions as HN user @lahfir",
+          "value": null,
+          "observed_at": "2026-05-02T02:18:24Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=47982708",
+            "retrieved_at": "2026-08-13T15:14:24.383052Z"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=47982708",
+          "retrieved_at": "2026-08-13T15:14:24.383052Z"
+        }
+      ]
+    },
+    {
+      "slug": "mount",
+      "name": "Mount",
+      "website": "https://mount.insure",
+      "one_liner": "The AI Agent Insurance Carrier",
+      "description": "TLDR: Mount is building the AI insurance carrier, starting with liability coverage for deployed AI agents. As everyone moves AI Agents into production and gives them more responsibility, we help businesses insure and secure them.\r\n\r\nWhenever responsibility shifts from human operators to autonomous systems, so too does the liability that accompanies it. The systems also introduce new risks: agentic software failures, prompt injection attacks, autonomous workflow errors, data leaks, and more.\r\n\r\nLegacy insurance was not built for this. Existing policies are often silent, ambiguous, or exclude autonomous software, and traditional insurers lack the data and technical capability to assess deployed AI Systems.\r\n\r\nOur first product, the Mount AI Liability Policy, is built for mid-market and enterprise companies deploying autonomous AI agents in real business processes. We scan and red-team AI deployments, quantify operational risk, help fix vulnerabilities, and insure the residual risk with purpose-built AI liability coverage.\r\n\r\nMount is best thought of as a highly automated version of today's commercial insurance carriers, which run on manual workflows, layers of intermediaries, and tens of thousands of employees. AI enables automation of underwriting, pricing, policy issuance, claims, fraud detection, customer support, and distribution. We believe that the best way to use this opportunity is to rebuild those processes from the ground up. ",
+      "keywords": [
+        "Fintech",
+        "Insurance"
+      ],
+      "relevance": 0.556,
+      "signals": [
+        {
+          "kind": "freshness",
+          "label": "YC Spring 2026 batch",
+          "value": null,
+          "observed_at": "2026-04-07T23:40:48Z",
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/mount",
+            "retrieved_at": "2026-08-13T15:14:22.606082Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Team of 2",
+          "value": 2.0,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/mount",
+            "retrieved_at": "2026-08-13T15:14:22.606082Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Stage: Early",
+          "value": null,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/mount",
+            "retrieved_at": "2026-08-13T15:14:22.606082Z"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/mount",
+          "retrieved_at": "2026-08-13T15:14:22.606082Z"
+        }
+      ]
+    },
+    {
+      "slug": "agent-fm",
+      "name": "Agent FM",
+      "website": "https://www.agentfm.ai/",
+      "one_liner": "One group chat to hear and steer your coding agents.",
+      "description": "Agent FM is a desktop app that gives engineers one group chat to hear and steer their coding agents. Instead of manually bouncing between different claude code and codex sessions, and combing through walls of text to monitor agents, engineers just tune in to Agent FM. Agents share important progress updates, blockers, assumptions, and decisions in the group chat. Engineers get live text and audio updates and respond right from the chat.",
+      "keywords": [
+        "Artificial Intelligence",
+        "B2B",
+        "Developer Tools",
+        "Engineering, Product and Design",
+        "Productivity"
+      ],
+      "relevance": 0.5,
+      "signals": [
+        {
+          "kind": "freshness",
+          "label": "YC Summer 2026 batch",
+          "value": null,
+          "observed_at": "2026-08-05T00:48:06Z",
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/agent-fm",
+            "retrieved_at": "2026-08-13T15:14:22.603520Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Team of 2",
+          "value": 2.0,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/agent-fm",
+            "retrieved_at": "2026-08-13T15:14:22.603520Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Stage: Early",
+          "value": null,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/agent-fm",
+            "retrieved_at": "2026-08-13T15:14:22.603520Z"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/agent-fm",
+          "retrieved_at": "2026-08-13T15:14:22.603520Z"
+        }
+      ]
+    },
+    {
+      "slug": "last-accounting-company",
+      "name": "Last Accounting Company",
+      "website": "https://lastaccountingcompany.com/",
+      "one_liner": "Agent-native accounting firm.",
+      "description": "Last Accounting Company (LAC) is a full-stack AI accounting firm. We sell the same service (bookkeeping, tax filings, etc.) as a traditional accounting firm, but underneath agents handle everything and a certified accountant signs off. Our service is faster, cheaper, and fully integrated, allowing our clients to focus on what matters, not accounting admin.\r\n\r\nLAC replaces both outsourced accountants and legacy accounting software for startups and SMBs. Our system is fully proprietary, from the general ledger to the accounting agents. This allows us to create powerful self-reinforcing loops and ultimately provide a state-of-the-art accounting service.",
+      "keywords": [
+        "Artificial Intelligence",
+        "B2B",
+        "Finance",
+        "Finance and Accounting",
+        "Fintech"
+      ],
+      "relevance": 0.5,
+      "signals": [
+        {
+          "kind": "freshness",
+          "label": "YC Summer 2026 batch",
+          "value": null,
+          "observed_at": "2026-07-20T19:16:55Z",
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/last-accounting-company",
+            "retrieved_at": "2026-08-13T15:14:22.603373Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Team of 4",
+          "value": 4.0,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/last-accounting-company",
+            "retrieved_at": "2026-08-13T15:14:22.603373Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Stage: Early",
+          "value": null,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/last-accounting-company",
+            "retrieved_at": "2026-08-13T15:14:22.603373Z"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/last-accounting-company",
+          "retrieved_at": "2026-08-13T15:14:22.603373Z"
+        }
+      ]
+    },
+    {
+      "slug": "plandex-v2",
+      "name": "Plandex v2",
+      "website": "https://github.com/plandex-ai/plandex",
+      "one_liner": "open source AI coding agent for large projects and tasks",
+      "description": "Hey HN! I’m Dane, the creator of Plandex ( https://github.com/plandex-ai/plandex ), an open source AI coding agent focused especially on tackling large tasks in real world software projects. You can watch a 2 minute demo of Plandex in action here: https://www.youtube.com/watch?v=SFSu2vNmlLk And here’s more of a tutorial style demo showing how Plandex can automatically debug a browser application: https://www.youtube.com/watch?v=g-_76U_nK0Y . I launched Plandex v1 here on HN a little less than a year ago ( https://news.ycombinator.com/item?id=39918500 ). Now I’m launching a major update, Plandex v2, which is the result of 8 months of heads down work, and is in effect a whole new project/product. In short, Plandex is now a top-tier coding agent with fully autonomous capabilities. It…",
+      "keywords": [],
+      "relevance": 0.444,
+      "signals": [
+        {
+          "kind": "traction",
+          "label": "257 points and 81 comments on Hacker News",
+          "value": 257.0,
+          "observed_at": "2025-04-16T21:26:42Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=43710576",
+            "retrieved_at": "2026-08-13T15:14:24.382806Z"
+          }
+        },
+        {
+          "kind": "freshness",
+          "label": "Launched on HN 16 Apr 2025",
+          "value": null,
+          "observed_at": "2025-04-16T21:26:42Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=43710576",
+            "retrieved_at": "2026-08-13T15:14:24.382806Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Posted and answered questions as HN user @danenania",
+          "value": null,
+          "observed_at": "2025-04-16T21:26:42Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=43710576",
+            "retrieved_at": "2026-08-13T15:14:24.382806Z"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=43710576",
+          "retrieved_at": "2026-08-13T15:14:24.382806Z"
+        }
+      ]
+    },
+    {
+      "slug": "sprocket",
+      "name": "Sprocket",
+      "website": "https://sprocket-demo.spikonado.com",
+      "one_liner": "The Best AI Agent for Hardware and Software Development",
+      "description": "Hey HN, I am 16y/o and have been working on Sprocket for a while. It's an open-source AI agent that beats every other agent out there at both hardware and software. And here's the best part: Sprocket can (on its own) buy anything from any website when you tell it to do so. From hardware parts to SaaS subscriptions. Sprocket retrieves best-in-class context from the web for everything it does. It is therefore incredibly reliable. The agent harness's quality, performance, and UI rival that of Codex/Cursor/T3Code, and we are rapidly improving. We will be releasing benchmarks on how Sprocket beats every other agent at both software and hardware soon. In terms of hardware design, Sprocket can make beautiful schematics in react, create your BOM, and create detailed assembly instructions. Hope…",
+      "keywords": [],
+      "relevance": 0.444,
+      "signals": [
+        {
+          "kind": "traction",
+          "label": "124 points and 14 comments on Hacker News",
+          "value": 124.0,
+          "observed_at": "2026-08-02T16:26:19Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=49145934",
+            "retrieved_at": "2026-08-13T15:14:24.382986Z"
+          }
+        },
+        {
+          "kind": "freshness",
+          "label": "Launched on HN 02 Aug 2026",
+          "value": null,
+          "observed_at": "2026-08-02T16:26:19Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=49145934",
+            "retrieved_at": "2026-08-13T15:14:24.382986Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Posted and answered questions as HN user @amronos",
+          "value": null,
+          "observed_at": "2026-08-02T16:26:19Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=49145934",
+            "retrieved_at": "2026-08-13T15:14:24.382986Z"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=49145934",
+          "retrieved_at": "2026-08-13T15:14:24.382986Z"
+        }
+      ]
+    },
+    {
+      "slug": "agentmail",
+      "name": "AgentMail",
+      "website": "https://chat.agentmail.to/",
+      "one_liner": "Email infra for AI agents",
+      "description": "Hey HN, we're Haakam, Michael, and Adi. We're building AgentMail ( https://agentmail.to/ ), an API to give AI agents their own email inboxes. We’re not talking about AI for your email, this is email for your AI. We started building email agents because they can converse with users in their inboxes, automate email-based workflows, and authenticate with third-party applications. Given these unique capabilities, we think email will be a core interface for agents. But we were building on top of Gmail, which was a struggle: poor API support, expensive subscriptions, rate limits, sending limits, GCP Pub/Sub, OAuth, crappy keyword search, and an overall terrible developer experience. Gmail and other providers didn’t work for us. So we decided to bite the bullet and build our own. AgentMail is…",
+      "keywords": [],
+      "relevance": 0.444,
+      "signals": [
+        {
+          "kind": "traction",
+          "label": "121 points and 70 comments on Hacker News",
+          "value": 121.0,
+          "observed_at": "2025-07-31T14:08:33Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=44745820",
+            "retrieved_at": "2026-08-13T15:14:24.385263Z"
+          }
+        },
+        {
+          "kind": "freshness",
+          "label": "Launched on HN 31 Jul 2025",
+          "value": null,
+          "observed_at": "2025-07-31T14:08:33Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=44745820",
+            "retrieved_at": "2026-08-13T15:14:24.385263Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Posted and answered questions as HN user @Haakam21",
+          "value": null,
+          "observed_at": "2025-07-31T14:08:33Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=44745820",
+            "retrieved_at": "2026-08-13T15:14:24.385263Z"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=44745820",
+          "retrieved_at": "2026-08-13T15:14:24.385263Z"
+        }
+      ]
+    },
+    {
+      "slug": "spine-swarm",
+      "name": "Spine Swarm",
+      "website": "https://www.getspine.ai/",
+      "one_liner": "AI agents that collaborate on a visual canvas",
+      "description": "Hey HN! We're Ashwin and Akshay from Spine AI ( https://www.getspine.ai ). Spine Swarm is a multi-agent system that works on an infinite visual canvas to complete complex non-coding projects: competitive analysis, financial modeling, SEO audits, pitch decks, interactive prototypes, and more. Here's a video of it in action: https://www.youtube.com/watch?v=R_2-ggpZz0Q . We've been friends for over 13 years. We took our first ML course together at NTU, in a part of campus called North Spine, which is where the name comes from. We went through YC in S23 and have spent about 3 years building Spine across many product iterations. The core idea: chat is the wrong interface for complex AI work. It's a linear thread, and real projects aren't linear. Sure, you can ask a chatbot to reference the…",
+      "keywords": [],
+      "relevance": 0.444,
+      "signals": [
+        {
+          "kind": "traction",
+          "label": "109 points and 69 comments on Hacker News",
+          "value": 109.0,
+          "observed_at": "2026-03-13T13:22:40Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=47364116",
+            "retrieved_at": "2026-08-13T15:14:23.500299Z"
+          }
+        },
+        {
+          "kind": "freshness",
+          "label": "Launched on HN 13 Mar 2026",
+          "value": null,
+          "observed_at": "2026-03-13T13:22:40Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=47364116",
+            "retrieved_at": "2026-08-13T15:14:23.500299Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Posted and answered questions as HN user @a24venka",
+          "value": null,
+          "observed_at": "2026-03-13T13:22:40Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=47364116",
+            "retrieved_at": "2026-08-13T15:14:23.500299Z"
+          }
+        },
+        {
+          "kind": "freshness",
+          "label": "YC S23 batch",
+          "value": null,
+          "observed_at": "2026-03-13T13:22:40Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=47364116",
+            "retrieved_at": "2026-08-13T15:14:23.500299Z"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=47364116",
+          "retrieved_at": "2026-08-13T15:14:23.500299Z"
+        }
+      ]
+    },
+    {
+      "slug": "peerd",
+      "name": "peerd",
+      "website": "https://github.com/NotASithLord/peerd",
+      "one_liner": "AI agent harness that runs entirely in your browser",
+      "description": "Hey HN. http://peerd.ai is an AI agent harness that lives entirely in your browser as a web extension. You don’t have to install a separate “AI browser”. You don’t have to bolt on or run some external process or manage a clunky mcp integration. It’s just a fully contained web extension, written in no build vanilla JS with minimal non-browser dependencies, using your own provider keys, and Apache 2. This isn’t just a fun hack. While it has largely been a solo side project, I genuinely believe the browser and the web could be the most natural platform for AI agents to operate safely, autonomously, and most importantly without A2A middlemen (more on that in a sec). To demonstrate that point peerd doesn’t just drive browser automation. It spins up isolated sandboxes using tabs and worker…",
+      "keywords": [],
+      "relevance": 0.444,
+      "signals": [
+        {
+          "kind": "traction",
+          "label": "75 points and 23 comments on Hacker News",
+          "value": 75.0,
+          "observed_at": "2026-06-23T15:05:00Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=48646165",
+            "retrieved_at": "2026-08-13T15:14:24.382483Z"
+          }
+        },
+        {
+          "kind": "freshness",
+          "label": "Launched on HN 23 Jun 2026",
+          "value": null,
+          "observed_at": "2026-06-23T15:05:00Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=48646165",
+            "retrieved_at": "2026-08-13T15:14:24.382483Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Posted and answered questions as HN user @NotASithLord",
+          "value": null,
+          "observed_at": "2026-06-23T15:05:00Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=48646165",
+            "retrieved_at": "2026-08-13T15:14:24.382483Z"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48646165",
+          "retrieved_at": "2026-08-13T15:14:24.382483Z"
+        }
+      ]
+    },
+    {
+      "slug": "voker",
+      "name": "Voker",
+      "website": "https://voker.ai",
+      "one_liner": "Analytics for AI Agents",
+      "description": "Hey HN, we're Alex and Tyler, co-founders of Voker.ai ( https://voker.ai/ ), an agent analytics platform for AI product teams. Voker gives full visibility into what users are asking of your agents, and whether your agents are delivering, without having to dig through logs. Our main product is a lightweight SDK that is LLM stack agnostic and purpose-built for agent products. ( https://app.voker.ai/docs ) Agent Engineers and AI product teams don’t have the right level of visibility into agent performance in production, which results in bad user experiences, churn, and hundreds of hours wasted with spot checks to find and debug issues with agent configurations. Demo: https://www.tella.tv/video/vid_cmoukcsk1000i07jgb4j65u67/vie... We recently conducted a survey of YC Founders and 90%+ of…",
+      "keywords": [],
+      "relevance": 0.444,
+      "signals": [
+        {
+          "kind": "traction",
+          "label": "59 points and 22 comments on Hacker News",
+          "value": 59.0,
+          "observed_at": "2026-05-12T15:45:20Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=48109962",
+            "retrieved_at": "2026-08-13T15:14:23.498836Z"
+          }
+        },
+        {
+          "kind": "freshness",
+          "label": "Launched on HN 12 May 2026",
+          "value": null,
+          "observed_at": "2026-05-12T15:45:20Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=48109962",
+            "retrieved_at": "2026-08-13T15:14:23.498836Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Posted and answered questions as HN user @ttpost",
+          "value": null,
+          "observed_at": "2026-05-12T15:45:20Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=48109962",
+            "retrieved_at": "2026-08-13T15:14:23.498836Z"
+          }
+        },
+        {
+          "kind": "freshness",
+          "label": "YC S24 batch",
+          "value": null,
+          "observed_at": "2026-05-12T15:45:20Z",
+          "provenance": {
+            "source": "hn",
+            "url": "https://news.ycombinator.com/item?id=48109962",
+            "retrieved_at": "2026-08-13T15:14:23.498836Z"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48109962",
+          "retrieved_at": "2026-08-13T15:14:23.498836Z"
+        }
+      ]
+    },
+    {
+      "slug": "tovenai",
+      "name": "TovenAI",
+      "website": "https://toven.ai",
+      "one_liner": "AI agents for compliance at institutional trading firms",
+      "description": "TovenAI builds a platform of AI agents that handle manual, data-intensive work for compliance teams at institutional trading firms, with six agents currently live. Our customers range from specialist firms to large global institutions, with our agents supporting multiple compliance workflows at a top-10 institutional brokerage.\r\n\r\nWith prebuilt connectors to more than 30 systems—including Bloomberg, Cloud9, and NICE Actimize—firms can onboard to our platform and evaluate results using their own data in less than a week.",
+      "keywords": [
+        "AI",
+        "Banking and Exchange",
+        "Fintech",
+        "Regtech"
+      ],
+      "relevance": 0.444,
+      "signals": [
+        {
+          "kind": "freshness",
+          "label": "YC Summer 2026 batch",
+          "value": null,
+          "observed_at": "2026-08-12T18:45:17Z",
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/tovenai",
+            "retrieved_at": "2026-08-13T15:14:22.603504Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Team of 2",
+          "value": 2.0,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/tovenai",
+            "retrieved_at": "2026-08-13T15:14:22.603504Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Stage: Early",
+          "value": null,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/tovenai",
+            "retrieved_at": "2026-08-13T15:14:22.603504Z"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/tovenai",
+          "retrieved_at": "2026-08-13T15:14:22.603504Z"
+        }
+      ]
+    },
+    {
+      "slug": "trynearby",
+      "name": "TryNearby",
+      "website": "https://trynearby.com",
+      "one_liner": "Local creators for local businesses",
+      "description": "TryNearby connects local businesses with creators who live nearby. Restaurants subscribe monthly and automatically get booked visits from local creators who film, edit, and post a review to the local algorithm. This creates a steady stream of content that compounds into discovery on TikTok, Instagram, and increasingly AI search. Over 100 restaurants and thousands of creators are on the platform across Southern California, with AI agents handling matching, booking, and every creator conversation.",
+      "keywords": [
+        "B2B",
+        "Creator Economy",
+        "Marketing",
+        "Restaurant Tech",
+        "SMB"
+      ],
+      "relevance": 0.444,
+      "signals": [
+        {
+          "kind": "freshness",
+          "label": "YC Summer 2026 batch",
+          "value": null,
+          "observed_at": "2026-08-11T22:48:00Z",
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/trynearby",
+            "retrieved_at": "2026-08-13T15:14:22.603356Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Team of 5",
+          "value": 5.0,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/trynearby",
+            "retrieved_at": "2026-08-13T15:14:22.603356Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Stage: Early",
+          "value": null,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/trynearby",
+            "retrieved_at": "2026-08-13T15:14:22.603356Z"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/trynearby",
+          "retrieved_at": "2026-08-13T15:14:22.603356Z"
+        }
+      ]
+    },
+    {
+      "slug": "spaceflow-technologies-inc",
+      "name": "SpaceFlow Technologies, Inc.",
+      "website": "https://spaceflow.tech",
+      "one_liner": "The managed runtime for enterprise AI agents",
+      "description": "SpaceFlow is the managed runtime for AI agents that execute supply chain work across ERPs, email, spreadsheets, documents, and supplier portals. It turns fragmented operational data and SOPs into a governed context layer, then gives agents reusable skills and controlled access to enterprise tools.\r\n\r\nSpaceFlow agents normalize multi-round quotations, chase suppliers and delivery confirmations, repair incomplete requests, classify materials, reconcile phantom inventory, surface market signals, and help sales and operations planning teams continuously align demand, supply, inventory, purchasing deadlines, and freight decisions.\r\n\r\nSpaceFlow deploys in the customer’s cloud or on-prem environment with permissions, human approvals, observability, and audit trails, allowing industrial and regulated enterprises to automate high-stakes operations without replacing existing systems or moving sensitive data.",
+      "keywords": [
+        "B2B",
+        "Logistics",
+        "Manufacturing",
+        "Supply Chain",
+        "Supply Chain and Logistics",
+        "Workflow Automation"
+      ],
+      "relevance": 0.444,
+      "signals": [
+        {
+          "kind": "freshness",
+          "label": "YC Summer 2026 batch",
+          "value": null,
+          "observed_at": "2026-08-02T04:22:37Z",
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+            "retrieved_at": "2026-08-13T15:14:22.603549Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Team of 4",
+          "value": 4.0,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+            "retrieved_at": "2026-08-13T15:14:22.603549Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Stage: Early",
+          "value": null,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+            "retrieved_at": "2026-08-13T15:14:22.603549Z"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+          "retrieved_at": "2026-08-13T15:14:22.603549Z"
+        }
+      ]
+    },
+    {
+      "slug": "stratum-industries",
+      "name": "Stratum Industries",
+      "website": "https://stratumindustries.co/",
+      "one_liner": "AI agents that clear the U.S. government backlog.",
+      "description": "Stratum builds AI agents that clear the U.S. government backlog. Every permit, license, patent, drug approval, and benefits claim in America has to be reviewed by a government adjudicator and the software they rely on was built decades before AI. The result is millions of applications stuck in queues: veterans waiting on disability ratings, families waiting on pensions, builders waiting years to break ground.\r\n\r\nStratum replaces that workflow. A reviewer drops in an application, selects the rubric it needs to be checked against, and an agent plans, executes, and reviews the file end to end routing each step to the right model for the most accurate and cost-efficient decision. Hundreds of agents run in parallel in the cloud, with a human kept in the loop to approve and full auditability at every step, so an entire backlog can be cleared in the time it used to take to review a single file.\r\n\r\nWe're rebuilding the entire infrastructure the government runs on both the reviewer side and the applicant side - so filing and adjudication become instant instead of taking weeks.\r\n\r\nWe're Vihaan and Raj, brothers. Vihaan was founding engineer #3 at Cadastral (acquired by Legora) and dropped out of Waterloo to build Stratum. Raj led GTM at Deel, averaging 220% of quota over two years and ranking top 5 of 1,000+ reps globally, and dropped out of grad school at the University of Bath to build Stratum.",
+      "keywords": [
+        "AI",
+        "Automation",
+        "GovTech",
+        "Government"
+      ],
+      "relevance": 0.444,
+      "signals": [
+        {
+          "kind": "freshness",
+          "label": "YC Summer 2026 batch",
+          "value": null,
+          "observed_at": "2026-07-29T22:47:30Z",
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/stratum-industries",
+            "retrieved_at": "2026-08-13T15:14:22.603167Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Team of 2",
+          "value": 2.0,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/stratum-industries",
+            "retrieved_at": "2026-08-13T15:14:22.603167Z"
+          }
+        },
+        {
+          "kind": "team",
+          "label": "Stage: Early",
+          "value": null,
+          "observed_at": null,
+          "provenance": {
+            "source": "yc",
+            "url": "https://www.ycombinator.com/companies/stratum-industries",
+            "retrieved_at": "2026-08-13T15:14:22.603167Z"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/stratum-industries",
+          "retrieved_at": "2026-08-13T15:14:22.603167Z"
+        }
+      ]
+    }
+  ]
+}
