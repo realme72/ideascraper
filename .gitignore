@@ -1,0 +1,19 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# os
+.DS_Store
+
+# NOTE: data/ and memos/ are deliberately NOT ignored.
+# The assignment requires pipeline outputs to be committed so reviewers
+# don't need to re-run anything.
