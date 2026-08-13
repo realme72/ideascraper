@@ -6,9 +6,9 @@ Point it at a topic, get one-page investment memos out the other end — each
 ending in a clear **Pass / Watch / Take a meeting**, and each claim traceable back
 to the source it came from.
 
-> **Status: scaffolding.** No pipeline code yet. The repo currently contains the
-> working trail (`prompts/`, `docs/decisions.md`) and structure. Stage 1 starts at
-> `prompts/0002`.
+> **Status: scaffolding.** The four stages exist as modules with their
+> responsibilities documented, but no implementation yet. Stage 1 (sourcing) is
+> next — see `prompts/0003`.
 
 ---
 
@@ -41,9 +41,11 @@ No queue, no vector DB, no frontend — the brief explicitly rules those out.
 |---|---|
 | `prompts/` | Verbatim prompt log, written as work happened. Start here. |
 | `docs/decisions.md` | What was chosen, what was rejected, and why. |
-| `pipeline/` | The pipeline itself. |
+| `docs/thesis.md` | The thesis every score is measured against. |
+| `pipeline/` | The four stages, plus shared schemas (`models.py`) and the disk cache (`cache.py`). |
 | `data/` | Committed intermediate outputs — reviewers don't need to re-run. |
 | `memos/` | Committed final memos. |
+| `tests/` | Tests. |
 
 ## How this was built
 

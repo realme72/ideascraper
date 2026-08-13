@@ -66,8 +66,8 @@ than answered; they remain open.
 > things one by one and while commting we will push the prompt as well
 
 **What happened.** This entry, the prompt-log convention in `prompts/README.md`,
-the decision log, and the initial repo scaffolding. No pipeline code yet — that
-starts at `0002`.
+the decision log, and the initial repo scaffolding. No pipeline code yet — the
+folder structure follows in `0002`, and stage 1 in `0003`.
 
 ---
 
