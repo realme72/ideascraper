@@ -1,0 +1,12 @@
+{
+  "key": "d613fd2f362e2523",
+  "inputs": {
+    "url": "https://hn.algolia.com/api/v1/users/danenania"
+  },
+  "fetched_at": "2026-08-13T20:46:29.165092+00:00",
+  "payload": {
+    "about": "Currently an engineer at OpenAI working on Codex Security.<p>Past founder of Plandex: an open source AI coding agent - https:&#x2F;&#x2F;plandex.ai | dane@plandex.ai<p>Also past founder of EnvKey (YC W18): the simple, secure, open source configuration and secrets manager - https:&#x2F;&#x2F;www.envkey.com | dane@envkey.com<p>@Danenania on the twitters.",
+    "karma": 8084,
+    "username": "danenania"
+  }
+}

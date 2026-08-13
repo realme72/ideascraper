@@ -1,0 +1,1066 @@
+{
+  "key": "422963f97adfd6ad",
+  "inputs": {
+    "url": "https://hn.algolia.com/api/v1/items/43710576"
+  },
+  "fetched_at": "2026-08-13T20:46:28.796103+00:00",
+  "payload": {
+    "author": "danenania",
+    "children": [
+      {
+        "author": "maxwelljoslyn",
+        "children": [
+          {
+            "author": "danenania",
+            "children": [
+              {
+                "author": "lsdkfjlkasfj",
+                "children": [
+                  {
+                    "author": "danenania",
+                    "children": [],
+                    "created_at": "2025-04-18T15:28:49.000Z",
+                    "created_at_i": 1744990129,
+                    "id": 43728977,
+                    "options": [],
+                    "parent_id": 43725261,
+                    "points": null,
+                    "story_id": 43710576,
+                    "text": "A few differences:<p>- Plandex is more agentic\u2014it can complete a complex task, updating many files, all in one go.<p>- Changes are applied to a sandbox by default rather than directly to project files, helping you prevent unintended changes.<p>- Plandex can automatically find the context it needs in the project.<p>- Plandex can execute commands (like installing dependencies, running tests, etc.) and auto-debug if they fail.<p>- Plandex should be more reliable on file edits\u2014it uses an enhanced version of aider&#x27;s diff-style edit that is resilient to multiple occurrences, but it also has validation, a whole file fallback, and on the cloud service, a custom fast apply model is also added to the mix. Will be publishing benchmarks on this soon.",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2025-04-18T05:21:44.000Z",
+                "created_at_i": 1744953704,
+                "id": 43725261,
+                "options": [],
+                "parent_id": 43710835,
+                "points": null,
+                "story_id": 43710576,
+                "text": "What are the main differences from aider?",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-04-16T21:55:46.000Z",
+            "created_at_i": 1744840546,
+            "id": 43710835,
+            "options": [],
+            "parent_id": 43710740,
+            "points": null,
+            "story_id": 43710576,
+            "text": "&gt; It seems that much like Aider, you use separate models for creating code edits and validating them.<p>That&#x27;s right. To apply edits, Plandex first attempts a deterministic edit based on the edit snippet. In some cases this can be used without validation, and in others a validation step is needed. A &quot;race&quot; is then orchestrated with o3-mini between an aider-style diff edit, a whole file build, and (on the cloud service) a specialized model. I actually wrote a comment about how this works (while maintaining efficiency&#x2F;cost-effectiveness) a couple days ago: <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43673412\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43673412</a><p>And on the Docker question, it should be working well on Mac.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "erikcelander",
+            "children": [
+              {
+                "author": "prophesi",
+                "children": [],
+                "created_at": "2025-04-17T13:06:21.000Z",
+                "created_at_i": 1744895181,
+                "id": 43716236,
+                "options": [],
+                "parent_id": 43714148,
+                "points": null,
+                "story_id": 43710576,
+                "text": "Should be noted that it&#x27;s proprietary and requires paying for a license for commercial&#x2F;business use.<p><a href=\"https:&#x2F;&#x2F;docs.orbstack.dev&#x2F;faq#free\" rel=\"nofollow\">https:&#x2F;&#x2F;docs.orbstack.dev&#x2F;faq#free</a>",
+                "title": null,
+                "type": "comment",
+                "url": null
+              },
+              {
+                "author": "volkk",
+                "children": [],
+                "created_at": "2025-04-17T14:06:30.000Z",
+                "created_at_i": 1744898790,
+                "id": 43717070,
+                "options": [],
+                "parent_id": 43714148,
+                "points": null,
+                "story_id": 43710576,
+                "text": "switched to this and never looked back",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-04-17T07:51:55.000Z",
+            "created_at_i": 1744876315,
+            "id": 43714148,
+            "options": [],
+            "parent_id": 43710740,
+            "points": null,
+            "story_id": 43710576,
+            "text": "orbstack &gt; docker on mac",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-04-16T21:43:49.000Z",
+        "created_at_i": 1744839829,
+        "id": 43710740,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "It seems that much like Aider, you use separate models for creating code edits and validating them. That&#x27;s a win in my book. It seems Claude Code does not do that, which is part of the reason it racks up a (relatively) large bill for long work sessions (that and the cost of sonnet-3.7).<p>I bounce back and forth between Aider, Claude Code, and Simon Willison&#x27;s LLM tool (&quot;just&quot; a GOOD wrapper for using LLMs at the CLI, unlike the other two which are agent-y.) LLM is my favorite because I usually don&#x27;t need&#x2F;want full autonomy, but Claude Code has started to win me over for straightforward stuff. Plandex looks cool enough to throw into the rotation!<p>My main concern at this point is that I use a Mac and as far as I understand it Docker containers can have pretty poor performance on the Mac, so I&#x27;m wondering if that will carry over to performance of Plandex. (I don&#x27;t use Docker at all so I&#x27;m not sure if that&#x27;s outdated info.)",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "chrisweekly",
+        "children": [
+          {
+            "author": "danenania",
+            "children": [],
+            "created_at": "2025-04-16T22:04:04.000Z",
+            "created_at_i": 1744841044,
+            "id": 43710888,
+            "options": [],
+            "parent_id": 43710745,
+            "points": null,
+            "story_id": 43710576,
+            "text": "Thanks for the kind words! I really appreciate it.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-04-16T21:44:19.000Z",
+        "created_at_i": 1744839859,
+        "id": 43710745,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "This looks powerful and useful. Also, IMHO it&#x27;s an exemplary &quot;Show HN&quot;; nice job w&#x2F; the description.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "handfuloflight",
+        "children": [],
+        "created_at": "2025-04-16T21:52:43.000Z",
+        "created_at_i": 1744840363,
+        "id": 43710811,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "How <i>efficient</i> is it in constructing context?",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "jmcpheron",
+        "children": [
+          {
+            "author": "danenania",
+            "children": [],
+            "created_at": "2025-04-17T00:24:47.000Z",
+            "created_at_i": 1744849487,
+            "id": 43711781,
+            "options": [],
+            "parent_id": 43711522,
+            "points": null,
+            "story_id": 43710576,
+            "text": "&gt; Would you classify Plandex as more similar to a terminal interface like Claude Code? Also it looks like Open AI released a similar terminal based tool today. <a href=\"https:&#x2F;&#x2F;github.com&#x2F;openai&#x2F;codex\">https:&#x2F;&#x2F;github.com&#x2F;openai&#x2F;codex</a><p>Yes, I would say Plandex is generally similar in spirit to both Claude Code and OpenAI&#x27;s new Codex tool. All three are agentic coding tools with a CLI interface.<p>A couple areas where I think Plandex can have an edge:<p>- Most importantly, it&#x27;s almost never the case these days that a single provider offers the best models across the board for coding. Instead, each provider has their strengths and weaknesses. By slotting in the best model for each role, regardless of provider, Plandex is able to get the best of all worlds. For example, it currently uses Sonnet 3.7 by default for planning and coding, which by most accounts is still the best coding model. But for the narrow task of file edits, o3-mini offers drastically better speed, cost, and overall results. Similarly, if you go above Sonnet 3.7&#x27;s context limit (200k tokens), Plandex can seamlessly move you over to a Gemini model.<p>- It offers some unique features, like writing all changes to a sandbox by default instead of directly to project files, that in my experience make a big difference for getting usable results and not leaving behind a mess by accident. I won&#x27;t list all the features again here, but if you go through the README, I think you&#x27;ll find a number of capabilities are quite helpful and aren&#x27;t offered by other tools.<p>&gt; Do you see an obvious distinctions or pros&#x2F;cons between the terminal tools and the IDE systems?<p>I&#x27;m a Cursor subscriber and I use both Cursor and Plandex regularly for different kinds of tasks. For me, Cursor works better for smaller, more localized changes, while Plandex offers a better workflow for tasks that involve many steps, many files, or need many attempts to figure out the right prompt (since Plandex has more robust version control). I think once you are editing many files in one go, the IDE tab-based paradigm starts to break down a bit and it can become difficult to keep a high level perspective on everything that&#x27;s changing.<p>Also, I&#x27;d say the terminal is naturally a better fit for executing scripts, installing dependencies, running tests and so on. It has your environment already configured, and it&#x27;s able to control execution in a much more structured and reliable way. Plandex, for example, can tentatively apply a bunch of pending changes to your project, execute an LLM-generated script, and then roll back everything if the script fails. It&#x27;s pretty hard to achieve that kind of low-level process control from an IDE.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-04-16T23:41:57.000Z",
+        "created_at_i": 1744846917,
+        "id": 43711522,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "Plandex was one of the first agentic style coating system to I tried several months ago, and it worked very well. But I&#x27;ve been using the cursor and windsurf style editors more recently because of their popularity. And their effectiveness is honestly pretty great.<p>Would you classify Plandex as more similar to a terminal interface like Claude Code? Also it looks like Open AI released a similar terminal based tool today. <a href=\"https:&#x2F;&#x2F;github.com&#x2F;openai&#x2F;codex\">https:&#x2F;&#x2F;github.com&#x2F;openai&#x2F;codex</a><p>Do you see an obvious distinctions or pros&#x2F;cons between the terminal tools and the IDE systems?",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "ramesh31",
+        "children": [
+          {
+            "author": "victor9000",
+            "children": [
+              {
+                "author": "nidnogg",
+                "children": [
+                  {
+                    "author": "danenania",
+                    "children": [],
+                    "created_at": "2025-04-17T15:45:20.000Z",
+                    "created_at_i": 1744904720,
+                    "id": 43718541,
+                    "options": [],
+                    "parent_id": 43717081,
+                    "points": null,
+                    "story_id": 43710576,
+                    "text": "Just to note, apart from git diff style diffs, Plandex also offers a web UI for side-by-side diff comparison\u2014similar to GitHub&#x27;s PR review UI.",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2025-04-17T14:07:20.000Z",
+                "created_at_i": 1744898840,
+                "id": 43717081,
+                "options": [],
+                "parent_id": 43712944,
+                "points": null,
+                "story_id": 43710576,
+                "text": "Good luck with a quick git diff spanning thousands of lines. AI code can be notoriously verbose and over engineered. Of course you want to be in control.",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-04-17T03:49:02.000Z",
+            "created_at_i": 1744861742,
+            "id": 43712944,
+            "options": [],
+            "parent_id": 43712711,
+            "points": null,
+            "story_id": 43710576,
+            "text": "UI&#x2F;UX is one of the last things I&#x27;m worried about when leveraging generative tools.  When I need to inspect what the model has done, a quick git diff does the trick.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-04-17T03:07:08.000Z",
+        "created_at_i": 1744859228,
+        "id": 43712711,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "CLI interfaces are not where it&#x27;s at for this stuff.<p>What makes Cline the king of codegen agents right now IMO (from a UI&#x2F;UX perspective) is how well they handle displaying the code, opening files, and scrolling the cursor as it changes. Even in a fully autonomous agentic flow, you still really want to be <i>reading</i> the code as it is written, to maintain context and keep steering it correctly. Having to go back and look at a huge diff after all of your updates is a real pain and slows things down.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "jtwaleson",
+        "children": [
+          {
+            "author": "danenania",
+            "children": [
+              {
+                "author": "jtwaleson",
+                "children": [],
+                "created_at": "2025-04-17T17:07:50.000Z",
+                "created_at_i": 1744909670,
+                "id": 43719602,
+                "options": [],
+                "parent_id": 43718131,
+                "points": null,
+                "story_id": 43710576,
+                "text": "Thanks! Quite a bit more money than Cursor (probably better quality, as Cursor&#x27;s context is limited) but still peanuts compared to hiring someone :)",
+                "title": null,
+                "type": "comment",
+                "url": null
+              },
+              {
+                "author": "dr_kiszonka",
+                "children": [
+                  {
+                    "author": "danenania",
+                    "children": [],
+                    "created_at": "2025-04-17T22:39:59.000Z",
+                    "created_at_i": 1744929599,
+                    "id": 43722998,
+                    "options": [],
+                    "parent_id": 43722733,
+                    "points": null,
+                    "story_id": 43710576,
+                    "text": "Hi, thanks! Yes, you could either:<p>- Add that directory to either .gitignore (in a git repo) or a .plandexignore file (which uses gitignore syntax).<p>- You can switch to a mode where context is not loaded automatically and you choose the files yourself instead (more on this here: <a href=\"https:&#x2F;&#x2F;docs.plandex.ai&#x2F;core-concepts&#x2F;autonomy\" rel=\"nofollow\">https:&#x2F;&#x2F;docs.plandex.ai&#x2F;core-concepts&#x2F;autonomy</a>).",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2025-04-17T22:05:14.000Z",
+                "created_at_i": 1744927514,
+                "id": 43722733,
+                "options": [],
+                "parent_id": 43718131,
+                "points": null,
+                "story_id": 43710576,
+                "text": "Hi. Nice product!<p>Let&#x27;s say I have a repo for an NLP project. One directory contains a few thousand text files. Can I tell Plandex to never ever index and access them? For my use case, I wish projects in this space always asked me before accessing anything. Claude recently decided to install seven Python packages and grabbed full terminal output following installation, which turned out pretty expensive (and useless).",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-04-17T15:16:14.000Z",
+            "created_at_i": 1744902974,
+            "id": 43718131,
+            "options": [],
+            "parent_id": 43712909,
+            "points": null,
+            "story_id": 43710576,
+            "text": "It&#x27;s a bit hard to give &quot;typical&quot; costs because it&#x27;s so dependent on how you use it. The project map size (which scales with overall project size) and the number&#x2F;size of relevant files are the main drivers of cost, so working in large existing codebases will be a lot more expensive than generating a new app from scratch.<p>Taking Plandex&#x27;s codebase as an example, it&#x27;s certainly not huge but is getting to be decent-sized\u2014I just ran a count and it&#x27;s at about 200k lines (mostly Go), which translates to a project map of ~43k tokens. I have a task in progress right now to add a json config file for model settings and other project settings. To get to a pretty good initial version of this feature, I first did a fair amount of back-and-forth in &#x27;chat mode&#x27; to pin down the details (maybe 10 or so prompts) and then an implementation phase where ~15 files were updated. The cost so far is at a little under $10.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-04-17T03:43:12.000Z",
+        "created_at_i": 1744861392,
+        "id": 43712909,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "Nice! I tried it out when you launched last year but found it pretty expensive to use. I believe I spent $5 for half an hour of coding or so. Can you share what the typical costs are now, since the model prices have changed significantly?",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "sreejithr",
+        "children": [],
+        "created_at": "2025-04-17T04:20:35.000Z",
+        "created_at_i": 1744863635,
+        "id": 43713099,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "we cooked?",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "sagarpatil",
+        "children": [
+          {
+            "author": "viraptor",
+            "children": [
+              {
+                "author": "danenania",
+                "children": [],
+                "created_at": "2025-04-17T15:52:35.000Z",
+                "created_at_i": 1744905155,
+                "id": 43718637,
+                "options": [],
+                "parent_id": 43713695,
+                "points": null,
+                "story_id": 43710576,
+                "text": "Yeah, you&#x27;re spot on. Rather than just continuously marketing and iterating on the v1, which was designed more for AI codegen&#x27;s early experimental phase, I decided to go heads down on engineering and try to get to more of a step change on reliability and robustness.<p>It&#x27;s not a total rewrite and is still based on v1&#x27;s foundations, but quite a lot of the core functionality has been reworked.",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-04-17T06:27:47.000Z",
+            "created_at_i": 1744871267,
+            "id": 43713695,
+            "options": [],
+            "parent_id": 43713520,
+            "points": null,
+            "story_id": 43710576,
+            "text": "Maybe because they had a release hiatus for a bit. V1 was cool and had great ideas &#x2F; interface, but needed some polish in practice (new models weren&#x27;t well supported, it for in endless cycles, etc.) The explicit planning, server model, visible steps and a few other novel things were impressive though.<p>Hopefully the V2 will bring the polish and reliability.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "danenania",
+            "children": [],
+            "created_at": "2025-04-17T15:39:18.000Z",
+            "created_at_i": 1744904358,
+            "id": 43718445,
+            "options": [],
+            "parent_id": 43713520,
+            "points": null,
+            "story_id": 43710576,
+            "text": "Thanks! Looking forward to hearing your thoughts.<p>&gt; Please up your marketing game, the product looks solid!<p>Working on it!",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "djhn",
+            "children": [
+              {
+                "author": "sagarpatil",
+                "children": [],
+                "created_at": "2025-04-21T05:29:18.000Z",
+                "created_at_i": 1745213358,
+                "id": 43748729,
+                "options": [],
+                "parent_id": 43725677,
+                "points": null,
+                "story_id": 43710576,
+                "text": "Hey. It\u2019s a personal interest. I don\u2019t know how and when it started but now it\u2019s become a habit.",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-04-18T06:55:25.000Z",
+            "created_at_i": 1744959325,
+            "id": 43725677,
+            "options": [],
+            "parent_id": 43713520,
+            "points": null,
+            "story_id": 43710576,
+            "text": "Are you getting paid to research AI products in some capacity or is this a personal interest and time investment?",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-04-17T05:53:02.000Z",
+        "created_at_i": 1744869182,
+        "id": 43713520,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "I spend hours everyday researching AI products. Why am I only hearing about plandex now? Looks very promising, I\u2019ll give it a try.\nPlease up your marketing game, the product looks solid!",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "ako",
+        "children": [
+          {
+            "author": "danenania",
+            "children": [],
+            "created_at": "2025-04-17T15:47:13.000Z",
+            "created_at_i": 1744904833,
+            "id": 43718565,
+            "options": [],
+            "parent_id": 43713977,
+            "points": null,
+            "story_id": 43710576,
+            "text": "Another way to think about it is the 8 months of work I did would have taken years without help from AI tools (including Plandex itself).",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-04-17T07:19:43.000Z",
+        "created_at_i": 1744874383,
+        "id": 43713977,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "Interesting to see that even with these type of tools coding it takes 8 months. That is not the general impression people have of ai assisted coding. Any thoughts on how you could improve plandex to bring down 8 months to 1 month or less?",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "MadsRC",
+        "children": [
+          {
+            "author": "danenania",
+            "children": [],
+            "created_at": "2025-04-17T15:32:40.000Z",
+            "created_at_i": 1744903960,
+            "id": 43718350,
+            "options": [],
+            "parent_id": 43714056,
+            "points": null,
+            "story_id": 43710576,
+            "text": "Thanks!<p>Yes, you can add &#x27;custom models&#x27; and set the base url. More on this here: <a href=\"https:&#x2F;&#x2F;docs.plandex.ai&#x2F;models&#x2F;model-settings\" rel=\"nofollow\">https:&#x2F;&#x2F;docs.plandex.ai&#x2F;models&#x2F;model-settings</a>",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-04-17T07:35:45.000Z",
+        "created_at_i": 1744875345,
+        "id": 43714056,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "This looks great!<p>With the self-host option, it\u2019s not really clear through the docs if one is able to override the base url of the different model providers?<p>I\u2019m running my own OpenAI, Anthropic, Vertex and Bedrock compatible API, can I have it use that instead?",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "Yiling-J",
+        "children": [
+          {
+            "author": "danenania",
+            "children": [],
+            "created_at": "2025-04-17T15:29:57.000Z",
+            "created_at_i": 1744903797,
+            "id": 43718307,
+            "options": [],
+            "parent_id": 43715355,
+            "points": null,
+            "story_id": 43710576,
+            "text": "Thanks for flagging\u2014I&#x27;ll take a look at this.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-04-17T11:41:21.000Z",
+        "created_at_i": 1744890081,
+        "id": 43715355,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "I noticed there&#x27;s an example in the docs: plandex rm app&#x2F;**&#x2F;*.ts # by glob pattern.<p>However, looking at the code (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;plandex-ai&#x2F;plandex&#x2F;blob&#x2F;main&#x2F;app&#x2F;cli&#x2F;cmd&#x2F;rm.go#L62\">https:&#x2F;&#x2F;github.com&#x2F;plandex-ai&#x2F;plandex&#x2F;blob&#x2F;main&#x2F;app&#x2F;cli&#x2F;cmd&#x2F;...</a>), it seems you&#x27;re using path&#x2F;filepath for pattern matching, which doesn&#x27;t support double star patterns. Here&#x27;s a playground example showing that: <a href=\"https:&#x2F;&#x2F;go.dev&#x2F;play&#x2F;p&#x2F;n8mFpJn-9iY\" rel=\"nofollow\">https:&#x2F;&#x2F;go.dev&#x2F;play&#x2F;p&#x2F;n8mFpJn-9iY</a>",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "lsllc",
+        "children": [
+          {
+            "author": "danenania",
+            "children": [
+              {
+                "author": "lsllc",
+                "children": [
+                  {
+                    "author": "danenania",
+                    "children": [],
+                    "created_at": "2025-04-17T16:07:00.000Z",
+                    "created_at_i": 1744906020,
+                    "id": 43718802,
+                    "options": [],
+                    "parent_id": 43718739,
+                    "points": null,
+                    "story_id": 43710576,
+                    "text": "I see\u2014fixed it, thanks!",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2025-04-17T16:01:35.000Z",
+                "created_at_i": 1744905695,
+                "id": 43718739,
+                "options": [],
+                "parent_id": 43718470,
+                "points": null,
+                "story_id": 43710576,
+                "text": "In the table showing the hosting options lower down in the README, the 3rd row is titled &quot;Self-hosted&#x2F;Local Mode&quot;, but the link in &quot;Follow the *local-mode quickstart* to get started.&quot; goes to a GH 404 page.",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-04-17T15:40:51.000Z",
+            "created_at_i": 1744904451,
+            "id": 43718470,
+            "options": [],
+            "parent_id": 43715766,
+            "points": null,
+            "story_id": 43710576,
+            "text": "Do you mean at the top of the README or somewhere else? The link at the top seems to be working for me.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-04-17T12:23:18.000Z",
+        "created_at_i": 1744892598,
+        "id": 43715766,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "The link in the README.md to &quot;local-mode quickstart&quot; seems broken.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "mertleee",
+        "children": [
+          {
+            "author": "danenania",
+            "children": [],
+            "created_at": "2025-04-17T15:58:02.000Z",
+            "created_at_i": 1744905482,
+            "id": 43718700,
+            "options": [],
+            "parent_id": 43717614,
+            "points": null,
+            "story_id": 43710576,
+            "text": "There are pros and cons to different interfaces for sure. Personally, I&#x27;d want to have a CLI-based codegen tool in my toolkit even if I hadn&#x27;t created Plandex, as there are benefits (environment configuration, execution control, file management, piping data, to name a few) that you can&#x27;t easily get outside of a CLI.<p>I also personally find the IDE unwieldy for reviewing large diffs (e.g. dozens of files). I much prefer a vertically-scrolling side-by-side comparison view like GitHub&#x27;s PR review UI (which Plandex offers).",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "shotgun",
+            "children": [],
+            "created_at": "2025-04-17T17:34:50.000Z",
+            "created_at_i": 1744911290,
+            "id": 43719913,
+            "options": [],
+            "parent_id": 43717614,
+            "points": null,
+            "story_id": 43710576,
+            "text": "Are you saying GUI IDEs are best? Or is there an ideal kind of interface we haven&#x27;t yet seen?",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-04-17T14:42:33.000Z",
+        "created_at_i": 1744900953,
+        "id": 43717614,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "CLI is the worst possible interface for coding llms.  Especially for &quot;larger&quot; projects.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "lightdot",
+        "children": [
+          {
+            "author": "danenania",
+            "children": [
+              {
+                "author": "lightdot",
+                "children": [
+                  {
+                    "author": "danenania",
+                    "children": [],
+                    "created_at": "2025-04-17T16:35:07.000Z",
+                    "created_at_i": 1744907707,
+                    "id": 43719181,
+                    "options": [],
+                    "parent_id": 43718997,
+                    "points": null,
+                    "story_id": 43710576,
+                    "text": "Well, I simply disagree with you that it&#x27;s a &quot;bad practice&quot;, and I have a fair amount of security experience. But you&#x27;re entitled to your opinion.<p>You can also build from source if you prefer: <a href=\"https:&#x2F;&#x2F;docs.plandex.ai&#x2F;install&#x2F;#build-from-source\" rel=\"nofollow\">https:&#x2F;&#x2F;docs.plandex.ai&#x2F;install&#x2F;#build-from-source</a>",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  },
+                  {
+                    "author": "stronglikedan",
+                    "children": [],
+                    "created_at": "2025-04-17T17:53:40.000Z",
+                    "created_at_i": 1744912420,
+                    "id": 43720160,
+                    "options": [],
+                    "parent_id": 43718997,
+                    "points": null,
+                    "story_id": 43710576,
+                    "text": "The instructions presume that one would follow best practices when installing something where the source is available, and doesn&#x27;t need to explicitly include all the steps to do so in this context. You are correct in that it would be bad practice to blindly install something, but knowing what you are installing is the first step to installing when you are following best practices. That onus is on the person doing the installing, not the installation instructions.",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2025-04-17T16:20:24.000Z",
+                "created_at_i": 1744906824,
+                "id": 43718997,
+                "options": [],
+                "parent_id": 43718210,
+                "points": null,
+                "story_id": 43710576,
+                "text": "Of course one can and should read the script before running it, but the instructions promote just the opposite.<p>Even if we skip a step ahead and consider that this script then installs a binary blob... the situation doesn&#x27;t get any better, does it?<p>If you find any of this as something normal and acceptable, I can only strongly disagree. Such bad practices should be discouraged.<p>On the other hand, using a distro&#x27;s package manager and a set of community approved packages is a far better choice when installing software, security vise. I really don&#x27;t see how you could compare the two without plainly seeing the difference, from a security perspective.<p>As an alternative, if the software is not available through a distro&#x27;s package manager, one should inspect and compile the code. This project provides the instructions to do so, they are just not promoted as a first choice.<p>I can&#x27;t help coming to a conclusion, that you&#x27;ve largely made my point about bad practices and having a wrong mindset when it comes to software security.",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-04-17T15:21:49.000Z",
+            "created_at_i": 1744903309,
+            "id": 43718210,
+            "options": [],
+            "parent_id": 43717668,
+            "points": null,
+            "story_id": 43710576,
+            "text": "You can read the script before installing. It&#x27;s pretty straightforward\u2014just grabs the appropriate binary from GitHub and puts it in &#x2F;usr&#x2F;local&#x2F;bin.<p>Installing via package managers or installers also runs remote 3rd party code on your machine, so I don&#x27;t see much difference from a security perspective. You should make sure you trust the source before installing anything.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "bottled_poe",
+            "children": [],
+            "created_at": "2025-04-18T04:26:13.000Z",
+            "created_at_i": 1744950373,
+            "id": 43725014,
+            "options": [],
+            "parent_id": 43717668,
+            "points": null,
+            "story_id": 43710576,
+            "text": "How is this any different to downloading and running a binary?",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-04-17T14:45:54.000Z",
+        "created_at_i": 1744901154,
+        "id": 43717668,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "From the Github page: &quot;curl -sL <a href=\"https:&#x2F;&#x2F;plandex.ai&#x2F;install.sh\" rel=\"nofollow\">https:&#x2F;&#x2F;plandex.ai&#x2F;install.sh</a> | bash&quot;<p>Enticing users to blindly run remote 3rd party code on their machines is IMHO not a proper thing to do.<p>This approach creates a dangerous mindset when it comes to security and good practices in general.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "gcanyon",
+        "children": [
+          {
+            "author": "danenania",
+            "children": [],
+            "created_at": "2025-04-17T15:29:04.000Z",
+            "created_at_i": 1744903744,
+            "id": 43718286,
+            "options": [],
+            "parent_id": 43718142,
+            "points": null,
+            "story_id": 43710576,
+            "text": "The project map supports markdown files (and html), so you could definitely use it to explore docs, notes, etc. if they&#x27;re all in markdown&#x2F;html. Plaintext files aren&#x27;t currently mapped though, so just the file name would be used to determine whether to load those.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-04-17T15:16:58.000Z",
+        "created_at_i": 1744903018,
+        "id": 43718142,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "&gt; It has an effective context window of 2M tokens, and can index projects of 20M tokens and beyond using tree-sitter project maps (30+ languages are supported). It can effectively find relevant context in massive million-line projects like SQLite, Redis, and Git.<p>Does this possibly have non-coding-related utility for general reasoning about large volumes of text?",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "zamalek",
+        "children": [
+          {
+            "author": "danenania",
+            "children": [],
+            "created_at": "2025-04-17T16:40:00.000Z",
+            "created_at_i": 1744908000,
+            "id": 43719254,
+            "options": [],
+            "parent_id": 43719079,
+            "points": null,
+            "story_id": 43710576,
+            "text": "Yeah, I&#x27;ve definitely thought about this. I would likely try to do it through tree-sitter to keep it as light and language-agnostic as possible vs. language-specific LSP integrations, but I agree it could be very helpful.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-04-17T16:25:49.000Z",
+        "created_at_i": 1744907149,
+        "id": 43719079,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "Have you considered adding LSP support? I anticipate go-to-defintion&#x2F;implementation and go-to-usages being pretty useful via MCP or function calling. I started doing this for an internal tool a while back (to help with understanding some really poorly written Ruby) but I don&#x27;t find any joy in coding this kind of stuff and have been hoping for someone else to do it instead.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "killerstorm",
+        "children": [
+          {
+            "author": "vunderba",
+            "children": [
+              {
+                "author": "danenania",
+                "children": [],
+                "created_at": "2025-04-17T17:14:03.000Z",
+                "created_at_i": 1744910043,
+                "id": 43719681,
+                "options": [],
+                "parent_id": 43719459,
+                "points": null,
+                "story_id": 43710576,
+                "text": "OpenRouter charges a bit extra on credits, and adds some latency with the extra hop, so I decided to keep the OpenAI calls direct by default.<p>I hear you though that it&#x27;s a bit of extra hassle to need two accounts, and you&#x27;re right that it could just use OpenRouter only. The OpenRouter OpenAI endpoints <i>are</i> included as built-in models in Plandex (and can be used via \\set-model or a custom model pack - <a href=\"https:&#x2F;&#x2F;docs.plandex.ai&#x2F;models&#x2F;model-settings\" rel=\"nofollow\">https:&#x2F;&#x2F;docs.plandex.ai&#x2F;models&#x2F;model-settings</a>).<p>I&#x27;m also working on allowing direct model provider access in general so that OpenRouter can be optional.<p>Maybe a quick onboard flow to choose preferred models&#x2F;providers would be helpful when starting out (OpenRouter only, OpenRouter + OpenAI, direct providers only, etc.).",
+                "title": null,
+                "type": "comment",
+                "url": null
+              },
+              {
+                "author": "killerstorm",
+                "children": [],
+                "created_at": "2025-04-17T19:02:30.000Z",
+                "created_at_i": 1744916550,
+                "id": 43720834,
+                "options": [],
+                "parent_id": 43719459,
+                "points": null,
+                "story_id": 43710576,
+                "text": "FWIW I got it working by selecting oss or anthropic model packs. But I had some OpenAI key... maybe it would work with a dummy.",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-04-17T16:56:13.000Z",
+            "created_at_i": 1744908973,
+            "id": 43719459,
+            "options": [],
+            "parent_id": 43719255,
+            "points": null,
+            "story_id": 43710576,
+            "text": "Yeah, I noticed that (needing a dedicated OpenAI key) as well for the BYO key plan. It&#x27;s a little bit odd considering that open router has access to the open AI models.<p><a href=\"https:&#x2F;&#x2F;openrouter.ai&#x2F;openai\" rel=\"nofollow\">https:&#x2F;&#x2F;openrouter.ai&#x2F;openai</a>",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "throwup238",
+            "children": [
+              {
+                "author": "danenania",
+                "children": [
+                  {
+                    "author": "throwup238",
+                    "children": [
+                      {
+                        "author": "danenania",
+                        "children": [
+                          {
+                            "author": "throwup238",
+                            "children": [
+                              {
+                                "author": "danenania",
+                                "children": [],
+                                "created_at": "2025-04-17T22:50:32.000Z",
+                                "created_at_i": 1744930232,
+                                "id": 43723058,
+                                "options": [],
+                                "parent_id": 43720520,
+                                "points": null,
+                                "story_id": 43710576,
+                                "text": "Email pins are disabled based on a LOCAL_MODE environment variable, which is set in the docker-compose config. I&#x27;ll take a look.",
+                                "title": null,
+                                "type": "comment",
+                                "url": null
+                              }
+                            ],
+                            "created_at": "2025-04-17T18:30:49.000Z",
+                            "created_at_i": 1744914649,
+                            "id": 43720520,
+                            "options": [],
+                            "parent_id": 43720387,
+                            "points": null,
+                            "story_id": 43710576,
+                            "text": "Yes, it showed up for me, luckily I had the logs open and remembered that was the solution in v1 (it wasn\u2019t documented back then iirc). I git pulled in the same directory I ran v1 in so maybe there\u2019s some sort of left over config or something?",
+                            "title": null,
+                            "type": "comment",
+                            "url": null
+                          }
+                        ],
+                        "created_at": "2025-04-17T18:15:01.000Z",
+                        "created_at_i": 1744913701,
+                        "id": 43720387,
+                        "options": [],
+                        "parent_id": 43720251,
+                        "points": null,
+                        "story_id": 43710576,
+                        "text": "It should already be skipping the email validation step in local mode. Is it showing up for you?<p>I\u2019ll look into the detached mode, thanks!",
+                        "title": null,
+                        "type": "comment",
+                        "url": null
+                      }
+                    ],
+                    "created_at": "2025-04-17T18:01:04.000Z",
+                    "created_at_i": 1744912864,
+                    "id": 43720251,
+                    "options": [],
+                    "parent_id": 43719701,
+                    "points": null,
+                    "story_id": 43710576,
+                    "text": "I would get rid of the email validation code for localhost, though. That remains the biggest annoyance when running it locally as a single user. I would also add a $@ to the docker-compose call in the bash start script so users can start it in detached mode.",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2025-04-17T17:15:45.000Z",
+                "created_at_i": 1744910145,
+                "id": 43719701,
+                "options": [],
+                "parent_id": 43719519,
+                "points": null,
+                "story_id": 43710576,
+                "text": "I&#x27;m glad to hear it went smoothly for you. It was definitely clunky in v1.",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-04-17T17:01:06.000Z",
+            "created_at_i": 1744909266,
+            "id": 43719519,
+            "options": [],
+            "parent_id": 43719255,
+            "points": null,
+            "story_id": 43710576,
+            "text": "The installation process for the FOSS version includes both the CLI (which is also used for the cloud version) and a docker-compose file for the server components. Last time I tried it (v1) it was quite clunky but yesterday with v2 it was quite a bit easier, with an explicit localhost option when using plandex login.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "danenania",
+            "children": [
+              {
+                "author": "killerstorm",
+                "children": [
+                  {
+                    "author": "danenania",
+                    "children": [
+                      {
+                        "author": "killerstorm",
+                        "children": [
+                          {
+                            "author": "danenania",
+                            "children": [],
+                            "created_at": "2025-04-18T15:32:35.000Z",
+                            "created_at_i": 1744990355,
+                            "id": 43729025,
+                            "options": [],
+                            "parent_id": 43724329,
+                            "points": null,
+                            "story_id": 43710576,
+                            "text": "I see, it sounds like \\continue is the issue\u2014this command is designed to continue with implementation rather than with a chat, so it switches you into &#x27;tell mode&#x27;. I&#x27;ll try to make that clearer, or to make it better handle chat mode. I can definitely see how it would be confusing.<p>The model pack shouldn&#x27;t be resetting, but a potential gotcha is that model settings are version controlled, so if you rewind to a point in the plan before the model settings were changed, you can undo those changes. Any chance that&#x27;s what happened? It&#x27;s a bit of a tradeoff since having those settings version controlled can also be useful in various ways.<p>This feedback is very valuable, so thanks again!",
+                            "title": null,
+                            "type": "comment",
+                            "url": null
+                          }
+                        ],
+                        "created_at": "2025-04-18T02:21:39.000Z",
+                        "created_at_i": 1744942899,
+                        "id": 43724329,
+                        "options": [],
+                        "parent_id": 43723039,
+                        "points": null,
+                        "story_id": 43710576,
+                        "text": "Here&#x27;s what happened:<p><pre><code>  1.  It started formulating the plan\n 2.  Got error from provider (it seems model set sometime randomly resets to default?!?)\n 3.  After I switched to different provider, I want it to continue planning, so I use \\continue command\n 4.  But when it gets \\continue command it starts writing code without asking anything!\n 5.  In the end it was still in chat mode. I never switched to tell mode, I just wanted it to keep planning.\n</code></pre>\nHere&#x27;s an excerpt: <a href=\"https:&#x2F;&#x2F;gist.github.com&#x2F;killerstorm&#x2F;ad8afa19b2f55588eb317138561c37d1\" rel=\"nofollow\">https:&#x2F;&#x2F;gist.github.com&#x2F;killerstorm&#x2F;ad8afa19b2f55588eb317138...</a><p>It went from entry 3 &quot;Made Plan&quot; to entry 4 and so on without any input from my end.<p>I could not reproduce the second issue this time: I didn&#x27;t get the same menu and it was more chill.",
+                        "title": null,
+                        "type": "comment",
+                        "url": null
+                      }
+                    ],
+                    "created_at": "2025-04-17T22:46:28.000Z",
+                    "created_at_i": 1744929988,
+                    "id": 43723039,
+                    "options": [],
+                    "parent_id": 43720525,
+                    "points": null,
+                    "story_id": 43710576,
+                    "text": "Thanks, I appreciate the feedback.<p>&gt; Oddly, in the default mode out of box it does not want to discuss the plan with me but just jumps to implementation.<p>It should be starting you out in &quot;chat mode&quot;. Do you mean that you&#x27;re prompted to begin implementation at the end of the chat response? You can just choose the &#x27;no&#x27; option if that&#x27;s the case and keep chatting.<p>Once you&#x27;re in &#x27;tell mode&#x27;, you can always switch back to chat mode with the &#x27;\\chat&#x27; command if you don&#x27;t want anything to be implemented.<p>&gt; And when it&#x27;s done writing code it aggressively wants me to decide whether to apply -- there&#x27;s no option to discuss changes, rewind back to planning, etc. Just &quot;APPLY OR REJECT!!!&quot;. Even Ctrl-C does not work! Not what I expected from software focused on planning...<p>This is just a menu to make the commands you&#x27;re most likely to need after a set of changes is finished. If you press &#x27;enter&#x27;, you&#x27;ll return back to the repl prompt where you can discuss the changes (switch back to chat mode with \\chat if you only want to discuss, rather than iterate), or use commands (like \\rewind) as needed.",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2025-04-17T18:31:02.000Z",
+                "created_at_i": 1744914662,
+                "id": 43720525,
+                "options": [],
+                "parent_id": 43719819,
+                "points": null,
+                "story_id": 43710576,
+                "text": "When I used `--pin` argument I got an error message along the lines of &quot;not found in the table&quot;.<p>I got it working by switching to oss model pack and specifying G2.5P on top. Also works with anthropic pack.<p>But I&#x27;m quite disappointed with UX - there&#x27;s a lot of configuration options but robustness is severely lacking.<p>Oddly, in the default mode out of box it does not want to discuss the plan with me but just jumps to implementation.<p>And when it&#x27;s done writing code it aggressively wants me to decide whether to apply -- there&#x27;s no option to discuss changes, rewind back to planning, etc. Just &quot;APPLY OR REJECT!!!&quot;. Even Ctrl-C does not work! Not what I expected from software focused on planning...",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-04-17T17:27:18.000Z",
+            "created_at_i": 1744910838,
+            "id": 43719819,
+            "options": [],
+            "parent_id": 43719255,
+            "points": null,
+            "story_id": 43710576,
+            "text": "Thanks for trying it!<p>Could you explain in a bit more detail what went wrong for you with sign-in and the pin? Did you get an error message?<p>On OpenRouter vs. OpenAI, see my other comment in this thread (<a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43719681\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43719681</a>). I&#x27;ll try to make this smoother.<p>On Gemini 2.5 Pro: the new paid 2.5 pro preview will be added soon, which will address this. The free OpenRouter 2.5 pro experimental model is hit or miss because it uses OpenRouter&#x27;s quota with Google. So if it&#x27;s getting used heavily by other OpenRouter users, it can end up being exhausted for all users.<p>On the cloud BYO plan, I&#x27;d say the main benefits are:<p>- Truly zero dependency (no need for docker, docker-compose, and git).<p>- Easy to access your plans on multiple devices.<p>- File edits are significantly faster and cheaper, and a bit more reliable, thanks to a custom fast apply model.<p>- There are some foundations in place for organizations&#x2F;teams, in case you might want to collaborate on a plan or share plans with others, but that&#x27;s more of a &#x27;coming soon&#x27; for now.<p>If you use the &#x27;Integrated Models&#x27; option (rather than BYO), there are also some useful billing and spend management features.<p>But if you don&#x27;t find any of those things valuable, then the FOSS could be the best choice for you.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-04-17T16:40:09.000Z",
+        "created_at_i": 1744908009,
+        "id": 43719255,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "I like the idea but it did not quite work out of box.<p>There was some issue with sign-in, it seems pin requested via web does not work in console (so the web suggesting using --pin option is misleading).<p>I tried BYO plan as I already have openrouter API key. But it seems like default model pack splits its API use between openrouter and openai, and I ended up stuck with &quot;o3-mini does not exist&quot;.<p>And my whole motivation was basically trying Gemini 2.5 Pro it seems like that requires some trial-and-error configuration. (gemini-exp pack doesn&#x27;t quite work now.)<p>The difference between FOSS and BYO plan is not clear: seems like installation process is different, but is the benefit of paid plan that it would store my stuff on server? I&#x27;d really rather not TBH, so it has negative value.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "greggh",
+        "children": [],
+        "created_at": "2025-04-20T13:52:51.000Z",
+        "created_at_i": 1745157171,
+        "id": 43743767,
+        "options": [],
+        "parent_id": 43710576,
+        "points": null,
+        "story_id": 43710576,
+        "text": "Have you tested any local models through ollama? Did any work good enough to recommend?",
+        "title": null,
+        "type": "comment",
+        "url": null
+      }
+    ],
+    "created_at": "2025-04-16T21:26:42.000Z",
+    "created_at_i": 1744838802,
+    "id": 43710576,
+    "options": [],
+    "parent_id": null,
+    "points": 257,
+    "story_id": 43710576,
+    "text": "Hey HN! I\u2019m Dane, the creator of Plandex (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;plandex-ai&#x2F;plandex\">https:&#x2F;&#x2F;github.com&#x2F;plandex-ai&#x2F;plandex</a>), an open source AI coding agent focused especially on tackling large tasks in real world software projects.<p>You can watch a 2 minute demo of Plandex in action here: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=SFSu2vNmlLk\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=SFSu2vNmlLk</a><p>And here\u2019s more of a tutorial style demo showing how Plandex can automatically debug a browser application: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=g-_76U_nK0Y\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=g-_76U_nK0Y</a>.<p>I launched Plandex v1 here on HN a little less than a year ago (<a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=39918500\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=39918500</a>).<p>Now I\u2019m launching a major update, Plandex v2, which is the result of 8 months of heads down work, and is in effect a whole new project&#x2F;product.<p>In short, Plandex is now a top-tier coding agent with fully autonomous capabilities. It combines models from Anthropic, OpenAI, and Google to achieve better results, more reliable agent behavior, better cost efficiency, and better performance than is possible by using only a single provider\u2019s models.<p>I believe it is now one of the best tools available for working on large tasks in real world codebases with AI. It has an effective context window of 2M tokens, and can index projects of 20M tokens and beyond using tree-sitter project maps (30+ languages are supported). It can effectively find relevant context in massive million-line projects like SQLite, Redis, and Git.<p>A bit more on some of Plandex\u2019s key features:<p>- Plandex has a built-in diff review sandbox that helps you get the benefits of AI without leaving behind a mess in your project. By default, all changes accumulate in the sandbox until you approve them. The sandbox is version-controlled. You can rewind it to any previous point, and you can also create branches to try out alternative approaches.<p>- It offers a \u2018full auto mode\u2019 that can complete large tasks autonomously end-to-end, including high level planning, context loading, detailed planning, implementation, command execution (for dependencies, builds, tests, etc.), and debugging.<p>- The autonomy level is highly configurable. You can move up and down the ladder of autonomy depending on the task, your comfort level, and how you weigh cost optimization vs. effort and results.<p>- Models and model settings are also very configurable. There are built-in models and model packs for different use cases. You can also add custom models and model packs, and customize model settings like temperature or top-p. All model changes are version controlled, so you can use branches to try out the same task with different models. The newly released OpenAI models and the paid Gemini 2.5 Pro model will be integrated in the default model pack soon.<p>- It can be easily self-hosted, including a \u2018local mode\u2019 for a very fast local single-user setup with Docker.<p>- Cloud hosting is also available for added convenience with a couple of subscription tiers: an \u2018Integrated Models\u2019 mode that requires no other accounts or API keys and allows you to manage billing&#x2F;budgeting&#x2F;spending alerts and track usage centrally, and a \u2018BYO API Key\u2019 mode that allows you to use your own OpenAI&#x2F;OpenRouter accounts.<p>I\u2019d love to get more HNers in the Plandex Discord (<a href=\"https:&#x2F;&#x2F;discord.gg&#x2F;plandex-ai\" rel=\"nofollow\">https:&#x2F;&#x2F;discord.gg&#x2F;plandex-ai</a>). Please join and say hi!<p>And of course I\u2019d love to hear your feedback, whether positive or negative. Thanks so much!",
+    "title": "Show HN: Plandex v2 \u2013 open source AI coding agent for large projects and tasks",
+    "type": "story",
+    "url": "https://github.com/plandex-ai/plandex"
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "key": "77f7530fe415cf5b",
+  "inputs": {
+    "url": "https://hn.algolia.com/api/v1/items/48109962"
+  },
+  "fetched_at": "2026-08-13T20:46:38.782723+00:00",
+  "payload": {
+    "author": "ttpost",
+    "children": [
+      {
+        "author": "akslp2080",
+        "children": [
+          {
+            "author": "ttpost",
+            "children": [
+              {
+                "author": "bfeynman",
+                "children": [
+                  {
+                    "author": "ttpost",
+                    "children": [
+                      {
+                        "author": "holoduke",
+                        "children": [
+                          {
+                            "author": "ttpost",
+                            "children": [],
+                            "created_at": "2026-05-12T21:14:03.000Z",
+                            "created_at_i": 1778620443,
+                            "id": 48114696,
+                            "options": [],
+                            "parent_id": 48114564,
+                            "points": null,
+                            "story_id": 48109962,
+                            "text": "haha oof that&#x27;s embarrassing if I really sound like AI, but unfortunately it was written by hand by yours truly!<p>Guess its human-sloppy :(",
+                            "title": null,
+                            "type": "comment",
+                            "url": null
+                          },
+                          {
+                            "author": "zwaps",
+                            "children": [],
+                            "created_at": "2026-05-12T21:39:48.000Z",
+                            "created_at_i": 1778621988,
+                            "id": 48114968,
+                            "options": [],
+                            "parent_id": 48114564,
+                            "points": null,
+                            "story_id": 48109962,
+                            "text": "how so? genuine question",
+                            "title": null,
+                            "type": "comment",
+                            "url": null
+                          }
+                        ],
+                        "created_at": "2026-05-12T21:06:01.000Z",
+                        "created_at_i": 1778619961,
+                        "id": 48114564,
+                        "options": [],
+                        "parent_id": 48112445,
+                        "points": null,
+                        "story_id": 48109962,
+                        "text": "Your response is AI. It&#x27;s a bit ai sloppy as well. Sorry to say that. But as a business owner you can and should do better.",
+                        "title": null,
+                        "type": "comment",
+                        "url": null
+                      }
+                    ],
+                    "created_at": "2026-05-12T18:39:35.000Z",
+                    "created_at_i": 1778611175,
+                    "id": 48112445,
+                    "options": [],
+                    "parent_id": 48112324,
+                    "points": null,
+                    "story_id": 48109962,
+                    "text": "We do! We have combined experience as PMs, ml engs, and data scientists across many verticals. We also have experience helping PMs and AI eng teams build agents across over 100 customers from our first product.<p>You&#x27;re totally right, the analytics annotation primitives we detect (intents, corrections, resolutions) are the cornerstone to all the other analysis in our platform. It&#x27;s critical that we get those right or all the data and insights in the world are useless.<p>LLMs are a core part of that detection, but we also do things like hierarchical classification, (<a href=\"https:&#x2F;&#x2F;voker.ai&#x2F;blog&#x2F;hierarchical-text-classification-with-llms\">https:&#x2F;&#x2F;voker.ai&#x2F;blog&#x2F;hierarchical-text-classification-with-...</a>) and will eventually add in other ML methods where applicable. On top of our automated detections, we&#x27;re building ways for the annotations to improve and adapt to your specific agent product, your data, and your feedback on our annotations.<p>Our SDK is architected to eventually accept any type of event you want to send as additional information like add to carts, or other conversion metrics that are valuable for analysis on agent performance.<p>You&#x27;re definitely right, we don&#x27;t expect a PM to instrument this all themselves - similar to web analytics or product analytics tools, the engineering team instruments and maintains the integration, and then our app makes the insights and data accessible to not just the engineer but the whole product team.",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2026-05-12T18:29:41.000Z",
+                "created_at_i": 1778610581,
+                "id": 48112324,
+                "options": [],
+                "parent_id": 48110594,
+                "points": null,
+                "story_id": 48109962,
+                "text": "do you have experience as PMs? Looking at website, it looks like you just use llms to guess what categories are? Seems like trap for garbage in garbage out.  Otherwise you would need someone technical to figure out how to setup the proper KPI monitoring things...",
+                "title": null,
+                "type": "comment",
+                "url": null
+              },
+              {
+                "author": "zwaps",
+                "children": [
+                  {
+                    "author": "zwaps",
+                    "children": [],
+                    "created_at": "2026-05-12T21:43:58.000Z",
+                    "created_at_i": 1778622238,
+                    "id": 48115015,
+                    "options": [],
+                    "parent_id": 48114960,
+                    "points": null,
+                    "story_id": 48109962,
+                    "text": "Maybe as a comment, you really put weight on intent classification. I am not sure why. For it to work, you are gonna need my expert domain input. And given that, I feel like the classification bit is basically solved. I wonder a bit why this is the feature you seem to put front and center  (e.g. screenshots)",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  },
+                  {
+                    "author": "ttpost",
+                    "children": [],
+                    "created_at": "2026-05-12T21:54:10.000Z",
+                    "created_at_i": 1778622850,
+                    "id": 48115113,
+                    "options": [],
+                    "parent_id": 48114960,
+                    "points": null,
+                    "story_id": 48109962,
+                    "text": "tl;dr: Langsmith + homegrown intents doesn&#x27;t scale with contributors and agent usage as an Analytics solution. Voker adds trend and usage insights on collaborative dashboards that work for the whole AI product team.<p>Nice, sounds like you&#x27;ve set up your own solution in house. We definitely see some teams do that, and for some it works perfectly, for others, its too expensive to maintain - they get new requests for new dashboards or different subcuts of data from product or design teams, or they run into an issue like way too many intents generated to be useful, and its not worth the tradeoff of investing time in building internal tooling. But for some it makes sense to roll your own! It also really depends on how many people on the team are involved in building the agent products, and how much volume your agents have. If you have millions of conversations a month with thousands of unique intents, you have to set up data eng pipelines just to process categorize, and store all that data in a way thats usable for the whole team.<p>When it comes to Langsmith, we hear about them a lot from our customers, pretty much all of them love it as an obs tool, but most say that only the engineers have access or spend time in it, and they&#x27;ve told us the strength of Langsmith is its technical tracing, not its visualizations, ui, or usability. They&#x27;ve told us any &quot;insights&quot; are very canned (because thats not Langsmith&#x27;s key focus).<p>We add self-serve analytics - like how Google Analytics lets marketers see how their website is performing without needing to ask engineers to write SQL queries on cloudwatch logs.<p>Ex: PM can self-serve and look at trends in what users are asking of agents, notice a problem, do a quick RCA, look for reproducibility across other sessions - before deciding to assign as an issue to engineer. Old way would be: PM hears a complaint from a customer, asks the engineer to &quot;look into it&quot; and the eng spends 4 hours combing through Langsmith logs to hunt down one session without even knowing if its actually a widespread issues",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2026-05-12T21:38:49.000Z",
+                "created_at_i": 1778621929,
+                "id": 48114960,
+                "options": [],
+                "parent_id": 48110594,
+                "points": null,
+                "story_id": 48109962,
+                "text": "For instance, I have intent classifiers running on my traces and most tools offer some sort of analysis agents or API so it&#x27;s claude sdk and go.<p>Maybe let&#x27;s take Langsmith. Now I know my gripes with that product. How do you see it? What do you add, specifically?",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2026-05-12T16:32:57.000Z",
+            "created_at_i": 1778603577,
+            "id": 48110594,
+            "options": [],
+            "parent_id": 48110403,
+            "points": null,
+            "story_id": 48109962,
+            "text": "We get this question a lot! We work hand-in-hand with obs tools like Langfuse.\nLangfuse is great for debugging technical issues on individual traces like timing conditions that resulted in failed API calls.<p>Voker focuses on product, business and user outcomes - like what intents did the user bring to your agent that you might not expect. We&#x27;re built for the whole product team, whereas Langfuse focuses on engineers specifically.<p>One way to think about it would be: a PM notices in Voker that a new intent category is coming up frequently and the agent isn&#x27;t handling it well. The PM can dig into the data with visualizations or our conversation reconstructions. Once they confirm its a real issue worth addressing, they can link their investigation to the AI engineer - who can use Voker AND Langfuse to debug and implement a fix&#x2F;improvement.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2026-05-12T16:20:49.000Z",
+        "created_at_i": 1778602849,
+        "id": 48110403,
+        "options": [],
+        "parent_id": 48109962,
+        "points": null,
+        "story_id": 48109962,
+        "text": "How is it different than Langfuse? sorry if I am off the track but Langfuse also provides some detailed tracing of agentic behavior and decisions.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "Ozzie_osman",
+        "children": [
+          {
+            "author": "ttpost",
+            "children": [
+              {
+                "author": "adrianisbored",
+                "children": [
+                  {
+                    "author": "ttpost",
+                    "children": [],
+                    "created_at": "2026-05-12T17:56:14.000Z",
+                    "created_at_i": 1778608574,
+                    "id": 48111795,
+                    "options": [],
+                    "parent_id": 48111561,
+                    "points": null,
+                    "story_id": 48109962,
+                    "text": "Thanks for clarifying - yes this is a much closer analog to what we&#x27;re building. That being said, we haven&#x27;t heard from anyone using it or tried it ourselves yet so can&#x27;t speak to quality comparison.<p>From what I can tell in this video, it still seems like Amplitude is focusing on the obs trace details (latency, tokens, etc).<p>They don&#x27;t seem to go as deep (or at least don&#x27;t highlight) as much of the semantic data processing and detection we&#x27;re doing (intents, corrections, resolutions) - and creating higher level classifications and insights from those. We&#x27;re completely purpose built for monitoring agent products, so we&#x27;re striving to do more than just visualizations, we intend to be best-in-category at the actual automated annotations and analysis of agent&lt;&gt;user interaction data.",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2026-05-12T17:39:02.000Z",
+                "created_at_i": 1778607542,
+                "id": 48111561,
+                "options": [],
+                "parent_id": 48110653,
+                "points": null,
+                "story_id": 48109962,
+                "text": "I think the link is off above, but they&#x27;re thinking of Amplitude&#x27;s not yet GA agent analytics, not their general analytics: <a href=\"https:&#x2F;&#x2F;amplitude.com&#x2F;blog&#x2F;agent-analytics\" rel=\"nofollow\">https:&#x2F;&#x2F;amplitude.com&#x2F;blog&#x2F;agent-analytics</a>",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2026-05-12T16:37:35.000Z",
+            "created_at_i": 1778603855,
+            "id": 48110653,
+            "options": [],
+            "parent_id": 48110569,
+            "points": null,
+            "story_id": 48109962,
+            "text": "Yeah, this is a confusing one on wording. TLDR: Amplitude is analytics for your web&#x2F;product data, Voker is analytics for your agent data.<p>We call Amplitude&#x27;s feature an &quot;AI Analyst&quot;. Essentially Amplitude is layering a LLM copilot  on top of their own product - so you don&#x27;t have to click the buttons or write reports to get insights.<p>We&#x27;re an analytics platform built for tracking your agents. Different products with different problems they&#x27;re solving.<p>Not sure if this helps, but essentially Amplitude could use Voker to track how well their AI Analyst agent product is actually working!",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2026-05-12T16:31:28.000Z",
+        "created_at_i": 1778603488,
+        "id": 48110569,
+        "options": [],
+        "parent_id": 48109962,
+        "points": null,
+        "story_id": 48109962,
+        "text": "If the team is here, would love to understand how it compares to something like Amplitude&#x27;s agent analytics (<a href=\"https:&#x2F;&#x2F;amplitude.com&#x2F;ai-agents\" rel=\"nofollow\">https:&#x2F;&#x2F;amplitude.com&#x2F;ai-agents</a>).",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "Damianf19",
+        "children": [
+          {
+            "author": "alrudolph",
+            "children": [],
+            "created_at": "2026-05-12T17:11:08.000Z",
+            "created_at_i": 1778605868,
+            "id": 48111159,
+            "options": [],
+            "parent_id": 48110772,
+            "points": null,
+            "story_id": 48109962,
+            "text": "For the agent working, we&#x27;re focusing on the user outcome, we think that the raw usage, number of turns, function calls are useful operationally but think of those as more observability than the core evaluation target. We do show some of these stats in our conversation view but don&#x27;t aggregate to compare agents. Longer term we will look to add in more of these features so we can compare quality vs cost, for example",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2026-05-12T16:45:38.000Z",
+        "created_at_i": 1778604338,
+        "id": 48110772,
+        "options": [],
+        "parent_id": 48109962,
+        "points": null,
+        "story_id": 48109962,
+        "text": "What&#x27;s the data model that lets you compare agents that differ a lot in tools&#x2F;policies? Curious if you normalize on the &quot;what did the user actually accomplish&quot; layer or on raw token&#x2F;turn metrics, because the two paint completely different pictures of &quot;is this agent working.&quot; We struggle with this on the eval side of our own product (email pipeline outcomes, not agents, but same shape).",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "ggamecrazy",
+        "children": [
+          {
+            "author": "ttpost",
+            "children": [],
+            "created_at": "2026-05-12T17:00:55.000Z",
+            "created_at_i": 1778605255,
+            "id": 48111015,
+            "options": [],
+            "parent_id": 48110783,
+            "points": null,
+            "story_id": 48109962,
+            "text": "thanks for the honest insight! Very helpful to hear that you feel the problem is real, that&#x27;s whats most important to us, we&#x27;ll keep working on getting the solution and messaging right!<p>- we say &gt;1K because two reasons: \n1. its still feasible (although tedious) to put the full burden on analyzing agent performance and usage on your engineers equipped with obs tools and logs (not ideal but its what most AI teams we see do)\n2. you&#x27;re spot on - it actually surprised us too how few companies (even the really big public ones that have promised to build 200+ agents back in 2024) still have barely one or two agents in prod with only hundreds of convos.\n1K convos was our best first guess at the cutoff point where the manual work of digging through traces, and the insights you can get start to make sense enough to need a tool for this. We&#x27;re definitely planning to tune that number as time goes on!<p>-We definitely don&#x27;t have pricing figured out yet, we plan to continue to iterate on the event volumes etc to make sure our product gives clear positive roi for the teams using it at every level. But in general we look at other analytics products as our early barometer. Yes the higher your event volume the more cost, but in my experience (back in Ecomm using Heap analytics) it was so incredibly worth it to pay more as our business and data volumes scaled (we ran on data) I think this is the challenge with all analytics products, they&#x27;re not useful if you only have 5 site visitors. We see the progression as start with obs&#x2F;logs -&gt; evals -&gt; analytics as your usage scales.<p>Curious to hear, whats the session volume of the agent products you run? Every datapoint helps us tune our tiers, pricing, and most importantly our product!",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2026-05-12T16:46:16.000Z",
+        "created_at_i": 1778604376,
+        "id": 48110783,
+        "options": [],
+        "parent_id": 48109962,
+        "points": null,
+        "story_id": 48109962,
+        "text": "&gt; High interaction volume (1k+ chat sessions per month)<p>I don&#x27;t mean to be that typical HN commenter but you did lose me a bit there.<p>I know a lot of people are just getting started with agents but even for a lot of scrappy startups usage is a lot higher than that!<p>If I may suggest focusing on explaining how you can add value even when usage is super low to controlling costs even when usage can get super high?<p>I can validate you that it is a true problem that&#x27;s solved by large companies but you have to hand-roll yourself @ startups (via airflow or queues, etc). But unfortunately one where I am not sure that a lot of stakeholders understand the benefits of (yet!). I think value has to be shown a bit more clearly here, sadly.<p>Congrats on the launch!",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "maxrumpf",
+        "children": [],
+        "created_at": "2026-05-12T17:55:47.000Z",
+        "created_at_i": 1778608547,
+        "id": 48111787,
+        "options": [],
+        "parent_id": 48109962,
+        "points": null,
+        "story_id": 48109962,
+        "text": "congratulations!",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "jorisw",
+        "children": [
+          {
+            "author": "ttpost",
+            "children": [],
+            "created_at": "2026-05-13T19:17:49.000Z",
+            "created_at_i": 1778699869,
+            "id": 48126191,
+            "options": [],
+            "parent_id": 48119614,
+            "points": null,
+            "story_id": 48109962,
+            "text": "thanks for the feedback\n- GREAT point, definitely going to noodle on this one\n- Yeah we&#x27;re about to add a product demo video lower down on the page that this button will jump to - what do you think about that instead?\n- I see your point.... hmm. maybe: &quot;Do you really know what your users are asking of your agents and whether they deliver?&quot; is a more direct phrasing?\n- hehe you found us out! that&#x27;s how we build our whole product! (JK - thats actually our linear agent taking a look at the roadmap doc that we put together so we could write out those features for a whiteboarding session) but good eye ;)",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2026-05-13T09:19:38.000Z",
+        "created_at_i": 1778663978,
+        "id": 48119614,
+        "options": [],
+        "parent_id": 48109962,
+        "points": null,
+        "story_id": 48109962,
+        "text": "Some notes on the sales website.<p>- To me, the line &quot;Do you really know what your agents are saying to your users?&quot; doesn&#x27;t match at all with the screenshot directly above, which is the first screenshot on the page. On first glance, all that screenshot conveys to me is &quot;some analytics app&quot;. Perhaps the first graphic could better express what about agents&#x27; activities, is being made easier to inspect.<p>- I click &quot;How it Works&quot; and I just get vaguely described screenshots. Only from reading the Python import line in the fourth screenshot, I get that it acts as a middleware by sitting in for the OpenAI import. Maybe this nav should link to the section above, with the 3 integration steps?<p>- Scrolling down and seeing Intents vs Corrections vs Resolutions, I&#x27;m actually getting a sense of what Voker does. To me, that still doesn&#x27;t fully align with &quot;Do you really know what your agents are saying to your users?&quot;<p>- I&#x27;m mildly amused by the fact that whiteboard desk guy is copying roadmap suggestions from ChatGPT.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "arm32",
+        "children": [],
+        "created_at": "2026-05-13T23:14:52.000Z",
+        "created_at_i": 1778714092,
+        "id": 48128911,
+        "options": [],
+        "parent_id": 48109962,
+        "points": null,
+        "story_id": 48109962,
+        "text": "Hey, Alex and Tyler! I love your idea\u2014can you reach out to me via email? I&#x27;d love to chat about working on it with you.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      }
+    ],
+    "created_at": "2026-05-12T15:45:20.000Z",
+    "created_at_i": 1778600720,
+    "id": 48109962,
+    "options": [],
+    "parent_id": null,
+    "points": 59,
+    "story_id": 48109962,
+    "text": "Hey HN, we&#x27;re Alex and Tyler, co-founders of Voker.ai (<a href=\"https:&#x2F;&#x2F;voker.ai&#x2F;\">https:&#x2F;&#x2F;voker.ai&#x2F;</a>), an agent analytics platform for AI product teams. Voker gives full visibility into what users are asking of your agents, and whether your agents are delivering, without having to dig through logs. Our main product is a lightweight SDK that is LLM stack agnostic and purpose-built for agent products. (<a href=\"https:&#x2F;&#x2F;app.voker.ai&#x2F;docs\">https:&#x2F;&#x2F;app.voker.ai&#x2F;docs</a>)<p>Agent Engineers and AI product teams don\u2019t have the right level of visibility into agent performance in production, which results in bad user experiences, churn, and hundreds of hours wasted with spot checks to find and debug issues with agent configurations.<p>Demo: <a href=\"https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;vid_cmoukcsk1000i07jgb4j65u67&#x2F;view\" rel=\"nofollow\">https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;vid_cmoukcsk1000i07jgb4j65u67&#x2F;vie...</a><p>We recently conducted a survey of YC Founders and 90%+ of respondents said that the only way they know if their Agents are failing users in production is by hearing complaints from customers. They push a prompt change hoping that it fixes the problem and doesn\u2019t break something somewhere else, and the cycle repeats.<p>We saw tons of observability and evals products popping up to try to address these problems, but we still felt like something was missing in the agent monitoring stack. Obs is good for individual trace debugging but is only accessible to engineers. Evals are good for testing known issues, but don&#x27;t give insights into trends that teams don\u2019t expect, so engineers are always playing catch up. Traditional product analytics tools do a good job tracking clicks and pageviews across your product surface but weren\u2019t built ground up for agent products. Knowing what users want out of agents, and whether the agent delivered requires specific conversational intelligence &#x2F; unstructured data processing techniques.<p>We came up with the agent analytics primitives of Intents, Corrections, and Resolutions to describe something pretty much all conversational agents had in common: a user will always come to an agent with an intent, the user might have to correct this agent on the way to getting their intent resolved, and hopefully every intent a user has is eventually resolved by the agent.\nVoker processes LLM calls by automatically annotating individual conversations and picking out user intent and corrections. Voker takes these and uses LLMs and hierarchical text classification to create dynamic categories that give higher level insights so you don\u2019t have to read individual conversations to know what are the main usage patterns across your users.<p>The most common substitute solution we\u2019ve seen is uploading obs logs to Claude or ChatGPT and asking for summary insights. There are a few problems with this - mainly that LLMs aren\u2019t good at math or data science, so you don\u2019t get accurate or consistent statistics. Its highly likely that the LLM overfits to some insights and underfits to others. The LLM isn\u2019t programmatically reading and classifying each individual session or interaction. This is why we don\u2019t use LLMs for any of our core data engineering (processing events, calculating statistics) so the analytics we produce are consistent, reproducible, and accurate.\nWe have a publicly available, lightweight SDK that wraps LLM calls to OpenAI, Anthropic and Gemini in Python and Typescript. Voker handles the data engineering to turn raw data into usable analytics primitives and higher level insights. \nFree tier: 2,000 events &#x2F; mo, requires email signup. Paid plans start at $80&#x2F;mo with a 30 day free trial.<p>We&#x27;d love to hear how you&#x27;re currently detecting trends, and if you try Voker, tell us what part of our analysis is valuable, and what still feels missing. Thanks for reading, and we\u2019re looking forward to your thoughts in the comments!",
+    "title": "Launch HN: Voker (YC S24) \u2013 Analytics for AI Agents",
+    "type": "story",
+    "url": "https://voker.ai"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "key": "a5fe241c5a5ca275",
+  "inputs": {
+    "url": "https://hn.algolia.com/api/v1/users/NotASithLord"
+  },
+  "fetched_at": "2026-08-13T20:46:37.866845+00:00",
+  "payload": {
+    "about": null,
+    "karma": 42,
+    "username": "NotASithLord"
+  }
+}

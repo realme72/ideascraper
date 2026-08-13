@@ -6,8 +6,8 @@ Point it at a topic, get one-page investment memos out the other end — each
 ending in a clear **Pass / Watch / Take a meeting**, and each claim traceable back
 to the source it came from.
 
-> **Status: stage 1 of 4 working.** Sourcing runs end to end against live data.
-> Enrichment, analysis and memo rendering are next.
+> **Status: stages 1–2 of 4 working.** Sourcing and enrichment run end to end
+> against live data. Analysis and memo rendering are next.
 
 ---
 
@@ -88,6 +88,42 @@ term coverage: agent (15), ai (15), smb (4)
 Useful flags: `--limit`, `--batches` (YC batches to search), `--min-relevance`,
 `--refresh` (bypass the cache).
 
+### Stage 2 — enrichment
+
 ```bash
-.venv/bin/python -m pytest tests/ -q      # 43 tests
+.venv/bin/python -m pipeline enrich
+```
+
+Gathers cited evidence for each candidate from four places: the YC company page
+(founders, bios, socials), the HN launch thread (the founders' pitch and what
+outsiders said back), GitHub (stars, recency, contributors) and the company
+homepage. Writes one bundle per company to `data/evidence/`.
+
+```
+Async                       4 items   3,221 chars  2 gaps
+Plandex v2                 12 items   6,698 chars  0 gaps
+TryNearby                   4 items   1,465 chars  3 gaps
+...
+15 bundles written to data/evidence/ (26 gaps recorded)
+```
+
+**`gaps` is the point.** Coverage is structurally uneven — a YC-only candidate
+has founder bios and no launch discussion, an HN-only candidate has the reverse
+— so every bundle records what was looked for and not found:
+
+```
+GAP: No Hacker News launch thread found for this company
+GAP: Website trynearby.com rendered only 224 characters of text
+     — likely a JavaScript app, so its content is unavailable
+GAP: chat.agentmail.to did not respond; read agentmail.to instead
+```
+
+Stage 3 is shown the gaps alongside the evidence. A model given silence fills it
+with plausible invention, and a thin file should score as thin rather than bad.
+
+Nothing in this stage interprets — it collects and cites. Judgement happens once,
+in stage 3.
+
+```bash
+.venv/bin/python -m pytest tests/ -q      # 89 tests
 ```

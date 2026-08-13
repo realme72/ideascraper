@@ -16,8 +16,33 @@ from typing import Literal
 
 from pydantic import BaseModel, Field
 
-SourceName = Literal["yc", "hn"]
+SourceName = Literal["yc", "hn", "github", "web"]
 SignalKind = Literal["team", "traction", "freshness"]
+
+EvidenceKind = Literal[
+    "founder",              # a named person, with whatever background is public
+    "company_profile",      # structured facts from the YC directory page
+    "website_copy",         # what the company says about itself, in its words
+    "github_repo",          # stars, recency, language, license
+    "github_contributors",  # who actually commits
+    "hn_launch_text",       # the founders' own launch post
+    "hn_comment",           # what outsiders said back
+    "hn_profile",           # the posting founder's HN bio
+]
+
+# Trimming order when a bundle is over budget: the last kinds go first.
+# Founders and the company's own description of itself are the least
+# replaceable; the eighth-best HN comment is the most.
+EVIDENCE_PRIORITY: tuple[EvidenceKind, ...] = (
+    "founder",
+    "company_profile",
+    "hn_launch_text",
+    "website_copy",
+    "github_repo",
+    "hn_profile",
+    "github_contributors",
+    "hn_comment",
+)
 
 
 class Provenance(BaseModel):
@@ -72,6 +97,61 @@ class Candidate(BaseModel):
     @property
     def sources(self) -> list[str]:
         return sorted({p.source for p in self.provenance})
+
+
+class EvidenceItem(BaseModel):
+    """One piece of gathered material, attributable to a page.
+
+    `content` is raw material for stage 3 to read — a founder's bio, a
+    skeptical HN comment, a paragraph of landing-page copy. It is never a
+    summary or a judgement; stage 2 does not interpret.
+    """
+
+    kind: EvidenceKind
+    title: str
+    content: str
+    value: float | None = None
+    observed_at: datetime | None = None
+    provenance: Provenance
+
+    def __len__(self) -> int:
+        return len(self.content)
+
+
+class EvidenceBundle(BaseModel):
+    """Stage 2's output: everything gathered about one candidate.
+
+    The bundle embeds the stage-1 `candidate` rather than referring to it, so
+    stage 3 reads exactly one file per company and nothing has to be joined
+    back together.
+
+    `gaps` is the load-bearing field. It records what we looked for and could
+    not find — a dead website, a company with no launch thread, a repo we
+    couldn't identify. Stage 3 is shown the gaps alongside the evidence,
+    because a model given silence will fill it with plausible invention, and
+    "claims with no traceable source" is a named anti-pattern.
+    """
+
+    candidate: Candidate
+    gathered_at: datetime
+    items: list[EvidenceItem] = Field(default_factory=list)
+    gaps: list[str] = Field(default_factory=list)
+
+    @property
+    def slug(self) -> str:
+        return self.candidate.slug
+
+    @property
+    def name(self) -> str:
+        return self.candidate.name
+
+    def items_of(self, kind: EvidenceKind) -> list[EvidenceItem]:
+        return [i for i in self.items if i.kind == kind]
+
+    @property
+    def size(self) -> int:
+        """Total characters of evidence — the stage 3 prompt budget."""
+        return sum(len(i) for i in self.items)
 
 
 class CandidateSet(BaseModel):

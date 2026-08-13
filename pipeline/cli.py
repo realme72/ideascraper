@@ -13,7 +13,7 @@ from __future__ import annotations
 import argparse
 import sys
 
-from pipeline import source
+from pipeline import enrich, source
 
 
 def _print_summary(result) -> None:
@@ -57,8 +57,13 @@ def build_parser() -> argparse.ArgumentParser:
         "--refresh", action="store_true", help="bypass the cache and refetch everything"
     )
 
+    enr = sub.add_parser("enrich", help="gather cited evidence for each candidate")
+    enr.add_argument("--limit", type=int, default=None, help="only enrich the first N candidates")
+    enr.add_argument(
+        "--refresh", action="store_true", help="bypass the cache and refetch everything"
+    )
+
     for name, help_text in [
-        ("enrich", "gather evidence for each candidate"),
         ("analyze", "score each candidate against the thesis"),
         ("memo", "render one-page memos"),
         ("run", "all four stages, end to end"),
@@ -88,6 +93,19 @@ def main(argv: list[str] | None = None) -> int:
             )
             return 1
         _print_summary(result)
+        return 0
+
+    if args.command == "enrich":
+        try:
+            bundles = enrich.run(limit=args.limit, refresh=args.refresh)
+        except FileNotFoundError as exc:
+            print(str(exc), file=sys.stderr)
+            return 1
+        total_gaps = sum(len(b.gaps) for b in bundles)
+        print(
+            f"\n{len(bundles)} bundles written to {enrich.OUTPUT_DIR}/ "
+            f"({total_gaps} gaps recorded)"
+        )
         return 0
 
     print(f"stage '{args.command}' is not implemented yet", file=sys.stderr)

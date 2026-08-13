@@ -1,0 +1,115 @@
+{
+  "candidate": {
+    "slug": "trynearby",
+    "name": "TryNearby",
+    "website": "https://trynearby.com",
+    "one_liner": "Local creators for local businesses",
+    "description": "TryNearby connects local businesses with creators who live nearby. Restaurants subscribe monthly and automatically get booked visits from local creators who film, edit, and post a review to the local algorithm. This creates a steady stream of content that compounds into discovery on TikTok, Instagram, and increasingly AI search. Over 100 restaurants and thousands of creators are on the platform across Southern California, with AI agents handling matching, booking, and every creator conversation.",
+    "keywords": [
+      "B2B",
+      "Creator Economy",
+      "Marketing",
+      "Restaurant Tech",
+      "SMB"
+    ],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "freshness",
+        "label": "YC Summer 2026 batch",
+        "value": null,
+        "observed_at": "2026-08-11T22:48:00Z",
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/trynearby",
+          "retrieved_at": "2026-08-13T15:14:22.603356Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Team of 5",
+        "value": 5.0,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/trynearby",
+          "retrieved_at": "2026-08-13T15:14:22.603356Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Stage: Early",
+        "value": null,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/trynearby",
+          "retrieved_at": "2026-08-13T15:14:22.603356Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/trynearby",
+        "retrieved_at": "2026-08-13T15:14:22.603356Z"
+      }
+    ]
+  },
+  "gathered_at": "2026-08-13T20:58:19.362197Z",
+  "items": [
+    {
+      "kind": "founder",
+      "title": "Yousef Abdelfattah — Founder",
+      "content": "Co-founded FaZe Clan after starting as a 14 year old YouTuber in 2010. Spent the last 15 years in the creator economy turning FaZe into the first internet-native content company to IPO at $1B. Now building for local creators and businesses.\nLinks: https://www.linkedin.com/in/yousef-abdelfattah-b0906b336/, https://x.com/fazeapex",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/trynearby",
+        "retrieved_at": "2026-08-13T20:58:19.361272Z"
+      }
+    },
+    {
+      "kind": "founder",
+      "title": "Obaida Albaroudi — Founder",
+      "content": "Founder at TryNearby. Early Replit employee and former Goldman Sachs. Cofounder of Clipping.exe, one of the first and largest video clipping infrastructures, processing tens of thousands of videos per month.\nLinks: https://www.linkedin.com/in/obaida-a-b7b366279",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/trynearby",
+        "retrieved_at": "2026-08-13T20:58:19.361272Z"
+      }
+    },
+    {
+      "kind": "founder",
+      "title": "Ahmad Ibrahim — Founder",
+      "content": "Founder at TryNearby. Previously CTO/Cofounder at Clipping Exe, building video clipping infrastructure that scaled to tens of thousands of videos monthly.\nLinks: https://www.linkedin.com/in/ahmibrahim97/",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/trynearby",
+        "retrieved_at": "2026-08-13T20:58:19.361272Z"
+      }
+    },
+    {
+      "kind": "company_profile",
+      "title": "TryNearby — YC directory profile",
+      "content": "Batch: Summer 2026\nFounded: 2025\nTeam size: 5\nLocation: Los Angeles, CA\nStatus: Active\nWebsite: https://trynearby.com\nLinkedIn: https://www.linkedin.com/company/trynearby\n\nTryNearby connects local businesses with creators who live nearby. Restaurants subscribe monthly and automatically get booked visits from local creators who film, edit, and post a review to the local algorithm. This creates a steady stream of content that compounds into discovery on TikTok, Instagram, and increasingly AI search. Over 100 restaurants and thousands of creators are on the platform across Southern California, with AI agents handling matching, booking, and every creator conversation.",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/trynearby",
+        "retrieved_at": "2026-08-13T20:58:19.361272Z"
+      }
+    }
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "No Hacker News launch thread found for this company",
+    "Website trynearby.com rendered only 224 characters of text — likely a JavaScript app, so its content is unavailable"
+  ]
+}

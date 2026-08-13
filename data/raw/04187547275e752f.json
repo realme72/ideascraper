@@ -1,0 +1,8 @@
+{
+  "key": "04187547275e752f",
+  "inputs": {
+    "url": "https://www.getspine.ai/robots.txt"
+  },
+  "fetched_at": "2026-08-13T20:46:35.843722+00:00",
+  "payload": "User-agent: *\nAllow: /\n\n# Production sitemap lists the /research hub plus every indexable legacy article URL.\nSitemap: https://www.getspine.ai/sitemap.xml\n"
+}

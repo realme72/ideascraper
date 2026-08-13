@@ -1,0 +1,8 @@
+{
+  "key": "aaf1d21e74521d4b",
+  "inputs": {
+    "url": "https://withasync.com/robots.txt"
+  },
+  "fetched_at": "2026-08-13T20:46:21.848558+00:00",
+  "payload": "# Allow crawling of public pages\nUser-agent: *\nAllow: /\nDisallow: /app/\nDisallow: /api/\nDisallow: /(auth)/\n\n# Block AI scrapers\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: ChatGPT-User\nDisallow: /\n\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: anthropic-ai\nDisallow: /\n"
+}

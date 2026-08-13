@@ -1,0 +1,111 @@
+{
+  "candidate": {
+    "slug": "mount",
+    "name": "Mount",
+    "website": "https://mount.insure",
+    "one_liner": "The AI Agent Insurance Carrier",
+    "description": "TLDR: Mount is building the AI insurance carrier, starting with liability coverage for deployed AI agents. As everyone moves AI Agents into production and gives them more responsibility, we help businesses insure and secure them.\r\n\r\nWhenever responsibility shifts from human operators to autonomous systems, so too does the liability that accompanies it. The systems also introduce new risks: agentic software failures, prompt injection attacks, autonomous workflow errors, data leaks, and more.\r\n\r\nLegacy insurance was not built for this. Existing policies are often silent, ambiguous, or exclude autonomous software, and traditional insurers lack the data and technical capability to assess deployed AI Systems.\r\n\r\nOur first product, the Mount AI Liability Policy, is built for mid-market and enterprise companies deploying autonomous AI agents in real business processes. We scan and red-team AI deployments, quantify operational risk, help fix vulnerabilities, and insure the residual risk with purpose-built AI liability coverage.\r\n\r\nMount is best thought of as a highly automated version of today's commercial insurance carriers, which run on manual workflows, layers of intermediaries, and tens of thousands of employees. AI enables automation of underwriting, pricing, policy issuance, claims, fraud detection, customer support, and distribution. We believe that the best way to use this opportunity is to rebuild those processes from the ground up. ",
+    "keywords": [
+      "Fintech",
+      "Insurance"
+    ],
+    "relevance": 0.556,
+    "signals": [
+      {
+        "kind": "freshness",
+        "label": "YC Spring 2026 batch",
+        "value": null,
+        "observed_at": "2026-04-07T23:40:48Z",
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/mount",
+          "retrieved_at": "2026-08-13T15:14:22.606082Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Team of 2",
+        "value": 2.0,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/mount",
+          "retrieved_at": "2026-08-13T15:14:22.606082Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Stage: Early",
+        "value": null,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/mount",
+          "retrieved_at": "2026-08-13T15:14:22.606082Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/mount",
+        "retrieved_at": "2026-08-13T15:14:22.606082Z"
+      }
+    ]
+  },
+  "gathered_at": "2026-08-13T20:58:18.486459Z",
+  "items": [
+    {
+      "kind": "founder",
+      "title": "Fabian Amherd — Founder",
+      "content": "Founder at Mount (YC P26) | Mount insures companies against AI risks.\n\nI studied Computer Science at ETH Zürich, focusing on machine learning. At MESH, an ETH robotics spin-off, he built and deployed custom CNNs for real-time object detection in industrial robotics. Before that, he founded and ran a web development company for 3.5 years, starting at age 16.\nLinks: https://www.linkedin.com/in/fabianamherd/",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/mount",
+        "retrieved_at": "2026-08-13T20:58:18.477027Z"
+      }
+    },
+    {
+      "kind": "founder",
+      "title": "John Bachmann — Founder",
+      "content": "Founder at Mount (YC P26) | Mount insures companies against AI risks. \n\nI grew up in a family that's been in the insurance industry for four generations. At 18, I dropped out of high school and flew solo to Bangalore, where I spent four months building an engineering team I recruited and led, scaling the business to $400K in annual revenue.\nLinks: https://www.linkedin.com/in/john-bachmann-844978301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/mount",
+        "retrieved_at": "2026-08-13T20:58:18.477027Z"
+      }
+    },
+    {
+      "kind": "company_profile",
+      "title": "Mount — YC directory profile",
+      "content": "Batch: Spring 2026\nFounded: 2026\nTeam size: 2\nLocation: San Francisco\nStatus: Active\nWebsite: https://mount.insure\nLinkedIn: https://www.linkedin.com/company/mountyc26/posts/?feedView=all\n\nTLDR: Mount is building the AI insurance carrier, starting with liability coverage for deployed AI agents. As everyone moves AI Agents into production and gives them more responsibility, we help businesses insure and secure them.\r\n\r\nWhenever responsibility shifts from human operators to autonomous systems, so too does the liability that accompanies it. The systems also introduce new risks: agentic software failures, prompt injection attacks, autonomous workflow errors, data leaks, and more.\r\n\r\nLegacy insurance was not built for this. Existing policies are often silent, ambiguous, or exclude autonomous software, and traditional insurers lack the data and technical capability to assess deployed AI Systems.\r\n\r\nOur first product, the Mount AI Liability Policy, is built for mid-market and enterprise companies deploying autonomous AI agents in real business processes. We scan and red-team AI deployments, quantify operational risk, help fix vulnerabilities, and insure the residual risk with purpose-built AI liability coverage.\r\n\r\nMount is best thought of as a highly automated version of today's commercial insurance carriers, which run on manual workflows, layers of intermediaries, and tens of thousands of employees. AI enables automation of underwriting, pricing, policy issuance, claims, fraud det",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/mount",
+        "retrieved_at": "2026-08-13T20:58:18.477027Z"
+      }
+    },
+    {
+      "kind": "website_copy",
+      "title": "Homepage of mount.insure — Mount",
+      "content": "Insurance for the agent economy Mount Insure and secure your AI agents Mount identifies vulnerabilities faster than attackers. Continuously improves security. Insures them instantly. Get a quote Get a quote Get a quote securing AI by the world's top providers HOW IT WORKS Everything you need to secure AI agents – all in one place Test your Risk Real-time vulnerability scanning and risk scoring for your deployed AI agents. Identify threats before attackers do. Vulnerability Scanning Real-Time Detection Risk Dashboard Improve Security Automated remediation recommendations and one-click security fixes. Your posture improves continuously, not annually. Automated Remediation Compliance Analysis Continuons hardening Active Insurance Insurance coverage built for AI agents. Instant activation, real-time pricing, and AI-specific risk protection. 48-Hour Activation Dynamic Pricing AI-Specific Coverage SOLUTION Coverage designed for real-world AI risks From operational failures to regulatory exposure, ActiveCover helps AI-native companies stay protected against the unique risks introduced by modern AI systems and automation. Get a quote Get a quote Get a quote 8 Real-world AI risk categories covered by ActiveCover 24/7 Continuous monitoring and incident response Enterprise Built for production AI deployments AI-first Purpose-built for agentic systems Type Solution Area Coverage Details First-Party Restoration & Retraining Cost to restore corrupted data and retrain AI models after an incident. First-Party Business Interruption Revenue loss from AI-driven failures that disrupt operations. First-Party Incident Response & Regulatory Costs Forensic investigation, legal counsel, and regulatory notifications. Third-Party Harmful or Infringing AI outputs Claims from AI content that infringes IP, defames, or cause harm. First-Party Runway Usage & Infrastructure Overage Unexpected spikes in API and infrastructure costs during security events First-Party Incorrect Funds Transfer Financial losses from AI-driven errors in payment processing Third-Party Privacy & Confidentiality Breaches Sensitive data inadvertently exposed thorugh AI systems or prompts. Third-Party Service Failure & Negligence Claims when AI systems fail to perform as expected. Learn more about Mount Industry Apr 13, 2026 Who's Liable When Your AI Agent Makes a Mistake? Industry Apr 13, 2026 Welcome to Mount Industry Apr 13, 2026 AI Insurance is the New Cyber Insurance Industry Apr 13, 2026 Who's Liable When Your AI Agent Makes a Mistake? Industry Apr 13, 2026 Welcome to Mount Industry Apr 13, 2026 AI Insurance is the New Cyber Insurance View All View All collborations In collborations with the best insurance players in the world It's time to get started with Mount Get a quote Get a quote Get a quote It's time to get started with Mount Get a quote Get a quote Get a quote It's time to get started with Mount Get a quote Get a quote Get a quote It's time to get started with Mount Get a quote Get a quote Ge",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "web",
+        "url": "https://mount.insure",
+        "retrieved_at": "2026-08-13T20:58:18.486450Z"
+      }
+    }
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "No Hacker News launch thread found for this company"
+  ]
+}

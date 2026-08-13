@@ -1,0 +1,380 @@
+{
+  "key": "8816f500e0e65e5a",
+  "inputs": {
+    "url": "https://hn.algolia.com/api/v1/items/48646165"
+  },
+  "fetched_at": "2026-08-13T20:46:37.422415+00:00",
+  "payload": {
+    "author": "NotASithLord",
+    "children": [
+      {
+        "author": "NotASithLord",
+        "children": [
+          {
+            "author": "beepbooptheory",
+            "children": [
+              {
+                "author": "NotASithLord",
+                "children": [],
+                "created_at": "2026-06-24T18:22:34.000Z",
+                "created_at_i": 1782325354,
+                "id": 48663792,
+                "options": [],
+                "parent_id": 48663522,
+                "points": null,
+                "story_id": 48646165,
+                "text": "It&#x27;s vanilla JS with no unnecessary build step. Runs in the browser as is, and easy to audit.",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2026-06-24T18:04:13.000Z",
+            "created_at_i": 1782324253,
+            "id": 48663522,
+            "options": [],
+            "parent_id": 48662624,
+            "points": null,
+            "story_id": 48646165,
+            "text": "JSdoc? Not typescript? What is this, 2010?",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2026-06-24T16:52:39.000Z",
+        "created_at_i": 1782319959,
+        "id": 48662624,
+        "options": [],
+        "parent_id": 48646165,
+        "points": null,
+        "story_id": 48646165,
+        "text": "Author here. Some other technical tidbits:<p>- Fully typed checked with JSdoc, and Bun&#x2F;TS for testing.<p>- stdlib-js is injected into every js runner and notebook for better math capabilities than vanilla js, and also charts etc.<p>- App dev tasks utilize mithril for making SPAs, a very small no-dependency framework that is very fit to purpose for the client side nature of peerd apps.<p>- Currently on main, tabs are global objects each chat session can freely mutate, which is not great. The new in progress model has one &quot;resident&quot; agent own every tab. Only they have the exposed capability to mutate it, and everything between agents&#x2F;sessions is message based. This has some cool properties: further isolation between contexts, mirroring the web runner subagent. Explicit ownership and scope is cleaner and better for parallel ops. Context and system prompts can be reduced and focused to the specific context the session is exposed to. The orchestrator doesn\u2019t have any low level tab interactions available to it. The tab residents have <i>only</i> the tab interaction tools relevant to it, and the instructions specific to the tab type (js notebook, linux vm, app dev, etc). Over time model usage can be tuned and optimized for each specific context etc.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "toozitax",
+        "children": [
+          {
+            "author": "NotASithLord",
+            "children": [],
+            "created_at": "2026-06-24T17:09:34.000Z",
+            "created_at_i": 1782320974,
+            "id": 48662836,
+            "options": [],
+            "parent_id": 48662684,
+            "points": null,
+            "story_id": 48646165,
+            "text": "It&#x27;s defense in depth, definitely not a silver bullet. The web runner has no access to wider capabilities outside of that page. So the only path for a prompt injection to do anything is to try and get itself included in the summary, and get the main loop to act on an instruction in that summary. That means getting pass two sets of &lt;untrusted&gt; tags and explicit instructions to treat everything inside as information, not instruction. Then the egress checkpoint and allow&#x2F;deny whitelists are the final guards regardless of what the main loop decides to do. Trying to harden wherever I can if you have any recs.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2026-06-24T16:57:25.000Z",
+        "created_at_i": 1782320245,
+        "id": 48662684,
+        "options": [],
+        "parent_id": 48646165,
+        "points": null,
+        "story_id": 48646165,
+        "text": "If the web runners return summarized results and those are still treated as untrusted, what&#x27;s stopping a summary itself from carrying the injection up to the main loop?",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "andai",
+        "children": [
+          {
+            "author": "NotASithLord",
+            "children": [],
+            "created_at": "2026-06-24T17:28:08.000Z",
+            "created_at_i": 1782322088,
+            "id": 48663087,
+            "options": [],
+            "parent_id": 48662996,
+            "points": null,
+            "story_id": 48646165,
+            "text": "I hope so! There&#x27;s different approaches for different use cases, for sure. This seemed like a genuinely new one worth exploring and seeing where it goes. I think the benefits are that the agent &quot;lives&quot; where most people already work and live their online lives. Has direct web access, and all the other browser primitives I&#x27;ve tried to demo. But yeah, wasm especially opens up literally any kind of application as well. The guys at CheerpX have made a great engine and 64-bit is going to be a big unlock.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "Garlef",
+            "children": [
+              {
+                "author": "andai",
+                "children": [
+                  {
+                    "author": "Garlef",
+                    "children": [
+                      {
+                        "author": "andai",
+                        "children": [],
+                        "created_at": "2026-06-27T03:37:15.000Z",
+                        "created_at_i": 1782531435,
+                        "id": 48694893,
+                        "options": [],
+                        "parent_id": 48670601,
+                        "points": null,
+                        "story_id": 48646165,
+                        "text": "What&#x27;s that?",
+                        "title": null,
+                        "type": "comment",
+                        "url": null
+                      }
+                    ],
+                    "created_at": "2026-06-25T08:30:37.000Z",
+                    "created_at_i": 1782376237,
+                    "id": 48670601,
+                    "options": [],
+                    "parent_id": 48667141,
+                    "points": null,
+                    "story_id": 48646165,
+                    "text": "and your orchestrating agent has permissions to add users?",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2026-06-25T00:12:16.000Z",
+                "created_at_i": 1782346336,
+                "id": 48667141,
+                "options": [],
+                "parent_id": 48663423,
+                "points": null,
+                "story_id": 48646165,
+                "text": "&gt;how do you manage this across multiple isolated sessions<p>I actually ran into this today. Needed a fresh environment to replicate a bug.<p><pre><code>    sudo adduser agent2</code></pre>",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2026-06-24T17:55:00.000Z",
+            "created_at_i": 1782323700,
+            "id": 48663423,
+            "options": [],
+            "parent_id": 48662996,
+            "points": null,
+            "story_id": 48646165,
+            "text": "&gt; just give it its own Linux user<p>it&#x27;s never &quot;just&quot; ...<p>(for example: how do you manage this across multiple isolated sessions?)<p>opening a browser is much easier<p>... and the entry barrier for non-linux people at your company is much much lower<p>... and the compliance barrier for companies is much much lower (how do you ensure that everyone creates the users correctly?)",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2026-06-24T17:21:19.000Z",
+        "created_at_i": 1782321679,
+        "id": 48662996,
+        "options": [],
+        "parent_id": 48646165,
+        "points": null,
+        "story_id": 48646165,
+        "text": "That&#x27;s cool. Sounds very impressive. What&#x27;s the point of all this security though?<p>You don&#x27;t want it to access your files, just give it its own Linux user. You don&#x27;t even need a container.<p>Better yet, you can give it root on a $3 VPS (or $30 Thinkpad) and get a sysadmin for free :)<p>Although, Cheerpx... that seems to imply your agent can play Java and Flash games. Alright, you might be on to something!",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "danielrmay",
+        "children": [
+          {
+            "author": "NotASithLord",
+            "children": [
+              {
+                "author": "NotASithLord",
+                "children": [],
+                "created_at": "2026-06-24T17:36:46.000Z",
+                "created_at_i": 1782322606,
+                "id": 48663187,
+                "options": [],
+                "parent_id": 48663098,
+                "points": null,
+                "story_id": 48646165,
+                "text": "Moved",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2026-06-24T17:29:11.000Z",
+            "created_at_i": 1782322151,
+            "id": 48663098,
+            "options": [],
+            "parent_id": 48663052,
+            "points": null,
+            "story_id": 48646165,
+            "text": "It&#x27;s a project convention for human contributors as well. Agree it can probably be relocated though.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2026-06-24T17:25:11.000Z",
+        "created_at_i": 1782321911,
+        "id": 48663052,
+        "options": [],
+        "parent_id": 48646165,
+        "points": null,
+        "story_id": 48646165,
+        "text": "&gt; The name is always lowercase: peerd.<p>Gotta love it when agent instructions get blurted out in user-facing documentation",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "ricardobeat",
+        "children": [
+          {
+            "author": "NotASithLord",
+            "children": [],
+            "created_at": "2026-06-24T17:36:13.000Z",
+            "created_at_i": 1782322573,
+            "id": 48663177,
+            "options": [],
+            "parent_id": 48663119,
+            "points": null,
+            "story_id": 48646165,
+            "text": "Scrubbed. Taking a fresh pass through.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "da_grift_shift",
+            "children": [
+              {
+                "author": "NotASithLord",
+                "children": [],
+                "created_at": "2026-06-24T18:41:36.000Z",
+                "created_at_i": 1782326496,
+                "id": 48664059,
+                "options": [],
+                "parent_id": 48663910,
+                "points": null,
+                "story_id": 48646165,
+                "text": "Agree on markdown bloat&#x2F;hoarding. Appreciate the feedback, already doing a pass based on other feedback and trimming fat.",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2026-06-24T18:30:47.000Z",
+            "created_at_i": 1782325847,
+            "id": 48663910,
+            "options": [],
+            "parent_id": 48663119,
+            "points": null,
+            "story_id": 48646165,
+            "text": "I&#x27;m going to do a simonw here and coin &quot;Markdown hoarding&quot; for the Claudeism of producing reams of hyper-dense prose and compounding it with every commit that touches docs. The documentation gets more and more bloated.<p>The default Claude voice is breathless, jargon-heavy showboating:<p><pre><code>    WebRTC transport (trickle ICE) \u2014 RTCPeerConnection data channels with trickle signaling; same-machine mDNS-loopback rewrite. Browser&#x2F;device-verified. peerd-distributed&#x2F;transport&#x2F;transports&#x2F;webrtc.js\n\n    TOFU rootfs integrity pin \u2014 pure decision logic: trust-on-first-use pin of base-image size + first-64KiB SHA-256, verified each boot, fails closed on drift. Head-only by construction \u2014 a faithful-head&#x2F;tampered-tail host is an acknowledged residual gap. peerd-engine&#x2F;image-pin.js (partial)\n\n    PDF reading (read_pdf) \u2014 pdf.js text-layer extraction with opt-in SRI-pinned OCR engine + page assembly. pdf&#x2F;, tools&#x2F;defs&#x2F;read-pdf.js\n</code></pre>\nThis isn&#x27;t a critique of the author, more of Opus, but I&#x27;d be curious what effect <a href=\"https:&#x2F;&#x2F;github.com&#x2F;blader&#x2F;humanizer&#x2F;blob&#x2F;main&#x2F;SKILL.md\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;blader&#x2F;humanizer&#x2F;blob&#x2F;main&#x2F;SKILL.md</a> might have.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "uberex",
+            "children": [],
+            "created_at": "2026-06-24T22:35:06.000Z",
+            "created_at_i": 1782340506,
+            "id": 48666399,
+            "options": [],
+            "parent_id": 48663119,
+            "points": null,
+            "story_id": 48646165,
+            "text": "Yeah those C suite press-release &quot;white paper&quot; articles I always avoided reading are now infecting everything.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2026-06-24T17:30:52.000Z",
+        "created_at_i": 1782322252,
+        "id": 48663119,
+        "options": [],
+        "parent_id": 48646165,
+        "points": null,
+        "story_id": 48646165,
+        "text": "&gt; The bet is structural<p>Why has AI writing become so insufferable?<p>The project would be a lot more credible if the feature list wasn&#x27;t so comically extensive and verbose [1]. Slop overload.<p>[1] <a href=\"https:&#x2F;&#x2F;github.com&#x2F;NotASithLord&#x2F;peerd&#x2F;blob&#x2F;main&#x2F;FEATURES.md\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;NotASithLord&#x2F;peerd&#x2F;blob&#x2F;main&#x2F;FEATURES.md</a>",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "arnley",
+        "children": [
+          {
+            "author": "NotASithLord",
+            "children": [],
+            "created_at": "2026-06-24T23:53:40.000Z",
+            "created_at_i": 1782345220,
+            "id": 48666977,
+            "options": [],
+            "parent_id": 48664711,
+            "points": null,
+            "story_id": 48646165,
+            "text": "Hey, cool project. Lots of simpler inspirations obviously. Ultimately an extension is more friction than a web page, but it comes with much wider capabilities when you&#x27;re not locked to a single tab. So it&#x27;s the right choice for peerd in particular, but the web page approach for a low friction demo is a good idea. I have two small ones on peerd.ai (the real linux terminal, and the p2p connections) but can probably flesh that out more in a compelling way.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2026-06-24T19:37:38.000Z",
+        "created_at_i": 1782329858,
+        "id": 48664711,
+        "options": [],
+        "parent_id": 48646165,
+        "points": null,
+        "story_id": 48646165,
+        "text": "Congratz on your project. Yet I feel that the browser extension part is doing damage to its discoverability hence democratization.<p>You might be interested in this browser-based agentic solution I&#x27;m currently building in the open: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;codename-co&#x2F;devs\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;codename-co&#x2F;devs</a>",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "ethigent",
+        "children": [],
+        "created_at": "2026-06-24T21:16:30.000Z",
+        "created_at_i": 1782335790,
+        "id": 48665739,
+        "options": [],
+        "parent_id": 48646165,
+        "points": null,
+        "story_id": 48646165,
+        "text": "Lets collaborate!  https;&#x2F;&#x2F;www.threedeep.tech&#x2F;",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "StahlGuo",
+        "children": [],
+        "created_at": "2026-06-25T04:38:41.000Z",
+        "created_at_i": 1782362321,
+        "id": 48668972,
+        "options": [],
+        "parent_id": 48646165,
+        "points": null,
+        "story_id": 48646165,
+        "text": "Broswer contains many security concerns, how do you solve privacy and security.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      }
+    ],
+    "created_at": "2026-06-23T15:05:00.000Z",
+    "created_at_i": 1782227100,
+    "id": 48646165,
+    "options": [],
+    "parent_id": null,
+    "points": 75,
+    "story_id": 48646165,
+    "text": "Hey HN. <a href=\"http:&#x2F;&#x2F;peerd.ai\" rel=\"nofollow\">http:&#x2F;&#x2F;peerd.ai</a> is an AI agent harness that lives entirely in your browser as a web extension. You don\u2019t have to install a separate \u201cAI browser\u201d. You don\u2019t have to bolt on or run some external process or manage a clunky mcp integration. It\u2019s just a fully contained web extension, written in no build vanilla JS with minimal non-browser dependencies, using your own provider keys, and Apache 2.<p>This isn\u2019t just a fun hack. While it has largely been a solo side project, I genuinely believe the browser and the web could be the most natural platform for AI agents to operate safely, autonomously, and most importantly without A2A middlemen (more on that in a sec). To demonstrate that point peerd doesn\u2019t just drive browser automation. It spins up isolated sandboxes using tabs and worker instances to support various real workload types. Those include headless JS computational work, visual JS notebooks, personal client side apps, and real Linux VMs on top of wasm with full http networking.<p>The industry discourse over the last several months has been dominated by \u201cwhich substrate is the best for ai agent sandboxes\u201d with many competing answers focused on different models and use cases. Cloudflare is one of the most prominent examples, positioning its v8 isolate based workers as the best in class solution thanks to faster than container startup times and strong isolation guarantees.   The v8 isolate is of course the product of chromium, which runs on billions of browsers around the world for free. The browser as a whole is perhaps the most battle tested sandbox system in the entire software industry. It\u2019s been built on 3 decades of learning from hostile content, hostile code, and hostile users. Native and cloud agents are necessarily rebuilding all or most of this posture from scratch. peerd doesn\u2019t. It leverages everything the browser has to offer and pushes it to its functional limits, while inheriting its security baseline and isolation from the host system.<p>Robust sandboxing isn\u2019t the only thing the browser offers and peerd uses. It comes with extremely powerful and underrated primitives, from webCrypto, webRTC, webAuthn, webGPU, and ~soon WebNN. Direct web access, with your real live sessions, and api calls with fetch present an alternative model to MCP integrations. The agent can write and spawn web apps right there in a tab, no hosted service necessary. Then there\u2019s the A2A piece: peerd already has a rudimentary p2p (peerd-to-peerd?) network in place using webRTC. Today you can connect with peers on the network, add them as contacts, and share signed apps you\u2019ve created. I\u2019m working on extending these apps to be able to leverage the same p2p network to support decentralized web apps (dwapps), as well as facilitate true p2p A2A with no platform or middlemen.<p>Given this is an early part time project, this is an extremely experimental build and in a v0.x preview state. I\u2019ve taken care to attempt to address the lethal trifecta: the main agent loops&#x2F;sessions never ingest untrusted DOM code or possess low level navigation tools. It delegates those tasks to dedicated web runners with no wider tooling or secrets access that return summarized results. Both the DOM and the summarized results are bracketed as untrusted, meaning two stacked prompt injection escapes are needed. All egress goes through a central module that has a customizable deny list, and only models calls to designated allowed endpoints are possible. See more in the docs, site, and the code itself. Ultimately, use at your own risk.<p>Today anthropic, open router, local ollama, and even an experimental WebGPU instance of Gemma are supported.<p>Honest limitations: Chrome store and AMO are still pending until it can get more eyeballs and live usage. Just loading unpacked from GitHub is the easiest way to go, and as a bonus makes it easy to audit thanks to no build. Linux on wasm depends on the Cheerpx engine, which is not open source and has restrictions for commercial use. That may be a good reason to reassess it compared to alternatives, but it\u2019s also the most performant and looks closest to implementing 64bit support.<p>Poke around, use it, critique it, and have fun.",
+    "title": "Show HN: peerd \u2013 AI agent harness that runs entirely in your browser",
+    "type": "story",
+    "url": "https://github.com/NotASithLord/peerd"
+  }
+}

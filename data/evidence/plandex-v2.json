@@ -1,0 +1,201 @@
+{
+  "candidate": {
+    "slug": "plandex-v2",
+    "name": "Plandex v2",
+    "website": "https://github.com/plandex-ai/plandex",
+    "one_liner": "open source AI coding agent for large projects and tasks",
+    "description": "Hey HN! I’m Dane, the creator of Plandex ( https://github.com/plandex-ai/plandex ), an open source AI coding agent focused especially on tackling large tasks in real world software projects. You can watch a 2 minute demo of Plandex in action here: https://www.youtube.com/watch?v=SFSu2vNmlLk And here’s more of a tutorial style demo showing how Plandex can automatically debug a browser application: https://www.youtube.com/watch?v=g-_76U_nK0Y . I launched Plandex v1 here on HN a little less than a year ago ( https://news.ycombinator.com/item?id=39918500 ). Now I’m launching a major update, Plandex v2, which is the result of 8 months of heads down work, and is in effect a whole new project/product. In short, Plandex is now a top-tier coding agent with fully autonomous capabilities. It…",
+    "keywords": [],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "traction",
+        "label": "257 points and 81 comments on Hacker News",
+        "value": 257.0,
+        "observed_at": "2025-04-16T21:26:42Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=43710576",
+          "retrieved_at": "2026-08-13T15:14:24.382806Z"
+        }
+      },
+      {
+        "kind": "freshness",
+        "label": "Launched on HN 16 Apr 2025",
+        "value": null,
+        "observed_at": "2025-04-16T21:26:42Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=43710576",
+          "retrieved_at": "2026-08-13T15:14:24.382806Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Posted and answered questions as HN user @danenania",
+        "value": null,
+        "observed_at": "2025-04-16T21:26:42Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=43710576",
+          "retrieved_at": "2026-08-13T15:14:24.382806Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=43710576",
+        "retrieved_at": "2026-08-13T15:14:24.382806Z"
+      }
+    ]
+  },
+  "gathered_at": "2026-08-13T20:58:18.509046Z",
+  "items": [
+    {
+      "kind": "hn_launch_text",
+      "title": "Launch post by @danenania",
+      "content": "Hey HN! I’m Dane, the creator of Plandex ( https://github.com/plandex-ai/plandex ), an open source AI coding agent focused especially on tackling large tasks in real world software projects. You can watch a 2 minute demo of Plandex in action here: https://www.youtube.com/watch?v=SFSu2vNmlLk And here’s more of a tutorial style demo showing how Plandex can automatically debug a browser application: https://www.youtube.com/watch?v=g-_76U_nK0Y . I launched Plandex v1 here on HN a little less than a year ago ( https://news.ycombinator.com/item?id=39918500 ). Now I’m launching a major update, Plandex v2, which is the result of 8 months of heads down work, and is in effect a whole new project/product. In short, Plandex is now a top-tier coding agent with fully autonomous capabilities. It combines models from Anthropic, OpenAI, and Google to achieve better results, more reliable agent behavior, better cost efficiency, and better performance than is possible by using only a single provider’s models. I believe it is now one of the best tools available for working on large tasks in real world codebases with AI. It has an effective context window of 2M tokens, and can index projects of 20M tokens and beyond using tree-sitter project maps (30+ languages are supported). It can effectively find relevant context in massive million-line projects like SQLite, Redis, and Git. A bit more on some of Plandex’s key features: - Plandex has a built-in diff review sandbox that helps you get the benefits of AI without leaving behind a mess in your project. By default, all changes accumulate in the sandbox until you approve them. The sandbox is version-controlled. You can rewind it to any previous point, and you can also create branches to try out alternative approaches. - It offers a ‘full auto mode’ that can complete large tasks autonomously end-to-end, including high level planning, context loading, detailed planning, implementation, command execution (for dependencies, builds, tests, etc.), and debugging. - The autonomy level is highly configurable. You can move up and down the ladder of autonomy depending on the task, your comfort level, and how you weigh cost optimization vs. effort and results. - Models and model settings are also very configurable. There are built-in models and model packs for different use cases. You can also add custom models and model packs, and customize model settings like temperature or top-p. All model changes are version controlled, so you can use…",
+      "value": 257.0,
+      "observed_at": "2025-04-16T21:26:42Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=43710576",
+        "retrieved_at": "2026-08-13T20:58:18.508636Z"
+      }
+    },
+    {
+      "kind": "github_repo",
+      "title": "GitHub repo plandex-ai/plandex",
+      "content": "Stars: 15581\nForks: 1171\nOpen issues: 60\nLanguage: Go\nCreated: 2023-10-24\nLast pushed: 2025-10-03\nLicense: MIT\nArchived: False\nDescription: Open source AI coding agent. Designed for large projects and real world tasks.\nTopics: ai, ai-agents, ai-developer-tools, ai-tools, cli, command-line, developer-tools, git, golang, gpt-4, llm, openai",
+      "value": 15581.0,
+      "observed_at": "2025-10-03T21:49:58Z",
+      "provenance": {
+        "source": "github",
+        "url": "https://github.com/plandex-ai/plandex",
+        "retrieved_at": "2026-08-13T20:58:18.508334Z"
+      }
+    },
+    {
+      "kind": "hn_profile",
+      "title": "HN profile of @danenania (8084 karma)",
+      "content": "Currently an engineer at OpenAI working on Codex Security. Past founder of Plandex: an open source AI coding agent - https://plandex.ai | dane@plandex.ai Also past founder of EnvKey (YC W18): the simple, secure, open source configuration and secrets manager - https://www.envkey.com | dane@envkey.com @Danenania on the twitters.",
+      "value": 8084.0,
+      "observed_at": null,
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/user?id=danenania",
+        "retrieved_at": "2026-08-13T20:58:18.509031Z"
+      }
+    },
+    {
+      "kind": "github_contributors",
+      "title": "Top contributors to plandex-ai/plandex",
+      "content": "danenania: 821 commits\nZanzyTHEbar: 23 commits\nharleypig: 19 commits\nSlahser: 18 commits\nappreciated: 13 commits\nryanwithawhy: 5 commits\nkalil0321: 4 commits\nsongzhibin97: 2 commits\nryansonshine: 2 commits\nGarfinkel: 2 commits",
+      "value": 10.0,
+      "observed_at": null,
+      "provenance": {
+        "source": "github",
+        "url": "https://github.com/plandex-ai/plandex",
+        "retrieved_at": "2026-08-13T20:58:18.508334Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @maxwelljoslyn",
+      "content": "It seems that much like Aider, you use separate models for creating code edits and validating them. That's a win in my book. It seems Claude Code does not do that, which is part of the reason it racks up a (relatively) large bill for long work sessions (that and the cost of sonnet-3.7). I bounce back and forth between Aider, Claude Code, and Simon Willison's LLM tool (\"just\" a GOOD wrapper for using LLMs at the CLI, unlike the other two which are agent-y.) LLM is my favorite because I usually don't need/want full autonomy, but Claude Code has started to win me over for straightforward stuff. Plandex looks cool enough to throw into the rotation! My main concern at this point is that I use a…",
+      "value": null,
+      "observed_at": "2025-04-16T21:43:49Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=43710740",
+        "retrieved_at": "2026-08-13T20:58:18.508735Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @chrisweekly",
+      "content": "This looks powerful and useful. Also, IMHO it's an exemplary \"Show HN\"; nice job w/ the description.",
+      "value": null,
+      "observed_at": "2025-04-16T21:44:19Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=43710745",
+        "retrieved_at": "2026-08-13T20:58:18.508742Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @handfuloflight",
+      "content": "How efficient is it in constructing context?",
+      "value": null,
+      "observed_at": "2025-04-16T21:52:43Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=43710811",
+        "retrieved_at": "2026-08-13T20:58:18.508746Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @jmcpheron",
+      "content": "Plandex was one of the first agentic style coating system to I tried several months ago, and it worked very well. But I've been using the cursor and windsurf style editors more recently because of their popularity. And their effectiveness is honestly pretty great. Would you classify Plandex as more similar to a terminal interface like Claude Code? Also it looks like Open AI released a similar terminal based tool today. https://github.com/openai/codex Do you see an obvious distinctions or pros/cons between the terminal tools and the IDE systems?",
+      "value": null,
+      "observed_at": "2025-04-16T23:41:57Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=43711522",
+        "retrieved_at": "2026-08-13T20:58:18.508760Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @ramesh31",
+      "content": "CLI interfaces are not where it's at for this stuff. What makes Cline the king of codegen agents right now IMO (from a UI/UX perspective) is how well they handle displaying the code, opening files, and scrolling the cursor as it changes. Even in a fully autonomous agentic flow, you still really want to be reading the code as it is written, to maintain context and keep steering it correctly. Having to go back and look at a huge diff after all of your updates is a real pain and slows things down.",
+      "value": null,
+      "observed_at": "2025-04-17T03:07:08Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=43712711",
+        "retrieved_at": "2026-08-13T20:58:18.508772Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @danenania",
+      "content": "> It seems that much like Aider, you use separate models for creating code edits and validating them. That's right. To apply edits, Plandex first attempts a deterministic edit based on the edit snippet. In some cases this can be used without validation, and in others a validation step is needed. A \"race\" is then orchestrated with o3-mini between an aider-style diff edit, a whole file build, and (on the cloud service) a specialized model. I actually wrote a comment about how this works (while maintaining efficiency/cost-effectiveness) a couple days ago: https://news.ycombinator.com/item?id=43673412 And on the Docker question, it should be working well on Mac.",
+      "value": null,
+      "observed_at": "2025-04-16T21:55:46Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=43710835",
+        "retrieved_at": "2026-08-13T20:58:18.508799Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @danenania",
+      "content": "A few differences: - Plandex is more agentic—it can complete a complex task, updating many files, all in one go. - Changes are applied to a sandbox by default rather than directly to project files, helping you prevent unintended changes. - Plandex can automatically find the context it needs in the project. - Plandex can execute commands (like installing dependencies, running tests, etc.) and auto-debug if they fail. - Plandex should be more reliable on file edits—it uses an enhanced version of aider's diff-style edit that is resilient to multiple occurrences, but it also has validation, a whole file fallback, and on the cloud service, a custom fast apply model is also added to the mix. Will…",
+      "value": null,
+      "observed_at": "2025-04-18T15:28:49Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=43728977",
+        "retrieved_at": "2026-08-13T20:58:18.508817Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @danenania",
+      "content": "Thanks for the kind words! I really appreciate it.",
+      "value": null,
+      "observed_at": "2025-04-16T22:04:04Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=43710888",
+        "retrieved_at": "2026-08-13T20:58:18.508820Z"
+      }
+    }
+  ],
+  "gaps": []
+}

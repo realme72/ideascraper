@@ -1,0 +1,12 @@
+{
+  "key": "15a7fa7d787a8f9f",
+  "inputs": {
+    "url": "https://hn.algolia.com/api/v1/users/Haakam21"
+  },
+  "fetched_at": "2026-08-13T20:46:34.371024+00:00",
+  "payload": {
+    "about": null,
+    "karma": 150,
+    "username": "Haakam21"
+  }
+}

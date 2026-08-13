@@ -1,0 +1,191 @@
+{
+  "candidate": {
+    "slug": "spine-swarm",
+    "name": "Spine Swarm",
+    "website": "https://www.getspine.ai/",
+    "one_liner": "AI agents that collaborate on a visual canvas",
+    "description": "Hey HN! We're Ashwin and Akshay from Spine AI ( https://www.getspine.ai ). Spine Swarm is a multi-agent system that works on an infinite visual canvas to complete complex non-coding projects: competitive analysis, financial modeling, SEO audits, pitch decks, interactive prototypes, and more. Here's a video of it in action: https://www.youtube.com/watch?v=R_2-ggpZz0Q . We've been friends for over 13 years. We took our first ML course together at NTU, in a part of campus called North Spine, which is where the name comes from. We went through YC in S23 and have spent about 3 years building Spine across many product iterations. The core idea: chat is the wrong interface for complex AI work. It's a linear thread, and real projects aren't linear. Sure, you can ask a chatbot to reference the…",
+    "keywords": [],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "traction",
+        "label": "109 points and 69 comments on Hacker News",
+        "value": 109.0,
+        "observed_at": "2026-03-13T13:22:40Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=47364116",
+          "retrieved_at": "2026-08-13T15:14:23.500299Z"
+        }
+      },
+      {
+        "kind": "freshness",
+        "label": "Launched on HN 13 Mar 2026",
+        "value": null,
+        "observed_at": "2026-03-13T13:22:40Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=47364116",
+          "retrieved_at": "2026-08-13T15:14:23.500299Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Posted and answered questions as HN user @a24venka",
+        "value": null,
+        "observed_at": "2026-03-13T13:22:40Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=47364116",
+          "retrieved_at": "2026-08-13T15:14:23.500299Z"
+        }
+      },
+      {
+        "kind": "freshness",
+        "label": "YC S23 batch",
+        "value": null,
+        "observed_at": "2026-03-13T13:22:40Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=47364116",
+          "retrieved_at": "2026-08-13T15:14:23.500299Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=47364116",
+        "retrieved_at": "2026-08-13T15:14:23.500299Z"
+      }
+    ]
+  },
+  "gathered_at": "2026-08-13T20:58:19.336497Z",
+  "items": [
+    {
+      "kind": "hn_launch_text",
+      "title": "Launch post by @a24venka",
+      "content": "Hey HN! We're Ashwin and Akshay from Spine AI ( https://www.getspine.ai ). Spine Swarm is a multi-agent system that works on an infinite visual canvas to complete complex non-coding projects: competitive analysis, financial modeling, SEO audits, pitch decks, interactive prototypes, and more. Here's a video of it in action: https://www.youtube.com/watch?v=R_2-ggpZz0Q . We've been friends for over 13 years. We took our first ML course together at NTU, in a part of campus called North Spine, which is where the name comes from. We went through YC in S23 and have spent about 3 years building Spine across many product iterations. The core idea: chat is the wrong interface for complex AI work. It's a linear thread, and real projects aren't linear. Sure, you can ask a chatbot to reference the financial model from earlier in the thread, or run research and market sizing together, but you're trusting the model to juggle that context implicitly. There's no way to see how it's connecting the pieces, no way to correct one step without rerunning everything, and no way to branch off and explore two strategies side by side. ChatGPT was a demo that blew up, and chat stuck around as the default interface, not because it's the right abstraction. We thought humans and agents needed a real workspace where the structure of the work is explicit and user-controllable, not hidden inside a context window. So we built an infinite visual canvas where you think in blocks instead of threads. Each block is our abstraction on top of AI models. There are dedicated block types for LLM calls, image generation, web browsing, apps, slides, spreadsheets, and more. Think of them as Lego bricks for AI workflows: each one does something specific, but they can be snapped together and composed in many different ways. You can connect any block to any other block, and that connection guarantees the passing of context regardless of block type. The whole system is model-agnostic, so in a single workflow you can go from an OpenAI LLM call, to an image generation mode like Nano Banana Pro, to Claude generating an interactive app, each block using whatever model fits best. Multiple blocks can fan out from the same input, analyzing it in different ways with different models, then feed their outputs into a downstream block that synthesizes the results. The first version of the canvas was fully manual. Users entered prompts, chose models, ran blocks, and made connections themselves. It clicked with founders…",
+      "value": 109.0,
+      "observed_at": "2026-03-13T13:22:40Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=47364116",
+        "retrieved_at": "2026-08-13T20:58:19.333577Z"
+      }
+    },
+    {
+      "kind": "website_copy",
+      "title": "Homepage of getspine.ai — Spine AI | Canvas, Medley, and multi-agent research",
+      "content": "Spine AI builds Canvas for cloud-based multi-agent work and Medley for local-first agent orchestration, backed by research into adaptive agent systems. Spine AI | Canvas, Medley, and multi-agent research Canvas — cloud multi-agent work Canvas assembles specialized agents across 300+ models to research, analyze, and produce sourced deliverables, websites, and apps. Canvas is SOC 2 Type I compliant. Medley — local-first agent orchestration Medley returns finished work within your constraints and permission boundaries, with the full history of evolving plans, adaptive graphs, and execution receipts behind it. Its local daemon and Claude Code or Codex plugins coordinate models and worker harnesses across research, analysis, software, and more. Adaptive graphs, review, and repair Both products grow the work graph as agents discover dependencies. Review can create repair branches that return for verification before completion. State of the art across domains At the time of evaluation, Canvas ranked first on GAIA Level 3 and DeepSearchQA in February 2026, while Medley reported new highs on Terminal-Bench 2.1, HealthBench Professional, ViBench, and DrugDiscoveryBench in July 2026. The July results exceeded published frontier-model baselines available then, including Fable 5 and GPT-5.6 Sol. Use cases by role Investors Market sizing, competitive landscapes, earnings analysis, and investment memos — from public filings and data. Build a TAM/SAM/SOM model for [market] triangulating industry reports, public company disclosures, and analyst estimates — with sources, assumptions, and scenario tabs Research 15+ companies in [sector], their positioning, funding, revenue signals, and key risks — produce an investment thesis memo with comparable valuations Analyze the last 4 quarters of earnings calls for [company] and its 5 closest peers — extract sentiment shifts, guidance changes, and strategic pivots into a cross-company trend report Research SEC filings, insider transactions, and 13F institutional ownership changes for [company] over the past 6 months — produce a smart money signals report with charts Consultants Industry landscapes, market sizing, due diligence, and competitive intelligence — client-ready in minutes. Research the [industry] landscape: map the top 15 companies by segment, their positioning, pricing, funding, key customers, and the 3 most underserved segments — produce a strategy deck Produce a market sizing report for [industry] with bottom-up and top-down estimates, triangulating industry reports, public disclosures, and analyst data — with methodology and source citations Build a commercial due diligence report on [company]: market position, competitive moat, management team assessment, customer concentration risk, and key person dependencies — citing 20+ public sources Produce a competitive intelligence brief across 10 competitors in [market]: pricing changes, product launches, executive hires, funding rounds, and regulatory actions from t",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "web",
+        "url": "https://www.getspine.ai/",
+        "retrieved_at": "2026-08-13T20:58:19.336477Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @sebmellen",
+      "content": "Just as a tiny first piece of feedback, the main marketing website is very hard to understand or grok without a demo of how the tool works. Even just the quick YouTube video that you added in your post here, if embedded, would make a difference. There are so many \"agentic tools\" out there that it's really hard to see what differentiates this just based on the website.",
+      "value": null,
+      "observed_at": "2026-03-13T13:55:18Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=47364511",
+        "retrieved_at": "2026-08-13T20:58:19.333880Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @stuckkeys",
+      "content": "[flagged]",
+      "value": null,
+      "observed_at": "2026-03-13T14:09:21Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=47364695",
+        "retrieved_at": "2026-08-13T20:58:19.333888Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @jpbryan",
+      "content": "Why do I need a canvas to visualize the work that the agents are doing? I don't want to see their thought process, I just want the end product like how ChatGPT or Claude currently work.",
+      "value": null,
+      "observed_at": "2026-03-13T14:15:26Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=47364780",
+        "retrieved_at": "2026-08-13T20:58:19.333899Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @dude250711",
+      "content": "Dark UI pattern: pretends that it is immediately usable only to redirect for sign-up.",
+      "value": null,
+      "observed_at": "2026-03-13T14:29:03Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=47364969",
+        "retrieved_at": "2026-08-13T20:58:19.333905Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @gravity2060",
+      "content": "Is it possible to build self-improving swarm loops? (ie swarm x builds a thing, swarm y critiques and improved x’s work, repeat…)",
+      "value": null,
+      "observed_at": "2026-03-13T14:29:22Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=47364974",
+        "retrieved_at": "2026-08-13T20:58:19.333915Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @a24venka",
+      "content": "Thanks for the feedback! Definitely agree that we could do more with the marketing site. We're working on a gallery page to showcase some demos.",
+      "value": null,
+      "observed_at": "2026-03-13T14:05:30Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=47364646",
+        "retrieved_at": "2026-08-13T20:58:19.333944Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @a24venka",
+      "content": "That is definitely a valid way of using Spine as well. You can just work in the chat and consume the deliverables similar to how you would in other tools. The canvas helps when you want to trace back why an output wasn't what you expected, or if you're curious to dig deeper. Even beyond auditability, the canvas also helps agents do better work: they can generate in parallel, explore branches, and pass context to each other in a structured way (especially useful for longer-running tasks).",
+      "value": null,
+      "observed_at": "2026-03-13T14:25:36Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=47364930",
+        "retrieved_at": "2026-08-13T20:58:19.333963Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @a24venka",
+      "content": "Fair point, we should be more upfront about the sign-up step. Given that tasks are long-running and token-intensive, we do need an auth barrier to protect against abuse, but we can definitely do a better job signaling that before you hit the canvas.",
+      "value": null,
+      "observed_at": "2026-03-13T14:35:28Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=47365065",
+        "retrieved_at": "2026-08-13T20:58:19.333974Z"
+      }
+    }
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "HN user @a24venka has no bio on their profile"
+  ]
+}

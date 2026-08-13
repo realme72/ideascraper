@@ -1,0 +1,113 @@
+{
+  "candidate": {
+    "slug": "stratum-industries",
+    "name": "Stratum Industries",
+    "website": "https://stratumindustries.co/",
+    "one_liner": "AI agents that clear the U.S. government backlog.",
+    "description": "Stratum builds AI agents that clear the U.S. government backlog. Every permit, license, patent, drug approval, and benefits claim in America has to be reviewed by a government adjudicator and the software they rely on was built decades before AI. The result is millions of applications stuck in queues: veterans waiting on disability ratings, families waiting on pensions, builders waiting years to break ground.\r\n\r\nStratum replaces that workflow. A reviewer drops in an application, selects the rubric it needs to be checked against, and an agent plans, executes, and reviews the file end to end routing each step to the right model for the most accurate and cost-efficient decision. Hundreds of agents run in parallel in the cloud, with a human kept in the loop to approve and full auditability at every step, so an entire backlog can be cleared in the time it used to take to review a single file.\r\n\r\nWe're rebuilding the entire infrastructure the government runs on both the reviewer side and the applicant side - so filing and adjudication become instant instead of taking weeks.\r\n\r\nWe're Vihaan and Raj, brothers. Vihaan was founding engineer #3 at Cadastral (acquired by Legora) and dropped out of Waterloo to build Stratum. Raj led GTM at Deel, averaging 220% of quota over two years and ranking top 5 of 1,000+ reps globally, and dropped out of grad school at the University of Bath to build Stratum.",
+    "keywords": [
+      "AI",
+      "Automation",
+      "GovTech",
+      "Government"
+    ],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "freshness",
+        "label": "YC Summer 2026 batch",
+        "value": null,
+        "observed_at": "2026-07-29T22:47:30Z",
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/stratum-industries",
+          "retrieved_at": "2026-08-13T15:14:22.603167Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Team of 2",
+        "value": 2.0,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/stratum-industries",
+          "retrieved_at": "2026-08-13T15:14:22.603167Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Stage: Early",
+        "value": null,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/stratum-industries",
+          "retrieved_at": "2026-08-13T15:14:22.603167Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/stratum-industries",
+        "retrieved_at": "2026-08-13T15:14:22.603167Z"
+      }
+    ]
+  },
+  "gathered_at": "2026-08-13T20:58:19.385207Z",
+  "items": [
+    {
+      "kind": "founder",
+      "title": "Raj Jagiasi — Founder",
+      "content": "Co-founder at Stratum Industries - Agents clearing the U.S. Government backlog. Prev GTM at Deel. MSc CS @ University of Bath.\nLinks: https://www.linkedin.com/in/raj-jagiasi/, https://x.com/raj_jagiasi",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/stratum-industries",
+        "retrieved_at": "2026-08-13T20:58:19.376719Z"
+      }
+    },
+    {
+      "kind": "founder",
+      "title": "Vihaan Jagiasi — Founder",
+      "content": "co-founder @ Stratum Industries - agents clearing the U.S. governments backlog. prev founding engineer #3 at Cadastral (acquired by Legora). waterloo dropout\nLinks: https://www.linkedin.com/in/vihaanjagiasi/, https://x.com/VihaanJagiasi",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/stratum-industries",
+        "retrieved_at": "2026-08-13T20:58:19.376719Z"
+      }
+    },
+    {
+      "kind": "company_profile",
+      "title": "Stratum Industries — YC directory profile",
+      "content": "Batch: Summer 2026\nFounded: 2026\nTeam size: 2\nLocation: New York City, NY\nStatus: Active\nWebsite: https://stratumindustries.co/\nLinkedIn: https://www.linkedin.com/company/stratum-industries\n\nStratum builds AI agents that clear the U.S. government backlog. Every permit, license, patent, drug approval, and benefits claim in America has to be reviewed by a government adjudicator and the software they rely on was built decades before AI. The result is millions of applications stuck in queues: veterans waiting on disability ratings, families waiting on pensions, builders waiting years to break ground.\r\n\r\nStratum replaces that workflow. A reviewer drops in an application, selects the rubric it needs to be checked against, and an agent plans, executes, and reviews the file end to end routing each step to the right model for the most accurate and cost-efficient decision. Hundreds of agents run in parallel in the cloud, with a human kept in the loop to approve and full auditability at every step, so an entire backlog can be cleared in the time it used to take to review a single file.\r\n\r\nWe're rebuilding the entire infrastructure the government runs on both the reviewer side and the applicant side - so filing and adjudication become instant instead of taking weeks.\r\n\r\nWe're Vihaan and Raj, brothers. Vihaan was founding engineer #3 at Cadastral (acquired by Legora) and dropped out of Waterloo to build Stratum. Raj led GTM at Deel, averaging 220% of quota over two years and ranking top 5",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/stratum-industries",
+        "retrieved_at": "2026-08-13T20:58:19.376719Z"
+      }
+    },
+    {
+      "kind": "website_copy",
+      "title": "Homepage of stratumindustries.co — Stratum - Every application the government reviews, in seconds.",
+      "content": "Stratum is the platform that eliminates the government's backlog and reviews applications within seconds - hundreds of AI agents in parallel, a person approving every decision, a full audit trail behind it. Stratum - Every application the government reviews, in seconds. Federal · State · Local Backed by Y Combinator The Government cannot run at the speed of paper. The people who run the country are handed its slowest tools. We’re building them the best software there’s ever been. Talk to us → ↓ Washington · D.C. MMXXVI Layer 01 Everything Goes Through It 01 America has always been where it happens first We had the first light bulb, the first powered flight, the first transistor, the internet and the moon landing. We landed a rocket back on its own legs and filled entire cities with cars that drive themselves. Every one of them had to go through the same back and forth with the government before it could reach anybody - a new factory, a new drug, a new way of moving people, all of it needs approval before it gets deployed, and that is the reason we can build at this scale and be trusted with it. Hadley Base, 1971 Apollo 15 - NASA The approval isn’t the problem. The software it runs on is. Layer 02 The Standard Procedure 02 How the system works today Form STR-1980 Standard review procedure 01 You fill out a form. 02 You wait. 03 You fill out more forms. 04 A department asks you for something you already sent, so you send it again. 05 You wait. 06 Then you fill out more forms. 07 Eventually someone approves it. Weeks. Months. Sometimes years. Pending Federal records center Paper case files in storage That worked fine in the 1980s, and it does not work now that AI and robotics are moving this fast. The government wants to move faster, but it doesn't have the software to do it - the tools people open every morning to file and review millions of applications were built before AI existed, and they still work the way they did then. You can't patch your way out of that. The whole layer has to come out and be rebuilt from the ground up. Layer 03 Stratum 03 Stratum is the platform that eliminates the government’s backlog and reviews applications within seconds. Stratum Case STR-2026 01 The file lands, and Stratum reads every page of it. 02 It checks the file against the rubric the agency already uses. 03 Every step routes to the model that reviews it most accurately for the least cost. 04 Anything missing goes back to the applicant as one specific request. 05 The officer gets the whole file summarized, with every citation behind it. 06 The officer approves it or denies it. Seconds, not months. Human in the loop Hundreds of agents, running in parallel, on the same backlog. Cleared In queue One reviewer, one file at a time, is the other way to do this. Hundreds of these run at once in the cloud, so an entire backlog clears in the time it used to take to review a single file. Every step is auditable, and a person still makes the decision. That part never moves",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "web",
+        "url": "https://stratumindustries.co/",
+        "retrieved_at": "2026-08-13T20:58:19.385200Z"
+      }
+    }
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "No Hacker News launch thread found for this company"
+  ]
+}

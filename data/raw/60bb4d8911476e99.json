@@ -1,0 +1,8 @@
+{
+  "key": "60bb4d8911476e99",
+  "inputs": {
+    "url": "https://stratumindustries.co/robots.txt"
+  },
+  "fetched_at": "2026-08-13T20:46:45.409853+00:00",
+  "payload": "User-Agent: *\nAllow: /\n\nHost: https://stratumindustries.co\nSitemap: https://stratumindustries.co/sitemap.xml\n"
+}

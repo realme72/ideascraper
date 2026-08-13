@@ -1,0 +1,12 @@
+{
+  "key": "c8ec4b72bf8869ad",
+  "inputs": {
+    "url": "https://hn.algolia.com/api/v1/users/amronos"
+  },
+  "fetched_at": "2026-08-13T20:46:30.631367+00:00",
+  "payload": {
+    "about": null,
+    "karma": 3,
+    "username": "amronos"
+  }
+}

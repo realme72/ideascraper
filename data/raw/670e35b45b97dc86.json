@@ -1,0 +1,8 @@
+{
+  "key": "670e35b45b97dc86",
+  "inputs": {
+    "url": "https://spaceflow.tech/robots.txt"
+  },
+  "fetched_at": "2026-08-13T20:46:43.876925+00:00",
+  "payload": "User-agent: *\nAllow: /\n\nSitemap: https://spaceflow.tech/sitemap.xml"
+}

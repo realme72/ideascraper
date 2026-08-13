@@ -1,0 +1,12 @@
+{
+  "key": "dc4800b42b54ff48",
+  "inputs": {
+    "url": "https://hn.algolia.com/api/v1/users/a24venka"
+  },
+  "fetched_at": "2026-08-13T20:46:35.444571+00:00",
+  "payload": {
+    "about": null,
+    "karma": 66,
+    "username": "a24venka"
+  }
+}

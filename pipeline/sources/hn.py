@@ -19,7 +19,6 @@ that have long since raised or died.
 
 from __future__ import annotations
 
-import html
 import re
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
@@ -28,6 +27,7 @@ import httpx
 
 from pipeline import cache
 from pipeline.models import Candidate, Provenance, Signal
+from pipeline.textutil import strip_html
 
 SEARCH_URL = "https://hn.algolia.com/api/v1/search"
 ITEM_URL = "https://news.ycombinator.com/item?id={id}"
@@ -40,18 +40,9 @@ _LAUNCH_RE = re.compile(
 _SHOW_RE = re.compile(r"^Show HN:\s*(?P<rest>.+)$")
 _SEPARATOR_RE = re.compile(r"\s+[–—]\s+|\s+-\s+|:\s+")
 
-_TAG_RE = re.compile(r"<[^>]+>")
-
-
 def _clean(text: str | None, limit: int = 800) -> str | None:
     """HN story text is HTML fragments. Strip to plain text for storage."""
-    if not text:
-        return None
-    plain = html.unescape(_TAG_RE.sub(" ", text))
-    plain = re.sub(r"\s+", " ", plain).strip()
-    if len(plain) > limit:
-        plain = plain[:limit].rsplit(" ", 1)[0] + "…"
-    return plain or None
+    return strip_html(text, limit)
 
 
 def _name_from_url(url: str | None) -> str | None:

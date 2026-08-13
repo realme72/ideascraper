@@ -1,0 +1,191 @@
+{
+  "candidate": {
+    "slug": "peerd",
+    "name": "peerd",
+    "website": "https://github.com/NotASithLord/peerd",
+    "one_liner": "AI agent harness that runs entirely in your browser",
+    "description": "Hey HN. http://peerd.ai is an AI agent harness that lives entirely in your browser as a web extension. You don’t have to install a separate “AI browser”. You don’t have to bolt on or run some external process or manage a clunky mcp integration. It’s just a fully contained web extension, written in no build vanilla JS with minimal non-browser dependencies, using your own provider keys, and Apache 2. This isn’t just a fun hack. While it has largely been a solo side project, I genuinely believe the browser and the web could be the most natural platform for AI agents to operate safely, autonomously, and most importantly without A2A middlemen (more on that in a sec). To demonstrate that point peerd doesn’t just drive browser automation. It spins up isolated sandboxes using tabs and worker…",
+    "keywords": [],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "traction",
+        "label": "75 points and 23 comments on Hacker News",
+        "value": 75.0,
+        "observed_at": "2026-06-23T15:05:00Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48646165",
+          "retrieved_at": "2026-08-13T15:14:24.382483Z"
+        }
+      },
+      {
+        "kind": "freshness",
+        "label": "Launched on HN 23 Jun 2026",
+        "value": null,
+        "observed_at": "2026-06-23T15:05:00Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48646165",
+          "retrieved_at": "2026-08-13T15:14:24.382483Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Posted and answered questions as HN user @NotASithLord",
+        "value": null,
+        "observed_at": "2026-06-23T15:05:00Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48646165",
+          "retrieved_at": "2026-08-13T15:14:24.382483Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48646165",
+        "retrieved_at": "2026-08-13T15:14:24.382483Z"
+      }
+    ]
+  },
+  "gathered_at": "2026-08-13T20:58:19.338200Z",
+  "items": [
+    {
+      "kind": "hn_launch_text",
+      "title": "Launch post by @NotASithLord",
+      "content": "Hey HN. http://peerd.ai is an AI agent harness that lives entirely in your browser as a web extension. You don’t have to install a separate “AI browser”. You don’t have to bolt on or run some external process or manage a clunky mcp integration. It’s just a fully contained web extension, written in no build vanilla JS with minimal non-browser dependencies, using your own provider keys, and Apache 2. This isn’t just a fun hack. While it has largely been a solo side project, I genuinely believe the browser and the web could be the most natural platform for AI agents to operate safely, autonomously, and most importantly without A2A middlemen (more on that in a sec). To demonstrate that point peerd doesn’t just drive browser automation. It spins up isolated sandboxes using tabs and worker instances to support various real workload types. Those include headless JS computational work, visual JS notebooks, personal client side apps, and real Linux VMs on top of wasm with full http networking. The industry discourse over the last several months has been dominated by “which substrate is the best for ai agent sandboxes” with many competing answers focused on different models and use cases. Cloudflare is one of the most prominent examples, positioning its v8 isolate based workers as the best in class solution thanks to faster than container startup times and strong isolation guarantees. The v8 isolate is of course the product of chromium, which runs on billions of browsers around the world for free. The browser as a whole is perhaps the most battle tested sandbox system in the entire software industry. It’s been built on 3 decades of learning from hostile content, hostile code, and hostile users. Native and cloud agents are necessarily rebuilding all or most of this posture from scratch. peerd doesn’t. It leverages everything the browser has to offer and pushes it to its functional limits, while inheriting its security baseline and isolation from the host system. Robust sandboxing isn’t the only thing the browser offers and peerd uses. It comes with extremely powerful and underrated primitives, from webCrypto, webRTC, webAuthn, webGPU, and ~soon WebNN. Direct web access, with your real live sessions, and api calls with fetch present an alternative model to MCP integrations. The agent can write and spawn web apps right there in a tab, no hosted service necessary. Then there’s the A2A piece: peerd already has a rudimentary p2p (peerd-to-peerd?) network in place using…",
+      "value": 75.0,
+      "observed_at": "2026-06-23T15:05:00Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48646165",
+        "retrieved_at": "2026-08-13T20:58:19.337677Z"
+      }
+    },
+    {
+      "kind": "github_repo",
+      "title": "GitHub repo NotASithLord/peerd",
+      "content": "Stars: 384\nForks: 38\nOpen issues: 22\nLanguage: JavaScript\nCreated: 2026-06-22\nLast pushed: 2026-08-13\nLicense: Apache-2.0\nArchived: False\nDescription: The first AI agent harness native to the browser. A browser extension that runs a full agent loop where you already work: it drives your tabs, spins up sandboxed compute (JS notebooks, WASM Linux VMs, client-side apps), and shares what it builds peer-to-peer. BYOK, no backend, no telemetry.\nTopics: agentic, ai-agent, browser-extension, chrome-extension, firefox-extension, llm, manifest-v3, p2p, webassembly, webrtc",
+      "value": 384.0,
+      "observed_at": "2026-08-13T20:45:59Z",
+      "provenance": {
+        "source": "github",
+        "url": "https://github.com/NotASithLord/peerd",
+        "retrieved_at": "2026-08-13T20:58:19.337409Z"
+      }
+    },
+    {
+      "kind": "github_contributors",
+      "title": "Top contributors to NotASithLord/peerd",
+      "content": "NotASithLord: 198 commits\njonybur: 82 commits\nmariazuheros: 12 commits\ndependabot[bot]: 2 commits\nNot-A-Sith-Lord: 1 commits\nfpolica91: 1 commits\ncaioribeiroclw-pixel: 1 commits",
+      "value": 7.0,
+      "observed_at": null,
+      "provenance": {
+        "source": "github",
+        "url": "https://github.com/NotASithLord/peerd",
+        "retrieved_at": "2026-08-13T20:58:19.337409Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @toozitax",
+      "content": "If the web runners return summarized results and those are still treated as untrusted, what's stopping a summary itself from carrying the injection up to the main loop?",
+      "value": null,
+      "observed_at": "2026-06-24T16:57:25Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48662684",
+        "retrieved_at": "2026-08-13T20:58:19.337818Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @andai",
+      "content": "That's cool. Sounds very impressive. What's the point of all this security though? You don't want it to access your files, just give it its own Linux user. You don't even need a container. Better yet, you can give it root on a $3 VPS (or $30 Thinkpad) and get a sysadmin for free :) Although, Cheerpx... that seems to imply your agent can play Java and Flash games. Alright, you might be on to something!",
+      "value": null,
+      "observed_at": "2026-06-24T17:21:19Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48662996",
+        "retrieved_at": "2026-08-13T20:58:19.337838Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @danielrmay",
+      "content": "> The name is always lowercase: peerd. Gotta love it when agent instructions get blurted out in user-facing documentation",
+      "value": null,
+      "observed_at": "2026-06-24T17:25:11Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48663052",
+        "retrieved_at": "2026-08-13T20:58:19.337847Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @ricardobeat",
+      "content": "> The bet is structural Why has AI writing become so insufferable? The project would be a lot more credible if the feature list wasn't so comically extensive and verbose [1]. Slop overload. [1] https://github.com/NotASithLord/peerd/blob/main/FEATURES.md",
+      "value": null,
+      "observed_at": "2026-06-24T17:30:52Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48663119",
+        "retrieved_at": "2026-08-13T20:58:19.337862Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @arnley",
+      "content": "Congratz on your project. Yet I feel that the browser extension part is doing damage to its discoverability hence democratization. You might be interested in this browser-based agentic solution I'm currently building in the open: https://github.com/codename-co/devs",
+      "value": null,
+      "observed_at": "2026-06-24T19:37:38Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48664711",
+        "retrieved_at": "2026-08-13T20:58:19.337876Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @NotASithLord",
+      "content": "Author here. Some other technical tidbits: - Fully typed checked with JSdoc, and Bun/TS for testing. - stdlib-js is injected into every js runner and notebook for better math capabilities than vanilla js, and also charts etc. - App dev tasks utilize mithril for making SPAs, a very small no-dependency framework that is very fit to purpose for the client side nature of peerd apps. - Currently on main, tabs are global objects each chat session can freely mutate, which is not great. The new in progress model has one \"resident\" agent own every tab. Only they have the exposed capability to mutate it, and everything between agents/sessions is message based. This has some cool properties: further…",
+      "value": null,
+      "observed_at": "2026-06-24T16:52:39Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48662624",
+        "retrieved_at": "2026-08-13T20:58:19.337926Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @NotASithLord",
+      "content": "It's vanilla JS with no unnecessary build step. Runs in the browser as is, and easy to audit.",
+      "value": null,
+      "observed_at": "2026-06-24T18:22:34Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48663792",
+        "retrieved_at": "2026-08-13T20:58:19.337934Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @NotASithLord",
+      "content": "It's defense in depth, definitely not a silver bullet. The web runner has no access to wider capabilities outside of that page. So the only path for a prompt injection to do anything is to try and get itself included in the summary, and get the main loop to act on an instruction in that summary. That means getting pass two sets of <untrusted> tags and explicit instructions to treat everything inside as information, not instruction. Then the egress checkpoint and allow/deny whitelists are the final guards regardless of what the main loop decides to do. Trying to harden wherever I can if you have any recs.",
+      "value": null,
+      "observed_at": "2026-06-24T17:09:34Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48662836",
+        "retrieved_at": "2026-08-13T20:58:19.337961Z"
+      }
+    }
+  ],
+  "gaps": [
+    "HN user @NotASithLord has no bio on their profile"
+  ]
+}

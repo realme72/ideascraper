@@ -106,6 +106,59 @@ independent of how a launch post happened to do on the day.
 
 ---
 
+## D7 — Homepage only; no multi-page website crawling
+
+**Date:** 2026-08-14 · **Status:** active
+
+The stage 2 plan had the website fetcher pulling `/about`, `/team` and
+`/pricing` as well as the homepage. Probing killed it before it was written:
+
+- Guessing paths returned about one usable page per site, sometimes none.
+- Following the homepage's own links returned nothing for sites whose nav is
+  JS-rendered — two of four probed.
+- Single-page apps serve **byte-identical text on every path**. `voker.ai/pricing`
+  matched `voker.ai` exactly, at 15,224 characters.
+
+Four to six extra requests per candidate for almost no new information, plus
+duplicate copy stage 3 would have mistaken for corroboration. The founder data
+it was meant to reach turned out to live on the YC company page and in HN
+profiles instead.
+
+---
+
+## D8 — Gaps are recorded, and travel with the evidence
+
+**Date:** 2026-08-14 · **Status:** active
+
+Every bundle carries an explicit `gaps` list: dead website, no launch thread, no
+repo identified, founder profiles with no bios, evidence dropped for budget. The
+live run records 26 gaps across 15 companies.
+
+This is the load-bearing part of stage 2. Coverage is structurally uneven — a
+YC-only candidate has founder bios and no discussion, an HN-only candidate has
+the reverse — and a model handed silence will fill it with plausible invention.
+Stage 3 sees the gaps next to the evidence so it can say "unknown" and so a
+thin file scores as thin rather than as bad.
+
+**Rejected:** dropping candidates we couldn't enrich well. That would quietly
+select for companies with good SEO rather than good businesses.
+
+---
+
+## D9 — 10,000 characters of evidence per company
+
+**Date:** 2026-08-14 · **Status:** provisional
+
+Bundles are trimmed to a character budget, dropping lowest-priority evidence
+first (comments before founders) and reporting anything dropped as a gap. At
+roughly four characters per token that is ~2.5k tokens of evidence per memo.
+
+Provisional on purpose: the right time to tune it is when stage 3 exists and we
+can see what the model actually needs. Current live run peaks at 8.7k, so
+nothing is being trimmed yet.
+
+---
+
 ## Open
 
 - **Thesis.** Must be specific enough that a score of 72 vs 48 means something.

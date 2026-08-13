@@ -1,0 +1,8 @@
+{
+  "key": "512a430bc1598673",
+  "inputs": {
+    "url": "https://mount.insure/robots.txt"
+  },
+  "fetched_at": "2026-08-13T20:46:24.581888+00:00",
+  "payload": "User-agent: *\nAllow: /\n\nSitemap: https://mount.insure/sitemap.xml"
+}

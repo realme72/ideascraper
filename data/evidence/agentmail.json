@@ -1,0 +1,181 @@
+{
+  "candidate": {
+    "slug": "agentmail",
+    "name": "AgentMail",
+    "website": "https://chat.agentmail.to/",
+    "one_liner": "Email infra for AI agents",
+    "description": "Hey HN, we're Haakam, Michael, and Adi. We're building AgentMail ( https://agentmail.to/ ), an API to give AI agents their own email inboxes. We’re not talking about AI for your email, this is email for your AI. We started building email agents because they can converse with users in their inboxes, automate email-based workflows, and authenticate with third-party applications. Given these unique capabilities, we think email will be a core interface for agents. But we were building on top of Gmail, which was a struggle: poor API support, expensive subscriptions, rate limits, sending limits, GCP Pub/Sub, OAuth, crappy keyword search, and an overall terrible developer experience. Gmail and other providers didn’t work for us. So we decided to bite the bullet and build our own. AgentMail is…",
+    "keywords": [],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "traction",
+        "label": "121 points and 70 comments on Hacker News",
+        "value": 121.0,
+        "observed_at": "2025-07-31T14:08:33Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=44745820",
+          "retrieved_at": "2026-08-13T15:14:24.385263Z"
+        }
+      },
+      {
+        "kind": "freshness",
+        "label": "Launched on HN 31 Jul 2025",
+        "value": null,
+        "observed_at": "2025-07-31T14:08:33Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=44745820",
+          "retrieved_at": "2026-08-13T15:14:24.385263Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Posted and answered questions as HN user @Haakam21",
+        "value": null,
+        "observed_at": "2025-07-31T14:08:33Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=44745820",
+          "retrieved_at": "2026-08-13T15:14:24.385263Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=44745820",
+        "retrieved_at": "2026-08-13T15:14:24.385263Z"
+      }
+    ]
+  },
+  "gathered_at": "2026-08-13T20:58:19.332578Z",
+  "items": [
+    {
+      "kind": "hn_launch_text",
+      "title": "Launch post by @Haakam21",
+      "content": "Hey HN, we're Haakam, Michael, and Adi. We're building AgentMail ( https://agentmail.to/ ), an API to give AI agents their own email inboxes. We’re not talking about AI for your email, this is email for your AI. We started building email agents because they can converse with users in their inboxes, automate email-based workflows, and authenticate with third-party applications. Given these unique capabilities, we think email will be a core interface for agents. But we were building on top of Gmail, which was a struggle: poor API support, expensive subscriptions, rate limits, sending limits, GCP Pub/Sub, OAuth, crappy keyword search, and an overall terrible developer experience. Gmail and other providers didn’t work for us. So we decided to bite the bullet and build our own. AgentMail is like Gmail, but API-first, with programmatic inbox creation, events over webhooks and websockets, simple API key auth, organization-wide semantic search, structured data extraction, and usage-based pricing that scales with emails sent/received. Here’s a demo of building an email agent: https://youtu.be/1V7BISeFUTM , and here’s a demo of a voice agent with its own email inbox: https://youtu.be/eG2fCsRK4RY So far AgentMail has been deployed to use cases such as apps with dedicated inboxes for each user, voice agents that receive documents in real time, automated account provisioning and QA testing, cold outbound platforms with thousands of inboxes, automations for processing invoices, and agents that coordinate work with humans and other agents. We would love to hear your thoughts and feedback. You can try our playground at https://chat.agentmail.to",
+      "value": 121.0,
+      "observed_at": "2025-07-31T14:08:33Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=44745820",
+        "retrieved_at": "2026-08-13T20:58:18.529583Z"
+      }
+    },
+    {
+      "kind": "website_copy",
+      "title": "Homepage of agentmail.to — AgentMail | Email Inbox API for AI Agents",
+      "content": "AgentMail gives AI agents real email inboxes. Create, send, receive, and search messages via REST API — built for autonomous agents and agentic workflows. AgentMail | Email Inbox API for AI Agents We raised $6M in Seed Funding Read more Backed by Combinator Email Inboxes for AI Agents AgentMail is the email inbox API for AI agents. It gives agents their own email inboxes, like Gmail does for humans. Start for free Docs No credit card required Python TypeScript cURL CLI from agentmail import AgentMail client = AgentMail () inbox = client . inboxes . create ( username = \" hello \" , domain = \" agentmail.to \" ) Live Inbox This is a real email inbox just created for you. Send it an email and see it show up in real time. AI Companies building on AgentMail. [ What we offer ] It's not AI for your email. It's email for your AI. Inboxes API Create, manage, and operate email inboxes entirely via API. Threads + replies Attachments Realtime events Custom domains Multi-tenancy SDKs + MCP Semantic search Data extraction Create, manage, and operate email inboxes entirely via API. [ Integrations ] Works with your agent stack Give your agent an inbox in one paste. Install skill Agent self-signup Copied Claude Code Hermes OpenClaw Codex Cursor Copied [ By the numbers ] Built for scale. 100M+ Emails delivered Across the globe, and counting. Always On Enterprise-grade reliability Built on redundant infrastructure across multiple regions. Your agents never miss a message. Instant Inboxes One API call Spin up a new inbox in milliseconds. No domain verification, no waiting. Developer First Simple, intuitive API RESTful endpoints, typed SDKs, and webhooks. Get started in minutes, not days. [ Use Cases ] Use Cases Powering every type of agent: from browser automation to customer service, AgentMail enables any agent to communicate via email. Browser Agents Extract 2FA Codes Enable browser agents to sign up for services by extracting OTP codes from email. Scheduling Executive Assistant Let your agent manage your calendar, schedule meetings, and send you summaries. Doc Processing Parse Attachments Parse invoices, receipts, and attachments automatically. Customer Service Smart Routing Ingest support emails and route to appropriate handlers. AgentMail Inbox acme.com Sign in to Acme Enter your email to continue Email address Send verification code Navigated to acme.com/signup Browser [ Testimonials ] Trusted by developers and enterprises alike Teams around the world use AgentMail to power their AI agent communications. \" AgentMail took email from the thing I worried the most about to the thing I worried the least about. \" Garrett Scott CEO, Pipedream Labs \" It's a no brainer, agents into email. Everyone is going to be using AgentMail. \" Garry Tan CEO, Y Combinator \" It's the only solution designed for agents, not humans. Each agent gets a real address, reads its own mail, and replies in context. Shipped in a day. \" Will Marquis Co-Founder and CEO, Pancake \" We needed a simple w",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "web",
+        "url": "https://agentmail.to",
+        "retrieved_at": "2026-08-13T20:58:19.332522Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @TZubiri",
+      "content": "Dejavu What is the benefit of an AI email infra over using any other generic email api provider like SES, azure communication, sendgrid, mailchimp",
+      "value": null,
+      "observed_at": "2025-07-31T19:12:10Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=44749041",
+        "retrieved_at": "2026-08-13T20:58:18.529637Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @mtmail",
+      "content": "Is the '10.000.000+ emails processed' all from alpha/beta testers?",
+      "value": null,
+      "observed_at": "2025-07-31T19:29:43Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=44749200",
+        "retrieved_at": "2026-08-13T20:58:18.529643Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @smpandya",
+      "content": "Why build with email now? Isn’t the world moving towards voice / live-chat paradigms?",
+      "value": null,
+      "observed_at": "2025-07-31T19:47:57Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=44749374",
+        "retrieved_at": "2026-08-13T20:58:18.529648Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @bearcobra",
+      "content": "Do you facilitate the domain registration or do users bring their own? And if you do facilitate it, do you retain ownership of it?",
+      "value": null,
+      "observed_at": "2025-07-31T19:54:11Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=44749433",
+        "retrieved_at": "2026-08-13T20:58:18.529653Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @nikhillv",
+      "content": "how much better is agentmail with rate limits and sending limits?",
+      "value": null,
+      "observed_at": "2025-07-31T20:10:09Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=44749605",
+        "retrieved_at": "2026-08-13T20:58:18.529656Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @Haakam21",
+      "content": "Yes, some providers support receiving via webhooks (or some other notification), but lack the inbox infrastructure that Gmail and AgentMail offer.",
+      "value": null,
+      "observed_at": "2025-07-31T19:40:00Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=44749297",
+        "retrieved_at": "2026-08-13T20:58:18.529671Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @Haakam21",
+      "content": "Happy to add some color here. SES and other APIs lack inboxes, email threading, attachment parsing, semantic search, structured data extraction, and more.",
+      "value": null,
+      "observed_at": "2025-07-31T19:49:10Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=44749384",
+        "retrieved_at": "2026-08-13T20:58:18.529676Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @Haakam21",
+      "content": "Yes we are live with several production workloads! The use cases include those described above.",
+      "value": null,
+      "observed_at": "2025-07-31T19:36:45Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=44749257",
+        "retrieved_at": "2026-08-13T20:58:18.529679Z"
+      }
+    }
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "HN user @Haakam21 has no bio on their profile",
+    "chat.agentmail.to did not respond; read agentmail.to instead"
+  ]
+}

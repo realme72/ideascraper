@@ -1,0 +1,12 @@
+{
+  "key": "809c0a2976ea0853",
+  "inputs": {
+    "url": "https://hn.algolia.com/api/v1/users/ttpost"
+  },
+  "fetched_at": "2026-08-13T20:46:39.146599+00:00",
+  "payload": {
+    "about": "Co-Founder of Voker (YC S24) In previous roles, I&#x27;ve built applied data products that drive growth. I was an operator of a $100MM DTC ecomm company and ran revenue growth data science for a $10B public SaaS company. I&#x27;m passionate about building high performing teams and continuously learning.",
+    "karma": 32,
+    "username": "ttpost"
+  }
+}

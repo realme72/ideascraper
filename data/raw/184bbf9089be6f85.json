@@ -1,0 +1,8 @@
+{
+  "key": "184bbf9089be6f85",
+  "inputs": {
+    "url": "https://voker.ai/robots.txt"
+  },
+  "fetched_at": "2026-08-13T20:46:39.226299+00:00",
+  "payload": "User-agent: *\nAllow: /\n\nSitemap: https://voker.ai/sitemap.xml"
+}

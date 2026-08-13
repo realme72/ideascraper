@@ -1,0 +1,8 @@
+{
+  "key": "91cf83f99aa4feba",
+  "inputs": {
+    "url": "https://agentmail.to/robots.txt"
+  },
+  "fetched_at": "2026-08-13T20:58:19.082443+00:00",
+  "payload": "User-Agent: *\nAllow: /\nDisallow: /internal/\n\nUser-Agent: ChatGPT-User\nAllow: /\nDisallow: /internal/\n\nUser-Agent: OAI-SearchBot\nAllow: /\nDisallow: /internal/\n\nUser-Agent: GPTBot\nAllow: /\nDisallow: /internal/\n\nUser-Agent: PerplexityBot\nAllow: /\nDisallow: /internal/\n\nUser-Agent: ClaudeBot\nAllow: /\nDisallow: /internal/\n\nUser-Agent: anthropic-ai\nAllow: /\nDisallow: /internal/\n\nUser-Agent: Google-Extended\nAllow: /\nDisallow: /internal/\n\nUser-Agent: Applebot-Extended\nAllow: /\nDisallow: /internal/\n\nSitemap: https://www.agentmail.to/sitemap.xml\n"
+}

@@ -1,0 +1,12 @@
+{
+  "key": "9c4ed46d6c2eb992",
+  "inputs": {
+    "url": "https://hn.algolia.com/api/v1/users/lahfir"
+  },
+  "fetched_at": "2026-08-13T20:46:23.903807+00:00",
+  "payload": {
+    "about": "Computer Use | Built agent-desktop, cracked-agent, PILOT | 2X founder",
+    "karma": 38,
+    "username": "lahfir"
+  }
+}

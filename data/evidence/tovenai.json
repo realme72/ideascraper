@@ -1,0 +1,113 @@
+{
+  "candidate": {
+    "slug": "tovenai",
+    "name": "TovenAI",
+    "website": "https://toven.ai",
+    "one_liner": "AI agents for compliance at institutional trading firms",
+    "description": "TovenAI builds a platform of AI agents that handle manual, data-intensive work for compliance teams at institutional trading firms, with six agents currently live. Our customers range from specialist firms to large global institutions, with our agents supporting multiple compliance workflows at a top-10 institutional brokerage.\r\n\r\nWith prebuilt connectors to more than 30 systems—including Bloomberg, Cloud9, and NICE Actimize—firms can onboard to our platform and evaluate results using their own data in less than a week.",
+    "keywords": [
+      "AI",
+      "Banking and Exchange",
+      "Fintech",
+      "Regtech"
+    ],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "freshness",
+        "label": "YC Summer 2026 batch",
+        "value": null,
+        "observed_at": "2026-08-12T18:45:17Z",
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/tovenai",
+          "retrieved_at": "2026-08-13T15:14:22.603504Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Team of 2",
+        "value": 2.0,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/tovenai",
+          "retrieved_at": "2026-08-13T15:14:22.603504Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Stage: Early",
+        "value": null,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/tovenai",
+          "retrieved_at": "2026-08-13T15:14:22.603504Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/tovenai",
+        "retrieved_at": "2026-08-13T15:14:22.603504Z"
+      }
+    ]
+  },
+  "gathered_at": "2026-08-13T20:58:19.360632Z",
+  "items": [
+    {
+      "kind": "founder",
+      "title": "Batu Balci — Co-Founder & CEO",
+      "content": "Founder at TovenAI. Previously Quantitative Research Engineer at Citadel's Global Quantitative Strategies group. Senior Software Engineer at Salesforce. Stanford CS.\nLinks: https://www.linkedin.com/in/batuhan-balci-7a3589114/",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/tovenai",
+        "retrieved_at": "2026-08-13T20:58:19.353465Z"
+      }
+    },
+    {
+      "kind": "founder",
+      "title": "Sam Turchetta — Founder",
+      "content": "Cofounder at TovenAI. Previously worked on ML at Meta. Stanford Men’s Varsity Tennis and CS ’21.\nLinks: https://www.linkedin.com/in/sam-turchetta-b14311166/",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/tovenai",
+        "retrieved_at": "2026-08-13T20:58:19.353465Z"
+      }
+    },
+    {
+      "kind": "company_profile",
+      "title": "TovenAI — YC directory profile",
+      "content": "Batch: Summer 2026\nFounded: 2026\nTeam size: 2\nLocation: New York City, NY\nStatus: Active\nWebsite: https://toven.ai\nLinkedIn: https://www.linkedin.com/company/tovenai/\n\nTovenAI builds a platform of AI agents that handle manual, data-intensive work for compliance teams at institutional trading firms, with six agents currently live. Our customers range from specialist firms to large global institutions, with our agents supporting multiple compliance workflows at a top-10 institutional brokerage.\r\n\r\nWith prebuilt connectors to more than 30 systems—including Bloomberg, Cloud9, and NICE Actimize—firms can onboard to our platform and evaluate results using their own data in less than a week.",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/tovenai",
+        "retrieved_at": "2026-08-13T20:58:19.353465Z"
+      }
+    },
+    {
+      "kind": "website_copy",
+      "title": "Homepage of toven.ai — TovenAI",
+      "content": "The intelligence layer for FINRA-regulated compliance teams. Toven augments your existing infrastructure with AI that surfaces context, reduces false positives, and keeps your analysts focused on judgment. TovenAI AI agents for compliance at institutional brokerages AI agents sift the data and find the evidence — your team gets that time back. More coverage. Less noise. Upgrade your compliance stack with Toven. Book a Demo Trusted by compliance teams at firms overseeing >$60B in total assets 15K+ employees >$1T in daily trading volume 20+ countries Our team's AI experience spans Backed by world-class institutional investors Deployment Live in five days, without touching your stack. Pilot on your own data while everything you run today keeps running. Toven reads from the chat, voice, surveillance, and archiving systems your desk already runs on — we handle all the integrations. Your analysts keep their tools; nothing migrates, nothing goes offline. And if it isn't earning its keep, you unplug it as easily as you plugged it in. Solutions AI Agents that unlock the compliance team. Trade Reconstruction eComms Surveillance Horizon Scanning Trade Monitoring & Surveillance Publication Review More coming soon How It Works An intelligence layer, not a new platform. Step 01 Toven reads what your desk already runs on Email, chat, and voice; surveillance alerts; research reports — every queue your team reviews today Connects to your existing archiving and surveillance systems — no migration, no new platform to learn Full coverage from day one, inside the tools your analysts already use Step 02 AI agents do the first pass on every item Each alert, report, and question gets an agent that assembles context and evaluates the signals Every check cites the rule it ran against — documented automatically The obvious cases clear themselves: ~70% of false positives auto-dispositioned, with full reasoning recorded Step 03 Your analysts judge what actually needs judgment Only cases warranting human review escalate — with the investigation package pre-built Every disposition lands in the audit trail: cited, timestamped, defensible When a regulator asks why something was approved, the answer takes seconds, not hours Security Enterprise-grade security by default Runs on our cloud — containerized on AWS — or fully on-prem for firms with strict data residency requirements. Your data stays yours: never used to train models, isolated per firm, and encrypted everywhere it moves or rests. No model training Client data never trains models Single-tenant isolation Dedicated instance per firm Encrypted end to end AES-256 at rest · TLS 1.2+ in transit Penetration tested Independent third-party testing SSO / SAML SAML & OIDC enterprise sign-on Audit logs Every action recorded Ready to see it inside your workflows? Book a Demo",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "web",
+        "url": "https://toven.ai",
+        "retrieved_at": "2026-08-13T20:58:19.360621Z"
+      }
+    }
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "No Hacker News launch thread found for this company"
+  ]
+}

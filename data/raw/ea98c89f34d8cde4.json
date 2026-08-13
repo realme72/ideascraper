@@ -1,0 +1,8 @@
+{
+  "key": "ea98c89f34d8cde4",
+  "inputs": {
+    "url": "https://lastaccountingcompany.com/robots.txt"
+  },
+  "fetched_at": "2026-08-13T20:46:26.946389+00:00",
+  "payload": "# All crawlers welcome \u2014 including AI search and training bots (GPTBot,\n# OAI-SearchBot, ClaudeBot, Claude-SearchBot, PerplexityBot, Google-Extended):\n# being read and cited by AI assistants is a goal of this site, not a risk.\nUser-agent: *\nAllow: /\n\nSitemap: https://lastaccountingcompany.com/sitemap.xml\n"
+}

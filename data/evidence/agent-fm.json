@@ -1,0 +1,114 @@
+{
+  "candidate": {
+    "slug": "agent-fm",
+    "name": "Agent FM",
+    "website": "https://www.agentfm.ai/",
+    "one_liner": "One group chat to hear and steer your coding agents.",
+    "description": "Agent FM is a desktop app that gives engineers one group chat to hear and steer their coding agents. Instead of manually bouncing between different claude code and codex sessions, and combing through walls of text to monitor agents, engineers just tune in to Agent FM. Agents share important progress updates, blockers, assumptions, and decisions in the group chat. Engineers get live text and audio updates and respond right from the chat.",
+    "keywords": [
+      "Artificial Intelligence",
+      "B2B",
+      "Developer Tools",
+      "Engineering, Product and Design",
+      "Productivity"
+    ],
+    "relevance": 0.5,
+    "signals": [
+      {
+        "kind": "freshness",
+        "label": "YC Summer 2026 batch",
+        "value": null,
+        "observed_at": "2026-08-05T00:48:06Z",
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/agent-fm",
+          "retrieved_at": "2026-08-13T15:14:22.603520Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Team of 2",
+        "value": 2.0,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/agent-fm",
+          "retrieved_at": "2026-08-13T15:14:22.603520Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Stage: Early",
+        "value": null,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/agent-fm",
+          "retrieved_at": "2026-08-13T15:14:22.603520Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/agent-fm",
+        "retrieved_at": "2026-08-13T15:14:22.603520Z"
+      }
+    ]
+  },
+  "gathered_at": "2026-08-13T20:58:18.502214Z",
+  "items": [
+    {
+      "kind": "founder",
+      "title": "Aniket Deshpande — Founder",
+      "content": "Co-founder & CEO at Agent FM · Previously Applied AI at Meta Superintelligence Labs\nLinks: https://linkedin.com/in/anideshp, https://x.com/anideshp",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/agent-fm",
+        "retrieved_at": "2026-08-13T20:58:18.487127Z"
+      }
+    },
+    {
+      "kind": "founder",
+      "title": "Mugdhaa Patankar — Founder",
+      "content": "Co-founder & CTO at Agent FM · Previously Snowflake, Twitch, AWS\nLinks: https://linkedin.com/in/mugdhaa-patankar",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/agent-fm",
+        "retrieved_at": "2026-08-13T20:58:18.487127Z"
+      }
+    },
+    {
+      "kind": "company_profile",
+      "title": "Agent FM — YC directory profile",
+      "content": "Batch: Summer 2026\nFounded: 2026\nTeam size: 2\nLocation: San Francisco\nStatus: Active\nWebsite: https://www.agentfm.ai/\nLinkedIn: https://www.linkedin.com/company/agent-fm-ai/\n\nAgent FM is a desktop app that gives engineers one group chat to hear and steer their coding agents. Instead of manually bouncing between different claude code and codex sessions, and combing through walls of text to monitor agents, engineers just tune in to Agent FM. Agents share important progress updates, blockers, assumptions, and decisions in the group chat. Engineers get live text and audio updates and respond right from the chat.",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/agent-fm",
+        "retrieved_at": "2026-08-13T20:58:18.487127Z"
+      }
+    },
+    {
+      "kind": "website_copy",
+      "title": "Homepage of agentfm.ai — Agent FM",
+      "content": "One command center for live audio updates, computer use, and group chat with your agents. Agent FM Backed by Combinator Interface between what you want and your coding agents Interface between what you want and your coding agents Interface between what you want and your coding agents One command center for live audio updates, computer use, and group chat with your agents. Download Agent FM Audio updates High-signal audio updates Agent insights Agent observability & insights Voice to text Voice-to-text, anywhere Home Global Mix Voice to text AI Metrics meridian-web Add real-time collab cursors to canvas now Migrate signup flow to Server Components 2m Audit Lighthouse scores across landing pa… 4m Refactor query layer to use Suspense 21h Replace lodash imports with native meth… 2d Update dependencies to React 19 2d meridian-api Investigate slow queries in /reports endp… 19m A Abigail Reyes Pro plan Today Vera meridian-web · Add real-time collab cursors to canvas ⌁ Claude · Opus 4.8 9:27 PM Shipped the live cursor layer — reconnects and stale-user cleanup are covered. Kai meridian-web · Audit Lighthouse scores across landing pages ⌁ OpenCode · Sonnet 5 9:28 PM Found the landing-page slowdown — the remaining check needs a clean browser run. Otto meridian-web · Migrate signup flow to Server Components ⌁ Codex · GPT-5.5 9:31 PM Waiting for you The signup migration needs one choice before I can continue. How should signup session state be handled? ○ ● Server actions (Recommended) Keep session mutation on the server ○ Encrypted cookie Read session state at the edge ○ Client session Keep the current browser flow Resolved ✓ The signup migration needs one choice before I can continue. How should signup session state be handled? Server actions Otto meridian-web · Migrate signup flow to Server Components ⌁ Codex · GPT-5.5 9:32 PM Got it — continuing the migration with server actions. Use Computer Use to run a Lighthouse audit in Chrome and save the report. Agent FM now Working on your computer Getting the computer task ready. Working in the app now. Stop task Task complete Saved the Lighthouse report for /pricing and /docs . Follow up On air Vera Repo meridian-web Branch ⌁ feature/collab-cursors Agent Claude · Local Mac Model Opus 4.8 Otto Repo meridian-web Branch ⌁ feature/server-signup Agent Codex · Local Mac Model GPT-5.5 Kai Repo meridian-web Branch ⌁ audit/lighthouse Agent OpenCode · Local Mac Model Sonnet 5 Narrating Computer Use is in Chrome now, running the Lighthouse audit. Audit complete. Agent FM saved the Lighthouse report. Ask your agents what changed, or tell Agent FM what to handle Use Computer Use to run a Lighthouse audit in Chrome and save the report. AMBIENT AWARENESS All your agents, one feed. Hear the important updates in real time, instead of reading walls of text. Home Global Mix Voice to text AI Metrics meridian-web Add real-time collab cursors to canvas 1m Migrate signup flow to Server Components 2m Audit Lighthouse scores across landi",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "web",
+        "url": "https://www.agentfm.ai/",
+        "retrieved_at": "2026-08-13T20:58:18.502200Z"
+      }
+    }
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "No Hacker News launch thread found for this company"
+  ]
+}

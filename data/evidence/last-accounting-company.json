@@ -1,0 +1,138 @@
+{
+  "candidate": {
+    "slug": "last-accounting-company",
+    "name": "Last Accounting Company",
+    "website": "https://lastaccountingcompany.com/",
+    "one_liner": "Agent-native accounting firm.",
+    "description": "Last Accounting Company (LAC) is a full-stack AI accounting firm. We sell the same service (bookkeeping, tax filings, etc.) as a traditional accounting firm, but underneath agents handle everything and a certified accountant signs off. Our service is faster, cheaper, and fully integrated, allowing our clients to focus on what matters, not accounting admin.\r\n\r\nLAC replaces both outsourced accountants and legacy accounting software for startups and SMBs. Our system is fully proprietary, from the general ledger to the accounting agents. This allows us to create powerful self-reinforcing loops and ultimately provide a state-of-the-art accounting service.",
+    "keywords": [
+      "Artificial Intelligence",
+      "B2B",
+      "Finance",
+      "Finance and Accounting",
+      "Fintech"
+    ],
+    "relevance": 0.5,
+    "signals": [
+      {
+        "kind": "freshness",
+        "label": "YC Summer 2026 batch",
+        "value": null,
+        "observed_at": "2026-07-20T19:16:55Z",
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/last-accounting-company",
+          "retrieved_at": "2026-08-13T15:14:22.603373Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Team of 4",
+        "value": 4.0,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/last-accounting-company",
+          "retrieved_at": "2026-08-13T15:14:22.603373Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Stage: Early",
+        "value": null,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/last-accounting-company",
+          "retrieved_at": "2026-08-13T15:14:22.603373Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/last-accounting-company",
+        "retrieved_at": "2026-08-13T15:14:22.603373Z"
+      }
+    ]
+  },
+  "gathered_at": "2026-08-13T20:58:18.507773Z",
+  "items": [
+    {
+      "kind": "founder",
+      "title": "Riki Karjalainen — Co-Founder",
+      "content": "Co-Founder at Last Accounting Company. Previously built petabyte-scale data infrastructure at Token Terminal. Applied Mathematics at Aalto University.\nLinks: https://www.linkedin.com/in/riki-karjalainen-22a612189",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/last-accounting-company",
+        "retrieved_at": "2026-08-13T20:58:18.502880Z"
+      }
+    },
+    {
+      "kind": "founder",
+      "title": "Sami Laakkonen — Founder",
+      "content": "Co-Founder at Last Accounting Company. Previously an early employee at Token Terminal, the first crypto data provider on Bloomberg Terminal. Built petabyte-scale financial data infrastructure. Computer Science at Aalto University.\nLinks: https://www.linkedin.com/in/sami-laakkonen/, https://x.com/samilaa",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/last-accounting-company",
+        "retrieved_at": "2026-08-13T20:58:18.502880Z"
+      }
+    },
+    {
+      "kind": "founder",
+      "title": "Veikko Pere — Founder",
+      "content": "Co-Founder at Last Accounting Company. Previously at BCG and private equity at Intera Partners with IB and law internships. M.Sc. Finance and M.Sc. Laws (ongoing).\nLinks: https://www.linkedin.com/in/veikkopere/",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/last-accounting-company",
+        "retrieved_at": "2026-08-13T20:58:18.502880Z"
+      }
+    },
+    {
+      "kind": "founder",
+      "title": "Pietari Virkkunen — Co-founder",
+      "content": "Co-Founder at Last Accounting Company. Prev. Tech/PE/VC. M.Sc. Industrial Engineering and Management at Aalto University.\nLinks: https://www.linkedin.com/in/pietarivirkkunen/",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/last-accounting-company",
+        "retrieved_at": "2026-08-13T20:58:18.502880Z"
+      }
+    },
+    {
+      "kind": "company_profile",
+      "title": "Last Accounting Company — YC directory profile",
+      "content": "Batch: Summer 2026\nFounded: 2026\nTeam size: 4\nLocation: Helsinki, Finland\nStatus: Active\nWebsite: https://lastaccountingcompany.com/\nLinkedIn: https://www.linkedin.com/company/lastaccountingcompany\n\nLast Accounting Company (LAC) is a full-stack AI accounting firm. We sell the same service (bookkeeping, tax filings, etc.) as a traditional accounting firm, but underneath agents handle everything and a certified accountant signs off. Our service is faster, cheaper, and fully integrated, allowing our clients to focus on what matters, not accounting admin.\r\n\r\nLAC replaces both outsourced accountants and legacy accounting software for startups and SMBs. Our system is fully proprietary, from the general ledger to the accounting agents. This allows us to create powerful self-reinforcing loops and ultimately provide a state-of-the-art accounting service.",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/last-accounting-company",
+        "retrieved_at": "2026-08-13T20:58:18.502880Z"
+      }
+    },
+    {
+      "kind": "website_copy",
+      "title": "Homepage of lastaccountingcompany.com — Last Accounting Company",
+      "content": "LAC replaces your accounting firm and software with one fixed-price service for Finnish startups, scaleups and SMBs. Last Accounting Company New How We’re Building the Most Interfaceable General Ledger → Uutta How We’re Building the Most Interfaceable General Ledger → EN FI Backed by Y Combinator Y Combinatorin tukema There's a Björn for that. Sitä varten on Björn. One service that combines the accounting firm and software to handle everything for you. Yksi alusta, joka yhdistää kirjanpito-ohjelmiston ja ammattitaitoisen kirjanpito-osaamisen ilman yrittäjän osallistumista Sign up Liity Transactions Tapahtumat 12.6 Stripe payout 4 210,00 13.6 Telia −64,90 16.6 Salaries Palkat −9 640,00 18.6 AWS −312,44 19.6 Invoice 2041 Lasku 2041 2 480,00 Income statement Tuloslaskelma Revenue Tuotot 48 200 Expenses Kulut −31 480 Result Tulos 16 720 Reconciled daily Täsmäytetty päivittäin Filings Ilmoitukset VAT return ALV-ilmoitus Filed ✓ Ilmoitettu ✓ Payroll Palkat Reported ✓ Ilmoitettu ✓ Financial statements Tilinpäätös Drafted Luonnos Balance sheet Tase Assets Vastaavaa 128 400 Equity & liabilities Vastattavaa 128 400 In balance Täsmää ✓ Bank feeds Pankkiyhteydet Nordea ✓ OP ✓ Stripe ✓ Work you'll never do again. Työt, joita et enää koskaan tee. Chasing missing receipts Kuittien metsästäminen Reconciling bank statements Tiliotteiden täsmäyttäminen Compiling VAT returns ALV-ilmoitusten kokoaminen Running payroll Palkka-ajojen pyörittäminen Answering month-end questions Kuunvaihteen kysymyksiin vastaaminen Forwarding invoices between systems Laskujen siirtely järjestelmästä toiseen Watching filing deadlines Määräpäivien vahtiminen Closing the books Kirjanpidon sulkeminen Our agent Björn handles the manual work — our accountants sign off the result. Agenttimme Björn hoitaa manuaaliset prosessit, kirjanpitäjämme varmistavat lopputuloksen. Accounting should not run through your team. Kirjanpitopalvelu, joka auttaa yritystäsi kasvamaan You still chase the missing pieces. Vanha kirjanpitojärjestelmä ei palvele yrittäjää LAC takes you out of the loop. Last Accounting Company tuo kirjanpidon nykyaikaan Your team is still the connector between accountant, software, and source data. Tiiminne on yhä yhdistävä taho tilitoimiston, ohjelmiston ja yrityksen datan välillä. Documents, banks, payroll, tax, and reports live in separate places. Dokumentit, pankkitiedot, palkat, verotiedot ja raportit elävät eri paikoissa eivätkä keskustele keskenään. Every month-end depends on someone inside the company pushing the process forward. Kirjanpitoprosessia edistää edelleen joku yrityksessänne. LAC takes you out of the loop. Last Accounting Company tuo kirjanpidon nykyaikaan LAC becomes the operating layer across accounting, software, and source data. LAC toimii operointikerroksena kirjanpidon, ohjelmiston ja lähdedatan päällä. Your systems connect once and stay updated automatically. Järjestelmänne yhdistetään kerran ja pysyvät ajan tasalla automaattisesti ja huomaamattomasti. Books, ",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "web",
+        "url": "https://lastaccountingcompany.com/",
+        "retrieved_at": "2026-08-13T20:58:18.507763Z"
+      }
+    }
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "No Hacker News launch thread found for this company"
+  ]
+}

@@ -1,0 +1,1109 @@
+{
+  "key": "f919bd3bc907158d",
+  "inputs": {
+    "url": "https://hn.algolia.com/api/v1/items/44745820"
+  },
+  "fetched_at": "2026-08-13T20:46:34.004605+00:00",
+  "payload": {
+    "author": "Haakam21",
+    "children": [
+      {
+        "author": "TZubiri",
+        "children": [
+          {
+            "author": "mtmail",
+            "children": [
+              {
+                "author": "abxyz",
+                "children": [
+                  {
+                    "author": "Haakam21",
+                    "children": [],
+                    "created_at": "2025-07-31T19:40:00.000Z",
+                    "created_at_i": 1753990800,
+                    "id": 44749297,
+                    "options": [],
+                    "parent_id": 44749231,
+                    "points": null,
+                    "story_id": 44745820,
+                    "text": "Yes, some providers support receiving via webhooks (or some other notification), but lack the inbox infrastructure that Gmail and AgentMail offer.",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2025-07-31T19:33:34.000Z",
+                "created_at_i": 1753990414,
+                "id": 44749231,
+                "options": [],
+                "parent_id": 44749188,
+                "points": null,
+                "story_id": 44745820,
+                "text": "Yes it does. As far as I recall, all major email providers handle inbound email. Sendgrid, Postmark, Mailgun, SparkPost, AWS SES.<p>(I don\u2019t think this compromises the value of AgentMail, just clarifying what is supported elsewhere.)",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-07-31T19:27:31.000Z",
+            "created_at_i": 1753990051,
+            "id": 44749188,
+            "options": [],
+            "parent_id": 44749041,
+            "points": null,
+            "story_id": 44745820,
+            "text": "The homepage has a feature comparison with Sendgrid. Sendgrid doesn&#x27;t have email receiving, inboxes, attachment parsing.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "swyx",
+            "children": [
+              {
+                "author": "Haakam21",
+                "children": [],
+                "created_at": "2025-07-31T19:49:10.000Z",
+                "created_at_i": 1753991350,
+                "id": 44749384,
+                "options": [],
+                "parent_id": 44749313,
+                "points": null,
+                "story_id": 44745820,
+                "text": "Happy to add some color here. SES and other APIs lack inboxes, email threading, attachment parsing, semantic search, structured data extraction, and more.",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-07-31T19:41:30.000Z",
+            "created_at_i": 1753990890,
+            "id": 44749313,
+            "options": [],
+            "parent_id": 44749041,
+            "points": null,
+            "story_id": 44745820,
+            "text": "good point. i guess really the comparison is SES not gmail",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-07-31T19:12:10.000Z",
+        "created_at_i": 1753989130,
+        "id": 44749041,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "Dejavu<p>What is the benefit of an AI email infra over using any other generic email api provider like SES, azure communication, sendgrid, mailchimp",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "mtmail",
+        "children": [
+          {
+            "author": "Haakam21",
+            "children": [],
+            "created_at": "2025-07-31T19:36:45.000Z",
+            "created_at_i": 1753990605,
+            "id": 44749257,
+            "options": [],
+            "parent_id": 44749200,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Yes we are live with several production workloads! The use cases include those described above.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "DalasNoin",
+            "children": [
+              {
+                "author": "adisingh13",
+                "children": [],
+                "created_at": "2025-08-01T01:21:53.000Z",
+                "created_at_i": 1754011313,
+                "id": 44752078,
+                "options": [],
+                "parent_id": 44751879,
+                "points": null,
+                "story_id": 44745820,
+                "text": "Fair concern but that comes with any email product. We&#x27;re a provider not a mass sending API like Resend, Mailgun, Sendgrid - that means our use cases primarily revolve around personalized, two-way conversations between reasoning agents and humans.",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-08-01T00:50:12.000Z",
+            "created_at_i": 1754009412,
+            "id": 44751879,
+            "options": [],
+            "parent_id": 44749200,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Imagine the amount of spam this generates",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-07-31T19:29:43.000Z",
+        "created_at_i": 1753990183,
+        "id": 44749200,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "Is the &#x27;10.000.000+ emails processed&#x27; all from alpha&#x2F;beta testers?",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "smpandya",
+        "children": [
+          {
+            "author": "Haakam21",
+            "children": [
+              {
+                "author": "farco12",
+                "children": [],
+                "created_at": "2025-07-31T20:01:57.000Z",
+                "created_at_i": 1753992117,
+                "id": 44749517,
+                "options": [],
+                "parent_id": 44749428,
+                "points": null,
+                "story_id": 44745820,
+                "text": "This. I also think e-mail clients are a more natural interface for managing multiple async conversations&#x2F;tasks with models&#x2F;agents from different providers.<p>There&#x27;s also nothing stopping this product from expanding to other interfaces&#x2F;modalities like voice or sms.<p>Congratulations on your launch.",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-07-31T19:53:33.000Z",
+            "created_at_i": 1753991613,
+            "id": 44749428,
+            "options": [],
+            "parent_id": 44749374,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Agree that interfaces are moving in this direction. But humans and agents will always need a way to send&#x2F;receive messages and notification asynchronously. Email is the most universal channel and we think it is here to stay.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "adisingh13",
+            "children": [],
+            "created_at": "2025-07-31T19:54:22.000Z",
+            "created_at_i": 1753991662,
+            "id": 44749435,
+            "options": [],
+            "parent_id": 44749374,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Great question - we get this input a lot. It really depends, while I&#x27;m a big believer of voice and API-driven design in the future, I think email&#x27;s role remains but looks different. It&#x27;s a sticky, universal protocol that serves as a great system of audit and record. Also think an agent is only as good as its context - an inbox serves almost as a personal gateway to the internet and early customer&#x27;s use cases show different applications from agent-human connection to identity verification and authentication.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "alfalfasprout",
+            "children": [
+              {
+                "author": "dang",
+                "children": [],
+                "created_at": "2025-07-31T20:08:48.000Z",
+                "created_at_i": 1753992528,
+                "id": 44749586,
+                "options": [],
+                "parent_id": 44749505,
+                "points": null,
+                "story_id": 44745820,
+                "text": "&gt; <i>What a silly take</i><p>Can you please omit swipes like that from your HN comments? This is in the site guidelines: <a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;newsguidelines.html\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;newsguidelines.html</a>.<p>Your post would be just fine without that bit!",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-07-31T20:01:10.000Z",
+            "created_at_i": 1753992070,
+            "id": 44749505,
+            "options": [],
+            "parent_id": 44749374,
+            "points": null,
+            "story_id": 44745820,
+            "text": "What a silly take. Email has been around for ages and it will continue to be around in perpetuity. It&#x27;s still the medium of choice for certain types of interactions where a documented paper trail is important and you eg; need escalation, further review, etc. It&#x27;s still also the choice for many companies and individuals.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "FinnKuhn",
+            "children": [],
+            "created_at": "2025-07-31T20:21:30.000Z",
+            "created_at_i": 1753993290,
+            "id": 44749709,
+            "options": [],
+            "parent_id": 44749374,
+            "points": null,
+            "story_id": 44745820,
+            "text": "I would actually go as far as potentially considering email a distributed protocol for live-chat considering how quickly they are delivered [1]. I&#x27;m aware that is not how many people use them, but I believe that is more related to the interface and not the underlying technology. Somebody could probably built a live-chat messenger that looks like Teams or iMessage while actually just being an email client. Edit: This already exists [2].<p>[1] <a href=\"https:&#x2F;&#x2F;groups.io&#x2F;email-provider-status\" rel=\"nofollow\">https:&#x2F;&#x2F;groups.io&#x2F;email-provider-status</a>\n[2] <a href=\"https:&#x2F;&#x2F;www.spikenow.com&#x2F;features&#x2F;conversational-email&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.spikenow.com&#x2F;features&#x2F;conversational-email&#x2F;</a>",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "simonw",
+            "children": [],
+            "created_at": "2025-07-31T21:28:04.000Z",
+            "created_at_i": 1753997284,
+            "id": 44750414,
+            "options": [],
+            "parent_id": 44749374,
+            "points": null,
+            "story_id": 44745820,
+            "text": "One of the most important startup lessons to learn, in perpetuity, is not to underestimate email.<p>I learned this the hard way when I was running a startup 15 years ago (we used sign in with Twitter and didn&#x27;t required people give us their email address) and it&#x27;s still true today.<p>Email is almost universal, mostly free from gatekeepers and is an incredibly effective way to keep your product relevant in a way that doesn&#x27;t depend on your users remembering to visit your site or open your app.<p>There are people out there who don&#x27;t use email, but they tend to not be people who spend serious money on the kind of products most startups are building.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-07-31T19:47:57.000Z",
+        "created_at_i": 1753991277,
+        "id": 44749374,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "Why build with email now? Isn\u2019t the world moving towards voice &#x2F; live-chat paradigms?",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "bearcobra",
+        "children": [
+          {
+            "author": "adisingh13",
+            "children": [],
+            "created_at": "2025-07-31T19:55:21.000Z",
+            "created_at_i": 1753991721,
+            "id": 44749446,
+            "options": [],
+            "parent_id": 44749433,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Users bring their own :) maybe this changes in the future though",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-07-31T19:54:11.000Z",
+        "created_at_i": 1753991651,
+        "id": 44749433,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "Do you facilitate the domain registration or do users bring their own? And if you do facilitate it, do you retain ownership of it?",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "nikhillv",
+        "children": [
+          {
+            "author": "Haakam21",
+            "children": [
+              {
+                "author": "AndroTux",
+                "children": [
+                  {
+                    "author": "Haakam21",
+                    "children": [],
+                    "created_at": "2025-08-01T19:14:08.000Z",
+                    "created_at_i": 1754075648,
+                    "id": 44761118,
+                    "options": [],
+                    "parent_id": 44756668,
+                    "points": null,
+                    "story_id": 44745820,
+                    "text": "We have checks in place to detect and reject spam. Don&#x27;t think rate limits are an effective solution for that either.",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2025-08-01T13:38:52.000Z",
+                "created_at_i": 1754055532,
+                "id": 44756668,
+                "options": [],
+                "parent_id": 44749660,
+                "points": null,
+                "story_id": 44745820,
+                "text": "Let me know how long that\u2019ll last. The low limits of other providers are there for a reason. That reason\u2019s called spam.",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-07-31T20:15:58.000Z",
+            "created_at_i": 1753992958,
+            "id": 44749660,
+            "options": [],
+            "parent_id": 44749605,
+            "points": null,
+            "story_id": 44745820,
+            "text": "So much better lol. We have sky high rate limits that only serve to mitigate denial of service.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-07-31T20:10:09.000Z",
+        "created_at_i": 1753992609,
+        "id": 44749605,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "how much better is agentmail with rate limits and sending limits?",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "loremm",
+        "children": [
+          {
+            "author": "Haakam21",
+            "children": [],
+            "created_at": "2025-07-31T20:28:15.000Z",
+            "created_at_i": 1753993695,
+            "id": 44749758,
+            "options": [],
+            "parent_id": 44749692,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Totally hear you. We think Gmail works great for individuals. We are solving the challenges of scaling email to thousands of agents per tenant.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "tonyhschu",
+            "children": [],
+            "created_at": "2025-08-01T03:39:34.000Z",
+            "created_at_i": 1754019574,
+            "id": 44752807,
+            "options": [],
+            "parent_id": 44749692,
+            "points": null,
+            "story_id": 44745820,
+            "text": "That workflow sounds amazing. How do you set that up? Got any code for it that we can look at?",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "lexoj",
+            "children": [],
+            "created_at": "2025-08-02T14:37:23.000Z",
+            "created_at_i": 1754145443,
+            "id": 44767955,
+            "options": [],
+            "parent_id": 44749692,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Good to know. I use a simple forwarder to a personal slack email which gives me the notifications via slack.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-07-31T20:19:29.000Z",
+        "created_at_i": 1753993169,
+        "id": 44749692,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "Keep in mind that default Gmail allows webhooks for any changes (email received but also changing labels, etc), for free using Gmail pubsub. I use it a lot because it&#x27;s the only way of getting programmatic notifications from credit card purchases (turn on purchase alerts to all cards, send to Gmail, have a filter archive but capture the reception in webhooks. Parse with simple regex)<p>Super fast low latency very satisfying. Pubsub scales well and free :)",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "winterrx",
+        "children": [
+          {
+            "author": "adisingh13",
+            "children": [],
+            "created_at": "2025-08-01T01:23:47.000Z",
+            "created_at_i": 1754011427,
+            "id": 44752090,
+            "options": [],
+            "parent_id": 44749988,
+            "points": null,
+            "story_id": 44745820,
+            "text": "thanks!!!",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-07-31T20:51:53.000Z",
+        "created_at_i": 1753995113,
+        "id": 44749988,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "Really cool stuff, keep it up.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "sauwan",
+        "children": [
+          {
+            "author": "Haakam21",
+            "children": [],
+            "created_at": "2025-07-31T22:19:38.000Z",
+            "created_at_i": 1754000378,
+            "id": 44750813,
+            "options": [],
+            "parent_id": 44750298,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Hey sauwan, happy to help! Email me at haakam[at]agentmail[dot]cc",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "adisingh13",
+            "children": [],
+            "created_at": "2025-08-01T01:23:19.000Z",
+            "created_at_i": 1754011399,
+            "id": 44752088,
+            "options": [],
+            "parent_id": 44750298,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Thanks for the input sauwan - it means a lot. We&#x27;re early, so this is by design. We have a generous free tier coming soon!<p>For now you can also use our playground at chat.agentmail.to",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "mhykim",
+            "children": [],
+            "created_at": "2025-08-10T06:27:18.000Z",
+            "created_at_i": 1754807238,
+            "id": 44853191,
+            "options": [],
+            "parent_id": 44750298,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Hey sauwan, wanted to follow up here. We as of 2 days ago just released our $20&#x2F;month tier! If you haven&#x27;t reached out yet already, its live on our website: agentmail.to<p>Let me know if you have any questions!",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-07-31T21:18:48.000Z",
+        "created_at_i": 1753996728,
+        "id": 44750298,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "This is perfect timing for me - was just thinking about how to do this. But pricing is a bit steep for a startup currently looking to prove the market. Would you consider a cheaper option (e.g. 1 free inbox, or maybe $20&#x2F;mo for 5 agent inboxes and a more limited storage level)? I&#x27;m building something that I might consider this for, but I don&#x27;t know how long my runway is before I get sustainable client revenue, so $100&#x2F;month is a deep hole being burned in my personal pocket before I can prove my MVP out.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "nextworddev",
+        "children": [
+          {
+            "author": "mhykim",
+            "children": [
+              {
+                "author": "nextworddev",
+                "children": [
+                  {
+                    "author": "Haakam21",
+                    "children": [],
+                    "created_at": "2025-08-01T08:41:52.000Z",
+                    "created_at_i": 1754037712,
+                    "id": 44754348,
+                    "options": [],
+                    "parent_id": 44752893,
+                    "points": null,
+                    "story_id": 44745820,
+                    "text": "Yes, it;s as easy as calling an SDK. We have a waitlist and you can try our playground: <a href=\"https:&#x2F;&#x2F;chat.agentmail.to\">https:&#x2F;&#x2F;chat.agentmail.to</a>",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2025-08-01T03:58:29.000Z",
+                "created_at_i": 1754020709,
+                "id": 44752893,
+                "options": [],
+                "parent_id": 44751687,
+                "points": null,
+                "story_id": 44745820,
+                "text": "I see - is it just an SDK? How do I try this out",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-08-01T00:15:54.000Z",
+            "created_at_i": 1754007354,
+            "id": 44751687,
+            "options": [],
+            "parent_id": 44750546,
+            "points": null,
+            "story_id": 44745820,
+            "text": "MCP&#x27;s are great as another communication medium with these agents(we have an MCP server as well!)<p>The problem we are primarily solving is the scale at which you can provision inboxes to these agents in the first place. With Gmail there comes a lot of hoops and hurdles(its built for human usage) with their APi.<p>So when it comes to orchestrating inboxes for thousands, perhaps even hundreds of thousands of agents, thats where we would come in!",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-07-31T21:45:32.000Z",
+        "created_at_i": 1753998332,
+        "id": 44750546,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "I have been using Gmail connector for Deep Research in ChatGPT and it works like a charm.<p>For sending emails, I have been using Gmail MCPs",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "franze",
+        "children": [
+          {
+            "author": "Haakam21",
+            "children": [],
+            "created_at": "2025-07-31T22:21:54.000Z",
+            "created_at_i": 1754000514,
+            "id": 44750832,
+            "options": [],
+            "parent_id": 44750569,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Very cool! We\u2019ve seen some neat personal assistants built with AgentMail as well",
+            "title": null,
+            "type": "comment",
+            "url": null
+          },
+          {
+            "author": "gautamp8",
+            "children": [],
+            "created_at": "2025-08-01T05:51:03.000Z",
+            "created_at_i": 1754027463,
+            "id": 44753389,
+            "options": [],
+            "parent_id": 44750569,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Sorry for plugging in our product here but this comment seemed relevant. We are actually building something similar at mxgo[.]ai. Started exactly same way as you did, now working on a chrome extension with suggestions within inbox. Would love to connect and know your feedback.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-07-31T21:48:08.000Z",
+        "created_at_i": 1753998488,
+        "id": 44750569,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "i created this last summer<p><a href=\"https:&#x2F;&#x2F;gpt.franzai.com\" rel=\"nofollow\">https:&#x2F;&#x2F;gpt.franzai.com</a><p>(test just email gpt@franzai.com)<p>sadly it never took off so it just became another abandoned side project<p>but still sometimes I use it ie do distill long emails or translate them without leaving the inbox - also the reminder and todo list feature is nice - whereby i mostly use the &quot;remind me of this email next monday&quot;<p>so my learnings for email agents: give them a sense of time and memory. its not only about that you write an email and send it but also when to write whom",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "tmshapland",
+        "children": [
+          {
+            "author": "adisingh13",
+            "children": [],
+            "created_at": "2025-08-01T01:23:54.000Z",
+            "created_at_i": 1754011434,
+            "id": 44752091,
+            "options": [],
+            "parent_id": 44750725,
+            "points": null,
+            "story_id": 44745820,
+            "text": "thank you!!",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-07-31T22:08:30.000Z",
+        "created_at_i": 1753999710,
+        "id": 44750725,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "Man, I&#x27;ve needed this! Brilliant!",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "tuckerman",
+        "children": [
+          {
+            "author": "Haakam21",
+            "children": [
+              {
+                "author": "govideo",
+                "children": [
+                  {
+                    "author": "Haakam21",
+                    "children": [],
+                    "created_at": "2025-08-01T08:32:07.000Z",
+                    "created_at_i": 1754037127,
+                    "id": 44754296,
+                    "options": [],
+                    "parent_id": 44753221,
+                    "points": null,
+                    "story_id": 44745820,
+                    "text": "Thanks! We&#x27;ve posted some vlogs on X, but I think we have some good content for engineering blogs too. Appreciate the support",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2025-08-01T05:14:23.000Z",
+                "created_at_i": 1754025263,
+                "id": 44753221,
+                "options": [],
+                "parent_id": 44751465,
+                "points": null,
+                "story_id": 44745820,
+                "text": "Cool product. I see the need. Many vendors might look like they have similar capabilities on a powerpoint, but when you look one level deeper, they really don&#x27;t. Eg, webhook notifications at 1 minute intervals with one big json of multiple emails, vs continuous&#x2F;instant&#x2F;single.<p>btw, would love to hear stories of you journey thus far. fwiw, I think you&#x27;re really onto smtg!",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-07-31T23:41:20.000Z",
+            "created_at_i": 1754005280,
+            "id": 44751465,
+            "options": [],
+            "parent_id": 44751175,
+            "points": null,
+            "story_id": 44745820,
+            "text": "It has been a journey, in fact even harder than we were expecting. But can say it was well worth it after seeing the unlock for devs building in the email space.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-07-31T23:01:07.000Z",
+        "created_at_i": 1754002867,
+        "id": 44751175,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "I was previously considering building in this space but the infra around sending &#x2F;receiving email for lots of addresses seemed like a major pain before getting to anything properly exciting, excited to see this! Would also encourage you to build good local dev&#x2F;testing infra, dealing with email gets messy.<p>I believe truly useful AI assistants will use the same tools that humans prefer to use, rather than forcing us to come to it (in the same way truly intelligent embodied AI would use the same spaces&#x2F;stairs&#x2F;tools&#x2F;doors as humans). Email, despite all its warts, still runs a lot of the world.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "xinweihe",
+        "children": [
+          {
+            "author": "Haakam21",
+            "children": [
+              {
+                "author": "xinweihe",
+                "children": [],
+                "created_at": "2025-08-01T04:17:18.000Z",
+                "created_at_i": 1754021838,
+                "id": 44752971,
+                "options": [],
+                "parent_id": 44752929,
+                "points": null,
+                "story_id": 44745820,
+                "text": "got it, will email you later, excited to try it out",
+                "title": null,
+                "type": "comment",
+                "url": null
+              },
+              {
+                "author": "throwaway-0001",
+                "children": [
+                  {
+                    "author": "Haakam21",
+                    "children": [],
+                    "created_at": "2025-08-01T18:58:13.000Z",
+                    "created_at_i": 1754074693,
+                    "id": 44760923,
+                    "options": [],
+                    "parent_id": 44755478,
+                    "points": null,
+                    "story_id": 44745820,
+                    "text": "Haha totally fair point. Here&#x27;s my email haakam@agentmail.cc go crazy",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2025-08-01T11:47:20.000Z",
+                "created_at_i": 1754048840,
+                "id": 44755478,
+                "options": [],
+                "parent_id": 44752929,
+                "points": null,
+                "story_id": 44745820,
+                "text": "I\u2019m curious why you\u2019d make your email hard to copy paste when in this day and age won\u2019t matter. Any basic AI agent can add your email to spam. Does it really help anymore?",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-08-01T04:07:10.000Z",
+            "created_at_i": 1754021230,
+            "id": 44752929,
+            "options": [],
+            "parent_id": 44752862,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Hi xinweihe, thanks for catching that. We are onboarding the waitlist with very fast turnaround. But, feel free to email me at haakam[at]agentmail[dot]cc",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-08-01T03:51:52.000Z",
+        "created_at_i": 1754020312,
+        "id": 44752862,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "I&#x27;m interested in trying agentmail for one of our internal agents, but I noticed you&#x27;re still on a waitlist and the &quot;contact us&quot; and &quot;contact sales&quot; buttons don\u2019t seem to be clickable.<p>Just wanted to flag in case it&#x27;s a bug. Excited to try it once access opens up.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "witnessme",
+        "children": [
+          {
+            "author": "statictype",
+            "children": [
+              {
+                "author": "Haakam21",
+                "children": [],
+                "created_at": "2025-08-01T08:57:26.000Z",
+                "created_at_i": 1754038646,
+                "id": 44754444,
+                "options": [],
+                "parent_id": 44753825,
+                "points": null,
+                "story_id": 44745820,
+                "text": "Yes you can use SES or Mailgun. But you would also need to build inboxes, email threading, attachment parsing, semantic search, structured data extraction, and more.",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-08-01T07:06:40.000Z",
+            "created_at_i": 1754032000,
+            "id": 44753825,
+            "options": [],
+            "parent_id": 44753502,
+            "points": null,
+            "story_id": 44745820,
+            "text": "You can do this with SES on AWS or Mailgun. \nWe use SES for this exact use case. Giving agents programmatic access to an email inbox and programmatically creating inboxes.",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-08-01T06:12:56.000Z",
+        "created_at_i": 1754028776,
+        "id": 44753502,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "What is the infrastructure tooling behind this product? I wanted to build this but it seemed like it is not a small startup project to build such big infra without riding on the existing email infra (which results in loss of the excitement to actually build the project itself and continue using the existing email infra by giants)",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "mayas_",
+        "children": [
+          {
+            "author": "Haakam21",
+            "children": [],
+            "created_at": "2025-08-01T08:59:16.000Z",
+            "created_at_i": 1754038756,
+            "id": 44754454,
+            "options": [],
+            "parent_id": 44753865,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Don&#x27;t worry we have checks in place to mitigate spam",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-08-01T07:13:17.000Z",
+        "created_at_i": 1754032397,
+        "id": 44753865,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "With this type of products, I feel like spamming nuisance will dramatically increase if mitigation doesn\u2019t catch up",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "primitivesuave",
+        "children": [
+          {
+            "author": "Haakam21",
+            "children": [],
+            "created_at": "2025-08-01T08:13:08.000Z",
+            "created_at_i": 1754035988,
+            "id": 44754190,
+            "options": [],
+            "parent_id": 44753892,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Thank you, all credit goes to my cofounder Michael! Your comment made our day",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-08-01T07:19:20.000Z",
+        "created_at_i": 1754032760,
+        "id": 44753892,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "This is really interesting and I&#x27;m sure it has many useful applications - what I am most impressed by is the popovers in your dashboard, which show SDK examples. This is a brilliant UI idea (executed with great polish) and is the first time I&#x27;m seeing it.<p>Unfortunately I&#x27;m not a potential customer and don&#x27;t have useful feedback on the market landscape - all I can add is that I really love your design. Also it seems like you all launched the new landing page while I was typing this comment a little past midnight, so kudos on the work ethic as well.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "matt_cogito",
+        "children": [
+          {
+            "author": "Haakam21",
+            "children": [],
+            "created_at": "2025-08-01T08:15:55.000Z",
+            "created_at_i": 1754036155,
+            "id": 44754204,
+            "options": [],
+            "parent_id": 44754093,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Nice, looking forward to hear about it!",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-08-01T07:54:48.000Z",
+        "created_at_i": 1754034888,
+        "id": 44754093,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "I do not have a use case for this _right now_. But I am a 100% sure I will have one pretty soon.<p>Email has become this massive, constant influx of information, that cannot be managed with just adding an AI agent to it. It takes so much more context knowledge to get right. None of the tools I have tried so far seem to solve this problem the way I would need it.<p>So sooner or later I might solve it for myself. And you guys will get a new customer.<p>Good luck, cowboys!",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "hajrice",
+        "children": [
+          {
+            "author": "adisingh13",
+            "children": [],
+            "created_at": "2025-08-01T18:29:02.000Z",
+            "created_at_i": 1754072942,
+            "id": 44760578,
+            "options": [],
+            "parent_id": 44755151,
+            "points": null,
+            "story_id": 44745820,
+            "text": "what confused you? happy to help - shoot me an email at adi(at)agentmail(dot)cc",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-08-01T10:51:19.000Z",
+        "created_at_i": 1754045479,
+        "id": 44755151,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "Onboarding&#x2F;signup started off great, but then you just drop in with no clarity on what to do next. A lot of actions possible and I&#x27;m unsure what to do first.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "hajrice",
+        "children": [
+          {
+            "author": "adisingh13",
+            "children": [],
+            "created_at": "2025-08-01T18:28:27.000Z",
+            "created_at_i": 1754072907,
+            "id": 44760568,
+            "options": [],
+            "parent_id": 44755184,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Yes exactly, we have some cases where people built a fully autonomous AI SDR",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-08-01T10:56:23.000Z",
+        "created_at_i": 1754045783,
+        "id": 44755184,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "You mentioned one of your use case is outbound (can totally see this being perhaps your biggest opportunity): How are people using this for outbound? As a full-cycle AI sales agent?",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "sneurgaonkar",
+        "children": [
+          {
+            "author": "adisingh13",
+            "children": [
+              {
+                "author": "adisingh13",
+                "children": [],
+                "created_at": "2025-08-01T18:27:14.000Z",
+                "created_at_i": 1754072834,
+                "id": 44760549,
+                "options": [],
+                "parent_id": 44760459,
+                "points": null,
+                "story_id": 44745820,
+                "text": "We&#x27;re also pretty interoperable as we&#x27;re an API and compatible with any framework today. Plans to double down here however",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2025-08-01T18:20:43.000Z",
+            "created_at_i": 1754072443,
+            "id": 44760459,
+            "options": [],
+            "parent_id": 44755466,
+            "points": null,
+            "story_id": 44745820,
+            "text": "Thanks a lot! We&#x27;re working on a lot of checks in place within our API for both the agents and email side, including things like spam filtering, verification, and protection against phishing or prompt injection. It&#x27;s an interesting task at hand, solving both archaic and cutting-edge problems within the same product lol",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2025-08-01T11:44:24.000Z",
+        "created_at_i": 1754048664,
+        "id": 44755466,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "Curious: how are you tackling abuse&#x2F;spam at scale, especially as more agents start talking to each other? Also, any plans for plug-and-play integrations with popular agent frameworks, or is the focus purely on infra for now?<p>Congrats on shipping - looking forward to seeing your journey.",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "psilambda",
+        "children": [],
+        "created_at": "2025-08-03T02:40:08.000Z",
+        "created_at_i": 1754188808,
+        "id": 44773631,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "What safeguards against prompt injection or phishing does AgentMail offer?",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "christoph123",
+        "children": [],
+        "created_at": "2025-08-05T08:37:37.000Z",
+        "created_at_i": 1754383057,
+        "id": 44795680,
+        "options": [],
+        "parent_id": 44745820,
+        "points": null,
+        "story_id": 44745820,
+        "text": "Was thinking of building something similar, considering just using yours now, looks great!<p>Postmark just made an open-source MCP server. I am using postmark already. Why would I use your tool? <a href=\"https:&#x2F;&#x2F;github.com&#x2F;ActiveCampaign&#x2F;postmark-mcp\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;ActiveCampaign&#x2F;postmark-mcp</a>",
+        "title": null,
+        "type": "comment",
+        "url": null
+      }
+    ],
+    "created_at": "2025-07-31T14:08:33.000Z",
+    "created_at_i": 1753970913,
+    "id": 44745820,
+    "options": [],
+    "parent_id": null,
+    "points": 121,
+    "story_id": 44745820,
+    "text": "Hey HN, we&#x27;re Haakam, Michael, and Adi. We&#x27;re building AgentMail (<a href=\"https:&#x2F;&#x2F;agentmail.to&#x2F;\">https:&#x2F;&#x2F;agentmail.to&#x2F;</a>), an API to give AI agents their own email inboxes. We\u2019re not talking about AI for your email, this is email for your AI.<p>We started building email agents because they can converse with users in their inboxes, automate email-based workflows, and authenticate with third-party applications. Given these unique capabilities, we think email will be a core interface for agents.<p>But we were building on top of Gmail, which was a struggle: poor API support, expensive subscriptions, rate limits, sending limits, GCP Pub&#x2F;Sub, OAuth, crappy keyword search, and an overall terrible developer experience.<p>Gmail and other providers didn\u2019t work for us. So we decided to bite the bullet and build our own.<p>AgentMail is like Gmail, but API-first, with programmatic inbox creation, events over webhooks and websockets, simple API key auth, organization-wide semantic search, structured data extraction, and usage-based pricing that scales with emails sent&#x2F;received.<p>Here\u2019s a demo of building an email agent: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;1V7BISeFUTM\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;1V7BISeFUTM</a>, and here\u2019s a demo of a voice agent with its own email inbox: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;eG2fCsRK4RY\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;eG2fCsRK4RY</a><p>So far AgentMail has been deployed to use cases such as apps with dedicated inboxes for each user, voice agents that receive documents in real time, automated account provisioning and QA testing, cold outbound platforms with thousands of inboxes, automations for processing invoices, and agents that coordinate work with humans and other agents.<p>We would love to hear your thoughts and feedback. You can try our playground at <a href=\"https:&#x2F;&#x2F;chat.agentmail.to\">https:&#x2F;&#x2F;chat.agentmail.to</a>",
+    "title": "Show HN: AgentMail \u2013 Email infra for AI agents",
+    "type": "story",
+    "url": "https://chat.agentmail.to/"
+  }
+}

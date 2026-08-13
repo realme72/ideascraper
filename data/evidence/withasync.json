@@ -1,0 +1,111 @@
+{
+  "candidate": {
+    "slug": "withasync",
+    "name": "Async",
+    "website": "https://withasync.com",
+    "one_liner": "Transforming small businesses with AI agents",
+    "description": "Async builds agents that change how businesses can run. Law firms, healthcare clinics and real estate companies hire our AI agents to automate complex work that's never been economical to staff with humans, letting us capture labor spend that didn't previously exist.",
+    "keywords": [
+      "Artificial Intelligence",
+      "B2B"
+    ],
+    "relevance": 0.667,
+    "signals": [
+      {
+        "kind": "freshness",
+        "label": "YC Summer 2026 batch",
+        "value": null,
+        "observed_at": "2025-06-25T19:18:46Z",
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/withasync",
+          "retrieved_at": "2026-08-13T15:14:22.602662Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Team of 2",
+        "value": 2.0,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/withasync",
+          "retrieved_at": "2026-08-13T15:14:22.602662Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Stage: Early",
+        "value": null,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/withasync",
+          "retrieved_at": "2026-08-13T15:14:22.602662Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/withasync",
+        "retrieved_at": "2026-08-13T15:14:22.602662Z"
+      }
+    ]
+  },
+  "gathered_at": "2026-08-13T20:58:18.474041Z",
+  "items": [
+    {
+      "kind": "founder",
+      "title": "Ben Smith — Co-Founder",
+      "content": "Co-Founder of Async. Used to sell shoes, trading cards and collectibles. Dropped out of college at 20 to build software.\nLinks: https://www.linkedin.com/in/ben-smith-b15b12293/, https://x.com/imbensmith",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/withasync",
+        "retrieved_at": "2026-08-13T20:58:18.465845Z"
+      }
+    },
+    {
+      "kind": "founder",
+      "title": "Connor Park — Co-Founder, CTO",
+      "content": "Previously studied Computer Science at the University of Michigan, Ann Arbor. Building since 7 years old.\nLinks: https://www.linkedin.com/in/connor-park24/",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/withasync",
+        "retrieved_at": "2026-08-13T20:58:18.465845Z"
+      }
+    },
+    {
+      "kind": "company_profile",
+      "title": "Async — YC directory profile",
+      "content": "Batch: Summer 2026\nFounded: 2025\nTeam size: 2\nLocation: New York City, NY\nStatus: Active\nWebsite: https://withasync.com\nLinkedIn: https://www.linkedin.com/company/useskope/\n\nAsync builds agents that change how businesses can run. Law firms, healthcare clinics and real estate companies hire our AI agents to automate complex work that's never been economical to staff with humans, letting us capture labor spend that didn't previously exist.",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/withasync",
+        "retrieved_at": "2026-08-13T20:58:18.465845Z"
+      }
+    },
+    {
+      "kind": "website_copy",
+      "title": "Homepage of withasync.com — Async",
+      "content": "Transforming small businesses with AI Agents. Async Backed by world-class investors Turn your institutional knowledge into specialized AI Work with Async to automate the administrative work you never wanted to do, with specialized AI agents. Contact Learn more Our Process Your Partner in AI Adoption A hands-on, four-step process to automate your highest-priority workflows, without reinventing how your team already works. Contact Learn More 01 Partner & audit We sit down with your team and audit your tech stack, internal workflows, and the areas where automation makes the highest impact on revenue. 02 Scope & deploy We agree on one or two scoped workflows to start, then build and deploy AI agents into your existing systems. 03 Prove & expand Once a deployment delivers, we earn the right to the next high-value workflow, expanding the range of work our agents touch across your business over time. 04 Maintain & compound We maintain and iterate on every deployment, and work to make your agents improve with each action. Security Enterprise-grade security and controls Your data deserves the highest standard of protection. Async is built with security and privacy at its core, not bolted on after the fact. Learn more → Zero Data Retention Ensure true privacy and compliance with customized ZDR. All queries and data can be automatically purged based on your requirements. End-to-End Encryption All data is encrypted in transit and at rest. Your information never leaves your control. We enforce strict access policies across every layer of the platform. SOC 2 Type I Certified Independently audited and certified to SOC 2 Type I standards, with security controls verified by third-party auditors. “As an attorney, I admit I am not easily impressed. I am naturally suspicious of anyone claiming they can make my life easier, but of all the vendors I have met with and used as a firm owner, Async has consistently gone above and beyond.” Adriena Clifton / Founder, Clifton Law PLLC Read the full story → See where AI fits in your business Get in touch and we'll explore how Async fits your team's workflow. Contact Resources Customer stories, product updates, and insights. Browse resources Company Who we are and why we're building Async. About us async Company Our Process Resources Company Security Help Legal Privacy Policy Terms of Service Social LinkedIn Email AI Agents built for your business. © 2026 Async",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "web",
+        "url": "https://withasync.com",
+        "retrieved_at": "2026-08-13T20:58:18.474020Z"
+      }
+    }
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "No Hacker News launch thread found for this company"
+  ]
+}

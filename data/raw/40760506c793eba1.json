@@ -1,0 +1,255 @@
+{
+  "key": "40760506c793eba1",
+  "inputs": {
+    "url": "https://hn.algolia.com/api/v1/items/49145934"
+  },
+  "fetched_at": "2026-08-13T20:46:30.194173+00:00",
+  "payload": {
+    "author": "amronos",
+    "children": [
+      {
+        "author": "MomohNobert",
+        "children": [],
+        "created_at": "2026-08-02T16:49:28.000Z",
+        "created_at_i": 1785689368,
+        "id": 49146119,
+        "options": [],
+        "parent_id": 49145934,
+        "points": null,
+        "story_id": 49145934,
+        "text": "this is currently unavailable, good luck!",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "astaka",
+        "children": [
+          {
+            "author": "amronos",
+            "children": [
+              {
+                "author": "slater",
+                "children": [
+                  {
+                    "author": "amronos",
+                    "children": [
+                      {
+                        "author": "slater",
+                        "children": [
+                          {
+                            "author": "greenregiment",
+                            "children": [],
+                            "created_at": "2026-08-13T19:08:52.000Z",
+                            "created_at_i": 1786648132,
+                            "id": 49290559,
+                            "options": [],
+                            "parent_id": 49147504,
+                            "points": null,
+                            "story_id": 49145934,
+                            "text": "Slater name 1 impressive thing you\u2019ve ever done.<p>Miserable loser with 0 accomplishments",
+                            "title": null,
+                            "type": "comment",
+                            "url": null
+                          }
+                        ],
+                        "created_at": "2026-08-02T19:28:15.000Z",
+                        "created_at_i": 1785698895,
+                        "id": 49147504,
+                        "options": [],
+                        "parent_id": 49147426,
+                        "points": null,
+                        "story_id": 49145934,
+                        "text": "riiight... kinda like the last time something like this happened (&quot;friends&quot; instead of &quot;team mates&quot;) ;)<p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49040902\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49040902</a>",
+                        "title": null,
+                        "type": "comment",
+                        "url": null
+                      }
+                    ],
+                    "created_at": "2026-08-02T19:18:21.000Z",
+                    "created_at_i": 1785698301,
+                    "id": 49147426,
+                    "options": [],
+                    "parent_id": 49147024,
+                    "points": null,
+                    "story_id": 49145934,
+                    "text": "Sorry, these aren&#x27;t puppet accounts, btw, just accounts of some friends and family who somehow found this project.",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  },
+                  {
+                    "author": "amronos",
+                    "children": [
+                      {
+                        "author": "astaka",
+                        "children": [],
+                        "created_at": "2026-08-04T05:00:31.000Z",
+                        "created_at_i": 1785819631,
+                        "id": 49164492,
+                        "options": [],
+                        "parent_id": 49147692,
+                        "points": null,
+                        "story_id": 49145934,
+                        "text": "Yep, it&#x27;s pretty cool! I actually tried building a tiny robot car myself before, but I don&#x27;t have a hardware background, so it was really challenging to learn everything and source all the components.<p>I even used an AI agent (OpenClaw) to help me with the project, but I still ran into a lot of obstacles\u2014things like circuit diagrams, wiring, hardware tools, and understanding the documentation. Eventually, I gave up... haha.<p>I think your tool could really help people like me who want to build hardware projects but don&#x27;t have much experience. It&#x27;s a great idea!",
+                        "title": null,
+                        "type": "comment",
+                        "url": null
+                      }
+                    ],
+                    "created_at": "2026-08-02T19:52:48.000Z",
+                    "created_at_i": 1785700368,
+                    "id": 49147692,
+                    "options": [],
+                    "parent_id": 49147024,
+                    "points": null,
+                    "story_id": 49145934,
+                    "text": "Did you look at the project btw? Any opinions?",
+                    "title": null,
+                    "type": "comment",
+                    "url": null
+                  }
+                ],
+                "created_at": "2026-08-02T18:29:14.000Z",
+                "created_at_i": 1785695354,
+                "id": 49147024,
+                "options": [],
+                "parent_id": 49146869,
+                "points": null,
+                "story_id": 49145934,
+                "text": "you should create more sockpuppet accounts to write nice comments ;)",
+                "title": null,
+                "type": "comment",
+                "url": null
+              }
+            ],
+            "created_at": "2026-08-02T18:11:37.000Z",
+            "created_at_i": 1785694297,
+            "id": 49146869,
+            "options": [],
+            "parent_id": 49146779,
+            "points": null,
+            "story_id": 49145934,
+            "text": "please check back in 20 mins",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2026-08-02T18:02:44.000Z",
+        "created_at_i": 1785693764,
+        "id": 49146779,
+        "options": [],
+        "parent_id": 49145934,
+        "points": null,
+        "story_id": 49145934,
+        "text": "The site is down... please check...",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "bittoogangster",
+        "children": [],
+        "created_at": "2026-08-02T18:25:39.000Z",
+        "created_at_i": 1785695139,
+        "id": 49146994,
+        "options": [],
+        "parent_id": 49145934,
+        "points": null,
+        "story_id": 49145934,
+        "text": "Guys this is a incredible work done by a 16 year old kid \nAmronos",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "amronos",
+        "children": [],
+        "created_at": "2026-08-02T18:56:25.000Z",
+        "created_at_i": 1785696985,
+        "id": 49147234,
+        "options": [],
+        "parent_id": 49145934,
+        "points": null,
+        "story_id": 49145934,
+        "text": "Hey HN, I am 16y&#x2F;o and have been working on Sprocket for a while. It&#x27;s an open-source AI agent that beats every other agent out there at both hardware and software.<p>And here&#x27;s the best part: Sprocket can (on its own) buy anything from any website when you tell it to do so. From hardware parts to SaaS subscriptions.<p>Sprocket retrieves best-in-class context from the web for everything it does. It is therefore incredibly reliable. The agent harness&#x27;s quality, performance, and UI rival that of Codex&#x2F;Cursor&#x2F;T3Code, and we are rapidly improving. We will be releasing benchmarks on how Sprocket beats every other agent at both software and hardware soon.<p>In terms of hardware design, Sprocket can make beautiful schematics in react, create your BOM, and create detailed assembly instructions.<p>Hope you try it out!<p>Thanks, Aarav",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "ilikenix-os",
+        "children": [
+          {
+            "author": "amronos",
+            "children": [],
+            "created_at": "2026-08-02T19:50:58.000Z",
+            "created_at_i": 1785700258,
+            "id": 49147675,
+            "options": [],
+            "parent_id": 49147337,
+            "points": null,
+            "story_id": 49145934,
+            "text": "Yup, I am actually participating in their agentic commerce hackathon with this project",
+            "title": null,
+            "type": "comment",
+            "url": null
+          }
+        ],
+        "created_at": "2026-08-02T19:07:33.000Z",
+        "created_at_i": 1785697653,
+        "id": 49147337,
+        "options": [],
+        "parent_id": 49145934,
+        "points": null,
+        "story_id": 49145934,
+        "text": "Looks like you used Prava to handle the agentic payments. Really neat!",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "lahorishehzan",
+        "children": [],
+        "created_at": "2026-08-03T05:15:01.000Z",
+        "created_at_i": 1785734101,
+        "id": 49151474,
+        "options": [],
+        "parent_id": 49145934,
+        "points": null,
+        "story_id": 49145934,
+        "text": "Wow",
+        "title": null,
+        "type": "comment",
+        "url": null
+      },
+      {
+        "author": "nitesh_22",
+        "children": [],
+        "created_at": "2026-08-03T14:37:21.000Z",
+        "created_at_i": 1785767841,
+        "id": 49156406,
+        "options": [],
+        "parent_id": 49145934,
+        "points": null,
+        "story_id": 49145934,
+        "text": "Nice",
+        "title": null,
+        "type": "comment",
+        "url": null
+      }
+    ],
+    "created_at": "2026-08-02T16:26:19.000Z",
+    "created_at_i": 1785687979,
+    "id": 49145934,
+    "options": [],
+    "parent_id": null,
+    "points": 124,
+    "story_id": 49145934,
+    "text": "Hey HN,\nI am 16y&#x2F;o and have been working on Sprocket for a while. It&#x27;s an open-source AI agent that beats every other agent out there at both hardware and software.<p>And here&#x27;s the best part: Sprocket can (on its own) buy anything from any website when you tell it to do so. From hardware parts to SaaS subscriptions.<p>Sprocket retrieves best-in-class context from the web for everything it does. It is therefore incredibly reliable.\nThe agent harness&#x27;s quality, performance, and UI rival that of Codex&#x2F;Cursor&#x2F;T3Code, and we are rapidly improving.\nWe will be releasing benchmarks on how Sprocket beats every other agent at both software and hardware soon.<p>In terms of hardware design, Sprocket can make beautiful schematics in react, create your BOM, and create detailed assembly instructions.<p>Hope you try it out!<p>Thanks,\nAarav<p>P.S. if the demo video doesn&#x27;t load for you, come back after ~1.5hr and it should be there, I kinda had to submit this early. Sorry!",
+    "title": "Show HN: Sprocket \u2013 The Best AI Agent for Hardware and Software Development",
+    "type": "story",
+    "url": "https://sprocket-demo.spikonado.com"
+  }
+}

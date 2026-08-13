@@ -1,0 +1,180 @@
+{
+  "candidate": {
+    "slug": "sprocket",
+    "name": "Sprocket",
+    "website": "https://sprocket-demo.spikonado.com",
+    "one_liner": "The Best AI Agent for Hardware and Software Development",
+    "description": "Hey HN, I am 16y/o and have been working on Sprocket for a while. It's an open-source AI agent that beats every other agent out there at both hardware and software. And here's the best part: Sprocket can (on its own) buy anything from any website when you tell it to do so. From hardware parts to SaaS subscriptions. Sprocket retrieves best-in-class context from the web for everything it does. It is therefore incredibly reliable. The agent harness's quality, performance, and UI rival that of Codex/Cursor/T3Code, and we are rapidly improving. We will be releasing benchmarks on how Sprocket beats every other agent at both software and hardware soon. In terms of hardware design, Sprocket can make beautiful schematics in react, create your BOM, and create detailed assembly instructions. Hope…",
+    "keywords": [],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "traction",
+        "label": "124 points and 14 comments on Hacker News",
+        "value": 124.0,
+        "observed_at": "2026-08-02T16:26:19Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=49145934",
+          "retrieved_at": "2026-08-13T15:14:24.382986Z"
+        }
+      },
+      {
+        "kind": "freshness",
+        "label": "Launched on HN 02 Aug 2026",
+        "value": null,
+        "observed_at": "2026-08-02T16:26:19Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=49145934",
+          "retrieved_at": "2026-08-13T15:14:24.382986Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Posted and answered questions as HN user @amronos",
+        "value": null,
+        "observed_at": "2026-08-02T16:26:19Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=49145934",
+          "retrieved_at": "2026-08-13T15:14:24.382986Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=49145934",
+        "retrieved_at": "2026-08-13T15:14:24.382986Z"
+      }
+    ]
+  },
+  "gathered_at": "2026-08-13T20:58:18.529066Z",
+  "items": [
+    {
+      "kind": "hn_launch_text",
+      "title": "Launch post by @amronos",
+      "content": "Hey HN, I am 16y/o and have been working on Sprocket for a while. It's an open-source AI agent that beats every other agent out there at both hardware and software. And here's the best part: Sprocket can (on its own) buy anything from any website when you tell it to do so. From hardware parts to SaaS subscriptions. Sprocket retrieves best-in-class context from the web for everything it does. It is therefore incredibly reliable. The agent harness's quality, performance, and UI rival that of Codex/Cursor/T3Code, and we are rapidly improving. We will be releasing benchmarks on how Sprocket beats every other agent at both software and hardware soon. In terms of hardware design, Sprocket can make beautiful schematics in react, create your BOM, and create detailed assembly instructions. Hope you try it out! Thanks, Aarav P.S. if the demo video doesn't load for you, come back after ~1.5hr and it should be there, I kinda had to submit this early. Sorry!",
+      "value": 124.0,
+      "observed_at": "2026-08-02T16:26:19Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=49145934",
+        "retrieved_at": "2026-08-13T20:58:18.509542Z"
+      }
+    },
+    {
+      "kind": "website_copy",
+      "title": "Homepage of sprocket-demo.spikonado.com — GitHub - spikonado/sprocket: The best and only AI agent for developing both hardware and software · GitHub",
+      "content": "The best and only AI agent for developing both hardware and software - spikonado/sprocket GitHub - spikonado/sprocket: The best and only AI agent for developing both hardware and software · GitHub Skip to content You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert Uh oh! There was an error while loading. Please reload this page . spikonado / sprocket Public Notifications You must be signed in to change notification settings Fork 3 Star 16 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 153 Commits 153 Commits .github .github apps apps assets assets crates crates npm npm packages packages patches patches scripts scripts .env .env .envrc .envrc .gitattributes .gitattributes .gitignore .gitignore .pre-commit-config.yaml .pre-commit-config.yaml .prettierignore .prettierignore .prettierrc .prettierrc AGENTS.md AGENTS.md ARCHITECTURE.md ARCHITECTURE.md Cargo.lock Cargo.lock Cargo.toml Cargo.toml LICENSE.md LICENSE.md README.md README.md bun.lock bun.lock commitlint.config.mjs commitlint.config.mjs flake.lock flake.lock flake.nix flake.nix package.json package.json renovate.json renovate.json turbo.json turbo.json View all files Repository files navigation Sprocket Goal : To make the world's best platform for developing hardware and software. Here's what makes Sprocket special: The only AI agent that can work on both hardware and software . Retrieves best-in-class context from the web for everything it does, so it stays incredibly reliable . Buys anything from any website when you ask, from hardware parts to SaaS subscriptions. Makes beautifully detailed schematics , creates your BOM , and writes assembly instructions . Sprocket Demo Using Sprocket Note You can run Sprocket using any of the ways defined below with no impact on Sprocket's capabilities or performance. The desktop app may take more RAM than using Sprocket through your browser. Run without installing npx @spikonado/sprocket The above runs Sprocket through your browser unless you have the desktop app installed. Desktop App Install it for your OS from the latest GitHub Release Artifacts and run it. CLI npm i -g @spikonado/sprocket sprocket The above runs Sprocket through your browser unless you have the desktop app installed. To always open a tab in your browser when using Sprocket, use the --web flag: sprocket --web Workspaces Pass a directory to open or reconnect that workspace in a new thread: sprocket . sprocket --web ../my-robot Sprocket remembers attached workspaces and local server sessions between launches. Local state lives in $HOME/.sprocket (or %USERPROFILE%\\.sprocket on Windows when HOME is unset). Override with SPROCKET_DATA_DIR . Additional CLI reference Command Behavior sprocket serve Run the loca",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "web",
+        "url": "https://sprocket-demo.spikonado.com",
+        "retrieved_at": "2026-08-13T20:58:18.529045Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @MomohNobert",
+      "content": "this is currently unavailable, good luck!",
+      "value": null,
+      "observed_at": "2026-08-02T16:49:28Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=49146119",
+        "retrieved_at": "2026-08-13T20:58:18.509572Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @astaka",
+      "content": "The site is down... please check...",
+      "value": null,
+      "observed_at": "2026-08-02T18:02:44Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=49146779",
+        "retrieved_at": "2026-08-13T20:58:18.509576Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @bittoogangster",
+      "content": "Guys this is a incredible work done by a 16 year old kid Amronos",
+      "value": null,
+      "observed_at": "2026-08-02T18:25:39Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=49146994",
+        "retrieved_at": "2026-08-13T20:58:18.509580Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @ilikenix-os",
+      "content": "Looks like you used Prava to handle the agentic payments. Really neat!",
+      "value": null,
+      "observed_at": "2026-08-02T19:07:33Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=49147337",
+        "retrieved_at": "2026-08-13T20:58:18.509583Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @lahorishehzan",
+      "content": "Wow",
+      "value": null,
+      "observed_at": "2026-08-03T05:15:01Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=49151474",
+        "retrieved_at": "2026-08-13T20:58:18.509585Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @amronos",
+      "content": "please check back in 20 mins",
+      "value": null,
+      "observed_at": "2026-08-02T18:11:37Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=49146869",
+        "retrieved_at": "2026-08-13T20:58:18.509591Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @amronos",
+      "content": "Sorry, these aren't puppet accounts, btw, just accounts of some friends and family who somehow found this project.",
+      "value": null,
+      "observed_at": "2026-08-02T19:18:21Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=49147426",
+        "retrieved_at": "2026-08-13T20:58:18.509596Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @amronos",
+      "content": "Did you look at the project btw? Any opinions?",
+      "value": null,
+      "observed_at": "2026-08-02T19:52:48Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=49147692",
+        "retrieved_at": "2026-08-13T20:58:18.509599Z"
+      }
+    }
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "HN user @amronos has no bio on their profile"
+  ]
+}

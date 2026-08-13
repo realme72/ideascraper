@@ -1,0 +1,127 @@
+{
+  "candidate": {
+    "slug": "spaceflow-technologies-inc",
+    "name": "SpaceFlow Technologies, Inc.",
+    "website": "https://spaceflow.tech",
+    "one_liner": "The managed runtime for enterprise AI agents",
+    "description": "SpaceFlow is the managed runtime for AI agents that execute supply chain work across ERPs, email, spreadsheets, documents, and supplier portals. It turns fragmented operational data and SOPs into a governed context layer, then gives agents reusable skills and controlled access to enterprise tools.\r\n\r\nSpaceFlow agents normalize multi-round quotations, chase suppliers and delivery confirmations, repair incomplete requests, classify materials, reconcile phantom inventory, surface market signals, and help sales and operations planning teams continuously align demand, supply, inventory, purchasing deadlines, and freight decisions.\r\n\r\nSpaceFlow deploys in the customer’s cloud or on-prem environment with permissions, human approvals, observability, and audit trails, allowing industrial and regulated enterprises to automate high-stakes operations without replacing existing systems or moving sensitive data.",
+    "keywords": [
+      "B2B",
+      "Logistics",
+      "Manufacturing",
+      "Supply Chain",
+      "Supply Chain and Logistics",
+      "Workflow Automation"
+    ],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "freshness",
+        "label": "YC Summer 2026 batch",
+        "value": null,
+        "observed_at": "2026-08-02T04:22:37Z",
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+          "retrieved_at": "2026-08-13T15:14:22.603549Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Team of 4",
+        "value": 4.0,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+          "retrieved_at": "2026-08-13T15:14:22.603549Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Stage: Early",
+        "value": null,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+          "retrieved_at": "2026-08-13T15:14:22.603549Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+        "retrieved_at": "2026-08-13T15:14:22.603549Z"
+      }
+    ]
+  },
+  "gathered_at": "2026-08-13T20:58:19.376130Z",
+  "items": [
+    {
+      "kind": "founder",
+      "title": "Emre Isik — Co-founder and CEO",
+      "content": "Founder and CEO of SpaceFlow Technologies. Previously researched computational linguistics at Cambridge under Prof. Anna Korhonen and developed system identification algorithms for motor control at UCLA's Institute of Pure and Applied Mathematics. BA in Computer Engineering from University of Cambridge.\nLinks: https://www.linkedin.com/in/emre-i-6a88aa193?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app, https://x.com/Emrre_isik",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+        "retrieved_at": "2026-08-13T20:58:19.362880Z"
+      }
+    },
+    {
+      "kind": "founder",
+      "title": "Hakan Enes Aksu — Founder",
+      "content": "co-founder and cto\nLinks: https://www.linkedin.com/in/hakan-enes-aksu/",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+        "retrieved_at": "2026-08-13T20:58:19.362880Z"
+      }
+    },
+    {
+      "kind": "founder",
+      "title": "Ali Eren Aytekin — Founder",
+      "content": "Co-Founder of SpaceFlow Technologies. Previously developed deep learning models for genetic perturbation analysis, earning runner-up at the Microsoft Imagine Cup. Holds a patent for a compressed-air energy storage system. Engineering at Istanbul Technical University, dropout.\nLinks: https://www.linkedin.com/in/ali-eren-aytekin-6305a41aa/",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+        "retrieved_at": "2026-08-13T20:58:19.362880Z"
+      }
+    },
+    {
+      "kind": "company_profile",
+      "title": "SpaceFlow Technologies, Inc. — YC directory profile",
+      "content": "Batch: Summer 2026\nFounded: 2025\nTeam size: 4\nLocation: San Francisco\nStatus: Active\nWebsite: https://spaceflow.tech\nLinkedIn: https://www.linkedin.com/company/spaceflow-yc-s26/\n\nSpaceFlow is the managed runtime for AI agents that execute supply chain work across ERPs, email, spreadsheets, documents, and supplier portals. It turns fragmented operational data and SOPs into a governed context layer, then gives agents reusable skills and controlled access to enterprise tools.\r\n\r\nSpaceFlow agents normalize multi-round quotations, chase suppliers and delivery confirmations, repair incomplete requests, classify materials, reconcile phantom inventory, surface market signals, and help sales and operations planning teams continuously align demand, supply, inventory, purchasing deadlines, and freight decisions.\r\n\r\nSpaceFlow deploys in the customer’s cloud or on-prem environment with permissions, human approvals, observability, and audit trails, allowing industrial and regulated enterprises to automate high-stakes operations without replacing existing systems or moving sensitive data.",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+        "retrieved_at": "2026-08-13T20:58:19.362880Z"
+      }
+    },
+    {
+      "kind": "website_copy",
+      "title": "Homepage of spaceflow.tech — Spaceflow",
+      "content": "Spaceflow deploys and runs your whole AI stack: open frontier models, a governance gateway, and AI employees that work inside the systems you already run. Spaceflow Backed by Y Combinator Enterprise AI, without the transformation. Spaceflow deploys and runs your whole AI stack: open frontier models, a governance gateway, and AI employees that work inside the systems you already run. Book a demo Book a demo Backed by operators from $400M in annual supplier spend runs through Spaceflow. Live as of Aug 6, 2026 Live as of Aug 6, 2026 With Spaceflow The AI comes to your systems. Live in weeks Your systems, unchanged Data stays inside It learns your systems exactly as they are. Book a demo Spaceflow deploys inside your network and learns your systems exactly as they are: custom tables, price conditions, approval chains, the institutional memory encoded over decades. No re-implementation, no data-cleansing megaproject, no consultants. Then it puts AI employees to work on top. Connect: read-only, inside your network 01 Learn: your tables, prices, approval flows 02 Work: AI employees in shadow mode, then earning autonomy 03 Connected, learning, and working in shadow mode within the first month. Connect: read-only, inside your network 01 Learn: your tables, prices, approval flows 02 Work: AI employees in shadow mode, then earning autonomy 03 Connected, learning, and working in shadow mode within the first month. Connect: read-only, inside your network 01 Learn: your tables, prices, approval flows 02 Work: AI employees in shadow mode, then earning autonomy 03 Connected, learning, and working in shadow mode within the first month. VENDORMarmara Foods · 6yr history VENDORMarmara Foods · 6yr history PRICE CONDZPRICE_COND_A904 APPROVAL RULE>$25K → director APPROVAL RULE>$25K → director EMAIL THREADRFQ-2847 · 12 replies EMAIL THREADRFQ-2847 · 12 replies BOMv3.1 · 214 items BOMv3.1 · 214 items SPREADSHEETquotes_w30_final(2).xlsx CONTRACT - net 45 · $41.75/line VENDORMarmara Foods · 6yr history PRICE CONDZPRICE_COND_A904 APPROVAL RULE>$25K → director EMAIL THREADRFQ-2847 · 12 replies BOMv3.1 · 214 items SPREADSHEETquotes_w30_final(2).xlsx CONTRACT - net 45 · $41.75/line First it learns your company. Then it staffs it. Vendors : 0 Price conditions : 0 Approval rules : 0 Contract terms : 0 Tasks proposed : 0 Logged : 0 Approval rules : 0 Contract terms : 0 On top of the brain, AI employees do operational work end to end: they read what arrives, extract what matters, draft what’s next, and route what needs a human. Every action is proposed, logged, and approved by your team - autonomy is earned task by task, with evidence. Contracts, quotes, price conditions, vendor history, approval flows, modelled as one queryable memory that gets richer with every cycle. The brain Purpose-built agents that work inside your systems 24/7. Create as many as you need. No forms, no screens, no training. The Employees See what they do Works with what you already run. Book a demo The sta",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "web",
+        "url": "https://spaceflow.tech",
+        "retrieved_at": "2026-08-13T20:58:19.376121Z"
+      }
+    }
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "No Hacker News launch thread found for this company"
+  ]
+}

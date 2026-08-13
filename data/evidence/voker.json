@@ -1,0 +1,202 @@
+{
+  "candidate": {
+    "slug": "voker",
+    "name": "Voker",
+    "website": "https://voker.ai",
+    "one_liner": "Analytics for AI Agents",
+    "description": "Hey HN, we're Alex and Tyler, co-founders of Voker.ai ( https://voker.ai/ ), an agent analytics platform for AI product teams. Voker gives full visibility into what users are asking of your agents, and whether your agents are delivering, without having to dig through logs. Our main product is a lightweight SDK that is LLM stack agnostic and purpose-built for agent products. ( https://app.voker.ai/docs ) Agent Engineers and AI product teams don’t have the right level of visibility into agent performance in production, which results in bad user experiences, churn, and hundreds of hours wasted with spot checks to find and debug issues with agent configurations. Demo: https://www.tella.tv/video/vid_cmoukcsk1000i07jgb4j65u67/vie... We recently conducted a survey of YC Founders and 90%+ of…",
+    "keywords": [],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "traction",
+        "label": "59 points and 22 comments on Hacker News",
+        "value": 59.0,
+        "observed_at": "2026-05-12T15:45:20Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48109962",
+          "retrieved_at": "2026-08-13T15:14:23.498836Z"
+        }
+      },
+      {
+        "kind": "freshness",
+        "label": "Launched on HN 12 May 2026",
+        "value": null,
+        "observed_at": "2026-05-12T15:45:20Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48109962",
+          "retrieved_at": "2026-08-13T15:14:23.498836Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Posted and answered questions as HN user @ttpost",
+        "value": null,
+        "observed_at": "2026-05-12T15:45:20Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48109962",
+          "retrieved_at": "2026-08-13T15:14:23.498836Z"
+        }
+      },
+      {
+        "kind": "freshness",
+        "label": "YC S24 batch",
+        "value": null,
+        "observed_at": "2026-05-12T15:45:20Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48109962",
+          "retrieved_at": "2026-08-13T15:14:23.498836Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48109962",
+        "retrieved_at": "2026-08-13T15:14:23.498836Z"
+      }
+    ]
+  },
+  "gathered_at": "2026-08-13T20:58:19.352673Z",
+  "items": [
+    {
+      "kind": "hn_launch_text",
+      "title": "Launch post by @ttpost",
+      "content": "Hey HN, we're Alex and Tyler, co-founders of Voker.ai ( https://voker.ai/ ), an agent analytics platform for AI product teams. Voker gives full visibility into what users are asking of your agents, and whether your agents are delivering, without having to dig through logs. Our main product is a lightweight SDK that is LLM stack agnostic and purpose-built for agent products. ( https://app.voker.ai/docs ) Agent Engineers and AI product teams don’t have the right level of visibility into agent performance in production, which results in bad user experiences, churn, and hundreds of hours wasted with spot checks to find and debug issues with agent configurations. Demo: https://www.tella.tv/video/vid_cmoukcsk1000i07jgb4j65u67/vie... We recently conducted a survey of YC Founders and 90%+ of respondents said that the only way they know if their Agents are failing users in production is by hearing complaints from customers. They push a prompt change hoping that it fixes the problem and doesn’t break something somewhere else, and the cycle repeats. We saw tons of observability and evals products popping up to try to address these problems, but we still felt like something was missing in the agent monitoring stack. Obs is good for individual trace debugging but is only accessible to engineers. Evals are good for testing known issues, but don't give insights into trends that teams don’t expect, so engineers are always playing catch up. Traditional product analytics tools do a good job tracking clicks and pageviews across your product surface but weren’t built ground up for agent products. Knowing what users want out of agents, and whether the agent delivered requires specific conversational intelligence / unstructured data processing techniques. We came up with the agent analytics primitives of Intents, Corrections, and Resolutions to describe something pretty much all conversational agents had in common: a user will always come to an agent with an intent, the user might have to correct this agent on the way to getting their intent resolved, and hopefully every intent a user has is eventually resolved by the agent. Voker processes LLM calls by automatically annotating individual conversations and picking out user intent and corrections. Voker takes these and uses LLMs and hierarchical text classification to create dynamic categories that give higher level insights so you don’t have to read individual conversations to know what are the main usage patterns across your…",
+      "value": 59.0,
+      "observed_at": "2026-05-12T15:45:20Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48109962",
+        "retrieved_at": "2026-08-13T20:58:19.338670Z"
+      }
+    },
+    {
+      "kind": "website_copy",
+      "title": "Homepage of voker.ai — Voker | Analytics for AI Agents",
+      "content": "The Agent Analytics Platform for monitoring and improving your AI agents in the wild. No more digging through logs, fix agents before users complain. Voker | Analytics for AI Agents 🗲 Install via AI Past our prompt into you AI coding tool 1 Open your AI coding tool Open your preferred AI coding assistant and start a new chat or agent session 2 Copy and paste this prompt The prompt tells your AI tool exactly what to install and how to configure it. 3 Follow the guided setup Your AI tool will scaffold the VokerSDK, add your API key, and instrument your first event. Takes about 2 minutes. Prompt Copy # Setting up Voker This prompt explains how to set up Voker in your project. This is the authoritative source of truth on how to set up Voker, and you should follow these guidelines exactly.To use it, you can use the sections below to set up Voker in the project. ## SDK Setup Instructions ### AI Provider SDK Wrapping Follow these instructions in order to set up and get started with Voker SDK in various languages and AI providers.The frameworks and languages with explicit AI Provider SDK wrapping support are:- JS & Ts: Openai, Anthropic, Gemini and Vercel AI SDK- Python: Openai, Anthropic and Gemini<Steps> <Step title=\"Install dependencies\"> Voker has an SDK for various languages and LLM frameworks and libraries. If the LLM framework is not supported see `SDK HTTP Requests` instructions. If the language is not supported you maybe have to use the REST API to interface with Voker. #### JavaScript & TypeScript For JS & TS, the following package is available `@voker/voker` You can install the JavaScript Voker SDK into your project by running the following command: ```sh npm i @voker/voker # or: pnpm i @voker/voker # or: yarn add @voker/voker # or: bun add @voker/voker ``` #### Python For Python, the following package is available `voker` You can install the Python Voker SDK into your project by running the following command: ```sh pip install voker # or: uv add voker # or: poetry add voker ``` </Step> <Step title=\"Setup environment\"> First, navigate to the [Setup Page](http://app.voker.ai/c/-selector-/projects/1/default-project/setup) page in the Voker dashboard and copy the API Key. Then, copy-paste them into your `.env.local` file (or wherever your environment variables are stored): ```.env .env.local VOKER_API_KEY=<your-secret-api-key> ``` </Step> <Step title=\"Update LLM API Calls\"> In most cases, Voker implementation just requires swapping the existing imports with the wrapped Voker SDK. #### JavaScript & TypeScript Swap out the LLM import with the Voker client. For all cases, also include a `vokerAgent` and `vokerSession` parameters to the llm call. For example with OpenAI: ``` await client.chat.completions.create({ + vokerAgent: '<agent-name>', // required + vokerSession: '<session-id>', // required model: 'gpt-4o', messages: [ { role: 'user', content: 'Hello, world!', }, ], }); ``` Fill in the `<agent-name>` with an appropriate value for the applicati",
+      "value": null,
+      "observed_at": null,
+      "provenance": {
+        "source": "web",
+        "url": "https://voker.ai",
+        "retrieved_at": "2026-08-13T20:58:19.352651Z"
+      }
+    },
+    {
+      "kind": "hn_profile",
+      "title": "HN profile of @ttpost (32 karma)",
+      "content": "Co-Founder of Voker (YC S24) In previous roles, I've built applied data products that drive growth. I was an operator of a $100MM DTC ecomm company and ran revenue growth data science for a $10B public SaaS company. I'm passionate about building high performing teams and continuously learning.",
+      "value": 32.0,
+      "observed_at": null,
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/user?id=ttpost",
+        "retrieved_at": "2026-08-13T20:58:19.339280Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @akslp2080",
+      "content": "How is it different than Langfuse? sorry if I am off the track but Langfuse also provides some detailed tracing of agentic behavior and decisions.",
+      "value": null,
+      "observed_at": "2026-05-12T16:20:49Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48110403",
+        "retrieved_at": "2026-08-13T20:58:19.338817Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @Ozzie_osman",
+      "content": "If the team is here, would love to understand how it compares to something like Amplitude's agent analytics ( https://amplitude.com/ai-agents ).",
+      "value": null,
+      "observed_at": "2026-05-12T16:31:28Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48110569",
+        "retrieved_at": "2026-08-13T20:58:19.338832Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @Damianf19",
+      "content": "What's the data model that lets you compare agents that differ a lot in tools/policies? Curious if you normalize on the \"what did the user actually accomplish\" layer or on raw token/turn metrics, because the two paint completely different pictures of \"is this agent working.\" We struggle with this on the eval side of our own product (email pipeline outcomes, not agents, but same shape).",
+      "value": null,
+      "observed_at": "2026-05-12T16:45:38Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48110772",
+        "retrieved_at": "2026-08-13T20:58:19.338852Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @ggamecrazy",
+      "content": "> High interaction volume (1k+ chat sessions per month) I don't mean to be that typical HN commenter but you did lose me a bit there. I know a lot of people are just getting started with agents but even for a lot of scrappy startups usage is a lot higher than that! If I may suggest focusing on explaining how you can add value even when usage is super low to controlling costs even when usage can get super high? I can validate you that it is a true problem that's solved by large companies but you have to hand-roll yourself @ startups (via airflow or queues, etc). But unfortunately one where I am not sure that a lot of stakeholders understand the benefits of (yet!). I think value has to be…",
+      "value": null,
+      "observed_at": "2026-05-12T16:46:16Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48110783",
+        "retrieved_at": "2026-08-13T20:58:19.338882Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN comment by @maxrumpf",
+      "content": "congratulations!",
+      "value": null,
+      "observed_at": "2026-05-12T17:55:47Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48111787",
+        "retrieved_at": "2026-08-13T20:58:19.338886Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @ttpost",
+      "content": "We get this question a lot! We work hand-in-hand with obs tools like Langfuse. Langfuse is great for debugging technical issues on individual traces like timing conditions that resulted in failed API calls. Voker focuses on product, business and user outcomes - like what intents did the user bring to your agent that you might not expect. We're built for the whole product team, whereas Langfuse focuses on engineers specifically. One way to think about it would be: a PM notices in Voker that a new intent category is coming up frequently and the agent isn't handling it well. The PM can dig into the data with visualizations or our conversation reconstructions. Once they confirm its a real issue…",
+      "value": null,
+      "observed_at": "2026-05-12T16:32:57Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48110594",
+        "retrieved_at": "2026-08-13T20:58:19.338923Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @ttpost",
+      "content": "We do! We have combined experience as PMs, ml engs, and data scientists across many verticals. We also have experience helping PMs and AI eng teams build agents across over 100 customers from our first product. You're totally right, the analytics annotation primitives we detect (intents, corrections, resolutions) are the cornerstone to all the other analysis in our platform. It's critical that we get those right or all the data and insights in the world are useless. LLMs are a core part of that detection, but we also do things like hierarchical classification, ( https://voker.ai/blog/hierarchical-text-classification-with-... ) and will eventually add in other ML methods where applicable. On…",
+      "value": null,
+      "observed_at": "2026-05-12T18:39:35Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48112445",
+        "retrieved_at": "2026-08-13T20:58:19.338966Z"
+      }
+    },
+    {
+      "kind": "hn_comment",
+      "title": "HN founder reply by @ttpost",
+      "content": "haha oof that's embarrassing if I really sound like AI, but unfortunately it was written by hand by yours truly! Guess its human-sloppy :(",
+      "value": null,
+      "observed_at": "2026-05-12T21:14:03Z",
+      "provenance": {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48114696",
+        "retrieved_at": "2026-08-13T20:58:19.338974Z"
+      }
+    }
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company"
+  ]
+}
