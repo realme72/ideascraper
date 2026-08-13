@@ -159,10 +159,35 @@ nothing is being trimmed yet.
 
 ---
 
+## D10 — Thesis: Budget-line AI
+
+**Date:** 2026-08-14 · **Status:** active
+
+Three theses were drafted as full scoring rubrics (`docs/thesis-candidates.md`)
+rather than as positioning statements, because the test of a thesis is whether
+72 and 48 mean different things. Gaurav picked A.
+
+**Why A over B and C.** A discriminates over the corpus we actually have — the
+developer tooling that dominates recent YC batches fails its first component
+loudly, producing a real spread instead of a cluster. It is scoreable from
+evidence stage 2 holds, with no need for revenue or funding data. And it agrees
+with the seed topic already in use, so sourcing and scoring point the same way.
+
+**Rejected:** B (agent infrastructure) was the tempting one and the weakest —
+easiest to evidence because our sources *are* GitHub and HN, therefore most
+likely to cluster, and biased toward open-source visibility over business
+quality. C (vertical AI into regulated operations) is genuinely good and would
+be the pick on a different seed topic; it stays on file.
+
+Three scoring rules carry across: only score what stage 2 can observe; weigh
+claims and facts differently; and let missing evidence cap confidence rather
+than lower the score, so the pipeline never marks a company down for having a
+JavaScript homepage.
+
+---
+
 ## Open
 
-- **Thesis.** Must be specific enough that a score of 72 vs 48 means something.
-  *Undecided — Gaurav's call.* `docs/thesis.md` is the empty slot.
 - **LLM.** No API key set in the environment yet. Open question is whether to
   commit cached model responses so reviewers can run the pipeline with no key at
-  all. *Undecided.*
+  all. *Undecided — blocks stage 3.*

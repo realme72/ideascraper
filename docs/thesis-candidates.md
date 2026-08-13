@@ -1,7 +1,8 @@
 # Candidate theses
 
-Three drafts. One becomes `docs/thesis.md`; the other two stay here as the
-record of what was considered and rejected.
+Three drafts. **Thesis A was chosen** and is now the live rubric in
+[thesis.md](thesis.md) — with score-to-call bands and overrides added. B and C
+stay here as the record of what was considered and rejected.
 
 A thesis is only worth having if a score of 72 and a score of 48 mean different
 things. Each draft below is therefore written as a scoring rubric — weighted
