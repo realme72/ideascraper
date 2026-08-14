@@ -34,6 +34,29 @@ breaking replay for outputs we still care about.
 
 ---
 
+## P3 — Free-tier quota caps a full run at ~20 companies/day
+
+**Raised:** 2026-08-14 (stage 3) · **Revisit:** before submission
+
+Google AI Studio's free tier allows **20 requests per day, per model** — measured,
+not documented; the published rate-limit page defers to a per-account dashboard.
+A 15-company run fits in principle, but retries and any re-run do not, and the
+first live run stopped after 7.
+
+Three properties make this survivable rather than fatal:
+
+- Quota is **per model**, so `GEMINI_MODEL` switches to a fresh budget.
+- Every completed analysis is cached and committed, so a re-run resumes rather
+  than restarting.
+- The run now stops cleanly and says how far it got, instead of raising.
+
+**The constraint that matters for submission:** all fifteen scores should come
+from the *same* model, or they aren't comparable to each other and the thesis
+isn't being applied consistently. Finishing a partial run on a second model
+would be the fast fix and the wrong one.
+
+---
+
 ## P2 — The YC directory has no founder names — RESOLVED
 
 **Raised:** 2026-08-13 (stage 1) · **Resolved:** 2026-08-14 (stage 2)

@@ -23,6 +23,7 @@ quietly passed through to a memo.
 from __future__ import annotations
 
 import os
+import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -40,9 +41,22 @@ PROMPT_PATH = Path(__file__).parent / "prompts" / "analysis.md"
 # that has already been gathered — not open-ended reasoning.
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.7-flash")
 
-# Free-tier accounts are rate limited per minute. Fifteen companies is nowhere
-# near a daily cap, but firing them back to back can trip a per-minute one.
+# Free-tier accounts are rate limited, and the ceiling is lower than the docs
+# suggest — a 15-company run trips it partway through. Spacing alone is guesswork
+# because the limit isn't published per model, so the real handling is the
+# backoff below; this just avoids provoking it on every call.
 CALL_SPACING_SECONDS = float(os.environ.get("GEMINI_CALL_SPACING", "4"))
+
+# Free quota is a *daily* cap (observed: 20 requests/day on gemini-3.7-flash)
+# and it is per model. Retrying rides out a per-minute limit; it cannot ride out
+# a daily one, so retries stay low and the run reports partial progress instead
+# of sleeping through a wall.
+MAX_RATE_LIMIT_RETRIES = 3
+FALLBACK_RETRY_SECONDS = 60.0
+
+# The 429 body carries the exact wait the server wants: "Please retry in 43.9s".
+# Honouring it beats guessing an interval.
+_RETRY_HINT_RE = re.compile(r"retry in ([\d.]+)s")
 
 
 class MissingCredentials(RuntimeError):
@@ -107,6 +121,46 @@ def build_user(bundle: EvidenceBundle) -> str:
     return "\n".join(parts)
 
 
+def _retry_delay(error: Exception) -> float:
+    """How long the server asked us to wait, or a conservative default."""
+    match = _RETRY_HINT_RE.search(str(error))
+    return float(match.group(1)) + 1 if match else FALLBACK_RETRY_SECONDS
+
+
+def _is_rate_limit(error: Exception) -> bool:
+    """Whether an SDK error is a 429.
+
+    Identified by the response, not the exception class. The SDK ships two
+    unrelated `APIError` hierarchies — a public one in `google.genai.errors` and
+    a private one under `_gaos` — and the interactions endpoint raises from the
+    private one, so `except errors.APIError` silently catches nothing. Matching
+    on status and body survives both that split and a future reshuffle.
+    """
+    if getattr(error, "status_code", None) == 429 or getattr(error, "code", None) == 429:
+        return True
+    text = str(error)
+    return "429" in text or "too_many_requests" in text or "RESOURCE_EXHAUSTED" in text
+
+
+def _create_with_backoff(client, **kwargs):
+    """One model call, waiting out free-tier rate limits rather than dying on them.
+
+    A fifteen-company run reliably exceeds the free quota partway through. Every
+    completed analysis is cached, so a crash here loses nothing — but the run
+    should finish unattended, and the server tells us exactly how long to wait.
+    """
+    for attempt in range(MAX_RATE_LIMIT_RETRIES):
+        try:
+            return client.interactions.create(**kwargs)
+        except Exception as exc:  # noqa: BLE001 — filtered by _is_rate_limit below
+            if not _is_rate_limit(exc) or attempt == MAX_RATE_LIMIT_RETRIES - 1:
+                raise
+            delay = _retry_delay(exc)
+            print(f"    rate limited — waiting {delay:.0f}s (retry {attempt + 1})", flush=True)
+            time.sleep(delay)
+    raise RuntimeError("unreachable")
+
+
 def _call_model(system: str, user: str, *, refresh: bool) -> dict:
     """One structured-output call, cached to disk by prompt.
 
@@ -133,7 +187,8 @@ def _call_model(system: str, user: str, *, refresh: bool) -> dict:
         from google import genai  # imported lazily so stages 1, 2 and 4 need no SDK
 
         client = genai.Client()
-        interaction = client.interactions.create(
+        interaction = _create_with_backoff(
+            client,
             model=MODEL,
             input=f"{system}\n\n---\n\n{user}",
             response_format={
@@ -306,7 +361,24 @@ def run(
         if called_model and not _is_cached(bundle, refresh=refresh):
             time.sleep(CALL_SPACING_SECONDS)
         called_model = called_model or not _is_cached(bundle, refresh=refresh)
-        analysis = analyse_one(bundle, refresh=refresh)
+
+        try:
+            analysis = analyse_one(bundle, refresh=refresh)
+        except Exception as exc:  # noqa: BLE001 — re-raised unless it's quota
+            if not _is_rate_limit(exc):
+                raise
+            # Everything analysed so far is already cached and written. Stopping
+            # cleanly beats a traceback that hides how much actually succeeded.
+            remaining = len(bundles) - len(analyses)
+            print(
+                f"\nFree-tier quota exhausted for {MODEL} after {len(analyses)} "
+                f"of {len(bundles)} companies.\n"
+                f"{remaining} left. Nothing is lost — completed analyses are cached, "
+                "so re-running picks up where this stopped.\n"
+                "Either wait for the daily quota to reset, or set GEMINI_MODEL to a "
+                "model with its own budget (quota is per model).",
+            )
+            break
         (output_dir / f"{analysis.slug}.json").write_text(analysis.model_dump_json(indent=2))
         analyses.append(analysis)
         flag = f"  ⚠ {len(analysis.uncited_refs)} uncited" if analysis.uncited_refs else ""

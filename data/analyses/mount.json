@@ -1,0 +1,149 @@
+{
+  "candidate": {
+    "slug": "mount",
+    "name": "Mount",
+    "website": "https://mount.insure",
+    "one_liner": "The AI Agent Insurance Carrier",
+    "description": "TLDR: Mount is building the AI insurance carrier, starting with liability coverage for deployed AI agents. As everyone moves AI Agents into production and gives them more responsibility, we help businesses insure and secure them.\r\n\r\nWhenever responsibility shifts from human operators to autonomous systems, so too does the liability that accompanies it. The systems also introduce new risks: agentic software failures, prompt injection attacks, autonomous workflow errors, data leaks, and more.\r\n\r\nLegacy insurance was not built for this. Existing policies are often silent, ambiguous, or exclude autonomous software, and traditional insurers lack the data and technical capability to assess deployed AI Systems.\r\n\r\nOur first product, the Mount AI Liability Policy, is built for mid-market and enterprise companies deploying autonomous AI agents in real business processes. We scan and red-team AI deployments, quantify operational risk, help fix vulnerabilities, and insure the residual risk with purpose-built AI liability coverage.\r\n\r\nMount is best thought of as a highly automated version of today's commercial insurance carriers, which run on manual workflows, layers of intermediaries, and tens of thousands of employees. AI enables automation of underwriting, pricing, policy issuance, claims, fraud detection, customer support, and distribution. We believe that the best way to use this opportunity is to rebuild those processes from the ground up. ",
+    "keywords": [
+      "Fintech",
+      "Insurance"
+    ],
+    "relevance": 0.556,
+    "signals": [
+      {
+        "kind": "freshness",
+        "label": "YC Spring 2026 batch",
+        "value": null,
+        "observed_at": "2026-04-07T23:40:48Z",
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/mount",
+          "retrieved_at": "2026-08-13T15:14:22.606082Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Team of 2",
+        "value": 2.0,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/mount",
+          "retrieved_at": "2026-08-13T15:14:22.606082Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Stage: Early",
+        "value": null,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/mount",
+          "retrieved_at": "2026-08-13T15:14:22.606082Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/mount",
+        "retrieved_at": "2026-08-13T15:14:22.606082Z"
+      }
+    ]
+  },
+  "generated_at": "2026-08-14T07:34:36.769080Z",
+  "model": "gemini-3.7-flash",
+  "team": "Mount was founded in 2026 by Fabian Amherd and John Bachmann. Amherd studied machine learning at ETH Zürich, built computer vision models at robotics spin-off MESH, and previously ran a web development firm. Bachmann comes from a multi-generational insurance family and previously built a technical team in Bangalore scaling to $400k in annual revenue.",
+  "product": "Mount provides specialized commercial liability insurance and automated security scanning for companies deploying autonomous AI agents, covering risks such as model errors, prompt injection, data leaks, and business interruption.",
+  "market": "Mid-market and enterprise businesses deploying production AI agents. Today they either carry traditional cyber/E&O policies that exclude or fail to price autonomous software risk, or operate unshielded as legacy carriers lack technical tooling to underwrite AI systems.",
+  "risks": [
+    "Traditional commercial carriers and established cyber insurers may update standard policy language and partner with security vendors to underwrite AI liability before Mount achieves meaningful distribution.",
+    "Underwriting catastrophic or unpredictable AI failures without historical actuarial data creates severe risk of unsustainable loss ratios.",
+    "Blending vulnerability scanning and policy underwriting risks friction between developer buyers who remediate code and finance or risk buyers who purchase insurance."
+  ],
+  "open_questions": [
+    "Are you operating as a licensed managing general agent (MGA) backed by a reinsurance carrier, or are you acting solely as an insurance broker?",
+    "How are you pricing and underwriting policies in the absence of historical loss data for agentic AI failures?",
+    "Who is the primary buyer inside target companies: the Chief Information Security Officer, General Counsel, or Chief Risk Officer/CFO?"
+  ],
+  "components": [
+    {
+      "component_id": "displaced_spend",
+      "score": 14,
+      "observed": true,
+      "rationale": "Mount offers an 'AI Liability Policy' and vulnerability scanning to protect against agent failures. While it sits adjacent to existing Cyber and E&O insurance line items, it largely sells into emerging AI risk budgets rather than cleanly replacing an existing recurring commercial invoice.",
+      "evidence_refs": [
+        "Mount — YC directory profile",
+        "Homepage of mount.insure — Mount"
+      ],
+      "what_would_change": "Evidence that enterprises are directly canceling or carving out existing E&O/cyber policies to allocate those exact insurance dollars to Mount."
+    },
+    {
+      "component_id": "operational_buyer",
+      "score": 9,
+      "observed": true,
+      "rationale": "The buyer persona is split between technical teams and operational executives. The vulnerability testing and red-teaming tools require engineering and DevOps integration, while policy sign-off sits with risk, finance, or legal leaders.",
+      "evidence_refs": [
+        "Mount — YC directory profile",
+        "Homepage of mount.insure — Mount"
+      ],
+      "what_would_change": "Evidence that commercial risk managers or finance leads purchase and manage the product entirely without technical security team involvement."
+    },
+    {
+      "component_id": "in_users_hands",
+      "score": 4,
+      "observed": true,
+      "rationale": "There is no independent evidence of external deployment, live bound policies, or external user discussions. The website provides high-level copy and 'Get a quote' call-to-actions without verified customer proof points.",
+      "evidence_refs": [
+        "Homepage of mount.insure — Mount",
+        "Mount — YC directory profile"
+      ],
+      "what_would_change": "Public evidence of active policyholders in production or customer testimonials detailing claims/underwriting workflows."
+    },
+    {
+      "component_id": "founding_team",
+      "score": 13,
+      "observed": true,
+      "rationale": "The team combines relevant technical ML experience from ETH Zürich with entrepreneurial background and family exposure to insurance. However, neither founder has direct executive underwriting or licensed carrier operating history.",
+      "evidence_refs": [
+        "Fabian Amherd — Founder",
+        "John Bachmann — Founder"
+      ],
+      "what_would_change": "Demonstrated prior experience leading underwriting or actuarial teams at a licensed carrier or successful insurtech MGA."
+    },
+    {
+      "component_id": "outside_reaction",
+      "score": 5,
+      "observed": false,
+      "rationale": "No public Hacker News launch thread or public scrutiny was found for Mount in public sources.",
+      "evidence_refs": [],
+      "what_would_change": "A public launch thread with substantive technical and actuarial pushback actively addressed by the founders."
+    },
+    {
+      "component_id": "momentum",
+      "score": 4,
+      "observed": true,
+      "rationale": "The company is an active member of the recent YC Spring 2026 batch with an active web presence and product positioning.",
+      "evidence_refs": [
+        "Mount — YC directory profile"
+      ],
+      "what_would_change": "Evidence of public production milestones, carrier capacity partnerships, or team expansion."
+    }
+  ],
+  "score": 49,
+  "coverage": 0.9,
+  "call": "Watch",
+  "call_reason": "Scores 49/100 with 90% evidence coverage.",
+  "what_would_change_my_mind": [
+    "Evidence that enterprises are directly canceling or carving out existing E&O/cyber policies to allocate those exact insurance dollars to Mount.",
+    "Public evidence of active policyholders in production or customer testimonials detailing claims/underwriting workflows.",
+    "Demonstrated prior experience leading underwriting or actuarial teams at a licensed carrier or successful insurtech MGA."
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "No Hacker News launch thread found for this company"
+  ],
+  "uncited_refs": []
+}

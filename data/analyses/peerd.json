@@ -1,0 +1,150 @@
+{
+  "candidate": {
+    "slug": "peerd",
+    "name": "peerd",
+    "website": "https://github.com/NotASithLord/peerd",
+    "one_liner": "AI agent harness that runs entirely in your browser",
+    "description": "Hey HN. http://peerd.ai is an AI agent harness that lives entirely in your browser as a web extension. You don’t have to install a separate “AI browser”. You don’t have to bolt on or run some external process or manage a clunky mcp integration. It’s just a fully contained web extension, written in no build vanilla JS with minimal non-browser dependencies, using your own provider keys, and Apache 2. This isn’t just a fun hack. While it has largely been a solo side project, I genuinely believe the browser and the web could be the most natural platform for AI agents to operate safely, autonomously, and most importantly without A2A middlemen (more on that in a sec). To demonstrate that point peerd doesn’t just drive browser automation. It spins up isolated sandboxes using tabs and worker…",
+    "keywords": [],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "traction",
+        "label": "75 points and 23 comments on Hacker News",
+        "value": 75.0,
+        "observed_at": "2026-06-23T15:05:00Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48646165",
+          "retrieved_at": "2026-08-13T15:14:24.382483Z"
+        }
+      },
+      {
+        "kind": "freshness",
+        "label": "Launched on HN 23 Jun 2026",
+        "value": null,
+        "observed_at": "2026-06-23T15:05:00Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48646165",
+          "retrieved_at": "2026-08-13T15:14:24.382483Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Posted and answered questions as HN user @NotASithLord",
+        "value": null,
+        "observed_at": "2026-06-23T15:05:00Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=48646165",
+          "retrieved_at": "2026-08-13T15:14:24.382483Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=48646165",
+        "retrieved_at": "2026-08-13T15:14:24.382483Z"
+      }
+    ]
+  },
+  "generated_at": "2026-08-14T07:34:36.769871Z",
+  "model": "gemini-3.7-flash",
+  "team": "The project is created and maintained primarily by the pseudonymous developer @NotASithLord, with outside open-source contributions from contributors like jonybur and mariazuheros. No formal founder background, prior company history, or employment details are publicly available.",
+  "product": "peerd is a browser extension that runs autonomous AI agents directly inside the user's browser without requiring an external backend or custom browser. It executes tasks using isolated browser tabs, JavaScript workers, and WebAssembly-based Linux virtual machines, using the user's own LLM API keys.",
+  "market": "The project targets software developers, AI hobbyists, and power users looking for local, sandboxed agent execution and browser automation. Current alternatives include cloud-hosted agent sandboxes (e.g., Cloudflare Workers), MCP-based local agent runners, and dedicated AI browsers.",
+  "risks": [
+    "Prompt injections from untrusted web runner outputs could compromise agent orchestrations and bypass browser sandbox defenses.",
+    "Browser extension distribution and Discoverability limitations may restrict adoption compared to native applications or web-hosted platforms.",
+    "A pure open-source, BYOK browser extension with no backend or monetization mechanism lacks a clear commercial business model."
+  ],
+  "open_questions": [
+    "What commercialization path or enterprise software use case is planned beyond an open-source developer side project?",
+    "How does the browser-based execution sandbox handle resource-heavy multi-agent workloads without crashing the host browser?",
+    "Who is the target paying customer if the product remains fully client-side and open source under Apache 2.0?"
+  ],
+  "components": [
+    {
+      "component_id": "displaced_spend",
+      "score": 2,
+      "observed": true,
+      "rationale": "peerd is described as an 'AI agent harness that lives entirely in your browser as a web extension.' It is horizontal developer tooling and open-source infrastructure with no specific business workflow, cost centre, or existing budget line displaced.",
+      "evidence_refs": [
+        "Launch post by @NotASithLord",
+        "GitHub repo NotASithLord/peerd"
+      ],
+      "what_would_change": "Pivot from a generic local agent harness to taking over a concrete operational cost centre (e.g., outsourced data extraction or automated back-office browser workflows)."
+    },
+    {
+      "component_id": "operational_buyer",
+      "score": 1,
+      "observed": true,
+      "rationale": "The software is designed for technical users and developers who configure their own API keys ('BYOK') and want local compute sandboxes (WASM Linux VMs, JS notebooks). Non-technical operational buyers are not the audience for this extension.",
+      "evidence_refs": [
+        "Launch post by @NotASithLord",
+        "GitHub repo NotASithLord/peerd"
+      ],
+      "what_would_change": "Package the browser automation capabilities into a non-technical SaaS interface targeted at business ops or administrative leads rather than developers."
+    },
+    {
+      "component_id": "in_users_hands",
+      "score": 11,
+      "observed": true,
+      "rationale": "The repository is public with 384 stars, 38 forks, and open-source contributions from several distinct developers. While the tool is actively available and usable, there is limited independent evidence of ongoing enterprise or production usage.",
+      "evidence_refs": [
+        "GitHub repo NotASithLord/peerd",
+        "Top contributors to NotASithLord/peerd"
+      ],
+      "what_would_change": "Show evidence of regular non-developer users or businesses using the extension to automate ongoing production workloads."
+    },
+    {
+      "component_id": "founding_team",
+      "score": 10,
+      "observed": true,
+      "rationale": "The author demonstrates strong technical competence in browser internals, WebAssembly, WebRTC, and sandboxing via extensive code commits and detailed architecture explanations. However, the developer is pseudonymous with no documented track record, prior startups, or domain background.",
+      "evidence_refs": [
+        "Top contributors to NotASithLord/peerd",
+        "HN founder reply by @NotASithLord"
+      ],
+      "what_would_change": "Disclose founder background showing prior startup leadership or relevant commercial operational experience."
+    },
+    {
+      "component_id": "outside_reaction",
+      "score": 8,
+      "observed": true,
+      "rationale": "The HN launch received substantive technical scrutiny regarding prompt injection vectors, container necessity, and browser extension limits. The creator engaged directly with thorough, highly technical defenses regarding defense-in-depth security.",
+      "evidence_refs": [
+        "HN comment by @toozitax",
+        "HN founder reply by @NotASithLord",
+        "HN comment by @andai"
+      ],
+      "what_would_change": "Address broader commercial adoption concerns in addition to technical security and architecture questions."
+    },
+    {
+      "component_id": "momentum",
+      "score": 4,
+      "observed": true,
+      "rationale": "The project was launched in late June 2026 and has maintained continuous commit activity through mid-August 2026 alongside multiple open-source contributors.",
+      "evidence_refs": [
+        "GitHub repo NotASithLord/peerd",
+        "Top contributors to NotASithLord/peerd"
+      ],
+      "what_would_change": "Demonstrate sustained team expansion and formal company formation alongside commit velocity."
+    }
+  ],
+  "score": 36,
+  "coverage": 1.0,
+  "call": "Pass",
+  "call_reason": "Scores 2/30 on displaced spend — outside the thesis, so the call is Pass regardless of the total.",
+  "what_would_change_my_mind": [
+    "Pivot from a generic local agent harness to taking over a concrete operational cost centre (e.g., outsourced data extraction or automated back-office browser workflows).",
+    "Package the browser automation capabilities into a non-technical SaaS interface targeted at business ops or administrative leads rather than developers.",
+    "Disclose founder background showing prior startup leadership or relevant commercial operational experience."
+  ],
+  "gaps": [
+    "HN user @NotASithLord has no bio on their profile"
+  ],
+  "uncited_refs": []
+}

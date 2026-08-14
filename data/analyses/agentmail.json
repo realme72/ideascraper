@@ -1,0 +1,153 @@
+{
+  "candidate": {
+    "slug": "agentmail",
+    "name": "AgentMail",
+    "website": "https://chat.agentmail.to/",
+    "one_liner": "Email infra for AI agents",
+    "description": "Hey HN, we're Haakam, Michael, and Adi. We're building AgentMail ( https://agentmail.to/ ), an API to give AI agents their own email inboxes. We’re not talking about AI for your email, this is email for your AI. We started building email agents because they can converse with users in their inboxes, automate email-based workflows, and authenticate with third-party applications. Given these unique capabilities, we think email will be a core interface for agents. But we were building on top of Gmail, which was a struggle: poor API support, expensive subscriptions, rate limits, sending limits, GCP Pub/Sub, OAuth, crappy keyword search, and an overall terrible developer experience. Gmail and other providers didn’t work for us. So we decided to bite the bullet and build our own. AgentMail is…",
+    "keywords": [],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "traction",
+        "label": "121 points and 70 comments on Hacker News",
+        "value": 121.0,
+        "observed_at": "2025-07-31T14:08:33Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=44745820",
+          "retrieved_at": "2026-08-13T15:14:24.385263Z"
+        }
+      },
+      {
+        "kind": "freshness",
+        "label": "Launched on HN 31 Jul 2025",
+        "value": null,
+        "observed_at": "2025-07-31T14:08:33Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=44745820",
+          "retrieved_at": "2026-08-13T15:14:24.385263Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Posted and answered questions as HN user @Haakam21",
+        "value": null,
+        "observed_at": "2025-07-31T14:08:33Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=44745820",
+          "retrieved_at": "2026-08-13T15:14:24.385263Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=44745820",
+        "retrieved_at": "2026-08-13T15:14:24.385263Z"
+      }
+    ]
+  },
+  "generated_at": "2026-08-14T07:34:36.767630Z",
+  "model": "gemini-3.7-flash",
+  "team": "The company was founded by Haakam, Michael, and Adi. No biographical details, prior company history, or technical track records were available in the public evidence provided.",
+  "product": "AgentMail is an API service that creates and operates real email inboxes for AI agents, enabling autonomous software to receive emails, parse attachments, extract login OTP codes, and reply programmatically.",
+  "market": "The product is sold to software engineers and AI developers building autonomous agents. Today, developers either hack personal Gmail accounts via brittle APIs or assemble low-level raw mail pipelines using services like Amazon SES and SendGrid.",
+  "risks": [
+    "Incumbent transactional email providers like AWS SES or SendGrid could build high-level inbox abstractions and semantic search, eroding AgentMail's differentiation.",
+    "Deliverability, IP blacklisting, and spam filtering could cripple client agents sending high-volume or automated outbound mail.",
+    "The agentic paradigm could shift predominantly toward real-time voice and WebSocket-based chat rather than asynchronous email communication."
+  ],
+  "open_questions": [
+    "How does AgentMail handle domain deliverability and protect its shared infrastructure against malicious automated spam and abuse?",
+    "What are the unit economics and gross margins of offering continuous semantic search and LLM extraction on high-volume inbound email streams?",
+    "What portion of API usage comes from recurring production workloads versus experimental hackathon projects and prototypes?"
+  ],
+  "components": [
+    {
+      "component_id": "displaced_spend",
+      "score": 3,
+      "observed": true,
+      "rationale": "AgentMail describes itself as 'Email infra for AI agents' and an 'Email Inbox API for AI Agents'. This is horizontal developer infrastructure rather than software that displaces an existing operational budget line or business cost center.",
+      "evidence_refs": [
+        "Launch post by @Haakam21",
+        "Homepage of agentmail.to — AgentMail | Email Inbox API for AI Agents"
+      ],
+      "what_would_change": "Position the product as a complete replacement for an existing outsourced service or operational budget (such as an automated customer support desk or executive assistant agency) rather than developer email tooling."
+    },
+    {
+      "component_id": "operational_buyer",
+      "score": 2,
+      "observed": true,
+      "rationale": "The platform is explicitly targeted at developers, featuring SDKs in Python and TypeScript, REST endpoints, CLI tools, and integrations with coding agents. It is bought and implemented by technical engineering teams rather than non-technical business operators.",
+      "evidence_refs": [
+        "Launch post by @Haakam21",
+        "Homepage of agentmail.to — AgentMail | Email Inbox API for AI Agents"
+      ],
+      "what_would_change": "Sell directly to operational or back-office managers as a no-code workflow tool rather than providing an API and SDK for software engineers."
+    },
+    {
+      "component_id": "in_users_hands",
+      "score": 12,
+      "observed": true,
+      "rationale": "The product is live with a functional API, developer playground, and stated customer testimonials from startup CEOs on the website. However, independent third-party confirmation is limited, with usage claims primarily originating from the founders' responses.",
+      "evidence_refs": [
+        "Launch post by @Haakam21",
+        "Homepage of agentmail.to — AgentMail | Email Inbox API for AI Agents",
+        "HN founder reply by @Haakam21"
+      ],
+      "what_would_change": "Provide demonstrable evidence of outside production deployments verified independently by active end users in public technical forums or case studies."
+    },
+    {
+      "component_id": "founding_team",
+      "score": 8,
+      "observed": false,
+      "rationale": "The evidence lists founder first names (Haakam, Michael, and Adi) but includes no founder bios, past work experience, educational history, or linked GitHub repositories. In accordance with the rubric, this lack of evidence takes the neutral score.",
+      "evidence_refs": [
+        "Launch post by @Haakam21"
+      ],
+      "what_would_change": "Provide detailed founder bios demonstrating past technical leadership in email deliverability or successful prior exits."
+    },
+    {
+      "component_id": "outside_reaction",
+      "score": 8,
+      "observed": true,
+      "rationale": "The HN launch thread received substantive scrutiny regarding why developers wouldn't just use standard APIs like Amazon SES or move toward voice/chat instead of email. Founder @Haakam21 engaged directly, explaining specific infrastructural differences such as inbox state management, semantic search, and attachment parsing.",
+      "evidence_refs": [
+        "Launch post by @Haakam21",
+        "HN comment by @TZubiri",
+        "HN comment by @smpandya",
+        "HN founder reply by @Haakam21"
+      ],
+      "what_would_change": "Address rate limits, domain ownership, and anti-spam deliverability mechanics with equal depth during technical pushback."
+    },
+    {
+      "component_id": "momentum",
+      "score": 4,
+      "observed": true,
+      "rationale": "The company launched recently in July 2025, raised a $6M seed round, and has active founder engagement with incoming developer feedback.",
+      "evidence_refs": [
+        "Launch post by @Haakam21",
+        "Homepage of agentmail.to — AgentMail | Email Inbox API for AI Agents"
+      ],
+      "what_would_change": "Show consistent month-over-month API volume growth and ongoing public hiring activity."
+    }
+  ],
+  "score": 37,
+  "coverage": 0.8,
+  "call": "Pass",
+  "call_reason": "Scores 3/30 on displaced spend — outside the thesis, so the call is Pass regardless of the total.",
+  "what_would_change_my_mind": [
+    "Position the product as a complete replacement for an existing outsourced service or operational budget (such as an automated customer support desk or executive assistant agency) rather than developer email tooling.",
+    "Sell directly to operational or back-office managers as a no-code workflow tool rather than providing an API and SDK for software engineers.",
+    "Provide detailed founder bios demonstrating past technical leadership in email deliverability or successful prior exits."
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "HN user @Haakam21 has no bio on their profile",
+    "chat.agentmail.to did not respond; read agentmail.to instead"
+  ],
+  "uncited_refs": []
+}

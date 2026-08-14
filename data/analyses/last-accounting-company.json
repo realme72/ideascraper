@@ -1,0 +1,154 @@
+{
+  "candidate": {
+    "slug": "last-accounting-company",
+    "name": "Last Accounting Company",
+    "website": "https://lastaccountingcompany.com/",
+    "one_liner": "Agent-native accounting firm.",
+    "description": "Last Accounting Company (LAC) is a full-stack AI accounting firm. We sell the same service (bookkeeping, tax filings, etc.) as a traditional accounting firm, but underneath agents handle everything and a certified accountant signs off. Our service is faster, cheaper, and fully integrated, allowing our clients to focus on what matters, not accounting admin.\r\n\r\nLAC replaces both outsourced accountants and legacy accounting software for startups and SMBs. Our system is fully proprietary, from the general ledger to the accounting agents. This allows us to create powerful self-reinforcing loops and ultimately provide a state-of-the-art accounting service.",
+    "keywords": [
+      "Artificial Intelligence",
+      "B2B",
+      "Finance",
+      "Finance and Accounting",
+      "Fintech"
+    ],
+    "relevance": 0.5,
+    "signals": [
+      {
+        "kind": "freshness",
+        "label": "YC Summer 2026 batch",
+        "value": null,
+        "observed_at": "2026-07-20T19:16:55Z",
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/last-accounting-company",
+          "retrieved_at": "2026-08-13T15:14:22.603373Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Team of 4",
+        "value": 4.0,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/last-accounting-company",
+          "retrieved_at": "2026-08-13T15:14:22.603373Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Stage: Early",
+        "value": null,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/last-accounting-company",
+          "retrieved_at": "2026-08-13T15:14:22.603373Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/last-accounting-company",
+        "retrieved_at": "2026-08-13T15:14:22.603373Z"
+      }
+    ]
+  },
+  "generated_at": "2026-08-14T07:34:36.768448Z",
+  "model": "gemini-3.7-flash",
+  "team": "Last Accounting Company was founded by a four-person team in Helsinki: Riki Karjalainen and Sami Laakkonen, who previously built financial data infrastructure at Token Terminal, alongside Veikko Pere (background in BCG, private equity at Intera Partners, and degrees in Finance and Law) and Pietari Virkkunen (background in tech, PE, and VC).",
+  "product": "A full-stack accounting service where automated AI agents handle routine bookkeeping, payroll reporting, bank reconciliations, and VAT filings, before a certified human accountant reviews and signs off on the final financial statements.",
+  "market": "Targets Finnish startups, scaleups, and SMBs who currently pay recurring fees to outsourced accounting firms alongside legacy accounting software subscriptions. Agentic LLMs and API integrations now make end-to-end reconciliation and document parsing viable without manual data entry.",
+  "risks": [
+    "Accounting errors or statutory tax misfilings could trigger significant professional liability and churn client trust.",
+    "Heavy localization to Finnish banking integrations and tax rules creates friction when attempting to expand internationally.",
+    "Reliance on human accountant sign-offs could create an operational bottleneck that compresses gross margins as client volume scales."
+  ],
+  "open_questions": [
+    "How many paying clients currently rely on LAC for their active monthly close and official tax filings?",
+    "Are the certified accountants signing off on filings employed full-time in-house or outsourced contractors?",
+    "What percentage of ledger transactions currently require human intervention versus full end-to-end automation?"
+  ],
+  "components": [
+    {
+      "component_id": "displaced_spend",
+      "score": 29,
+      "observed": true,
+      "rationale": "The company directly replaces both outsourced accounting agency retainers and legacy accounting software subscriptions with a single fixed-price service handling VAT, payroll, and bookkeeping.",
+      "evidence_refs": [
+        "Last Accounting Company — YC directory profile",
+        "Homepage of lastaccountingcompany.com — Last Accounting Company"
+      ],
+      "what_would_change": "Demonstrating displacement of multi-thousand-euro monthly outsourced accounting contracts at larger mid-market clients."
+    },
+    {
+      "component_id": "operational_buyer",
+      "score": 14,
+      "observed": true,
+      "rationale": "The buyer is a business owner, founder, or operations lead looking to offload administrative burden and avoid managing receipts, payroll runs, and tax deadlines.",
+      "evidence_refs": [
+        "Last Accounting Company — YC directory profile",
+        "Homepage of lastaccountingcompany.com — Last Accounting Company"
+      ],
+      "what_would_change": "Explicit evidence of selling to dedicated non-technical finance heads or CFOs at larger scaleups rather than early-stage founders."
+    },
+    {
+      "component_id": "in_users_hands",
+      "score": 11,
+      "observed": true,
+      "rationale": "The product is live with an active sign-up flow and demonstrated bank feed integrations, but all usage evidence currently traces back to marketing claims on the company's website.",
+      "evidence_refs": [
+        "Homepage of lastaccountingcompany.com — Last Accounting Company"
+      ],
+      "what_would_change": "Independent external validation such as verified customer reviews, public case studies, or production audit logs."
+    },
+    {
+      "component_id": "founding_team",
+      "score": 15,
+      "observed": true,
+      "rationale": "The team combines strong financial data engineering experience from Token Terminal with relevant private equity, strategy consulting, and legal/finance domain backgrounds.",
+      "evidence_refs": [
+        "Riki Karjalainen — Co-Founder",
+        "Sami Laakkonen — Founder",
+        "Veikko Pere — Founder",
+        "Pietari Virkkunen — Co-founder"
+      ],
+      "what_would_change": "A prior successful founder exit or holding formal certified accounting credentials in-house among the founders."
+    },
+    {
+      "component_id": "outside_reaction",
+      "score": 5,
+      "observed": false,
+      "rationale": "No public Hacker News launch thread or independent public discussion was identified during research.",
+      "evidence_refs": [],
+      "what_would_change": "A substantive public launch thread where the founders answer technical and regulatory scrutiny regarding liability and error rates."
+    },
+    {
+      "component_id": "momentum",
+      "score": 4,
+      "observed": true,
+      "rationale": "The company is an active member of the recent Y Combinator Summer 2026 batch with an active web presence and localized onboarding.",
+      "evidence_refs": [
+        "Last Accounting Company — YC directory profile",
+        "Homepage of lastaccountingcompany.com — Last Accounting Company"
+      ],
+      "what_would_change": "Public hiring activity or verifiable month-over-month customer and revenue growth figures post-batch."
+    }
+  ],
+  "score": 78,
+  "coverage": 0.9,
+  "call": "Take a meeting",
+  "call_reason": "Scores 78/100 with 90% evidence coverage.",
+  "what_would_change_my_mind": [
+    "Independent external validation such as verified customer reviews, public case studies, or production audit logs.",
+    "A prior successful founder exit or holding formal certified accounting credentials in-house among the founders.",
+    "A substantive public launch thread where the founders answer technical and regulatory scrutiny regarding liability and error rates."
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "No Hacker News launch thread found for this company"
+  ],
+  "uncited_refs": []
+}

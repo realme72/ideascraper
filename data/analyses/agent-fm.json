@@ -1,0 +1,150 @@
+{
+  "candidate": {
+    "slug": "agent-fm",
+    "name": "Agent FM",
+    "website": "https://www.agentfm.ai/",
+    "one_liner": "One group chat to hear and steer your coding agents.",
+    "description": "Agent FM is a desktop app that gives engineers one group chat to hear and steer their coding agents. Instead of manually bouncing between different claude code and codex sessions, and combing through walls of text to monitor agents, engineers just tune in to Agent FM. Agents share important progress updates, blockers, assumptions, and decisions in the group chat. Engineers get live text and audio updates and respond right from the chat.",
+    "keywords": [
+      "Artificial Intelligence",
+      "B2B",
+      "Developer Tools",
+      "Engineering, Product and Design",
+      "Productivity"
+    ],
+    "relevance": 0.5,
+    "signals": [
+      {
+        "kind": "freshness",
+        "label": "YC Summer 2026 batch",
+        "value": null,
+        "observed_at": "2026-08-05T00:48:06Z",
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/agent-fm",
+          "retrieved_at": "2026-08-13T15:14:22.603520Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Team of 2",
+        "value": 2.0,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/agent-fm",
+          "retrieved_at": "2026-08-13T15:14:22.603520Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Stage: Early",
+        "value": null,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/agent-fm",
+          "retrieved_at": "2026-08-13T15:14:22.603520Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/agent-fm",
+        "retrieved_at": "2026-08-13T15:14:22.603520Z"
+      }
+    ]
+  },
+  "generated_at": "2026-08-14T07:34:36.766325Z",
+  "model": "gemini-3.7-flash",
+  "team": "Agent FM is led by co-founders Aniket Deshpande (CEO, formerly Applied AI at Meta Superintelligence Labs) and Mugdhaa Patankar (CTO, formerly at Snowflake, Twitch, and AWS). Both have strong technical backgrounds in large technology companies, though neither has a documented prior founding exit.",
+  "product": "Agent FM is a desktop application that acts as a group chat and command center for software engineers working with multiple AI coding agents. Instead of checking terminal windows or reading through raw logs, engineers get streaming text and audio status updates from their agents, resolve blockers, and issue instructions in one feed.",
+  "market": "The target buyers and users are software developers and engineering teams currently juggling multiple local and cloud AI coding agents (such as Claude Code and Codex). It emerges from the recent surge in agentic coding workflows where managing several simultaneous agent sessions creates an oversight bottleneck.",
+  "risks": [
+    "Integrated development environments (IDEs) like Cursor or VS Code, or model providers like Anthropic and OpenAI, could build multi-agent orchestration directly into existing developer workflows, eliminating the need for a standalone desktop client.",
+    "Engineers may prefer terminal-based multiplexers or lightweight CLI tools over a proprietary audio-and-chat desktop application."
+  ],
+  "open_questions": [
+    "Are individual developers or engineering organizations actively downloading and using the desktop client on a daily basis?",
+    "What is the monetization strategy, and does the company intend to sell to engineering leaders or rely on bottom-up developer prosumer subscriptions?"
+  ],
+  "components": [
+    {
+      "component_id": "displaced_spend",
+      "score": 4,
+      "observed": true,
+      "rationale": "Agent FM describes itself as a desktop app that provides 'one group chat to hear and steer your coding agents' and an 'interface between what you want and your coding agents.' It is horizontal developer tooling that creates a new interaction layer rather than displacing an existing budget line like an outsourced service, contractor, or back-office software.",
+      "evidence_refs": [
+        "Agent FM — YC directory profile",
+        "Homepage of agentfm.ai — Agent FM"
+      ],
+      "what_would_change": "Position the product as taking over a specific, existing operational budget line rather than acting as a developer interface capability."
+    },
+    {
+      "component_id": "operational_buyer",
+      "score": 1,
+      "observed": true,
+      "rationale": "The product is explicitly marketed to software engineers who manage coding sessions across tools like Claude Code and Codex ('engineers just tune in to Agent FM'). The user and economic buyer is technical, directly conflicting with the thesis focus on non-technical operational buyers.",
+      "evidence_refs": [
+        "Agent FM — YC directory profile",
+        "Homepage of agentfm.ai — Agent FM"
+      ],
+      "what_would_change": "Sell the product to non-technical business operators or ops managers rather than individual software engineers."
+    },
+    {
+      "component_id": "in_users_hands",
+      "score": 6,
+      "observed": true,
+      "rationale": "The website offers a 'Download Agent FM' call to action and shows functional UI mockups, but there are no independent user reviews, public repositories, or third-party validation confirming active outside usage.",
+      "evidence_refs": [
+        "Homepage of agentfm.ai — Agent FM"
+      ],
+      "what_would_change": "Provide demonstrable evidence of daily active usage and feedback from external engineering teams."
+    },
+    {
+      "component_id": "founding_team",
+      "score": 13,
+      "observed": true,
+      "rationale": "The founding team has credible technical pedigrees at major tech companies, including Meta Superintelligence Labs, Snowflake, AWS, and Twitch. However, there is no documented record of prior startup exits or domain background outside core tech engineering.",
+      "evidence_refs": [
+        "Aniket Deshpande — Founder",
+        "Mugdhaa Patankar — Founder"
+      ],
+      "what_would_change": "Demonstrate a track record of previous venture-backed exits or commercial leadership."
+    },
+    {
+      "component_id": "outside_reaction",
+      "score": 5,
+      "observed": false,
+      "rationale": "No Hacker News launch thread or substantive public third-party discussion was found, so this component takes its neutral score.",
+      "evidence_refs": [],
+      "what_would_change": "Participate in a public launch thread with substantive back-and-forth technical vetting from outside users."
+    },
+    {
+      "component_id": "momentum",
+      "score": 4,
+      "observed": true,
+      "rationale": "The company is part of the YC Summer 2026 batch and has a live product website with downloadable software.",
+      "evidence_refs": [
+        "Agent FM — YC directory profile",
+        "Homepage of agentfm.ai — Agent FM"
+      ],
+      "what_would_change": "Demonstrate rapid user growth, hiring velocity, or high commit activity on public repositories."
+    }
+  ],
+  "score": 33,
+  "coverage": 0.9,
+  "call": "Pass",
+  "call_reason": "Scores 4/30 on displaced spend — outside the thesis, so the call is Pass regardless of the total.",
+  "what_would_change_my_mind": [
+    "Position the product as taking over a specific, existing operational budget line rather than acting as a developer interface capability.",
+    "Provide demonstrable evidence of daily active usage and feedback from external engineering teams.",
+    "Sell the product to non-technical business operators or ops managers rather than individual software engineers."
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "No Hacker News launch thread found for this company"
+  ],
+  "uncited_refs": []
+}

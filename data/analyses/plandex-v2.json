@@ -1,0 +1,154 @@
+{
+  "candidate": {
+    "slug": "plandex-v2",
+    "name": "Plandex v2",
+    "website": "https://github.com/plandex-ai/plandex",
+    "one_liner": "open source AI coding agent for large projects and tasks",
+    "description": "Hey HN! I’m Dane, the creator of Plandex ( https://github.com/plandex-ai/plandex ), an open source AI coding agent focused especially on tackling large tasks in real world software projects. You can watch a 2 minute demo of Plandex in action here: https://www.youtube.com/watch?v=SFSu2vNmlLk And here’s more of a tutorial style demo showing how Plandex can automatically debug a browser application: https://www.youtube.com/watch?v=g-_76U_nK0Y . I launched Plandex v1 here on HN a little less than a year ago ( https://news.ycombinator.com/item?id=39918500 ). Now I’m launching a major update, Plandex v2, which is the result of 8 months of heads down work, and is in effect a whole new project/product. In short, Plandex is now a top-tier coding agent with fully autonomous capabilities. It…",
+    "keywords": [],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "traction",
+        "label": "257 points and 81 comments on Hacker News",
+        "value": 257.0,
+        "observed_at": "2025-04-16T21:26:42Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=43710576",
+          "retrieved_at": "2026-08-13T15:14:24.382806Z"
+        }
+      },
+      {
+        "kind": "freshness",
+        "label": "Launched on HN 16 Apr 2025",
+        "value": null,
+        "observed_at": "2025-04-16T21:26:42Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=43710576",
+          "retrieved_at": "2026-08-13T15:14:24.382806Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Posted and answered questions as HN user @danenania",
+        "value": null,
+        "observed_at": "2025-04-16T21:26:42Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=43710576",
+          "retrieved_at": "2026-08-13T15:14:24.382806Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=43710576",
+        "retrieved_at": "2026-08-13T15:14:24.382806Z"
+      }
+    ]
+  },
+  "generated_at": "2026-08-14T07:34:36.770533Z",
+  "model": "gemini-3.7-flash",
+  "team": "Plandex is created by Dane Enania, a technical founder who previously founded EnvKey (YC W18) and works as an engineer at OpenAI on Codex Security.",
+  "product": "Plandex is an open-source terminal tool that uses multiple AI models to automatically plan, write, test, and debug code changes across large software codebases within an isolated sandbox before applying diffs.",
+  "market": "The product targets software developers and engineering teams who currently use IDE extensions or CLI tools like Cursor, Windsurf, Claude Code, and Aider to assist with coding workflows.",
+  "risks": [
+    "Direct competition from frontier lab terminal tools and well-funded IDE-based agents like Claude Code, Cursor, Windsurf, and OpenAI Codex.",
+    "Developers may prefer rich IDE-integrated visual interfaces over command-line interfaces for reading and steering live code changes.",
+    "Open-source CLI developer tools struggle to capture economic value and build monetizable enterprise business models."
+  ],
+  "open_questions": [
+    "How does the founder plan to commercialize an open-source CLI given the competitive landscape of free and low-cost developer agents?",
+    "Is Dane Enania working on Plandex full-time given his profile listing as an engineer at OpenAI?",
+    "What portion of users convert to the paid cloud service versus self-hosting or using their own API keys?"
+  ],
+  "components": [
+    {
+      "component_id": "displaced_spend",
+      "score": 3,
+      "observed": true,
+      "rationale": "Plandex is open-source developer tooling and infrastructure rather than software targeting an existing operational budget or displaced contractor cost centre. Its one-liner and launch text frame it entirely as a technical capability: an 'open source AI coding agent for large projects and tasks.'",
+      "evidence_refs": [
+        "Launch post by @danenania",
+        "GitHub repo plandex-ai/plandex"
+      ],
+      "what_would_change": "Tie the product directly to displacing outsourced software development agency spend or replacing external contract developer budgets."
+    },
+    {
+      "component_id": "operational_buyer",
+      "score": 1,
+      "observed": true,
+      "rationale": "The target user and buyer is an individual software engineer or technical developer operating in the terminal. The product is not designed for or sold to non-technical business or operations managers.",
+      "evidence_refs": [
+        "Launch post by @danenania",
+        "GitHub repo plandex-ai/plandex",
+        "HN comment by @maxwelljoslyn",
+        "HN comment by @jmcpheron"
+      ],
+      "what_would_change": "Reposition and package the tool for non-technical product or business operators building and maintaining workflows without code."
+    },
+    {
+      "component_id": "in_users_hands",
+      "score": 18,
+      "observed": true,
+      "rationale": "There is extensive independent evidence of real-world usage, including over 15,000 GitHub stars, external contributors, and HN commenters discussing their hands-on experiences comparing Plandex to tools like Aider, Cursor, and Claude Code.",
+      "evidence_refs": [
+        "GitHub repo plandex-ai/plandex",
+        "Top contributors to plandex-ai/plandex",
+        "HN comment by @jmcpheron",
+        "HN comment by @maxwelljoslyn"
+      ],
+      "what_would_change": "Provide verified telemetry or case studies demonstrating paying production enterprise team deployments."
+    },
+    {
+      "component_id": "founding_team",
+      "score": 19,
+      "observed": true,
+      "rationale": "Dane Enania is a YC alumnus (EnvKey, W18) and OpenAI Codex Security engineer with over 800 commits on the repository and deep domain knowledge in AI code generation.",
+      "evidence_refs": [
+        "HN profile of @danenania (8084 karma)",
+        "Top contributors to plandex-ai/plandex",
+        "HN founder reply by @danenania"
+      ],
+      "what_would_change": "Add a dedicated commercial co-founder focused on enterprise sales and go-to-market execution."
+    },
+    {
+      "component_id": "outside_reaction",
+      "score": 9,
+      "observed": true,
+      "rationale": "The HN launch received deep technical scrutiny regarding multi-model routing, context window limits, CLI usability, and comparisons to Cursor and Claude Code. The founder addressed questions with detailed technical answers regarding diff algorithms and orchestration architectures.",
+      "evidence_refs": [
+        "HN comment by @maxwelljoslyn",
+        "HN comment by @jmcpheron",
+        "HN comment by @ramesh31",
+        "HN founder reply by @danenania"
+      ],
+      "what_would_change": "Engage broader discussions addressing commercial viability, unit economics, and enterprise pricing models under public pushback."
+    },
+    {
+      "component_id": "momentum",
+      "score": 4,
+      "observed": true,
+      "rationale": "The project shows strong development momentum with a major v2 release following eight months of development, recent commit activity through October 2025, and over 15,000 GitHub stars.",
+      "evidence_refs": [
+        "Launch post by @danenania",
+        "GitHub repo plandex-ai/plandex"
+      ],
+      "what_would_change": "Demonstrate rapid commercial momentum through revenue growth and team hiring."
+    }
+  ],
+  "score": 54,
+  "coverage": 1.0,
+  "call": "Pass",
+  "call_reason": "Scores 3/30 on displaced spend — outside the thesis, so the call is Pass regardless of the total.",
+  "what_would_change_my_mind": [
+    "Tie the product directly to displacing outsourced software development agency spend or replacing external contract developer budgets.",
+    "Reposition and package the tool for non-technical product or business operators building and maintaining workflows without code.",
+    "Provide verified telemetry or case studies demonstrating paying production enterprise team deployments."
+  ],
+  "gaps": [],
+  "uncited_refs": []
+}

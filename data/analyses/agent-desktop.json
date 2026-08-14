@@ -1,0 +1,149 @@
+{
+  "candidate": {
+    "slug": "agent-desktop",
+    "name": "Agent-desktop",
+    "website": "https://github.com/lahfir/agent-desktop",
+    "one_liner": "Native desktop automation CLI for AI agents",
+    "description": "I've been building computer-use tools for a while, and I quietly launched this about a month ago (122 Stars on GH). I figured it was worth sharing here. Over the last few months, a lot of computer-use agents have come out: Codex, Claude Code, CUA, and others. Most of them seem to work roughly like this: 1. Take a screenshot 2. Have the model predict pixel coordinates 3. Click x,y 4. Take another screenshot 5. Repeat That works, but it's slow, expensive in tokens, and fragile. If the UI shifts a few pixels, things break. And the model still doesn't know what any element actually is. But the OS already exposes structured UI information: - macOS: Accessibility API - Windows: UI Automation - Linux: AT-SPI Screen readers have used these APIs for years. On the web, Playwright beat screenshot…",
+    "keywords": [],
+    "relevance": 0.556,
+    "signals": [
+      {
+        "kind": "traction",
+        "label": "99 points and 44 comments on Hacker News",
+        "value": 99.0,
+        "observed_at": "2026-05-02T02:18:24Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=47982708",
+          "retrieved_at": "2026-08-13T15:14:24.383052Z"
+        }
+      },
+      {
+        "kind": "freshness",
+        "label": "Launched on HN 02 May 2026",
+        "value": null,
+        "observed_at": "2026-05-02T02:18:24Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=47982708",
+          "retrieved_at": "2026-08-13T15:14:24.383052Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Posted and answered questions as HN user @lahfir",
+        "value": null,
+        "observed_at": "2026-05-02T02:18:24Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=47982708",
+          "retrieved_at": "2026-08-13T15:14:24.383052Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=47982708",
+        "retrieved_at": "2026-08-13T15:14:24.383052Z"
+      }
+    ]
+  },
+  "generated_at": "2026-08-14T07:34:36.764314Z",
+  "model": "gemini-3.7-flash",
+  "team": "Built by solo developer and self-described 2X founder @lahfir, who has also created other computer-use tools such as cracked-agent and PILOT, with primary author commits in Rust.",
+  "product": "A command-line tool that allows AI agents to inspect and click buttons in native desktop applications using OS accessibility trees rather than slow, screenshot-based computer vision.",
+  "market": "Software engineers and AI agent developers building desktop automation or computer-use tools. Today, developers use vision-based screenshot models (like Claude computer use) or browser-only frameworks like Playwright.",
+  "risks": [
+    "The tool is currently macOS-only, limiting developer adoption for Windows and enterprise desktop environments.",
+    "Major AI model providers could build structured desktop hooks or standard computer-use protocols directly into foundation models, commoditizing standalone CLI wrappers.",
+    "Open-source developer utility with Apache-2.0 licensing lacks a clear monetization path or commercial software budget."
+  ],
+  "open_questions": [
+    "What is the commercialization strategy beyond maintaining an open-source Rust CLI tool?",
+    "When will Windows UI Automation and Linux AT-SPI support achieve feature parity with macOS?",
+    "Are there plans to package this as an enterprise agent runtime or SDK sold directly to businesses rather than open-source hackers?"
+  ],
+  "components": [
+    {
+      "component_id": "displaced_spend",
+      "score": 2,
+      "observed": true,
+      "rationale": "Agent-desktop is horizontal open-source infrastructure for developers building AI agents, described as a 'Native desktop automation CLI for AI agents'. It provides a technical capability rather than replacing a specific non-technical operational budget line or outsourced service.",
+      "evidence_refs": [
+        "Launch post by @lahfir",
+        "GitHub repo lahfir/agent-desktop"
+      ],
+      "what_would_change": "Package the technology into a turn-key vertical solution that directly replaces an identifiable operational software subscription or back-office contractor spend."
+    },
+    {
+      "component_id": "operational_buyer",
+      "score": 1,
+      "observed": true,
+      "rationale": "The tool is packaged as a Rust binary CLI exposing JSON and MCP interfaces for LLMs, aimed directly at software engineers and agent builders. There is no operational or non-technical business buyer involved.",
+      "evidence_refs": [
+        "Launch post by @lahfir",
+        "GitHub repo lahfir/agent-desktop"
+      ],
+      "what_would_change": "Target and sell an end-to-end workflow automation product to business operations managers rather than a CLI to software developers."
+    },
+    {
+      "component_id": "in_users_hands",
+      "score": 17,
+      "observed": true,
+      "rationale": "The repository has over 1,000 GitHub stars, 66 forks, multiple external contributors, and public HN comments from users actively testing commands such as the Finder example.",
+      "evidence_refs": [
+        "GitHub repo lahfir/agent-desktop",
+        "Top contributors to lahfir/agent-desktop",
+        "HN comment by @zuzululu"
+      ],
+      "what_would_change": "Demonstrate sustained multi-platform production workloads and enterprise customer deployments rather than individual developer experimentation."
+    },
+    {
+      "component_id": "founding_team",
+      "score": 12,
+      "observed": true,
+      "rationale": "Founder @lahfir demonstrates strong technical capability in Rust and desktop accessibility APIs, backed by a profile citing prior work on tools like cracked-agent and PILOT. However, there is no domain background in vertical enterprise operations or visible commercial co-founders.",
+      "evidence_refs": [
+        "HN profile of @lahfir (38 karma)",
+        "Top contributors to lahfir/agent-desktop"
+      ],
+      "what_would_change": "Add commercial co-founders with proven B2B sales or vertical enterprise operating backgrounds."
+    },
+    {
+      "component_id": "outside_reaction",
+      "score": 8,
+      "observed": true,
+      "rationale": "The HN launch received active scrutiny regarding LLM-generated post text and cross-platform claims, which the founder addressed transparently by confirming Windows/Linux are roadmap items and Mac is currently GA.",
+      "evidence_refs": [
+        "HN comment by @jstanley",
+        "HN comment by @esperent",
+        "HN founder reply by @lahfir"
+      ],
+      "what_would_change": "Engage enterprise and operational stakeholders in discussions demonstrating concrete commercial problem-solving beyond technical CLI feedback."
+    },
+    {
+      "component_id": "momentum",
+      "score": 4,
+      "observed": true,
+      "rationale": "The repository has sustained active development from launch in February through August 2026, amassing over 1,000 stars and continuous commit activity.",
+      "evidence_refs": [
+        "GitHub repo lahfir/agent-desktop",
+        "Top contributors to lahfir/agent-desktop"
+      ],
+      "what_would_change": "Show commercial momentum such as institutional fundraising, full-time hiring, or paid enterprise customer acquisition."
+    }
+  ],
+  "score": 44,
+  "coverage": 1.0,
+  "call": "Pass",
+  "call_reason": "Scores 2/30 on displaced spend — outside the thesis, so the call is Pass regardless of the total.",
+  "what_would_change_my_mind": [
+    "Package the technology into a turn-key vertical solution that directly replaces an identifiable operational software subscription or back-office contractor spend.",
+    "Target and sell an end-to-end workflow automation product to business operations managers rather than a CLI to software developers.",
+    "Add commercial co-founders with proven B2B sales or vertical enterprise operating backgrounds."
+  ],
+  "gaps": [],
+  "uncited_refs": []
+}
