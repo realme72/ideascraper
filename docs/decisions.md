@@ -186,8 +186,62 @@ JavaScript homepage.
 
 ---
 
+## D11 — The model judges; the pipeline does the arithmetic
+
+**Date:** 2026-08-14 · **Status:** active
+
+The model scores each rubric component against its bands, cites the evidence it
+used, and says what would change its mind. It never sums, never computes
+coverage, never picks Pass/Watch/Take-a-meeting, and is told not to reason about
+thresholds at all. All of that is computed in `pipeline/analyze.py` from
+`pipeline/thesis.py`.
+
+Two reasons. A thesis a model can round up on is not being held consistently —
+and the overrides are the part that has to be right every time, so they are the
+part that gets unit tests rather than a prompt.
+
+**Rejected:** asking the model for a total and a call. Simpler prompt, but the
+thesis stops being binding the moment the model likes a company.
+
+---
+
+## D12 — One rubric, in code; the prose doc is downstream
+
+**Date:** 2026-08-14 · **Status:** active
+
+`pipeline/thesis.py` holds the components, weights, bands and neutral values as
+data. The model's system prompt is **rendered from it**, and the scorer sums the
+same table. `docs/thesis.md` is the human argument and says plainly that the
+module is what runs.
+
+The alternative — the rubric written out in a prompt string and the weights
+duplicated in the scorer — has the two drifting the first time a weight changes,
+silently, with the scores still looking plausible.
+
+---
+
+## D13 — Claude Opus 5, with the rubric cached and every response committed
+
+**Date:** 2026-08-14 · **Status:** active
+
+`claude-opus-5` ($5/$25 per MTok), structured output via the SDK's `parse()` so
+the response validates against the schema or fails loudly.
+
+The system prompt — instructions plus the full rubric, ~1,950 tokens — is
+identical for every company in a run, so it carries a cache breakpoint: one
+full-price prefix and fourteen cache reads instead of fifteen. Evidence goes in
+the user turn, where it belongs, because it changes every call.
+
+Model responses are cached to `data/raw/` and committed, like the HTTP
+responses. A reviewer can regenerate every memo with no API key and get
+identical output, and iterating on the memo template costs nothing.
+
+Note for anyone reading the code: thinking is on by default on this model and
+shares the `max_tokens` budget with the response, which is why `max_tokens` is
+16k for an analysis that is nowhere near that long.
+
+---
+
 ## Open
 
-- **LLM.** No API key set in the environment yet. Open question is whether to
-  commit cached model responses so reviewers can run the pipeline with no key at
-  all. *Undecided — blocks stage 3.*
+*Nothing blocking. Stage 4 (memo rendering) is next and needs no decisions.*

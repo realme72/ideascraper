@@ -13,7 +13,7 @@ from __future__ import annotations
 import argparse
 import sys
 
-from pipeline import enrich, source
+from pipeline import analyze, enrich, source
 
 
 def _print_summary(result) -> None:
@@ -63,8 +63,13 @@ def build_parser() -> argparse.ArgumentParser:
         "--refresh", action="store_true", help="bypass the cache and refetch everything"
     )
 
+    ana = sub.add_parser("analyze", help="score each candidate against the thesis")
+    ana.add_argument("--limit", type=int, default=None, help="only analyse the first N")
+    ana.add_argument(
+        "--refresh", action="store_true", help="bypass the cache and re-call the model"
+    )
+
     for name, help_text in [
-        ("analyze", "score each candidate against the thesis"),
         ("memo", "render one-page memos"),
         ("run", "all four stages, end to end"),
     ]:
@@ -106,6 +111,21 @@ def main(argv: list[str] | None = None) -> int:
             f"\n{len(bundles)} bundles written to {enrich.OUTPUT_DIR}/ "
             f"({total_gaps} gaps recorded)"
         )
+        return 0
+
+    if args.command == "analyze":
+        try:
+            analyses = analyze.run(limit=args.limit, refresh=args.refresh)
+        except (FileNotFoundError, analyze.MissingCredentials) as exc:
+            print(str(exc), file=sys.stderr)
+            return 1
+
+        calls: dict[str, int] = {}
+        for a in analyses:
+            calls[a.call] = calls.get(a.call, 0) + 1
+        summary = ", ".join(f"{n} {call}" for call, n in sorted(calls.items()))
+        print(f"\n{len(analyses)} analysed — {summary}")
+        print(f"written to {analyze.OUTPUT_DIR}/")
         return 0
 
     print(f"stage '{args.command}' is not implemented yet", file=sys.stderr)

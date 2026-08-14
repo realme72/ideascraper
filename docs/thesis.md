@@ -9,6 +9,12 @@ Every score in `data/analyses/` is measured against this document. Chosen from
 three drafts; the alternatives and the reasoning are in
 [thesis-candidates.md](thesis-candidates.md).
 
+> This page is the argument. The same rubric exists as data in
+> [`pipeline/thesis.py`](../pipeline/thesis.py), which is what the pipeline
+> actually executes: the model's prompt is rendered from it and the scorer sums
+> it, so those two can never disagree. If this page and that module ever
+> disagree, the module is what ran.
+
 ## The bet
 
 At seed, the hard part of AI is not capability. Models are a commodity input and

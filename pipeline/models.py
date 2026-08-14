@@ -154,6 +154,78 @@ class EvidenceBundle(BaseModel):
         return sum(len(i) for i in self.items)
 
 
+class ComponentJudgement(BaseModel):
+    """One rubric component, scored by the model.
+
+    The model scores and justifies; it never sums, never picks a call, and never
+    reasons about thresholds. `observed=False` means no evidence was found
+    either way and the component took its documented neutral value — an absence
+    in our research, not a finding about the company.
+    """
+
+    component_id: str
+    score: int
+    observed: bool
+    rationale: str
+    evidence_refs: list[str]
+    what_would_change: str
+
+
+class AnalysisDraft(BaseModel):
+    """Exactly what the model is asked to return.
+
+    Kept separate from `Analysis` so the boundary is visible: everything in this
+    class is judgement, and everything `Analysis` adds on top is arithmetic.
+    """
+
+    team: str
+    product: str
+    market: str
+    risks: list[str]
+    open_questions: list[str]
+    components: list[ComponentJudgement]
+
+
+class Analysis(BaseModel):
+    """Stage 3's output: the draft, plus everything computed from it.
+
+    `score`, `coverage`, `call` and `what_would_change_my_mind` are derived in
+    `pipeline.analyze` from `pipeline.thesis` — not returned by the model. A
+    thesis a model can round up on is not being held consistently.
+    """
+
+    candidate: Candidate
+    generated_at: datetime
+    model: str
+
+    team: str
+    product: str
+    market: str
+    risks: list[str]
+    open_questions: list[str]
+    components: list[ComponentJudgement]
+
+    score: int
+    coverage: float
+    call: str
+    call_reason: str
+    what_would_change_my_mind: list[str]
+
+    gaps: list[str] = Field(default_factory=list)
+    uncited_refs: list[str] = Field(default_factory=list)
+
+    @property
+    def slug(self) -> str:
+        return self.candidate.slug
+
+    @property
+    def name(self) -> str:
+        return self.candidate.name
+
+    def component(self, component_id: str) -> ComponentJudgement | None:
+        return next((c for c in self.components if c.component_id == component_id), None)
+
+
 class CandidateSet(BaseModel):
     """Stage 1's output: everything found for one topic, ranked.
 

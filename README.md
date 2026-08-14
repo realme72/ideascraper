@@ -6,8 +6,10 @@ Point it at a topic, get one-page investment memos out the other end — each
 ending in a clear **Pass / Watch / Take a meeting**, and each claim traceable back
 to the source it came from.
 
-> **Status: stages 1–2 of 4 working.** Sourcing and enrichment run end to end
-> against live data. Analysis and memo rendering are next.
+> **Status: stages 1–2 working, stage 3 built but not yet run.** Sourcing and
+> enrichment run end to end against live data. Analysis is implemented and
+> unit-tested but has never executed against the live model — no API key has
+> been supplied yet, so there are no memos in this repo. Memo rendering is next.
 
 ---
 
@@ -124,6 +126,32 @@ with plausible invention, and a thin file should score as thin rather than bad.
 Nothing in this stage interprets — it collects and cites. Judgement happens once,
 in stage 3.
 
+### Stage 3 — analysis
+
 ```bash
-.venv/bin/python -m pytest tests/ -q      # 89 tests
+cp .env.example .env        # add your own ANTHROPIC_API_KEY
+.venv/bin/python -m pipeline analyze
+```
+
+Scores each company against [the thesis](docs/thesis.md) using `claude-opus-5`,
+and writes a structured analysis to `data/analyses/`.
+
+**The model judges; the pipeline does the arithmetic.** The model scores each
+rubric component against its bands, cites the evidence items it used, and says
+what would change its mind. Summing, evidence coverage, the Pass / Watch / Take
+a meeting bands and the three overrides are all computed in code, from the same
+table the model's prompt was rendered from — so the rubric and the scorer cannot
+drift, and a thesis a model could round up on isn't one that's being held
+consistently.
+
+Every reference the model cites is resolved back against the evidence bundle
+afterwards. Anything that doesn't match a real item is recorded on the analysis
+and surfaced in the memo — an uncheckable citation is worse than none, because
+it looks checkable.
+
+Model responses are cached to `data/raw/` and committed alongside the HTTP
+responses, so the committed memos can be regenerated with no API key at all.
+
+```bash
+.venv/bin/python -m pytest tests/ -q      # 121 tests
 ```
