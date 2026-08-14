@@ -2,7 +2,8 @@
 
     data/evidence/<slug>.json  ->  data/analyses/<slug>.json
 
-The only stage that calls a model. It turns an evidence bundle into a structured
+The only stage that calls a model — Gemini, on Google AI Studio's free tier, so
+the pipeline costs nothing to run. It turns an evidence bundle into a structured
 analysis: team, product, market, risks, open questions, and a score against the
 thesis in `pipeline.thesis`.
 
@@ -22,6 +23,7 @@ quietly passed through to a memo.
 from __future__ import annotations
 
 import os
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -32,11 +34,15 @@ INPUT_DIR = Path("data/evidence")
 OUTPUT_DIR = Path("data/analyses")
 PROMPT_PATH = Path(__file__).parent / "prompts" / "analysis.md"
 
-MODEL = "claude-opus-5"
-# Thinking is on by default on this model and shares the max_tokens budget with
-# the response, so this is not sized to the analysis alone.
-MAX_TOKENS = 16_000
-EFFORT = "high"
+# Overridable so a reviewer can trade quality against whatever their own free
+# tier allows without editing code. Flash is the default because it is the tier
+# most likely to be free, and this task is structured judgement over evidence
+# that has already been gathered — not open-ended reasoning.
+MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.7-flash")
+
+# Free-tier accounts are rate limited per minute. Fifteen companies is nowhere
+# near a daily cap, but firing them back to back can trip a per-minute one.
+CALL_SPACING_SECONDS = float(os.environ.get("GEMINI_CALL_SPACING", "4"))
 
 
 class MissingCredentials(RuntimeError):
@@ -105,38 +111,47 @@ def _call_model(system: str, user: str, *, refresh: bool) -> dict:
     """One structured-output call, cached to disk by prompt.
 
     The cached payload is committed, so a reviewer can regenerate every memo
-    without a key and get byte-identical output.
+    without a key of their own and get byte-identical output.
+
+    The rubric and the evidence are concatenated into one input rather than
+    split across a system and a user turn. On a paid provider that split buys
+    prompt caching — the rubric is identical for all fifteen companies — but on
+    a free tier there is no cost to save, and one input is the shape the SDK
+    documents.
     """
 
     def produce() -> dict:
         _load_env()
-        if not os.environ.get("ANTHROPIC_API_KEY"):
+        if not os.environ.get("GEMINI_API_KEY"):
             raise MissingCredentials(
-                "ANTHROPIC_API_KEY is not set and this analysis is not cached.\n"
-                "Add it to .env (see .env.example), or run against the committed "
-                "cache with the analyses that ship in this repo."
+                "GEMINI_API_KEY is not set and this analysis is not cached.\n"
+                "Get a free key at https://aistudio.google.com/apikey (no billing "
+                "required) and add it to .env — see .env.example.\n"
+                "The analyses committed to this repo were generated with the "
+                "cached responses in data/raw/, so reading them needs no key at all."
             )
-        import anthropic  # imported lazily so stages 1, 2 and 4 need no SDK
+        from google import genai  # imported lazily so stages 1, 2 and 4 need no SDK
 
-        client = anthropic.Anthropic()
-        response = client.messages.parse(
+        client = genai.Client()
+        interaction = client.interactions.create(
             model=MODEL,
-            max_tokens=MAX_TOKENS,
-            output_config={"effort": EFFORT},
-            system=[
-                # Stable across every company in the run; the evidence that
-                # follows is not. Caching the rubric turns 15 calls into one
-                # full-price prefix and fourteen cache reads.
-                {"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}
-            ],
-            messages=[{"role": "user", "content": user}],
-            output_format=AnalysisDraft,
+            input=f"{system}\n\n---\n\n{user}",
+            response_format={
+                "type": "text",
+                "mime_type": "application/json",
+                "schema": AnalysisDraft.model_json_schema(),
+            },
         )
-        if response.stop_reason == "refusal":
+        text = (interaction.output_text or "").strip()
+        if not text:
             raise AnalysisRefused(
-                f"model declined to analyse this company ({response.stop_details})"
+                "the model returned nothing for this company — most likely a safety "
+                "filter or a truncated response"
             )
-        return response.parsed_output.model_dump()
+        # Validated against our own schema regardless of what the provider
+        # enforced, so a malformed response fails loudly here rather than
+        # becoming a memo full of empty sections.
+        return AnalysisDraft.model_validate_json(text).model_dump()
 
     return cache.fetch({"model": MODEL, "system": system, "user": user}, produce, refresh=refresh)
 
@@ -232,6 +247,14 @@ def check_citations(components: list[ComponentJudgement], bundle: EvidenceBundle
     return sorted(set(unmatched))
 
 
+def _is_cached(bundle: EvidenceBundle, *, refresh: bool) -> bool:
+    """Whether this company's analysis would come from disk rather than the API."""
+    if refresh:
+        return False
+    key = cache.key({"model": MODEL, "system": build_system(), "user": build_user(bundle)})
+    return cache.get(key) is not None
+
+
 def analyse_one(bundle: EvidenceBundle, *, refresh: bool = False) -> Analysis:
     draft = AnalysisDraft.model_validate(
         _call_model(build_system(), build_user(bundle), refresh=refresh)
@@ -274,9 +297,15 @@ def run(
 
     output_dir.mkdir(parents=True, exist_ok=True)
     analyses: list[Analysis] = []
+    called_model = False
 
     for path in bundles[:limit] if limit else bundles:
         bundle = EvidenceBundle.model_validate_json(path.read_text())
+        # Space out live calls to stay inside a free-tier per-minute limit.
+        # Cached companies cost nothing and are not paced.
+        if called_model and not _is_cached(bundle, refresh=refresh):
+            time.sleep(CALL_SPACING_SECONDS)
+        called_model = called_model or not _is_cached(bundle, refresh=refresh)
         analysis = analyse_one(bundle, refresh=refresh)
         (output_dir / f"{analysis.slug}.json").write_text(analysis.model_dump_json(indent=2))
         analyses.append(analysis)

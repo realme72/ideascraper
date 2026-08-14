@@ -129,12 +129,15 @@ in stage 3.
 ### Stage 3 — analysis
 
 ```bash
-cp .env.example .env        # add your own ANTHROPIC_API_KEY
+cp .env.example .env        # add your own GEMINI_API_KEY
 .venv/bin/python -m pipeline analyze
 ```
 
-Scores each company against [the thesis](docs/thesis.md) using `claude-opus-5`,
-and writes a structured analysis to `data/analyses/`.
+Scores each company against [the thesis](docs/thesis.md) and writes a structured
+analysis to `data/analyses/`. Uses Gemini via [Google AI
+Studio](https://aistudio.google.com/apikey) — a free key, no billing account —
+so the whole pipeline costs nothing to run. `GEMINI_MODEL` overrides the default
+if your free tier allows something else.
 
 **The model judges; the pipeline does the arithmetic.** The model scores each
 rubric component against its bands, cites the evidence items it used, and says
@@ -152,6 +155,10 @@ it looks checkable.
 Model responses are cached to `data/raw/` and committed alongside the HTTP
 responses, so the committed memos can be regenerated with no API key at all.
 
+The model is only ever asked to judge, never to do arithmetic — which is why
+swapping the provider from Claude to Gemini partway through touched one function
+and no tests. See [D14](docs/decisions.md).
+
 ```bash
-.venv/bin/python -m pytest tests/ -q      # 121 tests
+.venv/bin/python -m pytest tests/ -q      # 122 tests
 ```

@@ -222,7 +222,7 @@ silently, with the scores still looking plausible.
 
 ## D13 — Claude Opus 5, with the rubric cached and every response committed
 
-**Date:** 2026-08-14 · **Status:** active
+**Date:** 2026-08-14 · **Status:** SUPERSEDED by D14 (same day)
 
 `claude-opus-5` ($5/$25 per MTok), structured output via the SDK's `parse()` so
 the response validates against the schema or fails loudly.
@@ -239,6 +239,38 @@ identical output, and iterating on the memo template costs nothing.
 Note for anyone reading the code: thinking is on by default on this model and
 shares the `max_tokens` budget with the response, which is why `max_tokens` is
 16k for an analysis that is nowhere near that long.
+
+---
+
+## D14 — Gemini on the free tier, replacing Claude Opus 5
+
+**Date:** 2026-08-14 · **Status:** active · **Supersedes:** D13
+
+Stage 3 was built against `claude-opus-5` and never run: the Claude API bills
+separately from a Claude Pro subscription, and this project is not worth
+spending on. The brief allows any model and says free tiers are fine, so the
+client moved to Gemini via Google AI Studio — a free key, no billing account.
+
+**What the switch cost.** The rubric is identical for all fifteen companies, so
+on a paid provider it would carry a cache breakpoint: one full-price prefix and
+fourteen cache reads. On a free tier there is no cost to save, so the rubric and
+the evidence are now concatenated into a single input. Quality may also differ;
+that is measurable once the run happens and is recorded rather than assumed.
+
+**What the switch didn't cost.** Nothing above the client call. The rubric, the
+scoring, the overrides, the citation check and all 122 tests were already
+provider-agnostic, because the model was only ever asked to judge (D11). The
+diff is `_call_model` and a handful of constants.
+
+Default model `gemini-3.7-flash`, overridable with `GEMINI_MODEL`. Flash rather
+than Pro because it is the tier most likely to be free with usable limits, and
+this is structured judgement over evidence already gathered rather than
+open-ended reasoning. Calls are spaced by default to stay inside a per-minute
+free-tier limit; fifteen companies is far below any daily cap.
+
+**The lesson worth keeping:** the provider turned out to be the cheapest thing
+in the stage to change, and only because the thesis logic never lived in the
+prompt.
 
 ---
 

@@ -194,7 +194,14 @@ class TestAnalyseOne:
         assert analysis.what_would_change_my_mind == []
         assert analysis.uncited_refs == []
         assert analysis.gaps == ["no repo"]
-        assert analysis.model == "claude-opus-5"
+        assert analysis.model == analyze.MODEL
+
+    def test_missing_credentials_names_the_free_key_page(self, monkeypatch):
+        monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+        monkeypatch.setattr(analyze, "_load_env", lambda *a, **k: None)
+        monkeypatch.setattr(analyze.cache, "get", lambda k: None)
+        with pytest.raises(analyze.MissingCredentials, match="aistudio.google.com"):
+            analyze._call_model("system", "user", refresh=False)
 
 
 class TestPrompt:
