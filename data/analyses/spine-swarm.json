@@ -1,0 +1,215 @@
+{
+  "candidate": {
+    "slug": "spine-swarm",
+    "name": "Spine Swarm",
+    "website": "https://www.getspine.ai/",
+    "one_liner": "AI agents that collaborate on a visual canvas",
+    "description": "Hey HN! We're Ashwin and Akshay from Spine AI ( https://www.getspine.ai ). Spine Swarm is a multi-agent system that works on an infinite visual canvas to complete complex non-coding projects: competitive analysis, financial modeling, SEO audits, pitch decks, interactive prototypes, and more. Here's a video of it in action: https://www.youtube.com/watch?v=R_2-ggpZz0Q . We've been friends for over 13 years. We took our first ML course together at NTU, in a part of campus called North Spine, which is where the name comes from. We went through YC in S23 and have spent about 3 years building Spine across many product iterations. The core idea: chat is the wrong interface for complex AI work. It's a linear thread, and real projects aren't linear. Sure, you can ask a chatbot to reference the…",
+    "keywords": [],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "traction",
+        "label": "109 points and 69 comments on Hacker News",
+        "value": 109.0,
+        "observed_at": "2026-03-13T13:22:40Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=47364116",
+          "retrieved_at": "2026-08-15T15:14:21.422288Z"
+        }
+      },
+      {
+        "kind": "freshness",
+        "label": "Launched on HN 13 Mar 2026",
+        "value": null,
+        "observed_at": "2026-03-13T13:22:40Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=47364116",
+          "retrieved_at": "2026-08-15T15:14:21.422288Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Posted and answered questions as HN user @a24venka",
+        "value": null,
+        "observed_at": "2026-03-13T13:22:40Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=47364116",
+          "retrieved_at": "2026-08-15T15:14:21.422288Z"
+        }
+      },
+      {
+        "kind": "freshness",
+        "label": "YC S23 batch",
+        "value": null,
+        "observed_at": "2026-03-13T13:22:40Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=47364116",
+          "retrieved_at": "2026-08-15T15:14:21.422288Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=47364116",
+        "retrieved_at": "2026-08-15T15:14:21.422288Z"
+      }
+    ]
+  },
+  "generated_at": "2026-08-15T15:14:22.531327Z",
+  "model": "gemini-3.7-flash",
+  "team": "Ashwin and Akshay met while studying machine learning at Nanyang Technological University (NTU) over 13 years ago. They went through YC in the S23 batch and have spent three years iterating on Spine AI.",
+  "product": "Spine provides a visual, node-based workspace where multiple AI models run in parallel to tackle multi-step research and deliverables (such as market sizing models, slide decks, and competitive analysis) instead of using a standard linear chatbot.",
+  "market": "Knowledge workers, strategy consultants, and investment analysts who currently assemble research and analysis manually across search engines, spreadsheets, and standalone LLM chat interfaces.",
+  "risks": [
+    "End users may prefer simple single-prompt chat deliverables rather than navigating and inspecting an explicit visual canvas.",
+    "The product sits in a crowded horizontal 'agentic tools' space without clear differentiation or an obvious single budget line to replace.",
+    "Long-running, token-intensive multi-agent tasks could generate high inference costs that challenge unit economics without clear enterprise contract sizing."
+  ],
+  "open_questions": [
+    "Which specific vertical workflow (e.g., private equity due diligence vs. general consulting decks) is demonstrating repeatable customer willingness to pay?",
+    "What does cohort retention look like among non-technical business users versus technical power users?",
+    "How does the team plan to price token-intensive graph executions to maintain software gross margins?"
+  ],
+  "components": [
+    {
+      "component_id": "displaced_spend",
+      "score": 11,
+      "observed": true,
+      "rationale": "Spine is positioned primarily as horizontal capability software—'AI agents that collaborate on a visual canvas'—rather than taking over a named existing line-item cost center. While the homepage lists use cases for investors and consultants (such as TAM modeling and earnings analysis), it sells a general agentic workspace rather than replacing an outsourced agency or specific back-office spend.",
+      "evidence_refs": [
+        "Launch post by @a24venka",
+        "Homepage of getspine.ai — Spine AI | Canvas, Medley, and multi-agent research"
+      ],
+      "what_would_change": "Narrow the positioning from a horizontal agent canvas to replacing a specific outsourced service or dedicated software budget (e.g., an automated commercial due diligence vendor)."
+    },
+    {
+      "component_id": "operational_buyer",
+      "score": 9,
+      "observed": true,
+      "rationale": "The buyer profile is mixed. The launch emphasizes 'complex non-coding projects' for investors and consultants, but the product suite also includes developer-oriented components like 'Medley for local-first agent orchestration' with Claude Code and Codex plugins.",
+      "evidence_refs": [
+        "Launch post by @a24venka",
+        "Homepage of getspine.ai — Spine AI | Canvas, Medley, and multi-agent research"
+      ],
+      "what_would_change": "Demonstrate that purchasing decisions and daily workflows are driven by non-technical business operators rather than developers and AI enthusiasts."
+    },
+    {
+      "component_id": "in_users_hands",
+      "score": 11,
+      "observed": true,
+      "rationale": "The web application is live and demonstrable, with sign-up flows and benchmark evaluations published. However, evidence of day-to-day production usage traces entirely back to company demonstrations and claims rather than independent external customer testimonials in the discussion.",
+      "evidence_refs": [
+        "Launch post by @a24venka",
+        "Homepage of getspine.ai — Spine AI | Canvas, Medley, and multi-agent research",
+        "HN comment by @dude250711"
+      ],
+      "what_would_change": "Provide unprompted customer testimonials or external case studies showing active recurring production usage outside the company."
+    },
+    {
+      "component_id": "founding_team",
+      "score": 12,
+      "observed": true,
+      "rationale": "The founders have technical ML backgrounds from NTU, are backed by YC S23, and have spent three years dedicated to multi-agent architectures. However, no prior company exits or deep operating backgrounds in the specific end verticals (consulting/finance) are noted.",
+      "evidence_refs": [
+        "Launch post by @a24venka"
+      ],
+      "what_would_change": "Demonstrate past founder exits or direct domain operating experience in the commercial industries they are selling into."
+    },
+    {
+      "component_id": "outside_reaction",
+      "score": 8,
+      "observed": true,
+      "rationale": "Outside commenters pushed back directly on the necessity of a visual canvas over chat, dark sign-up patterns, and confusing site copy. The founders answered constructively and specifically, explaining architectural benefits (token context, parallel branching, auth protection) without becoming evasive.",
+      "evidence_refs": [
+        "HN comment by @sebmellen",
+        "HN comment by @jpbryan",
+        "HN comment by @dude250711",
+        "HN founder reply by @a24venka"
+      ],
+      "what_would_change": "Sustain that level of engagement against commercial and ROI objections from actual enterprise buyers rather than interface critiques."
+    },
+    {
+      "component_id": "momentum",
+      "score": 4,
+      "observed": true,
+      "rationale": "The company launched Spine Swarm on Hacker News in March 2026 with recent 2026 benchmark evaluations across both cloud and local product lines following their YC S23 batch.",
+      "evidence_refs": [
+        "Launch post by @a24venka",
+        "Homepage of getspine.ai — Spine AI | Canvas, Medley, and multi-agent research"
+      ],
+      "what_would_change": "Show verifiable revenue growth milestones or expanding engineering hiring signals alongside product launches."
+    }
+  ],
+  "score": 55,
+  "coverage": 1.0,
+  "call": "Watch",
+  "call_reason": "Scores 55/100 with 100% evidence coverage.",
+  "what_would_change_my_mind": [
+    "Narrow the positioning from a horizontal agent canvas to replacing a specific outsourced service or dedicated software budget (e.g., an automated commercial due diligence vendor).",
+    "Provide unprompted customer testimonials or external case studies showing active recurring production usage outside the company.",
+    "Demonstrate past founder exits or direct domain operating experience in the commercial industries they are selling into."
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "HN user @a24venka has no bio on their profile"
+  ],
+  "uncited_refs": [],
+  "sources": [
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=47364116",
+      "retrieved_at": "2026-08-15T15:14:22.483230Z"
+    },
+    {
+      "source": "web",
+      "url": "https://www.getspine.ai/",
+      "retrieved_at": "2026-08-15T15:14:22.485280Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=47364511",
+      "retrieved_at": "2026-08-15T15:14:22.483428Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=47364695",
+      "retrieved_at": "2026-08-15T15:14:22.483433Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=47364780",
+      "retrieved_at": "2026-08-15T15:14:22.483441Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=47364969",
+      "retrieved_at": "2026-08-15T15:14:22.483445Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=47364974",
+      "retrieved_at": "2026-08-15T15:14:22.483451Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=47364646",
+      "retrieved_at": "2026-08-15T15:14:22.483469Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=47364930",
+      "retrieved_at": "2026-08-15T15:14:22.483483Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=47365065",
+      "retrieved_at": "2026-08-15T15:14:22.483490Z"
+    }
+  ]
+}

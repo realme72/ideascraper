@@ -16,7 +16,7 @@
         "provenance": {
           "source": "hn",
           "url": "https://news.ycombinator.com/item?id=44745820",
-          "retrieved_at": "2026-08-13T15:14:24.385263Z"
+          "retrieved_at": "2026-08-15T15:14:22.322581Z"
         }
       },
       {
@@ -27,7 +27,7 @@
         "provenance": {
           "source": "hn",
           "url": "https://news.ycombinator.com/item?id=44745820",
-          "retrieved_at": "2026-08-13T15:14:24.385263Z"
+          "retrieved_at": "2026-08-15T15:14:22.322581Z"
         }
       },
       {
@@ -38,7 +38,7 @@
         "provenance": {
           "source": "hn",
           "url": "https://news.ycombinator.com/item?id=44745820",
-          "retrieved_at": "2026-08-13T15:14:24.385263Z"
+          "retrieved_at": "2026-08-15T15:14:22.322581Z"
         }
       }
     ],
@@ -46,11 +46,11 @@
       {
         "source": "hn",
         "url": "https://news.ycombinator.com/item?id=44745820",
-        "retrieved_at": "2026-08-13T15:14:24.385263Z"
+        "retrieved_at": "2026-08-15T15:14:22.322581Z"
       }
     ]
   },
-  "generated_at": "2026-08-14T07:34:36.767630Z",
+  "generated_at": "2026-08-15T15:14:22.528247Z",
   "model": "gemini-3.7-flash",
   "team": "The company was founded by Haakam, Michael, and Adi. No biographical details, prior company history, or technical track records were available in the public evidence provided.",
   "product": "AgentMail is an API service that creates and operates real email inboxes for AI agents, enabling autonomous software to receive emails, parse attachments, extract login OTP codes, and reply programmatically.",
@@ -149,5 +149,57 @@
     "HN user @Haakam21 has no bio on their profile",
     "chat.agentmail.to did not respond; read agentmail.to instead"
   ],
-  "uncited_refs": []
+  "uncited_refs": [],
+  "sources": [
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=44745820",
+      "retrieved_at": "2026-08-15T15:14:22.420201Z"
+    },
+    {
+      "source": "web",
+      "url": "https://agentmail.to",
+      "retrieved_at": "2026-08-15T15:14:22.482634Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=44749041",
+      "retrieved_at": "2026-08-15T15:14:22.420259Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=44749200",
+      "retrieved_at": "2026-08-15T15:14:22.420266Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=44749374",
+      "retrieved_at": "2026-08-15T15:14:22.420271Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=44749433",
+      "retrieved_at": "2026-08-15T15:14:22.420276Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=44749605",
+      "retrieved_at": "2026-08-15T15:14:22.420280Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=44749297",
+      "retrieved_at": "2026-08-15T15:14:22.420296Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=44749384",
+      "retrieved_at": "2026-08-15T15:14:22.420301Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=44749257",
+      "retrieved_at": "2026-08-15T15:14:22.420304Z"
+    }
+  ]
 }

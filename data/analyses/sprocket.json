@@ -1,0 +1,205 @@
+{
+  "candidate": {
+    "slug": "sprocket",
+    "name": "Sprocket",
+    "website": "https://sprocket-demo.spikonado.com",
+    "one_liner": "The Best AI Agent for Hardware and Software Development",
+    "description": "Hey HN, I am 16y/o and have been working on Sprocket for a while. It's an open-source AI agent that beats every other agent out there at both hardware and software. And here's the best part: Sprocket can (on its own) buy anything from any website when you tell it to do so. From hardware parts to SaaS subscriptions. Sprocket retrieves best-in-class context from the web for everything it does. It is therefore incredibly reliable. The agent harness's quality, performance, and UI rival that of Codex/Cursor/T3Code, and we are rapidly improving. We will be releasing benchmarks on how Sprocket beats every other agent at both software and hardware soon. In terms of hardware design, Sprocket can make beautiful schematics in react, create your BOM, and create detailed assembly instructions. Hope…",
+    "keywords": [],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "traction",
+        "label": "124 points and 14 comments on Hacker News",
+        "value": 124.0,
+        "observed_at": "2026-08-02T16:26:19Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=49145934",
+          "retrieved_at": "2026-08-13T15:14:24.382986Z"
+        }
+      },
+      {
+        "kind": "freshness",
+        "label": "Launched on HN 02 Aug 2026",
+        "value": null,
+        "observed_at": "2026-08-02T16:26:19Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=49145934",
+          "retrieved_at": "2026-08-13T15:14:24.382986Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Posted and answered questions as HN user @amronos",
+        "value": null,
+        "observed_at": "2026-08-02T16:26:19Z",
+        "provenance": {
+          "source": "hn",
+          "url": "https://news.ycombinator.com/item?id=49145934",
+          "retrieved_at": "2026-08-13T15:14:24.382986Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "hn",
+        "url": "https://news.ycombinator.com/item?id=49145934",
+        "retrieved_at": "2026-08-13T15:14:24.382986Z"
+      }
+    ]
+  },
+  "generated_at": "2026-08-15T15:11:27.122817Z",
+  "model": "gemini-3.7-flash",
+  "team": "Sprocket is built by Aarav (@amronos), a 16-year-old solo developer. There is no evidence of prior companies, exits, or industry operating experience.",
+  "product": "Sprocket is an open-source desktop and command-line assistant that helps engineers design hardware (generating schematics, bills of materials, and assembly guides) and write software, while autonomously purchasing components or software subscriptions online.",
+  "market": "Targeted at software and hardware developers who currently use code editors, EDA/schematic design software, and manual web procurement to design and build physical and digital products.",
+  "risks": [
+    "The demo site was offline during the public launch, undermining claims of exceptional reliability.",
+    "Initial public enthusiasm was admittedly driven by friends and family accounts rather than authentic developer adoption.",
+    "Autonomous purchasing agents placing online orders for physical parts and SaaS risk severe financial and security liability if actions fail."
+  ],
+  "open_questions": [
+    "What verification steps prevent the AI from generating flawed hardware schematics or ordering incorrect physical components?",
+    "What budget limits, human-in-the-loop approvals, and security guardrails govern the automated purchasing mechanism?",
+    "What is the commercialization plan for an open-source CLI and desktop application?"
+  ],
+  "components": [
+    {
+      "component_id": "displaced_spend",
+      "score": 6,
+      "observed": true,
+      "rationale": "Sprocket pitches itself as a broad capability tool ('The Best AI Agent for Hardware and Software Development') rather than displacing an established operational cost centre or back-office budget.",
+      "evidence_refs": [
+        "Launch post by @amronos",
+        "Homepage of sprocket-demo.spikonado.com — GitHub - spikonado/sprocket: The best and only AI agent for developing both hardware and software · GitHub"
+      ],
+      "what_would_change": "Target a specific corporate budget line, such as outsourced hardware drafting or procurement services."
+    },
+    {
+      "component_id": "operational_buyer",
+      "score": 2,
+      "observed": true,
+      "rationale": "The product is packaged as an open-source CLI and desktop application designed for technical engineers and developers writing code or designing hardware.",
+      "evidence_refs": [
+        "Homepage of sprocket-demo.spikonado.com — GitHub - spikonado/sprocket: The best and only AI agent for developing both hardware and software · GitHub",
+        "Launch post by @amronos"
+      ],
+      "what_would_change": "Sell directly to a non-technical business owner or procurement manager rather than individual developers via CLI/npm."
+    },
+    {
+      "component_id": "in_users_hands",
+      "score": 6,
+      "observed": true,
+      "rationale": "The package is published and installable via npm and GitHub, but the demo site was down at launch and there is no evidence of outside users running it in production.",
+      "evidence_refs": [
+        "Launch post by @amronos",
+        "HN comment by @MomohNobert",
+        "HN comment by @astaka",
+        "Homepage of sprocket-demo.spikonado.com — GitHub - spikonado/sprocket: The best and only AI agent for developing both hardware and software · GitHub"
+      ],
+      "what_would_change": "Demonstrate active production use by third-party hardware or software teams building real projects."
+    },
+    {
+      "component_id": "founding_team",
+      "score": 5,
+      "observed": true,
+      "rationale": "The founder is a 16-year-old solo developer showing technical initiative, but lacking prior domain experience, company-building history, or hardware engineering background.",
+      "evidence_refs": [
+        "Launch post by @amronos",
+        "HN comment by @bittoogangster"
+      ],
+      "what_would_change": "Add technical or industry co-founders with proven track records in hardware engineering or enterprise software."
+    },
+    {
+      "component_id": "outside_reaction",
+      "score": 3,
+      "observed": true,
+      "rationale": "Reaction was shallow: the site was unavailable, and early supportive comments were acknowledged by the founder as coming from friends and family rather than independent technical evaluators.",
+      "evidence_refs": [
+        "HN comment by @astaka",
+        "HN comment by @bittoogangster",
+        "HN founder reply by @amronos"
+      ],
+      "what_would_change": "Generate substantive technical feedback and user evaluations from unaffiliated practitioners."
+    },
+    {
+      "component_id": "momentum",
+      "score": 3,
+      "observed": true,
+      "rationale": "The launch is fresh and shows a 153-commit open-source repository, though operational momentum remains unproven.",
+      "evidence_refs": [
+        "Launch post by @amronos",
+        "Homepage of sprocket-demo.spikonado.com — GitHub - spikonado/sprocket: The best and only AI agent for developing both hardware and software · GitHub"
+      ],
+      "what_would_change": "Demonstrate sustained commit velocity, repository star growth, and outside contributor pull requests."
+    }
+  ],
+  "score": 25,
+  "coverage": 1.0,
+  "call": "Pass",
+  "call_reason": "Scores 6/30 on displaced spend — outside the thesis, so the call is Pass regardless of the total.",
+  "what_would_change_my_mind": [
+    "Target a specific corporate budget line, such as outsourced hardware drafting or procurement services.",
+    "Add technical or industry co-founders with proven track records in hardware engineering or enterprise software.",
+    "Demonstrate active production use by third-party hardware or software teams building real projects."
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "HN user @amronos has no bio on their profile"
+  ],
+  "uncited_refs": [],
+  "sources": [
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=49145934",
+      "retrieved_at": "2026-08-13T20:58:18.509542Z"
+    },
+    {
+      "source": "web",
+      "url": "https://sprocket-demo.spikonado.com",
+      "retrieved_at": "2026-08-13T20:58:18.529045Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=49146119",
+      "retrieved_at": "2026-08-13T20:58:18.509572Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=49146779",
+      "retrieved_at": "2026-08-13T20:58:18.509576Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=49146994",
+      "retrieved_at": "2026-08-13T20:58:18.509580Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=49147337",
+      "retrieved_at": "2026-08-13T20:58:18.509583Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=49151474",
+      "retrieved_at": "2026-08-13T20:58:18.509585Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=49146869",
+      "retrieved_at": "2026-08-13T20:58:18.509591Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=49147426",
+      "retrieved_at": "2026-08-13T20:58:18.509596Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=49147692",
+      "retrieved_at": "2026-08-13T20:58:18.509599Z"
+    }
+  ]
+}

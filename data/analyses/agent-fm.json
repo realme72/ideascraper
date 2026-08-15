@@ -22,7 +22,7 @@
         "provenance": {
           "source": "yc",
           "url": "https://www.ycombinator.com/companies/agent-fm",
-          "retrieved_at": "2026-08-13T15:14:22.603520Z"
+          "retrieved_at": "2026-08-15T15:14:20.595344Z"
         }
       },
       {
@@ -33,7 +33,7 @@
         "provenance": {
           "source": "yc",
           "url": "https://www.ycombinator.com/companies/agent-fm",
-          "retrieved_at": "2026-08-13T15:14:22.603520Z"
+          "retrieved_at": "2026-08-15T15:14:20.595344Z"
         }
       },
       {
@@ -44,7 +44,7 @@
         "provenance": {
           "source": "yc",
           "url": "https://www.ycombinator.com/companies/agent-fm",
-          "retrieved_at": "2026-08-13T15:14:22.603520Z"
+          "retrieved_at": "2026-08-15T15:14:20.595344Z"
         }
       }
     ],
@@ -52,11 +52,11 @@
       {
         "source": "yc",
         "url": "https://www.ycombinator.com/companies/agent-fm",
-        "retrieved_at": "2026-08-13T15:14:22.603520Z"
+        "retrieved_at": "2026-08-15T15:14:20.595344Z"
       }
     ]
   },
-  "generated_at": "2026-08-14T07:34:36.766325Z",
+  "generated_at": "2026-08-15T15:14:22.527516Z",
   "model": "gemini-3.7-flash",
   "team": "Agent FM is led by co-founders Aniket Deshpande (CEO, formerly Applied AI at Meta Superintelligence Labs) and Mugdhaa Patankar (CTO, formerly at Snowflake, Twitch, and AWS). Both have strong technical backgrounds in large technology companies, though neither has a documented prior founding exit.",
   "product": "Agent FM is a desktop application that acts as a group chat and command center for software engineers working with multiple AI coding agents. Instead of checking terminal windows or reading through raw logs, engineers get streaming text and audio status updates from their agents, resolve blockers, and issue instructions in one feed.",
@@ -146,5 +146,17 @@
     "No public GitHub repository identified for this company",
     "No Hacker News launch thread found for this company"
   ],
-  "uncited_refs": []
+  "uncited_refs": [],
+  "sources": [
+    {
+      "source": "yc",
+      "url": "https://www.ycombinator.com/companies/agent-fm",
+      "retrieved_at": "2026-08-15T15:14:22.374467Z"
+    },
+    {
+      "source": "web",
+      "url": "https://www.agentfm.ai/",
+      "retrieved_at": "2026-08-15T15:14:22.389201Z"
+    }
+  ]
 }

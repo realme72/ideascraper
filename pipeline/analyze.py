@@ -310,6 +310,14 @@ def _is_cached(bundle: EvidenceBundle, *, refresh: bool) -> bool:
     return cache.get(key) is not None
 
 
+def _evidence_sources(bundle: EvidenceBundle) -> list:
+    """One entry per distinct page the evidence came from, in bundle order."""
+    seen: dict[str, object] = {}
+    for item in bundle.items:
+        seen.setdefault(item.provenance.url, item.provenance)
+    return list(seen.values())
+
+
 def analyse_one(bundle: EvidenceBundle, *, refresh: bool = False) -> Analysis:
     draft = AnalysisDraft.model_validate(
         _call_model(build_system(), build_user(bundle), refresh=refresh)
@@ -334,6 +342,7 @@ def analyse_one(bundle: EvidenceBundle, *, refresh: bool = False) -> Analysis:
         what_would_change_my_mind=change_my_mind(draft.components),
         gaps=bundle.gaps,
         uncited_refs=check_citations(draft.components, bundle),
+        sources=_evidence_sources(bundle),
     )
 
 

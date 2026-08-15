@@ -6,10 +6,16 @@ Point it at a topic, get one-page investment memos out the other end — each
 ending in a clear **Pass / Watch / Take a meeting**, and each claim traceable back
 to the source it came from.
 
-> **Status: stages 1–2 working, stage 3 built but not yet run.** Sourcing and
-> enrichment run end to end against live data. Analysis is implemented and
-> unit-tested but has never executed against the live model — no API key has
-> been supplied yet, so there are no memos in this repo. Memo rendering is next.
+> **Status: all four stages working.** 15 companies sourced, enriched and
+> analysed against the thesis; **10 memos committed** in [`memos/`](memos/index.md).
+> The remaining 5 are waiting on free-tier quota (see
+> [P3](docs/parking-lot.md)), not on code.
+
+```bash
+python -m pipeline run "AI agents for SMBs"
+```
+
+One command: topic in, memos out. **[Start with `memos/index.md`.](memos/index.md)**
 
 ---
 
@@ -159,6 +165,22 @@ The model is only ever asked to judge, never to do arithmetic — which is why
 swapping the provider from Claude to Gemini partway through touched one function
 and no tests. See [D14](docs/decisions.md).
 
+### Stage 4 — memos
+
 ```bash
-.venv/bin/python -m pytest tests/ -q      # 122 tests
+.venv/bin/python -m pipeline memo
+```
+
+Renders a one-page memo per company into `memos/`, plus an index. Deterministic
+templating with no model call — the judgement was made and scored in stage 3, so
+a memo can never disagree with the score it came from.
+
+Three things are printed rather than hidden, because a partner deciding how much
+to trust a memo needs to know what's behind it: the gaps from stage 2 verbatim,
+any citation that doesn't resolve to a real evidence item, and a footer stating
+that the total and the call were *computed* from component scores rather than
+chosen by the model.
+
+```bash
+.venv/bin/python -m pytest tests/ -q      # 141 tests
 ```

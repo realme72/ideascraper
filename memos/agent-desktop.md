@@ -1,0 +1,72 @@
+# Agent-desktop — Pass
+
+**44/100** against [the thesis](../docs/thesis.md) · 100% evidence coverage · [github.com/lahfir/agent-desktop](https://github.com/lahfir/agent-desktop)
+
+> Native desktop automation CLI for AI agents
+
+## 🔴 Pass
+
+Scores 2/30 on displaced spend — outside the thesis, so the call is Pass regardless of the total.
+
+## What they do
+
+A command-line tool that allows AI agents to inspect and click buttons in native desktop applications using OS accessibility trees rather than slow, screenshot-based computer vision.
+
+## Team
+
+Built by solo developer and self-described 2X founder @lahfir, who has also created other computer-use tools such as cracked-agent and PILOT, with primary author commits in Rust.
+
+## Market
+
+Software engineers and AI agent developers building desktop automation or computer-use tools. Today, developers use vision-based screenshot models (like Claude computer use) or browser-only frameworks like Playwright.
+
+## Score against the thesis
+
+| Component | Score | Reasoning |
+|---|---:|---|
+| Displaced spend is nameable | 2/30 | Agent-desktop is horizontal open-source infrastructure for developers building AI agents, described as a 'Native desktop automation CLI for AI agents'. It provides a technical capability rather than replacing a specific non-technical operational budget line or outsourced service. |
+| Buyer is non-technical and operational | 1/15 | The tool is packaged as a Rust binary CLI exposing JSON and MCP interfaces for LLMs, aimed directly at software engineers and agent builders. There is no operational or non-technical business buyer involved. |
+| Product is in real users' hands | 17/20 | The repository has over 1,000 GitHub stars, 66 forks, multiple external contributors, and public HN comments from users actively testing commands such as the Finder example. |
+| Founding team | 12/20 | Founder @lahfir demonstrates strong technical capability in Rust and desktop accessibility APIs, backed by a profile citing prior work on tools like cracked-agent and PILOT. However, there is no domain background in vertical enterprise operations or visible commercial co-founders. |
+| Quality of outside reaction | 8/10 | The HN launch received active scrutiny regarding LLM-generated post text and cross-platform claims, which the founder addressed transparently by confirming Windows/Linux are roadmap items and Mac is currently GA. |
+| Momentum | 4/5 | The repository has sustained active development from launch in February through August 2026, amassing over 1,000 stars and continuous commit activity. |
+
+**Total: 44/100**
+
+## Risks
+
+- The tool is currently macOS-only, limiting developer adoption for Windows and enterprise desktop environments.
+- Major AI model providers could build structured desktop hooks or standard computer-use protocols directly into foundation models, commoditizing standalone CLI wrappers.
+- Open-source developer utility with Apache-2.0 licensing lacks a clear monetization path or commercial software budget.
+
+## Open questions
+
+- What is the commercialization strategy beyond maintaining an open-source Rust CLI tool?
+- When will Windows UI Automation and Linux AT-SPI support achieve feature parity with macOS?
+- Are there plans to package this as an enterprise agent runtime or SDK sold directly to businesses rather than open-source hackers?
+
+## What would change our mind
+
+1. Package the technology into a turn-key vertical solution that directly replaces an identifiable operational software subscription or back-office contractor spend.
+2. Target and sell an end-to-end workflow automation product to business operations managers rather than a CLI to software developers.
+3. Add commercial co-founders with proven B2B sales or vertical enterprise operating backgrounds.
+
+## Sources
+
+Every claim above traces to one of these pages.
+
+- `hn` — [https://news.ycombinator.com/item?id=47982708](https://news.ycombinator.com/item?id=47982708)
+- `github` — [https://github.com/lahfir/agent-desktop](https://github.com/lahfir/agent-desktop)
+- `hn` — [https://news.ycombinator.com/user?id=lahfir](https://news.ycombinator.com/user?id=lahfir)
+- `hn` — [https://news.ycombinator.com/item?id=47983478](https://news.ycombinator.com/item?id=47983478)
+- `hn` — [https://news.ycombinator.com/item?id=47983520](https://news.ycombinator.com/item?id=47983520)
+- `hn` — [https://news.ycombinator.com/item?id=47983530](https://news.ycombinator.com/item?id=47983530)
+- `hn` — [https://news.ycombinator.com/item?id=47983788](https://news.ycombinator.com/item?id=47983788)
+- `hn` — [https://news.ycombinator.com/item?id=47983840](https://news.ycombinator.com/item?id=47983840)
+- `hn` — [https://news.ycombinator.com/item?id=48019295](https://news.ycombinator.com/item?id=48019295)
+- `hn` — [https://news.ycombinator.com/item?id=48019304](https://news.ycombinator.com/item?id=48019304)
+- `hn` — [https://news.ycombinator.com/item?id=48019255](https://news.ycombinator.com/item?id=48019255)
+
+---
+
+*Generated by [ideascraper](../README.md) from evidence gathered 15 Aug 2026. Scored by `gemini-3.7-flash` against the components in [docs/thesis.md](../docs/thesis.md); the total, the coverage figure and this call were computed from those scores, not chosen by the model.*

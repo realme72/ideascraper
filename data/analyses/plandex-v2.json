@@ -16,7 +16,7 @@
         "provenance": {
           "source": "hn",
           "url": "https://news.ycombinator.com/item?id=43710576",
-          "retrieved_at": "2026-08-13T15:14:24.382806Z"
+          "retrieved_at": "2026-08-15T15:14:22.320223Z"
         }
       },
       {
@@ -27,7 +27,7 @@
         "provenance": {
           "source": "hn",
           "url": "https://news.ycombinator.com/item?id=43710576",
-          "retrieved_at": "2026-08-13T15:14:24.382806Z"
+          "retrieved_at": "2026-08-15T15:14:22.320223Z"
         }
       },
       {
@@ -38,7 +38,7 @@
         "provenance": {
           "source": "hn",
           "url": "https://news.ycombinator.com/item?id=43710576",
-          "retrieved_at": "2026-08-13T15:14:24.382806Z"
+          "retrieved_at": "2026-08-15T15:14:22.320223Z"
         }
       }
     ],
@@ -46,11 +46,11 @@
       {
         "source": "hn",
         "url": "https://news.ycombinator.com/item?id=43710576",
-        "retrieved_at": "2026-08-13T15:14:24.382806Z"
+        "retrieved_at": "2026-08-15T15:14:22.320223Z"
       }
     ]
   },
-  "generated_at": "2026-08-14T07:34:36.770533Z",
+  "generated_at": "2026-08-15T15:14:22.530303Z",
   "model": "gemini-3.7-flash",
   "team": "Plandex is created by Dane Enania, a technical founder who previously founded EnvKey (YC W18) and works as an engineer at OpenAI on Codex Security.",
   "product": "Plandex is an open-source terminal tool that uses multiple AI models to automatically plan, write, test, and debug code changes across large software codebases within an isolated sandbox before applying diffs.",
@@ -150,5 +150,62 @@
     "Provide verified telemetry or case studies demonstrating paying production enterprise team deployments."
   ],
   "gaps": [],
-  "uncited_refs": []
+  "uncited_refs": [],
+  "sources": [
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=43710576",
+      "retrieved_at": "2026-08-15T15:14:22.396526Z"
+    },
+    {
+      "source": "github",
+      "url": "https://github.com/plandex-ai/plandex",
+      "retrieved_at": "2026-08-15T15:14:22.396171Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/user?id=danenania",
+      "retrieved_at": "2026-08-15T15:14:22.396948Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=43710740",
+      "retrieved_at": "2026-08-15T15:14:22.396641Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=43710745",
+      "retrieved_at": "2026-08-15T15:14:22.396649Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=43710811",
+      "retrieved_at": "2026-08-15T15:14:22.396654Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=43711522",
+      "retrieved_at": "2026-08-15T15:14:22.396669Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=43712711",
+      "retrieved_at": "2026-08-15T15:14:22.396683Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=43710835",
+      "retrieved_at": "2026-08-15T15:14:22.396714Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=43728977",
+      "retrieved_at": "2026-08-15T15:14:22.396733Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=43710888",
+      "retrieved_at": "2026-08-15T15:14:22.396736Z"
+    }
+  ]
 }

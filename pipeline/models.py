@@ -213,6 +213,10 @@ class Analysis(BaseModel):
 
     gaps: list[str] = Field(default_factory=list)
     uncited_refs: list[str] = Field(default_factory=list)
+    # Every page the evidence came from, carried forward so a memo can be
+    # spot-checked without opening the evidence bundle. Stage 1's provenance
+    # only records where the *candidate* was found, which is a smaller set.
+    sources: list[Provenance] = Field(default_factory=list)
 
     @property
     def slug(self) -> str:

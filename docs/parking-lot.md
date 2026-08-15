@@ -34,6 +34,40 @@ breaking replay for outputs we still care about.
 
 ---
 
+## P4 — The HN search cache key changes every run
+
+**Raised:** 2026-08-15 (stage 4) · **Revisit:** as soon as the remaining
+analyses are done — this is a correctness bug, not a nicety
+
+`pipeline/sources/hn.py` sends `numericFilters=created_at_i>{now - 540 days}`.
+That bound is computed at call time, so **every run produces a different cache
+key**, the HTTP cache never hits, and the search refetches.
+
+That is not just wasted requests. Found by running `python -m pipeline run` end
+to end: the refetch picked up a real-world change — a 15th comment on Sprocket's
+launch thread, where the committed evidence recorded 14 — which changed the
+candidate's signal label, which changed the evidence bundle, which changed the
+analysis prompt, which invalidated that company's **model-response cache**. One
+new comment on Hacker News silently orphaned a committed analysis.
+
+This breaks the claim that the committed caches replay byte-identically, which
+is the one thing the whole caching design exists to provide.
+
+**The fix:** drop `numericFilters` from the request and apply the `since_days`
+window client-side after fetching. The key then contains no timestamp at all and
+is stable indefinitely. `hitsPerPage` needs raising to compensate, since the
+window is no longer applied server-side.
+
+**Why it is not fixed yet:** changing the request changes the cache key, which
+re-sources every candidate and invalidates all ten completed analyses — and
+free-tier quota cannot regenerate them today (P3). Sequencing matters: finish
+the analyses, then fix this, then re-run the whole pipeline once from clean.
+
+Interim state is safe: the evidence churn from the end-to-end run was reverted,
+and all ten analyses match their committed evidence again.
+
+---
+
 ## P3 — Free-tier quota caps a full run at ~20 companies/day
 
 **Raised:** 2026-08-14 (stage 3) · **Revisit:** before submission

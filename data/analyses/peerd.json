@@ -16,7 +16,7 @@
         "provenance": {
           "source": "hn",
           "url": "https://news.ycombinator.com/item?id=48646165",
-          "retrieved_at": "2026-08-13T15:14:24.382483Z"
+          "retrieved_at": "2026-08-15T15:14:22.319925Z"
         }
       },
       {
@@ -27,7 +27,7 @@
         "provenance": {
           "source": "hn",
           "url": "https://news.ycombinator.com/item?id=48646165",
-          "retrieved_at": "2026-08-13T15:14:24.382483Z"
+          "retrieved_at": "2026-08-15T15:14:22.319925Z"
         }
       },
       {
@@ -38,7 +38,7 @@
         "provenance": {
           "source": "hn",
           "url": "https://news.ycombinator.com/item?id=48646165",
-          "retrieved_at": "2026-08-13T15:14:24.382483Z"
+          "retrieved_at": "2026-08-15T15:14:22.319925Z"
         }
       }
     ],
@@ -46,11 +46,11 @@
       {
         "source": "hn",
         "url": "https://news.ycombinator.com/item?id=48646165",
-        "retrieved_at": "2026-08-13T15:14:24.382483Z"
+        "retrieved_at": "2026-08-15T15:14:22.319925Z"
       }
     ]
   },
-  "generated_at": "2026-08-14T07:34:36.769871Z",
+  "generated_at": "2026-08-15T15:14:22.529796Z",
   "model": "gemini-3.7-flash",
   "team": "The project is created and maintained primarily by the pseudonymous developer @NotASithLord, with outside open-source contributions from contributors like jonybur and mariazuheros. No formal founder background, prior company history, or employment details are publicly available.",
   "product": "peerd is a browser extension that runs autonomous AI agents directly inside the user's browser without requiring an external backend or custom browser. It executes tasks using isolated browser tabs, JavaScript workers, and WebAssembly-based Linux virtual machines, using the user's own LLM API keys.",
@@ -146,5 +146,57 @@
   "gaps": [
     "HN user @NotASithLord has no bio on their profile"
   ],
-  "uncited_refs": []
+  "uncited_refs": [],
+  "sources": [
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=48646165",
+      "retrieved_at": "2026-08-15T15:14:22.486195Z"
+    },
+    {
+      "source": "github",
+      "url": "https://github.com/NotASithLord/peerd",
+      "retrieved_at": "2026-08-15T15:14:22.485968Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=48662684",
+      "retrieved_at": "2026-08-15T15:14:22.486296Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=48662996",
+      "retrieved_at": "2026-08-15T15:14:22.486311Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=48663052",
+      "retrieved_at": "2026-08-15T15:14:22.486317Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=48663119",
+      "retrieved_at": "2026-08-15T15:14:22.486328Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=48664711",
+      "retrieved_at": "2026-08-15T15:14:22.486337Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=48662624",
+      "retrieved_at": "2026-08-15T15:14:22.486374Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=48663792",
+      "retrieved_at": "2026-08-15T15:14:22.486379Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=48662836",
+      "retrieved_at": "2026-08-15T15:14:22.486395Z"
+    }
+  ]
 }

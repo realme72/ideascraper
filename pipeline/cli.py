@@ -13,7 +13,7 @@ from __future__ import annotations
 import argparse
 import sys
 
-from pipeline import analyze, enrich, source
+from pipeline import analyze, enrich, memo, source
 
 
 def _print_summary(result) -> None:
@@ -69,12 +69,12 @@ def build_parser() -> argparse.ArgumentParser:
         "--refresh", action="store_true", help="bypass the cache and re-call the model"
     )
 
-    for name, help_text in [
-        ("memo", "render one-page memos"),
-        ("run", "all four stages, end to end"),
-    ]:
-        stage = sub.add_parser(name, help=f"{help_text} (not implemented yet)")
-        stage.add_argument("topic", nargs="?", help=argparse.SUPPRESS)
+    sub.add_parser("memo", help="render one-page memos from the analyses")
+
+    full = sub.add_parser("run", help="all four stages, end to end")
+    full.add_argument("topic", help='e.g. "AI agents for SMBs"')
+    full.add_argument("--limit", type=int, default=15, help="max candidates (default: 15)")
+    full.add_argument("--refresh", action="store_true", help="bypass every cache")
 
     return parser
 
@@ -126,6 +126,38 @@ def main(argv: list[str] | None = None) -> int:
         summary = ", ".join(f"{n} {call}" for call, n in sorted(calls.items()))
         print(f"\n{len(analyses)} analysed — {summary}")
         print(f"written to {analyze.OUTPUT_DIR}/")
+        return 0
+
+    if args.command == "memo":
+        try:
+            written = memo.run()
+        except FileNotFoundError as exc:
+            print(str(exc), file=sys.stderr)
+            return 1
+        print(f"\n{len(written)} memos written to {memo.OUTPUT_DIR}/ — start at index.md")
+        return 0
+
+    if args.command == "run":
+        print("── sourcing ──")
+        found = source.run(args.topic, limit=args.limit, refresh=args.refresh)
+        if not found.candidates:
+            print(f'No candidates matched "{args.topic}".', file=sys.stderr)
+            return 1
+        _print_summary(found)
+
+        print("── enrichment ──")
+        enrich.run(refresh=args.refresh)
+
+        print("\n── analysis ──")
+        try:
+            analyze.run(refresh=args.refresh)
+        except analyze.MissingCredentials as exc:
+            print(str(exc), file=sys.stderr)
+            return 1
+
+        print("\n── memos ──")
+        written = memo.run()
+        print(f"\n{len(written)} memos in {memo.OUTPUT_DIR}/ — start at index.md")
         return 0
 
     print(f"stage '{args.command}' is not implemented yet", file=sys.stderr)

@@ -19,7 +19,7 @@
         "provenance": {
           "source": "yc",
           "url": "https://www.ycombinator.com/companies/mount",
-          "retrieved_at": "2026-08-13T15:14:22.606082Z"
+          "retrieved_at": "2026-08-15T15:14:20.596998Z"
         }
       },
       {
@@ -30,7 +30,7 @@
         "provenance": {
           "source": "yc",
           "url": "https://www.ycombinator.com/companies/mount",
-          "retrieved_at": "2026-08-13T15:14:22.606082Z"
+          "retrieved_at": "2026-08-15T15:14:20.596998Z"
         }
       },
       {
@@ -41,7 +41,7 @@
         "provenance": {
           "source": "yc",
           "url": "https://www.ycombinator.com/companies/mount",
-          "retrieved_at": "2026-08-13T15:14:22.606082Z"
+          "retrieved_at": "2026-08-15T15:14:20.596998Z"
         }
       }
     ],
@@ -49,11 +49,11 @@
       {
         "source": "yc",
         "url": "https://www.ycombinator.com/companies/mount",
-        "retrieved_at": "2026-08-13T15:14:22.606082Z"
+        "retrieved_at": "2026-08-15T15:14:20.596998Z"
       }
     ]
   },
-  "generated_at": "2026-08-14T07:34:36.769080Z",
+  "generated_at": "2026-08-15T15:14:22.529311Z",
   "model": "gemini-3.7-flash",
   "team": "Mount was founded in 2026 by Fabian Amherd and John Bachmann. Amherd studied machine learning at ETH Zürich, built computer vision models at robotics spin-off MESH, and previously ran a web development firm. Bachmann comes from a multi-generational insurance family and previously built a technical team in Bangalore scaling to $400k in annual revenue.",
   "product": "Mount provides specialized commercial liability insurance and automated security scanning for companies deploying autonomous AI agents, covering risks such as model errors, prompt injection, data leaks, and business interruption.",
@@ -145,5 +145,17 @@
     "No public GitHub repository identified for this company",
     "No Hacker News launch thread found for this company"
   ],
-  "uncited_refs": []
+  "uncited_refs": [],
+  "sources": [
+    {
+      "source": "yc",
+      "url": "https://www.ycombinator.com/companies/mount",
+      "retrieved_at": "2026-08-15T15:14:22.364218Z"
+    },
+    {
+      "source": "web",
+      "url": "https://mount.insure",
+      "retrieved_at": "2026-08-15T15:14:22.373792Z"
+    }
+  ]
 }

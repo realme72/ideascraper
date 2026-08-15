@@ -1,0 +1,166 @@
+{
+  "candidate": {
+    "slug": "spaceflow-technologies-inc",
+    "name": "SpaceFlow Technologies, Inc.",
+    "website": "https://spaceflow.tech",
+    "one_liner": "The managed runtime for enterprise AI agents",
+    "description": "SpaceFlow is the managed runtime for AI agents that execute supply chain work across ERPs, email, spreadsheets, documents, and supplier portals. It turns fragmented operational data and SOPs into a governed context layer, then gives agents reusable skills and controlled access to enterprise tools.\r\n\r\nSpaceFlow agents normalize multi-round quotations, chase suppliers and delivery confirmations, repair incomplete requests, classify materials, reconcile phantom inventory, surface market signals, and help sales and operations planning teams continuously align demand, supply, inventory, purchasing deadlines, and freight decisions.\r\n\r\nSpaceFlow deploys in the customer’s cloud or on-prem environment with permissions, human approvals, observability, and audit trails, allowing industrial and regulated enterprises to automate high-stakes operations without replacing existing systems or moving sensitive data.",
+    "keywords": [
+      "B2B",
+      "Logistics",
+      "Manufacturing",
+      "Supply Chain",
+      "Supply Chain and Logistics",
+      "Workflow Automation"
+    ],
+    "relevance": 0.444,
+    "signals": [
+      {
+        "kind": "freshness",
+        "label": "YC Summer 2026 batch",
+        "value": null,
+        "observed_at": "2026-08-02T04:22:37Z",
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+          "retrieved_at": "2026-08-15T15:14:20.595372Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Team of 4",
+        "value": 4.0,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+          "retrieved_at": "2026-08-15T15:14:20.595372Z"
+        }
+      },
+      {
+        "kind": "team",
+        "label": "Stage: Early",
+        "value": null,
+        "observed_at": null,
+        "provenance": {
+          "source": "yc",
+          "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+          "retrieved_at": "2026-08-15T15:14:20.595372Z"
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source": "yc",
+        "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+        "retrieved_at": "2026-08-15T15:14:20.595372Z"
+      }
+    ]
+  },
+  "generated_at": "2026-08-15T15:14:22.530759Z",
+  "model": "gemini-3.7-flash",
+  "team": "SpaceFlow was founded by Emre Isik (CEO), Hakan Enes Aksu (CTO), and Ali Eren Aytekin. Isik studied Computer Engineering at Cambridge and conducted computational linguistics and motor control research at Cambridge and UCLA; Aytekin has a background in deep learning research at Istanbul Technical University and holds a patent in energy storage. The team is technically strong but lacks documented prior operating experience in enterprise supply chain logistics.",
+  "product": "SpaceFlow connects to enterprise ERPs, email systems, and spreadsheets to deploy automated AI agents that handle repetitive supply chain tasks. It automates supplier follow-ups, normalizes vendor price quotes, classifies parts and materials, and reconciles phantom inventory directly within existing internal networks.",
+  "market": "The product targets supply chain, procurement, and operations planning leaders at industrial and mid-to-large enterprise companies. Historically, these workflows are handled by manual back-office teams or custom integration consultants across legacy ERPs like SAP and Oracle.",
+  "risks": [
+    "Positioning as both a technical infrastructure runtime and a vertical supply chain automation tool creates split messaging and ambiguous buying journeys.",
+    "Industrial supply chain workflows carry high error costs, which may limit customer willingness to graduate agents from shadow mode to autonomous execution.",
+    "Enterprise procurement and ERP integrations typically require long, high-friction sales cycles and security reviews."
+  ],
+  "open_questions": [
+    "What specific buyer role signs the contract: head of supply chain/procurement or enterprise IT/platform engineering?",
+    "How is the claimed $400M in annual supplier spend distributed across pilot customers versus live, paying production deployments?",
+    "How does the platform handle hallucinations or incorrect data entry when posting updates back into enterprise ERP systems?"
+  ],
+  "components": [
+    {
+      "component_id": "displaced_spend",
+      "score": 17,
+      "observed": true,
+      "rationale": "SpaceFlow outlines specific operational workflows it takes over, such as 'normalize multi-round quotations, chase suppliers... classify materials, reconcile phantom inventory.' However, the company also frames itself as a generic 'managed runtime for enterprise AI agents', leaving the exact replaced budget line split between IT software and procurement operational headcount.",
+      "evidence_refs": [
+        "SpaceFlow Technologies, Inc. — YC directory profile",
+        "Homepage of spaceflow.tech — Spaceflow"
+      ],
+      "what_would_change": "Focusing positioning strictly on replacing procurement contractor and operational headcount spend rather than positioning as a developer runtime would increase this score."
+    },
+    {
+      "component_id": "operational_buyer",
+      "score": 9,
+      "observed": true,
+      "rationale": "The company targets supply chain and S&OP workflows, but its messaging as a 'managed runtime' with 'on-prem environment permissions, human approvals, observability, and audit trails' indicates a hybrid sell requiring technical platform and IT security sign-off.",
+      "evidence_refs": [
+        "SpaceFlow Technologies, Inc. — YC directory profile",
+        "Homepage of spaceflow.tech — Spaceflow"
+      ],
+      "what_would_change": "Evidence showing that non-technical supply chain directors can purchase and deploy without IT/engineering sign-off would raise this score."
+    },
+    {
+      "component_id": "in_users_hands",
+      "score": 6,
+      "observed": true,
+      "rationale": "The website claims '$400M in annual supplier spend runs through Spaceflow', but all evidence traces solely to marketing claims with a 'Book a demo' CTA. There is no independent user validation or public repository to corroborate active production usage.",
+      "evidence_refs": [
+        "Homepage of spaceflow.tech — Spaceflow"
+      ],
+      "what_would_change": "Public case studies, customer testimonials, or verified production usage metrics would lift the score into higher bands."
+    },
+    {
+      "component_id": "founding_team",
+      "score": 12,
+      "observed": true,
+      "rationale": "The founding team has solid technical and research credentials from Cambridge and ITU in computational linguistics and deep learning. However, there is no evidence of prior enterprise founder experience or background in enterprise supply chain operations.",
+      "evidence_refs": [
+        "Emre Isik — Co-founder and CEO",
+        "Ali Eren Aytekin — Founder",
+        "Hakan Enes Aksu — Founder"
+      ],
+      "what_would_change": "Direct prior domain experience in enterprise procurement or a track record of scaling B2B enterprise software companies would raise this score."
+    },
+    {
+      "component_id": "outside_reaction",
+      "score": 5,
+      "observed": false,
+      "rationale": "No public launch thread or independent public scrutiny was found for this company.",
+      "evidence_refs": [],
+      "what_would_change": "A public launch thread featuring technical and operational pushback handled well by the founders would raise this score."
+    },
+    {
+      "component_id": "momentum",
+      "score": 4,
+      "observed": true,
+      "rationale": "The company is an active participant in the YC Summer 2026 batch with a newly updated web presence.",
+      "evidence_refs": [
+        "SpaceFlow Technologies, Inc. — YC directory profile",
+        "Homepage of spaceflow.tech — Spaceflow"
+      ],
+      "what_would_change": "Sustained public deployment updates and demonstrated hiring growth over the next quarter would push this to the top score."
+    }
+  ],
+  "score": 53,
+  "coverage": 0.9,
+  "call": "Watch",
+  "call_reason": "Scores 53/100 with 90% evidence coverage.",
+  "what_would_change_my_mind": [
+    "Public case studies, customer testimonials, or verified production usage metrics would lift the score into higher bands.",
+    "Focusing positioning strictly on replacing procurement contractor and operational headcount spend rather than positioning as a developer runtime would increase this score.",
+    "Direct prior domain experience in enterprise procurement or a track record of scaling B2B enterprise software companies would raise this score."
+  ],
+  "gaps": [
+    "No public GitHub repository identified for this company",
+    "No Hacker News launch thread found for this company"
+  ],
+  "uncited_refs": [],
+  "sources": [
+    {
+      "source": "yc",
+      "url": "https://www.ycombinator.com/companies/spaceflow-technologies-inc",
+      "retrieved_at": "2026-08-15T15:14:22.504890Z"
+    },
+    {
+      "source": "web",
+      "url": "https://spaceflow.tech",
+      "retrieved_at": "2026-08-15T15:14:22.516734Z"
+    }
+  ]
+}

@@ -16,7 +16,7 @@
         "provenance": {
           "source": "hn",
           "url": "https://news.ycombinator.com/item?id=47982708",
-          "retrieved_at": "2026-08-13T15:14:24.383052Z"
+          "retrieved_at": "2026-08-15T15:14:22.320455Z"
         }
       },
       {
@@ -27,7 +27,7 @@
         "provenance": {
           "source": "hn",
           "url": "https://news.ycombinator.com/item?id=47982708",
-          "retrieved_at": "2026-08-13T15:14:24.383052Z"
+          "retrieved_at": "2026-08-15T15:14:22.320455Z"
         }
       },
       {
@@ -38,7 +38,7 @@
         "provenance": {
           "source": "hn",
           "url": "https://news.ycombinator.com/item?id=47982708",
-          "retrieved_at": "2026-08-13T15:14:24.383052Z"
+          "retrieved_at": "2026-08-15T15:14:22.320455Z"
         }
       }
     ],
@@ -46,11 +46,11 @@
       {
         "source": "hn",
         "url": "https://news.ycombinator.com/item?id=47982708",
-        "retrieved_at": "2026-08-13T15:14:24.383052Z"
+        "retrieved_at": "2026-08-15T15:14:22.320455Z"
       }
     ]
   },
-  "generated_at": "2026-08-14T07:34:36.764314Z",
+  "generated_at": "2026-08-15T15:14:22.526888Z",
   "model": "gemini-3.7-flash",
   "team": "Built by solo developer and self-described 2X founder @lahfir, who has also created other computer-use tools such as cracked-agent and PILOT, with primary author commits in Rust.",
   "product": "A command-line tool that allows AI agents to inspect and click buttons in native desktop applications using OS accessibility trees rather than slow, screenshot-based computer vision.",
@@ -145,5 +145,62 @@
     "Add commercial co-founders with proven B2B sales or vertical enterprise operating backgrounds."
   ],
   "gaps": [],
-  "uncited_refs": []
+  "uncited_refs": [],
+  "sources": [
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=47982708",
+      "retrieved_at": "2026-08-15T15:14:22.362999Z"
+    },
+    {
+      "source": "github",
+      "url": "https://github.com/lahfir/agent-desktop",
+      "retrieved_at": "2026-08-15T15:14:22.362653Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/user?id=lahfir",
+      "retrieved_at": "2026-08-15T15:14:22.363444Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=47983478",
+      "retrieved_at": "2026-08-15T15:14:22.363098Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=47983520",
+      "retrieved_at": "2026-08-15T15:14:22.363105Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=47983530",
+      "retrieved_at": "2026-08-15T15:14:22.363112Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=47983788",
+      "retrieved_at": "2026-08-15T15:14:22.363115Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=47983840",
+      "retrieved_at": "2026-08-15T15:14:22.363122Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=48019295",
+      "retrieved_at": "2026-08-15T15:14:22.363137Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=48019304",
+      "retrieved_at": "2026-08-15T15:14:22.363141Z"
+    },
+    {
+      "source": "hn",
+      "url": "https://news.ycombinator.com/item?id=48019255",
+      "retrieved_at": "2026-08-15T15:14:22.363143Z"
+    }
+  ]
 }
